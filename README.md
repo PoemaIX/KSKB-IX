@@ -1,10 +1,10 @@
 # KSKB-IX
 
 ## 介紹 | Introduction
-一個IPV6 IX，主要作為一個中立的BGP實驗交流和學習的平台
+一個IPV6 IX，主要作為一個中立的BGP實驗交流和學習的平台  
 
-本IX支援IPv4/IPv6
-我們支持MTU9000的巨型幀(僅IX VM)
+本IX支援IPv4/IPv6  
+我們支持MTU9000的巨型幀  
 
 ## 接入 | Join
 僅限邀請/內部推薦  
