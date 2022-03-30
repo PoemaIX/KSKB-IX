@@ -36,4 +36,4 @@ VM接入/wifi接入(如果你住我家隔壁)
 由防火牆conntrack模組負責追蹤( `-m conntrack --ctstate NEW ` )整個session  
 講人話: 透過port forward連進來的連線走Hinet，MTU 1492。由內部向外發起連線，走wgcf，1432  
 
-可以申請IP白名單，供隧道搭建使用，名單內的IP不論方向，不走wgcf，直接hinet出去  
+可以申請IP白名單，供隧道搭建使用，名單內的IP不論方向，均直接走hinet出去  
