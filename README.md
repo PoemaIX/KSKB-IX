@@ -31,7 +31,7 @@ VM接入/wifi接入(如果你住我家隔壁)
 ## 連線 | Connectivity
 內部向外發起的連線，走wgcf。MTU 1432  
 外部向內發起的連線，走hinet。MTU 1492  
-提供udp port forward服務，範圍 [VMID00~VMID99]供內網隧道連接使用  
+提供udp port forward服務，port範圍 [VMID]00~[VMID]99供內網隧道連接使用  
 向內/向外，並不是依據封包方向。而是依據tcp/udp session建立的方向  
 由防火牆conntrack模組負責追蹤( `-m conntrack --ctstate NEW ` )整個session  
 講人話: 透過port forward連進來的連線走Hinet，MTU 1492。由內部向外發起連線，走wgcf，1432  
