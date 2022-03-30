@@ -15,6 +15,17 @@ VM接入/wifi接入(如果你住我家隔壁)
 若有發送IPv4路由需求，參與者還須支援multiprotocol BGP和extended nexthop  
 若沒有和RS進行BGP連接並發送路由，KSKB將在Chrome記憶體爆炸的時候，優先關閉妳的VM  
 
+## 設定 | Configure
+
+* RS1
+  * RS1必須連接，並發送至少一條路由
+  * 有過濾，AS-SET內容變動，請手動聯繫更新
+  * 連線地址: fe80::114:514%eth1
+* RS2
+  * RS2只有智慧之人才能連接
+  * `import all; export all;`
+  * 連線地址: fe80::11:4514%eth1
+
 ## 連線 | Connectivity
 內部向外發起的連線，走wgcf。MTU 1432  
 外部向內發起的連線，走hinet。MTU 1492  
