@@ -1,4 +1,4 @@
-Configuration of route server fe80::114:514 at KSKB-IX
+Configuration of route server 192.168.16.1 at AS114514
 ======================================================================
 
 BGP sessions default configuration
@@ -85,6 +85,9 @@ are **rejected**.
 | Prefix | More specific | Comment |
 | --- | --- | --- |
 | 192.168.0.0/16 | any more specific prefix | Local network |
+| 172.16.0.0/12 | any more specific prefix | Local network |
+| 10.0.0.0/8 | any more specific prefix | Local network |
+| fd00::/8 | any more specific prefix | Local network |
 
 * **Bogon prefixes** are rejected too.
 
