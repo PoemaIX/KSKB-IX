@@ -20,7 +20,7 @@ VM接入/wifi接入(如果你住我家隔壁)
 * RS1
   * AS114514
   * 必須連接，並發送至少一條路由
-  * 有過濾，AS-SET內容變動，請手動聯繫更新
+  * 有過濾 https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md
   * 連線地址: fe80::114:514%eth1
 * RS2
   * AS114514
