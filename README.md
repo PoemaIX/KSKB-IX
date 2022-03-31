@@ -15,7 +15,7 @@ VM接入/wifi接入(如果你住我家隔壁)
 若沒有和RS進行BGP連接並發送路由，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM  
 
 ## 要求
-參與者使用的bgp daemon必須支援
+參與者使用的bgp daemon必須支援以下功能
 * IPv6 link local
 * bgp large community
 * multiprotocol BGP (IPv4)
