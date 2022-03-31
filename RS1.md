@@ -5,7 +5,7 @@ BGP sessions default configuration
 ----------------------------------
 
 * **Passive** sessions are configured toward neighbors.
-* GTSM (Generalized TTL Security Mechanism - [RFC5082](//tools.ietf.org/html/rfc5082)) is **enabled** on sessions toward the neighbors.
+* GTSM (Generalized TTL Security Mechanism - [RFC5082](//tools.ietf.org/html/rfc5082)) is **disabled** on sessions toward the neighbors.
 * **ADD-PATH** capability ([RFC7911](//tools.ietf.org/html/rfc7911)) is negotiaded by default; the route server is configured as "able to send multiple paths to its peer".
 
 Route server general behaviours
