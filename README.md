@@ -43,6 +43,7 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 IPv6感謝Nyaa裙友提供的免費HE TPE IPv6 transit。MTU 1372  
 
 提供udp port forward服務，port範圍 XXX00~XXX99，XXX=VMID。供內網隧道搭建使用  
+
 向內/向外，並不是依據封包方向。而是依據tcp/udp session建立的方向  
 由防火牆conntrack模組負責追蹤( `-m conntrack --ctstate NEW ` )整個session  
 講人話: 透過port forward連進來的連線走Hinet，MTU 1492。由內部向外發起連線，走wgcf，1432  
