@@ -3,8 +3,7 @@
 ## 介紹 | Introduction
 一個搭在我家客廳雲的玩具IX，主要作為一個中立的BGP實驗交流和學習的平台  
 
-本IX支援IPv4/IPv6  
-我們支持MTU9000的巨型幀  
+本IX支援IPv4/IPv6/MTU9000
 
 ## 接入 | Join
 玩具IX  
