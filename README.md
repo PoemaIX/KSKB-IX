@@ -32,7 +32,7 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 * RS2
   * AS114514
   * 只有智慧之人才能連接
-  * `import all; export all;`
+  * 過濾規則: `import all; export all;`
   * 不支援任何Community屬性
   * 路由發送上限 2000，超過會被斷開連接
   * 連線地址: fe80::11:4514%eth1
