@@ -38,15 +38,17 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * 連線地址: fe80::11:4514%eth1
 
 ## 連線 | Connectivity
-內部向外發起的連線，走wgcf。MTU 1432  
-外部向內發起的連線，走hinet。MTU 1492  
-IPv6感謝Nyaa裙友提供的免費HE TPE IPv6 transit。MTU 1372  
+
+Traffic     | Connection   | MTU  | Comment                |
+------------|--------------|------|------------------------|
+IPv4 Output | wgcf         | 1432 | 內部對外發起的連線       |
+IPv4 Input  | Hinet        | 1492 | port forward進來的連線  |
+IPv6        | wg in wgcf   | 1372 | 感謝Nyaa群友提供的免費HE TPE IPv6 transit |
 
 提供udp port forward服務，port範圍 XXX00~XXX99，XXX=VMID。供內網隧道搭建使用  
 
-向內/向外，並不是依據封包方向。而是依據tcp/udp session建立的方向  
+Input/Output，並不是依據封包方向。而是依據tcp/udp session建立的方向  
 由防火牆conntrack模組負責追蹤( `-m conntrack --ctstate NEW ` )整個session  
-講人話: 透過port forward連進來的連線走Hinet，MTU 1492。由內部向外發起連線，走wgcf，1432  
 
 可以申請IP白名單，供隧道搭建使用，名單內的IP不論方向，均直接走hinet出去  
 
