@@ -13,7 +13,7 @@ SLA保證低於99%
 VM接入/wifi接入(如果你住我家隔壁)  
 IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP Transit  
 我們強制要求與RS進行BGP連接  
-若沒有和RS進行BGP連接並發送至少一條路由，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順瀏覽網頁/玩遊戲  
+若沒有和RS進行BGP連接並發送至少一條路由，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
 
 ## 要求
 參與者使用的bgp daemon必須支援以下功能  
