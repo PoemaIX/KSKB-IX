@@ -45,7 +45,7 @@ IPv4 Input  | Hinet        | 1492 | port forward進來的連線  |
 IPv4 Output | wgcf         | 1432 | 內部對外發起的連線       |
 IPv6        | wg in wgcf   | 1372 | 感謝Nyaa群友提供的免費HE TPE IPv6 transit |
 
-提供udp port forward服務，port範圍 XXX00~XXX99，XXX=VMID。供內網隧道搭建使用  
+提供udp port forward服務，port範圍 \*\*\*00~\*\*\*99，\*\*\*=VMID，共計100個port供內網隧道搭建使用  
 port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint  
 
 Input/Output，並不是依據封包方向。而是依據tcp/udp session建立的方向  
