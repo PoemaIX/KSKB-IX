@@ -39,6 +39,8 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 
 ## 連線 | Connectivity
 
+IX VM 的網路連線能力
+
 Traffic     | Connection   | MTU  | Comment                |
 ------------|--------------|------|------------------------|
 IPv4 Input  | Hinet        | 1492 | port forward進來的連線  |
