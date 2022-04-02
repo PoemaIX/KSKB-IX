@@ -51,7 +51,7 @@ port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoi
 Input/Output，並不是依據封包方向。而是依據tcp/udp session建立的方向  
 由防火牆conntrack模組負責追蹤( `-m conntrack --ctstate NEW ` )整個session  
 
-可以申請IP白名單，供隧道搭建使用，名單內的IP不論方向，均直接走hinet出去  
+可以申請dst IP白名單，供隧道搭建使用，名單內的IP不論方向，均直接走hinet出去  
 
 ## 限制 | Limitations
 對於KSKB提供的IX VM，僅供IX成員作為網路流量交換使用。禁止其他類型使用  
