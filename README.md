@@ -25,15 +25,15 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 ## 設定 | Configure
 * RS1
   * AS114514
-  * 普通人也能連接
-  * 必須連接，並發送至少一條路由
   * [過濾規則](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#default-filtering-policy)
+  * 普通人也能連接，RS有做過濾
+  * 必須連接，並發送至少一條路由
   * [支援的Community屬性](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#announcement-control-via-bgp-communities)
   * 連線地址: fe80::114:514%eth1
 * RS2
   * AS114514
-  * 只有智慧之人才能連接
   * 過濾規則: `import all; export all;`
+  * 只有智慧之人才能連接，相信智慧之人都會自己做好過濾的，對吧?
   * 不支援任何Community屬性
   * 路由發送上限 2000，超過會被斷開連接
   * 連線地址: fe80::11:4514%eth1
