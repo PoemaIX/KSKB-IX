@@ -59,6 +59,7 @@ Input/Output，並不是依據封包方向。而是依據tcp/udp session建立�
 ## 成員 | Members
  
 * [Looking Glass 兼成員列表 ](https://ixlg.kskb.eu.org/summary/127.0.0.1/)
+* AS-SET: `AS-KSKB-IX`
 
 ## 限制 | Limitations
 對於KSKB提供的IX VM，僅供IX成員作為網路流量交換使用。禁止其他類型使用  
