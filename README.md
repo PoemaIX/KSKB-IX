@@ -2,8 +2,8 @@
 
 ## 介紹 | Introduction
 一個搭在我家客廳雲的玩具IX，主要作為一個BGP實驗交流和學習的平台  
-
-本IX支援IPv4/IPv6
+本IX支援IPv4/IPv6  
+peeringdb: https://www.peeringdb.com/ix/3792
 
 ## 接入 | Join
 非商業，也禁止商業使用  
