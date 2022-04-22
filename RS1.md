@@ -48,6 +48,8 @@ are **rejected**.
 
 | Validity state | Standard | Extended | Large |
 | --- | --- | --- | --- |
+| Prefix is included in client's AS-SET | 65530:5 | None | 114514:65530:5 |
+| Prefix is NOT included in client's AS-SET | 65530:6 | None | 114514:65530:6 |
 | Origin ASN is included in client's AS-SET | 65530:1 | None | 114514:65530:1 |
 | Origin ASN is NOT included in client's AS-SET | 65530:0 | None | 114514:65530:0 |
 | Prefix matched by a RPKI ROA for the authorized origin ASN | 65530:2 | None | 114514:65530:2 |
@@ -212,3 +214,4 @@ Reject reasons
 | 14 | RPKI INVALID route |
 | 15 | Never via route-servers ASN in AS_PATH |
 | 65535 | Unknown |
+
