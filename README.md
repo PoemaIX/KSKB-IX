@@ -3,7 +3,7 @@
 ## 介紹 | Introduction
 一個搭在我家客廳雲的玩具IX，主要作為一個BGP實驗交流和學習的平台  
 
-本IX支援IPv4/IPv6/MTU9000
+本IX支援IPv4/IPv6
 
 ## 接入 | Join
 非商業，也禁止商業使用  
