@@ -52,6 +52,7 @@ are **rejected**.
 | Prefix is NOT included in client's AS-SET | 65530:6 | None | 114514:65530:6 |
 | Origin ASN is included in client's AS-SET | 65530:1 | None | 114514:65530:1 |
 | Origin ASN is NOT included in client's AS-SET | 65530:0 | None | 114514:65530:0 |
+| AS-PATH contains transit providers | 65530:7 | None | 114514:65530:7 |
 | Prefix matched by a RPKI ROA for the authorized origin ASN | 65530:2 | None | 114514:65530:2 |
 | Prefix matched by an entry of the ARIN Whois DB dump | 65530:4 | None | 114514:65530:4 |
 | Route authorized soley because of a client white list entry | 65530:3 | None | 114514:65530:3 |
@@ -214,4 +215,3 @@ Reject reasons
 | 14 | RPKI INVALID route |
 | 15 | Never via route-servers ASN in AS_PATH |
 | 65535 | Unknown |
-
