@@ -47,7 +47,7 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
     * 弄好以後即可以申請開通炸全表filter
 * RS3
   * AS114514
-  * 過濾規則: `import all; export all;，也就是沒有過濾
+  * 過濾規則: `import all; export all`;，也就是沒有過濾
   * 只有智慧之人才能連接，智慧之人都會自己做好過濾的
   * 不支援任何Community屬性
   * 路由發送上限 2000，超過會被斷開連接
