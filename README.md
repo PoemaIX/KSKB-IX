@@ -2,18 +2,22 @@
 
 ## 介紹 | Introduction
 一個搭在我家客廳雲的玩具IX，主要作為一個BGP實驗交流和學習的平台  
-本IX支援IPv4/IPv6  
+本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
 peeringdb: https://www.peeringdb.com/ix/3792
 
 ## 接入 | Join
+接入方式:
+1. VM接入
+2. Wifi接入(如果妳住我家隔壁)
+3. AX.25 無線電接入(規劃中)
+
 非商業，也禁止商業使用  
 只是個玩具IX啦，不要拿營業用ASN來加喔  
 SLA保證低於99%  
 ~~保證低於也算是一種保證~~  
-VM接入/wifi接入(如果妳住我家隔壁)  
 IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP Transit  
-我們強制要求與RS進行BGP連接  
-若沒有和RS進行BGP連接並發送至少一條路由，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
+我們強制要求與`RS1`進行BGP連接  
+若沒有和`RS1`進行BGP連接並**發送至少一條路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
 
 ## 要求
 參與者使用的bgp daemon必須支援以下功能  
@@ -26,27 +30,25 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 * RS1
   * AS114514
   * [過濾規則](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#default-filtering-policy)
-  * 普通人也能連接，RS有做過濾
-  * 必須連接，並發送至少一條路由
   * [支援的Community屬性](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#announcement-control-via-bgp-communities)
+  * 普通人也能連接，RS有做過濾
   * 連線地址: fe80::114:514%eth1
 * RS2
   * AS114514
-  * 過濾規則: `import all; export all;`
+  * 規則和RS1一樣，但是可以申請炸全表
+  * 連線地址: fe80::1145:14%eth1
+  * 炸全表條件:
+    * 先將此RS收到的成員路由transit給上游，才能將上游的全表發送至RS.
+    * AS-SET: `AS-KSKB-IX`
+    * 上游路由需打上 (65530:7) 屬性(也可以登記上游ASN，RS會幫忙自動打上)
+    * 弄好以後即可以申請開通炸全表filter
+* RS3
+  * AS114514
+  * 過濾規則: `import all; export all;，也就是沒有過濾
   * 只有智慧之人才能連接，智慧之人都會自己做好過濾的
   * 不支援任何Community屬性
   * 路由發送上限 2000，超過會被斷開連接
-  * 連線地址: fe80::11:4514%eth1.
-* RS3
-  * AS114514
-  * (under construction)
-  * 連線地址: fe80::1145:14%eth1.
-  * 其餘規則和RS1一樣，但是可以申請炸全表
-  * 炸全表條件:
-    * 須將此RS收到的成員路由transit給上游，才能將上游的全表發送至RS
-    * 上游路由需打上 (65530:7) 屬性(可以登記上游ASN，RS也會幫忙自動打上)
-    * 弄好以後可以申請開通炸全表filter
-
+  * 連線地址: fe80::11:4514%eth1
 ## 連線 | Connectivity
 
 IX VM 的網路連線能力
