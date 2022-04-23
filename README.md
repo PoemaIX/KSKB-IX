@@ -40,6 +40,7 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * 炸全表條件:
     * 先將此RS收到的成員路由transit給上游，才能將上游的全表發送至RS.
     * AS-SET: `AS-KSKB-IX`
+    * 如果不想幫部分成員transit，則需要使用[Community屬性](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#announcement-control-via-bgp-communities)裡面的Do not announce to peer`，排除發表對象
     * 上游路由需打上 (65530:7) 屬性(也可以登記上游ASN，RS會幫忙自動打上)
     * 弄好以後即可以申請開通炸全表filter
 * RS3
