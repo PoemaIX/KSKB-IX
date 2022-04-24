@@ -3,7 +3,13 @@
 ## 介紹 | Introduction
 一個搭在我家客廳雲的玩具IX，主要作為一個BGP實驗交流和學習的平台  
 本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
-peeringdb: https://www.peeringdb.com/ix/3792
+peeringdb: https://www.peeringdb.com/ix/3792  
+
+一般IX都不用link local/mpbgp/extended next hop  
+為什麼不用呢?有甚麼坑嗎?  
+所以我就想來用看看，有坑也要親自採一遍  
+
+普通的IX也不能炸全表。所以我也想順便開一個可以炸全表的IX  
 
 ## 接入 | Join
 接入方式:
