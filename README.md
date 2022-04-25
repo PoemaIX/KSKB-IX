@@ -2,7 +2,7 @@
 
 ## 介紹 | Introduction
 一個搭在我家客廳雲的玩具IX，作為一個BGP實驗交流和學習的平台  
-主要是給BGP配網業餘/有興趣/新手成員一個練習的地方，可以放心炸網  
+主要是給BGP配網的業餘/有興趣/新手玩家一個練習的地方，可以放心炸網  
 
 本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
 peeringdb: https://www.peeringdb.com/ix/3792  
