@@ -1,16 +1,18 @@
 # KSKB-IX
 
 ## 介紹 | Introduction
-一個搭在我家客廳雲的玩具IX，主要作為一個BGP實驗交流和學習的平台  
+一個搭在我家客廳雲的玩具IX，作為一個BGP實驗交流和學習的平台  
+主要是給BGP配網業餘/有興趣/新手成員一個練習的地方，可以放心炸網  
+
 本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
 peeringdb: https://www.peeringdb.com/ix/3792  
 
-一般IX都不用link local/mpbgp/extended next hop  
-為什麼不用呢?有甚麼坑嗎?  
-所以我就想來用看看，有坑也要親自採一遍  
+一般IX都不用 link local/mpbgp/extended next hop  
+為什麼不用呢?我很好奇!  
+所以我就想來用看看了  
 
 普通的IX也不能炸全表  
-所以我也想順便開一個可以炸全表的IX  
+同時我也想順便開一個可以炸全表的IX  
 用比較科學的方式啦  
 
 ## 接入 | Join
