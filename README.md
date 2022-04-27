@@ -27,7 +27,7 @@ peeringdb: https://www.peeringdb.com/ix/3792
 
 非商業，也禁止商業使用  
 只是個玩具IX啦，不要拿營業用ASN來加喔  
-SLA保證低於99% (我家電腦很不穩，可能是mem問題，會自己不定時BSoD)  
+SLA保證低於99% (我家電腦很不穩，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
 ~~保證低於也算是一種保證~~  
 IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP Transit  
 我們強制要求與`RS1`進行BGP連接  
