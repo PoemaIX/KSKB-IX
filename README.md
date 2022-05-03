@@ -104,4 +104,4 @@ Input/Output，並不是依據封包方向。而是依據tcp/udp session建立�
 
 ## 致謝 | Special Thanks
 * Nyaa 的 HE TPE IPv6 Transit
-* 小易的轉發，解決 CHT-STUIX 繞美的問題
+* 小易的轉發，解決 CHT <-> STUIX 繞美的問題
