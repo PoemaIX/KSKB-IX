@@ -69,11 +69,11 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 
 IX VM 的網路連線能力
 
-Traffic     | Connection   | MTU  | Comment                        |
-------------|--------------|------|--------------------------------|
-IPv4 Input  | Hinet        | 1492 | port forward進來的連線          |
-IPv4 Output | wgcf         | 1432 | 內部對外發起的連線               |
-IPv6        | wg           | 1432 | HE TPE 線路                    |
+Traffic     | Connection    | MTU  | Comment                        |
+------------|---------------|------|--------------------------------|
+IPv4 Input  | hinet         | 1492 | port forward進來的連線          |
+IPv4 Output | (wg)-cf       | 1432 | 內部對外發起的連線               |
+IPv6        | (sit)-yi-nyaa | 1472 | Hurricane Electric TPE(STUIX)  |
 
 提供port forward服務，port範圍 \*\*\*00~\*\*\*99，\*\*\*=VMID，共計100個port供內網隧道搭建使用  
 port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint  
