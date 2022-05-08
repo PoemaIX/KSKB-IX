@@ -69,19 +69,26 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 
 IX VM 的網路連線能力
 
-Traffic     | Connection    | MTU  | Comment                        |
-------------|---------------|------|--------------------------------|
-IPv4 Input  | hinet         | 1492 | port forward進來的連線          |
-IPv4 Output | (wg)-cf       | 1432 | 內部對外發起的連線               |
-IPv6        | (sit)-yi-nyaa | 1472 | Hurricane Electric TPE(STUIX)  |
+Traffic        | Connection    | MTU  | Comment                                |
+---------------|---------------|------|----------------------------------------|
+IPv4(1)        | wgcf          | 1432 | `tcp` & `udp --dport 0:9999`           |
+IPv4(2)        | hinet         | 1492 | `icmp` & `udp --dport 10000:65535`     |
+IPv6           | yi-nyaa-HE    | 1472 | 群友 Nyaa 的 HE TPE 上游(STUIX)         |
+L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                            |
 
 提供port forward服務，port範圍 \*\*\*00~\*\*\*99，\*\*\*=VMID，共計100個port供內網隧道搭建使用  
 port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint  
 
-Input/Output，並不是依據封包方向。而是依據tcp/udp session建立的方向  
-由防火牆conntrack模組負責追蹤( `-m conntrack --ctstate NEW ` )整個session  
 
-可以申請dst IP白名單，供隧道搭建使用，名單內的IP不論方向，均直接走hinet出去  
+#### 連線服務 | Connection Service
+1. Dst IP白名單服務(已棄用): 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
+2. STUIX 直連隧道服務: 因為種花<->STUIX 繞美。因此提供 L2 隧道直接通向 STUIX IX VM。
+    * 並非接入 STUIX LAN。您必須先購買 STUIX IX VM 服務才能使用喔
+    * 使用方法:
+        1. 您 `STUIX 的 IX VM` 和我這邊的`小易VM`建立gretap隧道
+        2. 我幫您 `KSKB-IX 的 IX VM` 新增網卡
+    * 由我維護網卡兩邊的隧道。兩邊端口 L2 互通
+    * MTU 1432
 
 ## 成員 | Members
  
@@ -104,4 +111,4 @@ Input/Output，並不是依據封包方向。而是依據tcp/udp session建立�
 
 ## 致謝 | Special Thanks
 * Nyaa 的 HE TPE IPv6 Transit
-* 小易的轉發，解決 CHT <-> STUIX 繞美的問題
+* 小易的轉發，解決`中華電信 <-> STUIX`繞美的問題
