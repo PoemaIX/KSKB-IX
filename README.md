@@ -65,9 +65,9 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * 不支援任何Community屬性
   * 路由發送上限 2000，超過會被斷開連接
   * 連線地址: fe80::11:4514%eth1
-## 連線 | Connectivity
+## IX VM 連線 | IX VM Connectivity
 
-IX VM 的網路連線能力
+IX VM 的網路連線能力。wifi 接入可以無視本章節
 
 Traffic        | Connection    | MTU  | Comment                                |
 ---------------|---------------|------|----------------------------------------|
