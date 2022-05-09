@@ -65,9 +65,14 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * 不支援任何Community屬性
   * 路由發送上限 2000，超過會被斷開連接
   * 連線地址: fe80::11:4514%eth1
-## IX VM 連線 | IX VM Connectivity
 
-IX VM 的網路連線能力。wifi 接入可以無視本章節
+## 成員 | Members
+* [Looking Glass](https://ixlg.kskb.eu.org/summary/127.0.0.1/)
+* AS-SET: [AS-KSKB-IX](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX)
+
+
+## IX VM 連線 | IX VM Connectivity
+**IX VM 的網路連線能力。wifi 或是其他方式接入可以無視本章節**
 
 Traffic        | Connection    | MTU  | Comment                                |
 ---------------|---------------|------|----------------------------------------|
@@ -93,13 +98,9 @@ port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoi
     * 由我維護網卡兩邊的隧道。兩邊端口 L2 互通  
     * MTU 1432  
 
-## 成員 | Members
- 
-* [Looking Glass](https://ixlg.kskb.eu.org/summary/127.0.0.1/)
-* AS-SET: [AS-KSKB-IX](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX)
-
 ## 限制 | Limitations
-對於KSKB提供的IX VM，僅供IX成員作為網路流量交換使用。禁止其他類型使用  
+
+對於KSKB提供的IX VM，以及IX LAN，僅供IX成員作為網路流量交換使用。禁止其他類型使用  
 包括但不限於以下限制
 
 * 遵守中華民國（台灣）法律，禁止做出任何可能會讓我家電腦被扣押的舉動
@@ -113,5 +114,5 @@ port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoi
 * 禁止架設耗資源的程式，如線上遊戲。或將主機當作檔案主機使用，提供公開連接，例如圖床/檔案伺服器
 
 ## 致謝 | Special Thanks
-* Nyaa 的 HE TPE IPv6 Transit
+* Nyaa 給我使用的 HE TPE IPv6 Transit
 * 小易的轉發，解決`中華電信 <-> STUIX`繞美的問題
