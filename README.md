@@ -81,11 +81,14 @@ port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoi
 
 
 #### 連線服務 | Connection Service
-1. Dst IP白名單服務(已棄用): 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
-2. STUIX 直連隧道服務: 因為種花<->STUIX 繞美，但是不少成員同時有購買 STUIX IXVM。因此提供 L2 隧道直接通向 STUIX IX VM。  
-    * 注意: **並非**接入 STUIX LAN 喔，不能和 HE peer。您必須先購買 STUIX IX VM 服務才能使用喔  
+1. Dst IP白名單服務(已棄用): 
+    * 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
+3. STUIX 隧道服務: 
+    * 因為`中華電信<->STUIX`繞美，咱家裡剛好也是中華電信。但是不少成員同時有購買 STUIX IXVM
+    * 因此我想說幫忙轉發遺下，提供 L2 隧道直接通向成員的 STUIX IX VM。  
+    * 注意，**並非**接入 STUIX LAN 喔，不能和 HE peer。您還是必須先購買 STUIX IX VM 才能使用喔  
     * 使用方法:
-        1. 您 `STUIX 的 IX VM` 和我這邊的`小易VM`建立gretap隧道  
+        1. 您 `STUIX 的 IX VM` 和我這邊的`小易VM`建立gretap/隧道  
         2. 我幫您 `KSKB-IX 的 IX VM` 新增虛擬網卡  
     * 由我維護網卡兩邊的隧道。兩邊端口 L2 互通  
     * MTU 1432  
