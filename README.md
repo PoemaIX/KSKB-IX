@@ -85,7 +85,7 @@ Traffic        | Connection    | MTU  | Comment                                |
 ---------------|---------------|------|----------------------------------------|
 IPv4(1)        | wgcf          | 1432 | `tcp` & `udp --dport 0:9999`           |
 IPv4(2)        | hinet         | 1492 | `icmp` & `udp --dport 10000:65535`     |
-IPv6           | yi-nyaa-HE    | 1472 | 群友 Nyaa 的 HE TPE 上游(STUIX)         |
+IPv6           | wgcf-nyaa-HE  | 1372 | 群友 Nyaa 的 HE TPE 上游(STUIX)         |
 L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                            |
 
 提供port forward服務，port範圍 \*\*\*00~\*\*\*99，\*\*\*=VMID，共計100個port供內網隧道搭建使用  
