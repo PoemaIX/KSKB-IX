@@ -39,6 +39,11 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 * multiprotocol BGP (IPv4)
 * extended nexthop (IPv4)
 
+參與者要有一點網路相關知識和經驗，比如
+* 知道L2和L3運作的原理
+* 知道iBGP/iGP是什麼和其差異
+* 配過兩個以上 DN42 節點，並提供跨節點的ip transit服務。或是與之相等的知識經驗(在其他實驗網/公網提供類似服務)
+
 ## 設定 | Configure
 * RS1
   * AS114514
