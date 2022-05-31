@@ -32,17 +32,19 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 我們強制要求與`RS1`進行BGP連接  
 若沒有和`RS1`進行BGP連接並**發送至少一條路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
 
-## 要求
-參與者使用的bgp daemon必須支援以下功能  
-* IPv6 link local
-* bgp large community
-* multiprotocol BGP (IPv4)
-* extended nexthop (IPv4)
+## 要求 | Requirement
+參與者要有一個公網ASN，以及至少一段 /48 的ipv6
 
 參與者要有一點網路相關知識和經驗，比如
 * 知道L2和L3運作的原理
 * 知道iBGP/iGP是什麼和其差異
 * 配過兩個以上 DN42 節點，並提供跨節點的ip transit服務。或是與之相等的知識經驗(在其他實驗網/公網提供類似服務)
+
+參與者使用的bgp daemon必須支援以下功能  
+* IPv6 link local
+* bgp large community
+* multiprotocol BGP (IPv4)
+* extended nexthop (IPv4
 
 ## 設定 | Configure
 * RS1
