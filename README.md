@@ -20,10 +20,10 @@ peeringdb: https://www.peeringdb.com/ix/3792
 ## 接入 | Join
 接入方式:
 1. VM接入
-2. Wifi接入
+2. Wifi接入 - Taipei
     1. 短距離接入，僅限鄰居
-        1. 2.4GHz 802.11n - Taipei
-        2. 5GHz 802.11ac - Taipei
+        1. 2.4GHz 802.11n
+        2. 5GHz 802.11ac
     2. 長距離接入
         1. 接入點必須位於六張犁捷運站3km內
         2. 我提供頂樓，指向式wifi建設成本由妳提供
