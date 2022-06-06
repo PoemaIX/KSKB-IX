@@ -57,12 +57,12 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * [過濾規則](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#default-filtering-policy)
   * [支援的Community屬性](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#announcement-control-via-bgp-communities)
   * 普通人也能連接，RS有做過濾
-  * 把RS 當作 peer 對象來連線
+  * 懶人包: **把RS 當作 peer 對象來連線**
   * 連線地址: fe80::114:514%eth1
 * RS2
   * AS114514
   * 規則和RS1一樣，但是可以申請炸全表
-  * 和RS1不一樣的點在於，接收路由時，請將帶有 (65530:7) Community屬性的路由視為transit路由，剩餘的視為peer路由
+  * 懶人包: **請將帶有 (65530:7) Community屬性的路由視為transit路由，剩餘的視為peer路由**
   * 連線地址: fe80::1145:14%eth1
   * 炸全表條件:
     * 先將此RS收到的成員路由transit給上游，才能將上游的全表發送至RS.
