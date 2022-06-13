@@ -95,12 +95,13 @@ IPv4           | hinet         | 1492 | `10000 以上的port`，'icmp           
 IPv6           | wgcf-nyaa-HE  | 1372 | 群友<ins>雫</ins>的 HE TPE 上游(STUIX)  |
 L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                            |
 
-提供port forward服務，port範圍 \*\*\*00~\*\*\*99，\*\*\*=VMID，共計100個port供內網隧道搭建使用  
-port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint  
-
-
 #### 連線服務 | Connection Service
-1. Dst IP白名單服務(已棄用): 
+1. port forward服務:
+    * \*\*\*=VMID 
+    * :\[\*\*\*00~\*\*\*99\] → :\[\*\*\*00~\*\*\*99\]，共計100個port供內網隧道搭建使用  
+    * :10\*\*\* → :22 ，供ssh連線使用
+    * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint。
+2. Dst IP白名單服務(已棄用): 
     * 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
 3. STUIX 隧道服務: 
     * 因為`中華電信<->STUIX`繞美，家裡剛好也是中華電信。但是不少成員同時有購買 STUIX IXVM
