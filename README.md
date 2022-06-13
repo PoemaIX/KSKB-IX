@@ -97,10 +97,10 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
 
 #### 連線服務 | Connection Service
 1. port forward服務:
-    * \*\*\*=VMID 
+    * **\*\*\*=VMID**
     * :\[\*\*\*00~\*\*\*99\] → :\[\*\*\*00~\*\*\*99\]，共計100個port供內網隧道搭建使用  
     * :10\*\*\* → :22 ，供ssh連線使用
-    * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint。
+    * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint
 2. Dst IP白名單服務(已棄用): 
     * 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
 3. STUIX 隧道服務: 
