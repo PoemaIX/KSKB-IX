@@ -92,7 +92,7 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 Traffic        | Connection    | MTU  | Comment                                |
 ---------------|---------------|------|----------------------------------------|
 IPv4           | wgcf          | 1432 | `9999 以下的port`                      |
-IPv4           | hinet         | 1492 | `10000 以上的port`，'icmp'             |
+IPv4           | hinet         | 1492 | `10000 以上的port`，`icmp`             |
 IPv6           | wgcf-nyaa-HE  | 1372 | 群友<ins>雫</ins>的 HE TPE 上游(STUIX)  |
 L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                            |
 
