@@ -58,14 +58,14 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * [支援的Community屬性](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#announcement-control-via-bgp-communities)
   * 普通人也能連接，RS有做過濾
   * 懶人包: **把RS 當作 peer 對象來連線**
-  * 連線地址(link-local 模式): fe80::114:514 % eth1
-  * 連線地址(普通模式): 2404:f4c0:f70e:1980::114:514
+  * 連線地址(link-local 模式): `fe80::114:514 % eth1`
+  * 連線地址(普通模式): `2404:f4c0:f70e:1980::114:514`
 * RS2
   * AS114514
   * 規則和RS1一樣，但是可以申請炸全表
   * 懶人包: **請將帶有 (65530:7) Community屬性的路由視為transit路由，剩餘的視為peer路由**
-  * 連線地址(link-local 模式): fe80::1145:14 % eth1
-  * 連線地址(普通模式): 2404:f4c0:f70e:1980::1145:14
+  * 連線地址(link-local 模式): `fe80::1145:14 % eth1`
+  * 連線地址(普通模式): `2404:f4c0:f70e:1980::1145:14`
   * 炸全表條件:
     * 先將此RS收到的成員路由transit給上游，才能將上游的全表發送至RS.
     * AS-SET: `AS-KSKB-IX`
@@ -81,8 +81,8 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * 懶人包: **大亂鬥，有DN42漏油都不奇怪**
   * 不支援任何Community屬性
   * 路由發送上限 2000，超過會被斷開連接
-  * 連線地址(link-local 模式): fe80::11:4514 % eth1
-  * 連線地址(普通模式): 2404:f4c0:f70e:1980::11:4514
+  * 連線地址(link-local 模式): `fe80::11:4514 % eth1`
+  * 連線地址(普通模式): `2404:f4c0:f70e:1980::11:4514`
 
 ## 成員 | Members
 * [Looking Glass](https://ixlg.kskb.eu.org/summary/127.0.0.1/)
