@@ -54,6 +54,7 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
 ## 設定 | Configure
 * RS1
   * AS114514
+  * 初衷是一個普通RS
   * [過濾規則](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#default-filtering-policy)
   * [支援的Community屬性](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#announcement-control-via-bgp-communities)
   * 普通人也能連接，RS有做過濾
@@ -62,17 +63,17 @@ IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP 
   * 連線地址(普通模式): `2404:f4c0:f70e:1980::114:514`
 * RS2
   * AS114514
-  * 規則和RS1一樣，但是可以申請炸全表
-  * 懶人包: **請將帶有 (65530:7) Community屬性的路由視為transit路由，剩餘的視為peer路由**
+  * 規則和RS1一樣，但是可以炸全表(需事先設定)
+  * 懶人包: **請將帶有 (114514:65530:7) Community屬性的路由視為transit路由，剩餘的視為peer路由**
   * 連線地址(link-local 模式): `fe80::1145:14 % eth1`
   * 連線地址(普通模式): `2404:f4c0:f70e:1980::1145:14`
-  * 炸全表條件:
-    * 先將此RS收到的成員路由transit給上游，才能將上游的全表發送至RS.
-    * AS-SET: `AS-KSKB-IX`
+  * 發全表條件:
+    * 初衷是想說有志願者可以幫忙把 IX 裡面的路由 transit 去別的地方，比如 STUIX ，或是 HE
+    * 如果你想成為志願者，想幫忙 transit RS2 的路由去 STUIX 的話，收路由就要過濾掉 (114514:65530:7)。然後STUIX收到的表要打上 (114514:65530:7)才能發去RS2
+    * AS-SET: [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) ，裡面只有已和RS2有連線的成員，每小時同步一次
     * 若想排除部分成員的transit，則需要使用[Community屬性](https://github.com/KSKBpage/KSKB-IX/blob/main/RS1.md#announcement-control-via-bgp-communities)裡面的`Do not announce to peer`，一併從全表發送對象之中排除
-      * 意思是若你想法全表發給A，你就得同時把A的路由發給上游
-      * 不想把某人路由發上游，就不要發給他全表。要做到對稱
-    * 上游路由需打上 (65530:7) 屬性(可以在我這邊登記上游ASN，RS會幫忙自動打上)
+      * 意思是若你想法全表發給A，你就得同時把A的路由發給上游。不想幫某人發上游，就不要發給他全表。要對稱
+    * 上游來，發往 RS2 的路由需打上 (114514:65530:7) 屬性(可以在我這邊登記上游ASN，RS會幫忙自動打上)
     * 弄好以後即可以申請開通炸全表filter
 * RS3
   * AS114514
