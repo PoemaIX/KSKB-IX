@@ -35,7 +35,7 @@ SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.ht
 SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
 IX本身不存在IP Transit。妳可以在IX裡面自行尋找參與者索要IP Transit  
 我們強制要求與`RS1`進行BGP連接  
-若沒有和`RS1`進行BGP連接並**發送至少一條路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
+若沒有和`RS1`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
 
 ## 要求 | Requirement
 參與者要有一個公網ASN，以及至少一段 /48 的ipv6
