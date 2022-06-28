@@ -98,7 +98,7 @@ Traffic        | Connection    | MTU  | Comment                                |
 ---------------|---------------|------|----------------------------------------|
 IPv4           | wgcf          | 1432 | `9999 以下的port`                      |
 IPv4           | hinet         | 1492 | `10000 以上的port`，`icmp`             |
-IPv6           | wgcf-nyaa-HE  | 1372 | 群友<ins>雫</ins>的 HE TPE 上游(STUIX)  |
+IPv6           | wg-wgcf-STUIX | 1372 | 群友提供的 IP Transit(HE TPE at STUIX)  |
 L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                            |
 
 #### 連線服務 | Connection Service
@@ -136,7 +136,11 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
 * 禁止架設耗資源的程式，如線上遊戲。或將主機當作檔案主機使用，提供公開連接，例如圖床/檔案伺服器
 
 ## 致謝 | Special Thanks
-* 雫: 感謝雫提供的 HE TPE IPv6 Transit
-* 小易: 感謝小易幫我轉發，解決`中華電信 <-> STUIX`繞美的問題
+KSKB-IX 的正常運作，離不開下列群友的貢獻
+| 名單                                      | 致謝 |
+|------------------------------------------|----------|
+| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝白渃提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
+| [雫](https://as142553.zhiccc.net/)       | <li>感謝雫提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
+| [小易](https://network.steveyi.net/)     | <li>感謝小易提供的 IPv6 Transit</li><li>走小易提供的VM去STUIX</li><li>感謝小易提供的VM，可以同時直連Hinet和STUIX，解決`中華電信 <-> STUIX`繞美的問題</li> |
 
 [^1]: 真實故事: 不法分子行騙以後，贓款 GASH 點數於網路上轉賣。有人貪便宜購買贓物 GASH 以後，掛著 Hinet 出口的VPN儲值。警方接獲報案以後循線追蹤，因此將VPN主人的電腦(查到儲值IP是VPN主人的IP)扣押進行後續調查。因此符合第一條的「可能會讓我家電腦被扣押的舉動」
