@@ -63,8 +63,8 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 * RS1
     * AS114514
     * 初衷是一個普通RS
-    * [過濾規則](Route%20Server%20Configuration#default-filtering-policy)
-    * [支援的Community屬性](Route%20Server%20Configuration#announcement-control-via-bgp-communities)
+    * [過濾規則](RS#default-filtering-policy)
+    * [支援的Community屬性](RS#announcement-control-via-bgp-communities)
     * 普通人也能連接，RS有做過濾
     * 懶人包: **把RS 當作 peer 對象來連線**
     * 連線地址(link-local 模式): `fe80::114:514 % eth1`
@@ -83,7 +83,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
         * 如果你想成為志願者，想幫忙 transit RS2 的路由去 STUIX 的話，收路由就要過濾掉 (114514:65530:7)
         * 然後STUIX收到的表要打上 (114514:65530:7)才能發去RS2
         * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和RS2有連線的成員，每小時同步一次
-        * 若想排除部分成員的transit，則需要使用[Community屬性](Route%20Server%20Configuration#announcement-control-via-bgp-communities)裡面的`Do not announce to peer`，一併從全表發送對象之中排除
+        * 若想排除部分成員的transit，則需要使用[Community屬性](RS#announcement-control-via-bgp-communities)裡面的`Do not announce to peer`，一併從全表發送對象之中排除
             * 意思是若你想法全表發給A，你就得同時把A的路由發給上游。不想幫某人發上游，就不要發給他全表。要對稱
         * 上游來，發往 RS2 的路由需打上 (114514:65530:7) 屬性(可以在我這邊登記上游ASN，RS會幫忙自動打上)
         * 弄好以後即可以申請開通炸全表filter
