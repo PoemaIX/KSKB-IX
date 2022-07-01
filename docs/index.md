@@ -8,7 +8,7 @@
 還有提供一個平台，給大家熟悉IX環境。畢竟DN42和公網環境差距不只是一點點  
 
 本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
-peeringdb: https://www.peeringdb.com/ix/3792  
+PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
 
 一般IX都不用 `link local`/`mpbgp`/`extended next hop`  
 這些技術明明存在，為什麼不用呢?我很好奇!  
