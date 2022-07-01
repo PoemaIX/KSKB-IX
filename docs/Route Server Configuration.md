@@ -1,4 +1,4 @@
-Configuration of route server 192.168.16.1 at AS114514
+Configuration of route server
 ======================================================================
 
 BGP sessions default configuration
