@@ -146,8 +146,7 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
     * 0x86dd - IPv6
 * Link-local 流量: 
     * 只允許以下的 link-local 流量:
-        * ARP
-        * IPv6 ND
+        * IPv6 Neighbor Discovery
         * IX 內部使用的 BGP session over link-local address
     * 其餘種類的 lick-local 流量皆禁止，包括但不限於:
         * IGP流量 (e.g. OSPF, ISIS, IGRP, EIGRP)
