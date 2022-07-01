@@ -2,6 +2,7 @@
 
 ## 介紹 | Introduction
 一個搭在我家客廳雲，**非營利**的玩具 IX ，作為一個BGP實驗交流和學習的平台  
+提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching服務。針對Switching內網，以下稱呼為 **IX LAN**
 
 主要是給BGP配網的``業餘/有興趣/新手``玩家一個練習的地方，可以放心炸網  
 還有提供一個平台，給大家熟悉IX環境。畢竟DN42和公網環境差距不只是一點點  
@@ -29,7 +30,7 @@ peeringdb: https://www.peeringdb.com/ix/3792
         2. 我提供頂樓，指向式wifi建設成本由妳提供
 3. AX.25 無線電接入(正在想要不要搞)
 
-非商業，也禁止商業使用  
+非商業，也禁止商業使用，請聯系我們以獲取更多信息  
 只是個玩具IX啦，不要拿營業用ASN來加喔  
 SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
 SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
@@ -121,6 +122,41 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
 
 ## 限制 | Limitations
 
+### IX LAN
+對於  IX LAN 內網，以及IX接入端口(IX VM 接入的話通常是eth1)，有以下安全規範
+
+* 只有經過申請的來源mac位址可以被使用
+* 端口必須關閉 arp-proxy 和 ndp-proxy ，只能針對由 KSKB-IX 分配的 **IX LAN** IP 的 Neighbor Discovery 封包做出回應
+* 必須 L3 接入，不得將端口橋接到其他交換機上面
+* KSKB-IX 服務交換網段(IPv6: 2404:f4c0:f70e:1980::/64)資訊不可被轉送至客戶所轄網內或者是互聯網上任何地方以免成為受攻擊目標
+* KSKB-IX 不支援與成員交換或者對應/修改VLAN資訊
+* Ethertypes: 轉發的所有幀必須具有以下以太網類型之一:
+    * 0x0800 - IPv4
+    * 0x0806 - ARP
+    * 0x86dd - IPv6
+* Link-local 流量: 
+    * 只允許以下的 link-local 流量:
+        * ARP
+        * IPv6 ND
+        * IX 內部使用的 BGP session over link-local address
+    * 其餘種類的 lick-local 流量皆禁止，包括但不限於:
+        * IGP流量 (e.g. OSPF, ISIS, IGRP, EIGRP)
+        * BOOTP/DHCP
+        * ICMPv6 Router Advertisement
+        * ICMP redirects
+        * 發現協議：CDP、EDP
+        * VLAN/中繼協議：VTP、DTP
+* 單播/組播/廣播: 只允許單播流量，不得發送到多播或廣播的 MAC 目標地址
+    * 以下情況除外：
+        * ICMPv6 Neighbor Discovery
+    * 組播/廣播封包流量不得超過 1kbps
+* 禁止濫用 IXP 成員的網路基礎設施。包括但不限於以下行為:
+    *  禁止將 default route 或是未授權的路由，指向IXP成員
+    *  禁止向 Route Server 或是成員發送nexthop不是自己，而是其他成員的路由
+    *  禁止 ICMP redirects 封包，將自己的封包重新導向至其他成員
+
+
+### IX VM
 對於KSKB提供的IX VM，以及IX LAN，僅供IX成員作為網路流量交換使用。禁止其他類型使用  
 包括但不限於以下限制
 
@@ -134,6 +170,9 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
 * 資源合理使用。禁止長時間消耗/佔滿CPU/網路頻寬等資源，例如rclone轉存/挖礦，或是讓我感覺家裡網路很卡
 * 個人使用，可以拿來解鎖流媒體之類的。但禁止用於爬蟲/帳號註冊等，可能會使IP被標記為bot(俗稱IP被汙染)之行為
 * 禁止架設耗資源的程式，如線上遊戲。或將主機當作檔案主機使用，提供公開連接，例如圖床/檔案伺服器
+
+## 聯絡方式 | Contact
+* mailto: ix@kskb.eu.org
 
 ## 致謝 | Special Thanks
 KSKB-IX 的正常運作，離不開下列群友的貢獻
