@@ -1,7 +1,7 @@
 site_name: KSKB-IX
 theme:
-  name: material
-  # name: flatly
+  # name: material
+  name: flatly
 extra_css:
   - css/hidefooter.css
 markdown_extensions:
