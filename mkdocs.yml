@@ -2,8 +2,6 @@ site_name: KSKB-IX
 theme:
   name: material
   # name: flatly
-  features:
-    - navigation.tabs
 extra_css:
   - css/hidefooter.css
 markdown_extensions:
