@@ -102,7 +102,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 * AS-SET: [AS-KSKB-IX](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX)
 
 
-## IX VM 連線 | IX VM Connectivity
+## VM 連線 | VM Connectivity
 **IX VM 的網路連線能力。wifi 或是其他方式接入可以無視本章節**
 
 Traffic        | Connection    | MTU  | Comment                                |
@@ -170,7 +170,7 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
 包括但不限於以下限制
 
 * 遵守中華民國（台灣）法律，禁止做出任何可能會讓我家電腦被扣押的舉動
-* 尤其是任何涉及「錢」的操作，更是**嚴禁**。比如遊戲點卡儲值，註冊相關帳號。或是金融相關網頁/程式的帳戶開設/操作 [^1]
+* 尤其是任何涉及「錢」的操作，更是**嚴禁**[^1]。比如遊戲點卡儲值，註冊相關帳號。或是金融相關網頁/程式的帳戶開設/操作
 * 僅供個人玩玩，禁止轉讓/租借/商業使用
 * 禁止主機對外、對內發包（無論是否為主動行為）, ARP 攻擊, ARP 劫持, 掃描弱密碼, 惡意窮舉，DDoS，木馬和干擾其它伺服器運行
 * 禁止發送垃圾郵件、垃圾訊息, 散播木馬、病毒(包括引用其它伺服器的惡意文件)
