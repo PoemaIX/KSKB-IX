@@ -6,3 +6,5 @@ extra_css:
 markdown_extensions:
     - pymdownx.tilde
 site_url: https://ix.kskb.eu.org/
+repo_url: https://github.com/KSKBpage/KSKB-IX
+edit_uri: edit/main/docs/
