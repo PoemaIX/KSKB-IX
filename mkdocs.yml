@@ -5,3 +5,4 @@ extra_css:
     - css/hidefooter.css
 markdown_extensions:
     - pymdownx.tilde
+site_url: https://ix.kskb.moe/
