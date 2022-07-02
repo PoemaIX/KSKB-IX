@@ -145,7 +145,7 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
     * 0x86dd - IPv6
 * Link-local 流量: 
     * 只允許以下的 link-local 流量:
-        * IPv6 Neighbor Discovery
+        * ICMPv6 Neighbor Solicitation / Advertisement
         * IX 內部使用的 BGP session over link-local address
     * 其餘種類的 lick-local 流量皆禁止，包括但不限於:
         * IGP流量 (e.g. OSPF, ISIS, IGRP, EIGRP)
@@ -156,11 +156,12 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
         * VLAN/中繼協議：VTP、DTP
 * 單播/組播/廣播: 只允許單播流量，不得發送到多播或廣播的 MAC 目標地址
     * 以下情況除外：
-        * ICMPv6 Neighbor Discovery
+        * ICMPv6 Neighbor Solicitation / Advertisement
     * 組播/廣播封包流量不得超過 1kbps
-* 禁止濫用 IXP 成員的網路基礎設施。包括但不限於以下行為:
-    *  禁止將 default route 或是未授權的路由，指向IXP成員
-    *  禁止向 Route Server 或是成員發送nexthop不是自己，而是其他成員的路由
+* 不得濫用 IXP 成員的網路基礎設施。包括但不限於以下行為:
+    *  不得將 default route 或是未授權的路由，指向IXP成員
+    *  不得發送 nexthop 不是自己，而是指向其他成員的路由
+    *  不得盜播路由
     *  禁止 ICMP redirects 封包，將自己的封包重新導向至其他成員
 
 
