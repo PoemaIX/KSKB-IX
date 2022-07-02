@@ -142,7 +142,6 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                       
 * KSKB-IX 不支援與成員交換或者對應/修改VLAN資訊
 * Ethertypes: 轉發的所有幀必須具有以下以太網類型之一:
     * 0x0800 - IPv4
-    * 0x0806 - ARP
     * 0x86dd - IPv6
 * Link-local 流量: 
     * 只允許以下的 link-local 流量:
