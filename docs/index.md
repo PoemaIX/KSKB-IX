@@ -110,7 +110,7 @@ Traffic        | Connection    | MTU  | Comment                                |
 IPv4           | wgcf          | 1432 | `9999 以下的port`                      |
 IPv4           | hinet         | 1492 | `10000 以上的port`，`icmp`             |
 IPv6           | wg-wgcf-STUIX | 1372 | 群友提供的 IP Transit`HE TPE at STUIX`  |
-L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉                            |
+L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉(Currently Unavailable)     |
 
 #### 連線服務 | Connection Service
 1. port forward服務:
