@@ -58,7 +58,11 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 * extended nexthop (IPv4)
 
 ## 設定 | Configure
-我們有以下三台Route Server，分別有著不同的策略
+我們有以下三台Route Server，分別有著不同的策略  
+
+**只有 RS1 是正常的 Route server**  
+RS2 RS3 都是特殊RS，有實驗/整活的性質，接入的話要設定一下  
+懶得設定的話，只要連 RS1 就好了
 
 * RS1
     * AS114514
@@ -76,7 +80,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
         * 比如 STUIX ，或是 HE 上游之類
     * 懶人包:
         * **一般成員: 請將 RS2 設定成上游**
-        * Transit提供者: 請將 RS2 設定成下游，路由打上 `(114514:65530:7)`，並拒收帶有 `(114514:65530:7)` 的路由
+        * **Transit提供者: 請將 RS2 設定成下游**，發送路由打上 `(114514:65530:7)`，並拒收帶有 `(114514:65530:7)` 的路由
     * 連線地址(link-local 模式): `fe80::1145:14 % eth1`
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::1145:14`
     * 發全表條件:
