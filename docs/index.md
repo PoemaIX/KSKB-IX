@@ -62,7 +62,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 
 **只有 RS1 是正常的 Route server**  
 RS2 RS3 都是特殊RS，有實驗/整活的性質，接入的話要設定一下  
-懶得設定的話，只要連 RS1 就好了
+**懶得設定的話，只要連 RS1 就好了**
 
 * RS1
     * AS114514
@@ -71,6 +71,7 @@ RS2 RS3 都是特殊RS，有實驗/整活的性質，接入的話要設定一下
     * [支援的Community屬性](RS#announcement-control-via-bgp-communities)
     * 普通人也能連接，RS有做過濾
     * 懶人包: **把RS 當作 peer 對象來連線**
+    * 我們強制要求與RS1進行BGP連接，並發送至少一條IPv6路由
     * 連線地址(link-local 模式): `fe80::114:514 % eth1`
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::114:514`
 * RS2
