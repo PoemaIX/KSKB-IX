@@ -61,7 +61,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 我們有以下三台Route Server，分別有著不同的策略  
 
 **只有 RS1 是正常的 Route server**  
-RS2 RS3 都是特殊RS，有實驗/整活的性質，接入的話要設定一下  
+RS2 RS3 都是特殊RS，有實驗/整活的性質，請先針對RS的情況，弄好配套的特殊設定才能接入喔  
 **懶得設定的話，只要連 RS1 就好了**
 
 * RS1
