@@ -115,7 +115,7 @@ Traffic        | Connection    | MTU  | Comment                                |
 IPv4           | wgcf          | 1432 | `9999 以下的port`                      |
 IPv4           | hinet         | 1492 | `10000 以上的port`，`icmp`             |
 IPv6           | wg-wgcf-STUIX | 1372 | 群友提供的 IP Transit`HE TPE at STUIX`  |
-L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉(Currently Unavailable)     |
+L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉(暫時不可用)                 |
 
 #### 連線服務 | Connection Service
 1. port forward服務:
@@ -125,7 +125,7 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉(Currently Unavailable)
     * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint
 2. Dst IP白名單服務(已棄用): 
     * 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
-3. STUIX 隧道服務: 
+3. STUIX 隧道服務(暫時不可用): 
     * 因為`中華電信<->STUIX`繞美，家裡剛好也是中華電信。但是不少成員同時有購買 STUIX IXVM
     * 因此我想說幫忙轉發一下，提供 L2 隧道直接通向成員的 STUIX IX VM。  
     * 注意，**並非**接入 STUIX LAN 喔，不能和 HE peer。您還是必須先購買 STUIX IX VM 才能使用喔  
@@ -193,8 +193,8 @@ KSKB-IX 的正常運作，離不開下列群友的貢獻
 
 | 名單                                      | 致謝 |
 |------------------------------------------|----------|
-| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝白渃提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
-| [雫](https://as142553.zhiccc.net/)       | <li>感謝雫提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
-| [小易](https://network.steveyi.net/)     | <li>感謝小易提供的 IPv6 Transit</li><li>走小易提供的VM去STUIX</li><li>感謝小易提供的VM，可以同時直連Hinet和STUIX，解決`中華電信 <-> STUIX`繞美的問題</li> |
+| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
+| [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
+| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 IPv6 Transit</li><li>走<ins>小易</ins>提供的VM去STUIX</li><li>感謝<ins>小易</ins>提供的VM，可以同時直連Hinet和STUIX，解決`中華電信 <-> STUIX`繞美的問題</li> |
 
 [^1]: 真實故事: 不法分子行騙以後，贓款 GASH 點數於網路上轉賣。有人貪便宜購買贓物 GASH 以後，掛著 Hinet 出口的VPN儲值。警方接獲報案以後循線追蹤，因此將VPN主人的電腦(查到儲值IP是VPN主人的IP)扣押進行後續調查。因此符合第一條的「可能會讓我家電腦被扣押的舉動」
