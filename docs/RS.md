@@ -20,7 +20,7 @@ Default filtering policy
 
 ### NEXT_HOP attribute
 
-* The route server verifies that the NEXT_HOP attribute of routes received from a client matches the **IP address of the client itself** or one of the **IP addresses of other clients from the same AS**. This "allows an organization with multiple connections into an IXP configured with different IP addresses to direct traffic off the IXP infrastructure through any of their connections for traffic engineering or other purposes." [RFC7948, section 4.8](https://tools.ietf.org/html/rfc7948#section-4.8)
+* The route server verifies that the NEXT_HOP attribute of routes received from a client matches the **IP address of the client itself**.
 
 ### AS_PATH attribute
 
@@ -31,7 +31,7 @@ Default filtering policy
 are **rejected**.
 
   List of "transit-free" networks' ASNs:
-[174](https://stat.ripe.net/AS174), [701](https://stat.ripe.net/AS701), [1299](https://stat.ripe.net/AS1299), [2914](https://stat.ripe.net/AS2914), [3257](https://stat.ripe.net/AS3257), [3320](https://stat.ripe.net/AS3320), [3356](https://stat.ripe.net/AS3356), [5511](https://stat.ripe.net/AS5511), [6453](https://stat.ripe.net/AS6453), [6461](https://stat.ripe.net/AS6461), [6762](https://stat.ripe.net/AS6762), [6830](https://stat.ripe.net/AS6830), [7018](https://stat.ripe.net/AS7018), [12956](https://stat.ripe.net/AS12956)
+[701](https://stat.ripe.net/AS701), [1239](https://stat.ripe.net/AS1239), [1299](https://stat.ripe.net/AS1299), [2914](https://stat.ripe.net/AS2914), [3257](https://stat.ripe.net/AS3257), [3320](https://stat.ripe.net/AS3320), [3356](https://stat.ripe.net/AS3356), [3491](https://stat.ripe.net/AS3491), [5511](https://stat.ripe.net/AS5511), [6453](https://stat.ripe.net/AS6453), [6461](https://stat.ripe.net/AS6461), [6762](https://stat.ripe.net/AS6762), [6830](https://stat.ripe.net/AS6830), [7018](https://stat.ripe.net/AS7018), [12956](https://stat.ripe.net/AS12956), [174](https://stat.ripe.net/AS174), [1273](https://stat.ripe.net/AS1273), [2828](https://stat.ripe.net/AS2828), [4134](https://stat.ripe.net/AS4134), [4809](https://stat.ripe.net/AS4809), [4637](https://stat.ripe.net/AS4637), [6939](https://stat.ripe.net/AS6939), [7473](https://stat.ripe.net/AS7473), [7922](https://stat.ripe.net/AS7922), [9002](https://stat.ripe.net/AS9002)
 * Routes with an AS_PATH containing one or more **"never via route-servers" networks**' ASNs are **rejected**.
 
   List of "never via route-servers" networks' ASNs is generated from PeeringDB.
@@ -60,14 +60,20 @@ are **rejected**.
 ### RPKI BGP Prefix Origin Validation
 
 
-* [RPKI BGP Origin Validation](https://tools.ietf.org/html/rfc6483) of routes received by the route server is **disabled**.
+* [RPKI BGP Origin Validation](https://tools.ietf.org/html/rfc6483) of routes received by the route server is **enabled**.
+* When an INVALID route is received by the route server, **it is rejected**.
 
 
+
+### RPKI ROAs
+
+
+* RPKI ROAs are fetched from the RIPE RPKI Validator format cache files at <a href="https://console.rpki-client.org/vrps.json" rel="noopener">https://console.rpki-client.org/vrps.json</a>, <a href="https://rpki.gin.ntt.net/api/export.json" rel="noopener">https://rpki.gin.ntt.net/api/export.json</a>, <a href="https://rpki-validator.ripe.net/api/export.json" rel="noopener">https://rpki-validator.ripe.net/api/export.json</a>. The following Trust Anchors are used: APNIC RPKI Root, AfriNIC RPKI Root, LACNIC RPKI Root, RIPE NCC RPKI Root, apnic, afrinic, lacnic, ripe
 
 ### Max-pref limit
 
 
-* A **max-prefix limit** is enforced; when it triggers, the session with the announcing client is **restarted** after 30 minutes.
+* A **max-prefix limit** is enforced; when it triggers,  new routes from the announcing client are **discarded**.
 * The limit, if not provided on a client-by-client basis, is learnt from the client's **PeeringDB record**.
 * If no more specific limits exist for the client, the **general limit** of 170000 IPv4 routes and 12000 IPv6 routes is enforced.
 
@@ -215,3 +221,4 @@ Reject reasons
 | 14 | RPKI INVALID route |
 | 15 | Never via route-servers ASN in AS_PATH |
 | 65535 | Unknown |
+
