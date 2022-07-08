@@ -32,6 +32,7 @@ are **rejected**.
 
   List of "transit-free" networks' ASNs:
 [701](https://stat.ripe.net/AS701), [1239](https://stat.ripe.net/AS1239), [1299](https://stat.ripe.net/AS1299), [2914](https://stat.ripe.net/AS2914), [3257](https://stat.ripe.net/AS3257), [3320](https://stat.ripe.net/AS3320), [3356](https://stat.ripe.net/AS3356), [3491](https://stat.ripe.net/AS3491), [5511](https://stat.ripe.net/AS5511), [6453](https://stat.ripe.net/AS6453), [6461](https://stat.ripe.net/AS6461), [6762](https://stat.ripe.net/AS6762), [6830](https://stat.ripe.net/AS6830), [7018](https://stat.ripe.net/AS7018), [12956](https://stat.ripe.net/AS12956), [174](https://stat.ripe.net/AS174), [1273](https://stat.ripe.net/AS1273), [2828](https://stat.ripe.net/AS2828), [4134](https://stat.ripe.net/AS4134), [4809](https://stat.ripe.net/AS4809), [4637](https://stat.ripe.net/AS4637), [6939](https://stat.ripe.net/AS6939), [7473](https://stat.ripe.net/AS7473), [7922](https://stat.ripe.net/AS7922), [9002](https://stat.ripe.net/AS9002)
+
 * Routes with an AS_PATH containing one or more **"never via route-servers" networks**' ASNs are **rejected**.
 
   List of "never via route-servers" networks' ASNs is generated from PeeringDB.
