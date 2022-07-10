@@ -20,7 +20,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 
 ## 接入 | Join
 
-KSKB-IX 處於開放狀態，只要達到要求歡迎接入。接入方式:
+接入方式:
 
 1. VM接入
 2. Wifi接入 - Taipei
@@ -37,7 +37,7 @@ KSKB-IX 處於開放狀態，只要達到要求歡迎接入。接入方式:
 * 非商業，也禁止商業使用。例如使用 KSKB-IX 交換商業流量，請聯系我們以獲取更多信息  
 * SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
 * SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
-* IX本身不存在IP Transit，但是現在有[志願者](#RS2)於RS2提供IP Transit。妳也可以在IX裡面自行尋找其他參與者索要IP Transit  
+* IX本身不存在IP Transit，但是現在有[志願者](#RS2)於RS2提供IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
 * 我們強制要求與`RS1`進行BGP連接  
 * 若沒有和`RS1`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
 
@@ -105,9 +105,8 @@ RS2 RS3 都是特殊RS，有實驗/整活的性質，請先針對RS的情況，�
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::11:4514`
 
 ## 成員 | Members
-* [Looking Glass](https://ixlg.kskb.eu.org/summary/127.0.0.1/)
-* AS-SET: [AS-KSKB-IX](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX)
 
+See member list: [Members](members)
 
 ## VM 連線 | VM Connectivity
 **IX VM 的網路連線能力。wifi 或是其他方式接入可以無視本章節**
