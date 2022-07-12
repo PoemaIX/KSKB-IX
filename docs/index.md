@@ -1,7 +1,7 @@
 # KSKB-IX
 
 ## 介紹 | Introduction
-一個搭在我家客廳雲，非營利的玩具 IX ，作為一個BGP實驗交流和學習的平台  
+一個搭在我家客廳雲，非營利玩具類型的[虛擬 IX](https://bgp.tools/kb/virtual-ixp) ，作為一個BGP實驗交流和學習的平台  
 提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching。針對Switching內網，以下稱呼為 **IX LAN**
 
 主要是給BGP配網的``業餘/有興趣/新手``玩家一個練習的地方，可以放心炸網  
