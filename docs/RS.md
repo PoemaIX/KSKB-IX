@@ -1,5 +1,4 @@
 Configuration of route server at KSKB-IX
-======================================================================
 
 BGP sessions default configuration
 ----------------------------------
@@ -195,24 +194,25 @@ Reject reasons
 
 * The following values are used to identify the reason for which routes are rejected. This is mostly used for troubleshooting, internal reporting purposes, looking glasses or in the route server log files.
 
+* Routes which are rejected are tagged with the BGP community that represents the reason for which they were discarded.
 
-| ID | Reason |
-| --- | --- |
-| 0 |Generic code: the route must be treated as rejected |
-| 1 | Invalid AS_PATH length |
-| 2 | Prefix is bogon |
-| 3 | Prefix is in global blacklist |
-| 4 | Invalid AFI |
-| 5 | Invalid NEXT_HOP |
-| 6 | Invalid left-most ASN |
-| 7 | Invalid ASN in AS_PATH |
-| 8 | Transit-free ASN in AS_PATH |
-| 9 | Origin ASN not in IRRDB AS-SETs |
-| 10 | IPv6 prefix not in global unicast space |
-| 11 | Prefix is in client blacklist |
-| 12 | Prefix not in IRRDB AS-SETs |
-| 13 | Invalid prefix length |
-| 14 | RPKI INVALID route |
-| 15 | Never via route-servers ASN in AS_PATH |
-| 65535 | Unknown |
+| ID | Reason | Standard | Extended | Large |
+| --- | --- | --- | --- | --- |
+| 0 | Generic code: the route must be treated as rejected | 65531:0 | None | 114514:65531:0 |
+| 1 | Invalid AS_PATH length | 65531:1 | None | 114514:65531:1 |
+| 2 | Prefix is bogon | 65531:2 | None | 114514:65531:2 |
+| 3 | Prefix is in global blacklist | 65531:3 | None | 114514:65531:3 |
+| 4 | Invalid AFI | 65531:4 | None | 114514:65531:4 |
+| 5 | Invalid NEXT_HOP | 65531:5 | None | 114514:65531:5 |
+| 6 | Invalid left-most ASN | 65531:6 | None | 114514:65531:6 |
+| 7 | Invalid ASN in AS_PATH | 65531:7 | None | 114514:65531:7 |
+| 8 | Transit-free ASN in AS_PATH | 65531:8 | None | 114514:65531:8 |
+| 9 | Origin ASN not in IRRDB AS-SETs | 65531:9 | None | 114514:65531:9 |
+| 10 | IPv6 prefix not in global unicast space | 65531:10 | None | 114514:65531:10 |
+| 11 | Prefix is in client blacklist | 65531:11 | None | 114514:65531:11 |
+| 12 | Prefix not in IRRDB AS-SETs | 65531:12 | None | 114514:65531:12 |
+| 13 | Invalid prefix length | 65531:13 | None | 114514:65531:13 |
+| 14 | RPKI INVALID route | 65531:14 | None | 114514:65531:14 |
+| 15 | Never via route-servers ASN in AS_PATH | 65531:15 | None | 114514:65531:15 |
+| 65535 | Unknown | 65531:65535 | None | 114514:65531:65535 |
 
