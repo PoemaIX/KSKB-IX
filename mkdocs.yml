@@ -2,6 +2,7 @@ site_name: KSKB-IX
 theme:
   # name: material
   name: flatly
+  custom_dir: static
 extra_css:
   - css/hidefooter.css
 markdown_extensions:
