@@ -235,7 +235,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250
@@ -249,7 +249,7 @@
                 "as_macro": [
                   "AS-ANILLC"
                 ],
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -517,7 +517,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250
@@ -531,7 +531,7 @@
                 "as_macro": [
                   "AS-ZH-NET"
                 ],
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
