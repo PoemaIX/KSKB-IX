@@ -48,8 +48,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 
 * 知道L2和L3運作的原理
 * 知道eBGP/iBGP/iGP是什麼和其差異
-* 曾經配過兩個以上 DN42 節點，並提供跨節點的ip transit服務
-* 或是與之相等的知識經驗(曾在其他實驗網/公網提供類似服務)
+* 曾經配過兩個以上 DN42 節點，並提供跨節點的ip transit服務。或是與之相等的知識經驗(曾在其他實驗網/公網提供類似服務)
 * 抱著謙虛學習的心，Be nice.
 
 參與者使用的bgp daemon必須支援以下功能
