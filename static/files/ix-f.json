@@ -10,6 +10,17 @@
         {
           "id": 0
         }
+      ],
+      "switch": [
+        {
+          "id": 1,
+          "name": "main switch",
+          "colo": "KSKB Home",
+          "city": "Taiwan",
+          "country": "TW",
+          "manufacturer": "unknown",
+          "model": "unknown"
+        }
       ]
     }
   ],
@@ -22,7 +33,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -30,9 +42,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::134:478",
-                "as_macro": [
-                  "AS-JSMSR"
-                ],
+                "as_macro": "AS-JSMSR",
                 "routeserver": true
               }
             }
@@ -48,7 +58,12 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
+            },
+            {
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -56,9 +71,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::138:517",
-                "as_macro": [
-                  "AS-POEMA"
-                ],
+                "as_macro": "AS-POEMA",
                 "routeserver": true
               }
             },
@@ -66,9 +79,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::100:138:517",
-                "as_macro": [
-                  "AS-POEMA"
-                ],
+                "as_macro": "AS-POEMA",
                 "routeserver": true
               }
             }
@@ -84,7 +95,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -92,9 +104,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::139:317",
-                "as_macro": [
-                  "AS-ZXINC"
-                ],
+                "as_macro": "AS-ZXINC",
                 "routeserver": true
               }
             }
@@ -110,7 +120,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -118,9 +129,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::139:328",
-                "as_macro": [
-                  "RIPE::AS-MOEBEE-CN"
-                ],
+                "as_macro": "AS-MOEBEE-CN",
                 "routeserver": true
               }
             }
@@ -136,7 +145,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -144,7 +154,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::140:506",
-                "as_macro": [],
+                "as_macro": "AS140506",
                 "routeserver": true
               }
             }
@@ -160,7 +170,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -168,9 +179,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::140:731",
-                "as_macro": [
-                  "RIPE::AS-TOHUNET"
-                ],
+                "as_macro": "AS-TOHUNET",
                 "routeserver": true
               }
             }
@@ -186,7 +195,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -194,9 +204,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::140:913",
-                "as_macro": [
-                  "AS-KOISHI"
-                ],
+                "as_macro": "AS-KOISHI",
                 "routeserver": true
               }
             }
@@ -212,7 +220,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -220,9 +229,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::141:237",
-                "as_macro": [
-                  "AS-MOEC"
-                ],
+                "as_macro": "AS-MOEC",
                 "routeserver": false
               }
             }
@@ -238,7 +245,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -246,9 +254,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:55",
-                "as_macro": [
-                  "AS-ANILLC"
-                ],
+                "as_macro": "AS-ANILLC",
                 "routeserver": true
               }
             }
@@ -264,7 +270,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -272,7 +279,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:281",
-                "as_macro": [],
+                "as_macro": "AS142281",
                 "routeserver": false
               }
             }
@@ -288,7 +295,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -296,7 +304,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:551",
-                "as_macro": [],
+                "as_macro": "AS142551",
                 "routeserver": true
               }
             }
@@ -312,7 +320,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -320,9 +329,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:553",
-                "as_macro": [
-                  "AS-AIRSPROJECT"
-                ],
+                "as_macro": "AS-AIRSPROJECT",
                 "routeserver": true
               }
             }
@@ -338,7 +345,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -346,9 +354,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::149:835",
-                "as_macro": [
-                  "AS149835:AS-ALL"
-                ],
+                "as_macro": "AS149835:AS-ALL",
                 "routeserver": true
               }
             }
@@ -364,7 +370,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -372,10 +379,33 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::17:415",
-                "as_macro": [
-                  "AS-Sciuridae"
-                ],
+                "as_macro": "AS-Sciuridae",
                 "routeserver": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 203314,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::203:314",
+                "as_macro": "AS-HATSNET",
+                "routeserver": true
               }
             }
           ]
@@ -390,7 +420,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -398,9 +429,32 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::203:472",
-                "as_macro": [
-                  "AS-POEMA"
-                ],
+                "as_macro": "AS-POEMA",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 204508,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::204:508",
+                "as_macro": "AS-MLGT",
                 "routeserver": true
               }
             }
@@ -416,7 +470,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -424,9 +479,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::205:603",
-                "as_macro": [
-                  "AS-WOLFLAB"
-                ],
+                "as_macro": "AS-WOLFLAB",
                 "routeserver": true
               }
             }
@@ -442,7 +495,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -450,9 +504,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::207:705",
-                "as_macro": [
-                  "AS-JKNET"
-                ],
+                "as_macro": "AS-JKNET",
                 "routeserver": true
               }
             }
@@ -468,7 +520,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -476,9 +529,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::208:223",
-                "as_macro": [
-                  "AS208223:AS-ALL"
-                ],
+                "as_macro": "AS208223:AS-ALL",
                 "routeserver": true
               }
             }
@@ -494,7 +545,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -502,9 +554,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::209:306",
-                "as_macro": [
-                  "AS209306:AS-SET"
-                ],
+                "as_macro": "AS209306:AS-SET",
                 "routeserver": false
               }
             }
@@ -520,7 +570,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -528,9 +579,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::210:320",
-                "as_macro": [
-                  "AS-ZH-NET"
-                ],
+                "as_macro": "AS-ZH-NET",
                 "routeserver": true
               }
             }
@@ -546,7 +595,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -554,9 +604,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::210:932",
-                "as_macro": [
-                  "AS-CHESSKUO"
-                ],
+                "as_macro": "AS-CHESSKUO",
                 "routeserver": false
               }
             }
@@ -572,7 +620,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -580,9 +629,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::212:357",
-                "as_macro": [
-                  "AS-LEKO"
-                ],
+                "as_macro": "AS-LEKO",
                 "routeserver": false
               }
             }
@@ -598,7 +645,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -606,9 +654,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::212:483",
-                "as_macro": [
-                  "RIPE::AS-86"
-                ],
+                "as_macro": "AS-86",
                 "routeserver": true
               }
             }
@@ -624,7 +670,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -632,9 +679,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::213:262",
-                "as_macro": [
-                  "AS-CUTE"
-                ],
+                "as_macro": "AS-CUTE",
                 "routeserver": false
               }
             }
@@ -650,7 +695,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -658,9 +704,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::47:158",
-                "as_macro": [
-                  "AS-HUIZE"
-                ],
+                "as_macro": "AS-HUIZE",
                 "routeserver": false
               }
             }
@@ -676,7 +720,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -684,9 +729,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::51:930",
-                "as_macro": [
-                  "AS-AUGUST"
-                ],
+                "as_macro": "AS-AUGUST",
                 "routeserver": true
               }
             }
@@ -702,7 +745,8 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -710,9 +754,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::57:429",
-                "as_macro": [
-                  "AS-HARAGUROICHA"
-                ],
+                "as_macro": "AS-HARAGUROICHA",
                 "routeserver": false
               }
             }
@@ -728,7 +770,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -736,9 +779,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::60:326",
-                "as_macro": [
-                  "AS-MrSheep"
-                ],
+                "as_macro": "AS-MrSheep",
                 "routeserver": true
               }
             }
@@ -754,7 +795,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -762,9 +804,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::7721",
-                "as_macro": [
-                  "APNIC::AS-QINCLOUD"
-                ],
+                "as_macro": "AS-QINCLOUD",
                 "routeserver": true
               }
             }
@@ -780,7 +820,8 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250
+              "if_speed": 250,
+              "switch_id": 1
             }
           ],
           "vlan_list": [
@@ -788,9 +829,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::9886",
-                "as_macro": [
-                  "AS-MERCYCLOUD"
-                ],
+                "as_macro": "AS-MERCYCLOUD",
                 "routeserver": true
               }
             }
