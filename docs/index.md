@@ -37,7 +37,7 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 
 只是個玩具IX啦，不要拿營業用ASN來加喔
 
-* 非商業，也禁止商業使用。例如使用 KSKB-IX 交換商業流量，請聯系我們以獲取更多信息  
+* 非商業性質。禁止商業使用，例如使用 KSKB-IX 交換商業流量。請聯系我們以獲取更多信息  
 * SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
 * SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
 * IX本身不存在IP Transit，但是現在有[志願者](#RS2)於RS2提供IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
