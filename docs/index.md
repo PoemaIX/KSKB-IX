@@ -23,14 +23,17 @@ PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792
 接入方式:
 
 1. VM接入
-2. Wifi接入 - Taipei
+2. 隧道接入
+    1. zerotier
+    2. openvpn
+3. Wifi接入 - Taipei
     1. 短距離接入，僅限鄰居
         1. 2.4GHz 802.11n
         2. 5GHz 802.11ac
     2. 長距離接入
         1. 接入點必須位於六張犁捷運站 3km 內，並且可直接目視，無建物遮擋
         2. 我提供頂樓，指向式wifi建設成本由妳提供
-3. AX.25 無線電接入(正在想要不要搞)
+4. AX.25 無線電接入(正在想要不要搞)
 
 只是個玩具IX啦，不要拿營業用ASN來加喔
 
