@@ -209,7 +209,7 @@ KSKB-IX 的正常運作，離不開下列群友的貢獻
 | [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
 | [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
 | [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 IPv6 Transit</li><li>走<ins>小易</ins>提供的VM去STUIX</li><li>感謝<ins>小易</ins>提供的VM，可以同時直連Hinet和STUIX，解決`中華電信 <-> STUIX`繞美的問題</li> |
-| [Gatterer Manuel](https://as204508.net/) | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國VM讓我做相關實驗. |
+| [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國VM讓我做相關實驗. |
 
 
 [^1]: 真實故事: 不法分子行騙以後，贓款 GASH 點數於網路上轉賣。有人貪便宜購買贓物 GASH 以後，掛著 Hinet 出口的VPN儲值。警方接獲報案以後循線追蹤，因此將VPN主人的電腦(查到儲值IP是VPN主人的IP)扣押進行後續調查。因此符合第一條的「可能會讓我家電腦被扣押的舉動」

@@ -4,15 +4,15 @@
 KSKB-IX is a [Virtual IXP](https://bgp.tools/kb/virtual-ixp) located and running on a laptop at my home in order to provide a platform to BGP hobbyist to learn and expirenment with the real life networking.  
 This IX provides OSI Layer 2 Ethernet Switching service. For the switching network, we refer to `IX LAN`, `IX peering LAN` or `Peering LAN` in the following sections.  
 
-I host this virtal Internet eXchange point because I want to provide a platform to learn and expirenment the BGP for network engineering hobbyist or novice.  
-The idea behind the KSKB-IX project, is to enable regular end user to learn, use and play with IPv6, and BGP networking.  
+I host this virtal Internet eXchange point because I want to provide a platform to learn and expirenment the BGP for network engineering hobbyist or novices.  
+The idea behind the KSKB-IX project is, to enable regular end user to learn, use and play with IPv6, and BGP networking.  
 
 This IX supports IPv4(mpbgp + extended next hop) and IPv6  
 PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
 IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/)  
 
-Meanwhile, there is a lot of new technologies such as `IPv6 Link-local address`, `Multiprotocol BGP` and `Extended Next Hop(RFC 5549)` but only a few networks are using it.  
-These technologies exists, but why we don't use it? So, I decide to use it ay my IXP.  
+Meanwhile a number of new technologies are aviable, such as `IPv6 Link-local address`, `Multiprotocol BGP` and `Extended Next Hop(RFC 5549)` but only a few networks are using it.  
+If those technologies are aviable, but why we don't use it? So, I decide to use it ay my IXP.  
 
 ## Join
 
@@ -34,15 +34,15 @@ Commercial use is prohibited. For example using KSKB-IX to exchange commercial t
 * Commercial use is not allowed. For example using KSKB-IX to exchange commercial traffic. Please contact us for more information.
 * SLA < 99% guaranteed. ([My computer is very unstable](https://www.kskb.eu.org/2022/06/5.html), It may be a problem with the memory or the motherboard, and it will BSoD randomly) 
 * If SLA >= 99%，You can get double SLA credit compensate, I will shutdown your server to fit the SLA. ~~Guaranteed less than is also a guarantee~~  
-* IXP **DO NOT** provides IP Transit itself, but there are some [volunteer](#RS2) Provides IP Transit. You can ask IP transit from [IX members](../members).
-* We require you to maintain a BGP connection with RS1 and **announce at least one IPv6 route from your internal network**.
-* KSKB will shut your VM down when I feel my computer is laggy if you do not establish a bgp session to `RS1` and announce routes to release resource for KSKB surf the internet/play games smoothly.  
+* The IXP **DOES NOT** provides IP Transit itself, but there are some [volunteers](#RS2) who provides IP Transit. Otherwise  you can ask IP transit from [IX members](../members) directly.
+* We require you to maintain an active BGP connection with RS1 and **announce at least one IPv6 route from your internal network**.
+* KSKB will disable your VM when I feel my computer is laggy if you do not establish a bgp session to `RS1` and announce routes.  
 
 ## Requirement
-Participants must have a public network ASN and at least a /48 ipv6  
+Participants must have a ASN and at least a public routabe /48 ipv6 subent  
 Participants should should have some knowledge and experience related to the networking and BGP, such as:
 
-* Know how L2 and L3 work
+* Know the basics about L2 and L3
 * Know what eBGP/iBGP/iGP is and its differences
 * Deployed more than two DN42 nodes and provided cross-node ip transit services before. Or equivalent knowledge and experience (provided similar services on other experimental networks/public networks)
 * With a humble learning heart, Be nice.
@@ -69,13 +69,13 @@ Please first make the special settings according to the policy of RS before you 
     * [Filtering Policy](..\RS#default-filtering-policy)
     * [Communities](..\RS#announcement-control-via-bgp-communities)
     * Nutshell: **Config the RS session as peering session**
-    * You can connect to this RS without any concern, We will doing IRR and RPKI validation for you.
+    * You can connect to this RS without any concern, We do IRR and RPKI validation for you.
     * A BGP connection with RS1 is mandatory and you must **announce at least one IPv6 route from your internal network**.
     * IP Address(link-local mode): `fe80::114:514 % eth1`
     * IP Address(Regular mode): `2404:f4c0:f70e:1980::114:514`
 * RS2<a name="RS2"></a>
     * AS114514
-    * Transitable route server. This RS allow it's routes be transitted to external, and it allows transit external route to RS.
+    * "Transitable" route server. This RS allow it's routes be exported to external upstream by any member, and it allows transit external route to RS.
         * But you have to transit symmetrically. When you transit routes in, you have to transit our routes out.
         * You can be a voluntary **transit provider**, help us transit our routes to other place such as STUIX or he.net without setup BGP sessions for each downstream one by one.
     * Experimental RS, which mixes the peering route and the transit route in the same bgp session. Please sperate it by using bgp_large_community at your filter.
@@ -132,7 +132,7 @@ IPv6           | wg-wgcf-STUIX | 1372 | sponsered IP Transit `HE TPE at STUIX` |
 ## Limitations
 
 ### IX LAN
-There are some security regulations for the IX peering LAN and the IX access port (usually eth1 for the IX VM)  
+There are some security regulations for the IX peering LAN and the IX access port (usually eth1 for the IX VM).  
 
 * Only permitted MAC addresses will be allowed
 * arp-proxy and ndp-proxy must disable on the IX port. You can only respond the Neighbor Discovery packet that send to the KSKB-IX allocated `IX LAN` IP.
@@ -169,13 +169,13 @@ There are some security regulations for the IX peering LAN and the IX access por
 
 ### IX VM
 Regarding the IX VM provided by KSKB, as well as the IX peering LAN itself, IX members may only use it to exchange network traffic. Other types of use are not allowed.
-Including but not limited to the following restrictions:  
+Including but not limited to the following:  
 
 * You must comply with the laws of the Republic of China (Taiwan) and refrain from anly unlawful activety which may cause my hardware to be seized by the police.
-* Any operation involving "money" is **strictly prohibited**[^1]. For example, Gameing point, card top-up, registering third-party account or account opening/operation of financial-related webpages/programs.
+* Any operation involving "money" is **strictly prohibited**[^1]. For example, Game point, card top-up, registering third-party account or account opening/operation of financial-related webpages/programs.
 * Personal use only, transfer/rental/commercial use is prohibited
 * Cyber attack are not allowed, such as ARP attack, ARP hijacking, scan weak passwords, malicious exhaustion, DDoS, Trojan horses and interfere with the operation of other networks and servers
-* Spam email, spam messages, spread Trojan horses, viruses (including referencing malicious files from other servers) are not allowed
+* Spam email, spam messages, spread Trojans, viruses (including referencing malicious files from other servers) are not allowed
 * Commiting copyright violations using Torrents, BitTorrent, etc. is not allowed.
 * I do not allow the use of the net_speeder/finalspeed/kcptun, etc, and any form of multiple packet sending tools that may interfere my home network, or let my web browsing slowing down.
 * Fair use terms applied for all resources. It is forbidden to consume/occupy CPU/network/bandwidth and other resources for a long time, such as `rclone transferring`/`crypto mining`, or any action that makes me feel my home network is very lag
@@ -192,7 +192,7 @@ We want to acknowledge the following sponsers for their sponsored resources and 
 |------------------------------------------|----------------------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>Thank to <ins>The BaiRuo</ins> for the IPv6 Transit to STUIX over GeekIX</li> |
 | [Shizuku](https://as142553.zhiccc.net/)  | <li>Thank to <ins>Shizuku</ins> for the IPv6 Transit to to STUIX over WGCF</li>   |
-| [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the IPv6 Transit to STUIX over <ins>SteveYi</ins>'s VM</li><li>Thank <ins>SteveYi</ins> for the Taipei VM which can reach both Hinet and STUIX with low latency to slove the `Hinet-STUIX` routing problem.</li> |
-| [MLGT](https://as204508.net/)            | <li>Thank <ins>Gatterer Manuel</ins> for the germany VM for better connectivity. |
+| [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the IPv6 Transit to STUIX over <ins>SteveYi</ins>'s VM</li><li>Thank to <ins>SteveYi</ins> for the Taipei VM which can reach both Hinet and STUIX with low latency to slove the `Hinet-STUIX` routing problem.</li> |
+| [MLGT](https://as204508.net/)            | <li>Thank to <ins>Gatterer Manuel</ins> for providing the Germany VM for better connectivity. |
 
 [^1]: True story: Someone bought a swag gift card unintentionally, top-up it with a Taiwan VPN. Then the police found the top-uping IP is from a Taiwan IP. Then the computer has been seized and the server holder has been arrest by the police.
