@@ -10,6 +10,7 @@ markdown_extensions:
   - pymdownx.extra
 nav:
   - KSKB-IX: index.md
+  - KSKB-IX(EN): KSKB-IX-EN.md
   - Members: members.md
   - Route Server Configuration: RS.md
   - Poema Network: "https://net.kskb.eu.org"

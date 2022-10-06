@@ -4,11 +4,12 @@
 一個搭在我家客廳雲，非營利玩具類型的[虛擬 IX](https://bgp.tools/kb/virtual-ixp) ，作為一個BGP實驗交流和學習的平台  
 提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching。針對Switching內網，以下稱呼為 **IX LAN**
 
-主要是給BGP配網的``業餘/有興趣/新手``玩家一個練習的地方，可以放心炸網  
+主要是給BGP配網的`業餘/有興趣/新手`玩家一個練習的地方，可以放心炸網  
 還有提供一個平台，給大家熟悉IX環境。畢竟DN42和公網環境差距不只是一點點  
 
 本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
 PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
+IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/)  
 
 一般IX都不用 `link local`/`mpbgp`/`extended next hop`  
 這些技術明明存在，為什麼不用呢?我很好奇!  
@@ -80,12 +81,12 @@ RS2 RS3 都是特殊RS，有實驗/整活的性質，請先針對RS的情況，�
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::114:514`
 * RS2<a name="RS2"></a>
     * AS114514
-    * 規則和RS1一樣，但是可以炸全表(需手動開通炸全表filter)
-        * 初衷是想說任何成員都可以成為志願者，一次性幫忙把 IX 裡面全部成員的路由 transit 去別的地方，而不需要每個下游一一設定BGP session
-        * 比如 STUIX ，或是 HE 上游之類
-    * 實驗性質的 RS ，把 peering route 和 transit route 混在同一個 bgp session 裡面，透過 bgp_large_community 來區分。
+    * Transitable route server. 這個 RS 的路由允許被 transit 到其他地方，同時也允許把其他地方的路由 transit 進來
+        * 但兩者必須同時發生。把其他地方的路由 transit 進來的同時，必須把 RS 內路由 transit 到其他地方。必須要對秤
+        * 初衷是想說任何成員都可以成為志願者，一次性幫忙把 IX 裡面全部成員的路由 transit 去別的地方，而不需要每個下游一一設定BGP session。比如 STUIX ，或是 HE 上游之類
+    * 實驗性質，把 peering route 和 transit route 混在同一個 bgp session 裡面，透過 bgp_large_community 來區分
         * 有 `(114514:65530:7)` 屬性的就是 transit 路由，請當成上游路由處裡。沒有的就是 peering 路由，請當成 peering 路由處理
-        * 同理，若將外部路由倒入 RS2 ，請將外部路由打上 `(114514:65530:7)` ，供其他成員參考
+        * 同理，若將外部路由倒入 RS2 ，請將外部路由打上 `(114514:65530:7)`，供其他成員參考
         * 只有提供Transit志願者可以倒全表，請參考下面的「發全表條件」
     * 懶人包:
         * **一般成員: 請將 RS2 設定成上游**
@@ -94,11 +95,10 @@ RS2 RS3 都是特殊RS，有實驗/整活的性質，請先針對RS的情況，�
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::1145:14`
     * 發全表條件:
         * 如果你想成為志願者，想幫忙 transit RS2 的路由去 STUIX 的話，收路由就要過濾掉 (114514:65530:7)
-        * 然後STUIX收到的表要打上 (114514:65530:7)才能發去RS2
-        * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和RS2有連線的成員，每小時同步一次
-        * 若想排除部分成員的transit，則需要使用[Community屬性](RS#announcement-control-via-bgp-communities)裡面的`Do not announce to peer`，一併從全表發送對象之中排除
-            * 意思是若你想法全表發給A，你就得同時把A的路由發給上游。不想幫某人發上游，就不要發給他全表。路由上盡量做到對稱
-        * 上游來，發往 RS2 的路由需打上 (114514:65530:7) 屬性(可以在我這邊登記上游ASN，RS會幫忙自動打上)
+        * 外面收到的表要打上 `(114514:65530:7)`才能發去 RS2 (可以在我這邊登記上游ASN，RS會幫忙自動打上)
+        * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和RS2有連線的成員(並且 AS-SET 大小必須小於100條路由)，每小時同步一次
+        * 若想排除部分成員的transit，則需要使用[Community屬性](RS#announcement-control-via-bgp-communities)裡面的`Do not announce to peer`，將之從發送對象之中排除
+            * 意思是若你想法全表發給A，你就得同時把A的路由發給上游。不想幫某人發上游，就不要發給他全表。必須做到對稱
         * 弄好以後即可以申請開通炸全表filter
 * RS3
     * AS114514
@@ -116,6 +116,8 @@ See member list: [Members](members)
 
 ## VM 連線 | VM Connectivity
 **IX VM 的網路連線能力。wifi 或是其他方式接入可以無視本章節**
+
+所有從 IX VM 的**出方向**的連線，遵守以下路由策略
 
 Traffic        | Connection    | MTU  | Comment                                |
 ---------------|---------------|------|----------------------------------------|
@@ -166,8 +168,9 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉(暫時不可用)      
         * ICMP redirects
         * 發現協議：CDP、EDP
         * VLAN/中繼協議：VTP、DTP
-* 單播/組播/廣播: 只允許單播流量，不得發送到多播或廣播的 MAC 目標地址
-    * 以下情況除外：
+* 單播/組播/廣播: 
+    * 只允許單播流量
+    * 不得發送到多播或廣播的 MAC 目標地址，以下情況除外：
         * ICMPv6 Neighbor Solicitation / Advertisement
     * 組播/廣播封包流量不得超過 1kbps
 * 不得濫用 IXP 成員的網路基礎設施。包括但不限於以下行為:
@@ -206,5 +209,7 @@ KSKB-IX 的正常運作，離不開下列群友的貢獻
 | [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
 | [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
 | [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 IPv6 Transit</li><li>走<ins>小易</ins>提供的VM去STUIX</li><li>感謝<ins>小易</ins>提供的VM，可以同時直連Hinet和STUIX，解決`中華電信 <-> STUIX`繞美的問題</li> |
+| [Gatterer Manuel](https://as204508.net/) | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國VM讓我做相關實驗. |
+
 
 [^1]: 真實故事: 不法分子行騙以後，贓款 GASH 點數於網路上轉賣。有人貪便宜購買贓物 GASH 以後，掛著 Hinet 出口的VPN儲值。警方接獲報案以後循線追蹤，因此將VPN主人的電腦(查到儲值IP是VPN主人的IP)扣押進行後續調查。因此符合第一條的「可能會讓我家電腦被扣押的舉動」
