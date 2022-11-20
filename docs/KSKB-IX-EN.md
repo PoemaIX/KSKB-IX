@@ -168,7 +168,7 @@ There are some security regulations for the IX peering LAN and the IX access por
         * AS path manipulation
 
 ### IX VM
-Regarding the IX VM provided by KSKB, as well as the IX peering LAN itself, IX members may only use it to exchange network traffic. Other types of use are not allowed.
+Regarding the IX VM provided by KSKB, as well as the IX peering LAN itself, IX members may only use it to exchange network traffic(internal traffic/peering). Other types of use are not allowed.
 Including but not limited to the following:  
 
 * You must comply with the laws of the Republic of China (Taiwan) and refrain from anly unlawful activety which may cause my hardware to be seized by the police.
@@ -179,7 +179,7 @@ Including but not limited to the following:
 * Commiting copyright violations using Torrents, BitTorrent, etc. is not allowed.
 * I do not allow the use of the net_speeder/finalspeed/kcptun, etc, and any form of multiple packet sending tools that may interfere my home network, or let my web browsing slowing down.
 * Fair use terms applied for all resources. It is forbidden to consume/occupy CPU/network/bandwidth and other resources for a long time, such as `rclone transferring`/`crypto mining`, or any action that makes me feel my home network is very lag
-* Personal use is allowed. But using it as crawler or for account registration, etc., which may cause my IP to be marked as a bot is not allowed
+* Personal use is allowed. But using it as crawler or for account registration, etc. which may cause my IP to be marked as a bot is not allowed
 * You may not run resource-consuming programs, such as online games, crypto mining. It is not allowed to use our network as open proxy or for filesharing.
 
 ## Contact
@@ -192,7 +192,8 @@ We want to acknowledge the following sponsers for their sponsored resources and 
 |------------------------------------------|----------------------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>Thank to <ins>The BaiRuo</ins> for the IPv6 Transit to STUIX over GeekIX</li> |
 | [Shizuku](https://as142553.zhiccc.net/)  | <li>Thank to <ins>Shizuku</ins> for the IPv6 Transit to to STUIX over WGCF</li>   |
-| [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the IPv6 Transit to STUIX over <ins>SteveYi</ins>'s VM</li><li>Thank to <ins>SteveYi</ins> for the Taipei VM which can reach both Hinet and STUIX with low latency to slove the `Hinet-STUIX` routing problem.</li> |
+| [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the IPv6 Transit to STUIX over <ins>SteveYi</ins>'s VM</li><li>Thank to <ins>SteveYi</ins> for the Taipei VM which can reach STUIX with low latency.</li> |
+| Licson                                   | <li>Thank to <ins>Licson</ins> for the IP which can reach Hinet with low latency to solve the connectivity issue between KSKBIX and STUIX.</li> |
 | [MLGT](https://as204508.net/)            | <li>Thank to <ins>Gatterer Manuel</ins> for providing the Germany VM for better connectivity. |
 
 [^1]: True story: Someone bought a swag gift card unintentionally, top-up it with a Taiwan VPN. Then the police found the top-uping IP is from a Taiwan IP. Then the computer has been seized and the server holder has been arrest by the police.

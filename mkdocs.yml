@@ -11,6 +11,7 @@ markdown_extensions:
 nav:
   - KSKB-IX: index.md
   - KSKB-IX(EN): KSKB-IX-EN.md
+  - Virtual IXP: Virtual-IXP.md
   - Members: members.md
   - Route Server Configuration: RS.md
   - Poema Network: "https://net.kskb.eu.org"

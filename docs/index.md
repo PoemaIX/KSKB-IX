@@ -1,7 +1,7 @@
 # KSKB-IX
 
 ## 介紹 | Introduction
-一個搭在我家客廳雲，非營利玩具類型的[虛擬 IX](https://bgp.tools/kb/virtual-ixp) ，作為一個BGP實驗交流和學習的平台  
+一個搭在我家客廳雲，非營利玩具類型的[虛擬 IX](Virtual-IXP) ，作為一個BGP實驗交流和學習的平台  
 提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching。針對Switching內網，以下稱呼為 **IX LAN**
 
 主要是給BGP配網的`業餘/有興趣/新手`玩家一個練習的地方，可以放心炸網  
@@ -184,18 +184,18 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉(暫時不可用)      
 
 
 ### IX VM
-對於KSKB提供的IX VM，以及IX LAN，僅供IX成員作為網路流量交換使用。禁止其他類型使用  
+對於KSKB提供的IX VM，以及IX LAN，僅供IX成員作為網路流量交換(內網流量交換/peering)使用。禁止其他類型使用  
 包括但不限於以下限制
 
 * 遵守中華民國（台灣）法律，禁止做出任何可能會讓我家電腦被扣押的舉動
 * 尤其是任何涉及「錢」的操作，更是**嚴禁**[^1]。比如遊戲點卡儲值，註冊相關帳號。或是金融相關網頁/程式的帳戶開設/操作
-* 僅供個人玩玩，禁止轉讓/租借/商業使用
+* 僅供個人使用，禁止轉讓/租借/商業使用
 * 禁止主機對外、對內發包（無論是否為主動行為）, ARP 攻擊, ARP 劫持, 掃描弱密碼, 惡意窮舉，DDoS，木馬和干擾其它伺服器運行
 * 禁止發送垃圾郵件、垃圾訊息, 散播木馬、病毒(包括引用其它伺服器的惡意文件)
 * 禁止使用 Torrents、BT，等下載或傳播版權內容
 * 禁止使用 net_speeder/finalspeed/kcptun 等干擾我家網路運作的，任何形式的多倍發包工具
 * 資源合理使用。禁止長時間消耗/佔滿CPU/網路頻寬等資源，例如rclone轉存/挖礦，**或是讓我感覺家裡網路很卡**(最主要的判斷方式)
-* 個人使用，可以拿來解鎖流媒體之類的。但禁止用於爬蟲/帳號註冊等，可能會使IP被標記為bot(俗稱IP被汙染)之行為
+* 個人使用，禁止用於爬蟲/帳號註冊等，可能會使IP被標記為bot(俗稱IP被汙染)之行為
 * 禁止架設耗資源的程式，如線上遊戲。或將主機當作檔案主機使用，提供公開連接，例如圖床/檔案伺服器
 
 ## 聯絡方式 | Contact
@@ -208,7 +208,8 @@ KSKB-IX 的正常運作，離不開下列群友的貢獻
 |------------------------------------------|----------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
 | [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
-| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 IPv6 Transit</li><li>走<ins>小易</ins>提供的VM去STUIX</li><li>感謝<ins>小易</ins>提供的VM，可以同時直連Hinet和STUIX，解決`中華電信 <-> STUIX`繞美的問題</li> |
+| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 IPv6 Transit</li><li>走<ins>小易</ins>提供的VM去STUIX</li> |
+| Licson                                   | <li>感謝<ins>Licson</ins>的IP，可以直連Hinet，解決了 Hinet 和 STUIX 互連性問題</li> |
 | [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國VM讓我做相關實驗. |
 
 
