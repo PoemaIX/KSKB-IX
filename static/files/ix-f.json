@@ -101,6 +101,31 @@
       ]
     },
     {
+      "asnum": 138435,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::138:435",
+                "as_macro": "AS-YUETAU",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "asnum": 138517,
       "connection_list": [
         {
@@ -292,7 +317,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -305,7 +330,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:55",
                 "as_macro": "AS-ANILLC",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -431,6 +456,31 @@
                 "address": "2404:f4c0:f70e:1980::17:415",
                 "as_macro": "AS-Sciuridae",
                 "routeserver": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 201217,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::201:217",
+                "as_macro": "AS-RADISH",
+                "routeserver": true
               }
             }
           ]
@@ -813,6 +863,31 @@
       ]
     },
     {
+      "asnum": 211390,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::211:390",
+                "as_macro": "AS-YUZHEN",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "asnum": 212154,
       "connection_list": [
         {
@@ -892,7 +967,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -905,7 +980,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::213:262",
                 "as_macro": "AS-CUTE",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -942,7 +1017,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -955,7 +1030,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::57:406",
                 "as_macro": "AS-ZERODISTANCE",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
