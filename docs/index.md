@@ -134,15 +134,6 @@ L2 to STUIX VM | yi-(your vm)  | 1432 | 走小易VM中轉(暫時不可用)      
     * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint
 2. Dst IP白名單服務(已棄用): 
     * 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
-3. STUIX 隧道服務(暫時不可用): 
-    * 因為`中華電信<->STUIX`繞美，家裡剛好也是中華電信。但是不少成員同時有購買 STUIX IXVM
-    * 因此我想說幫忙轉發一下，提供 L2 隧道直接通向成員的 STUIX IX VM。  
-    * 注意，**並非**接入 STUIX LAN 喔，不能和 HE peer。您還是必須先購買 STUIX IX VM 才能使用喔  
-    * 使用方法:
-        1. 您 `STUIX 的 IX VM` 和我這邊的`小易VM`建立gretap/隧道  
-        2. 我幫您 `KSKB-IX 的 IX VM` 新增虛擬網卡  
-    * 由我維護網卡兩邊的隧道。兩邊端口 L2 互通  
-    * MTU 1432  
 
 ## 限制 | Limitations
 
