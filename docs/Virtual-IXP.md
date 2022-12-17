@@ -68,6 +68,7 @@ STUIX 提供了「port 接入」、「colo」服務
 
 虛擬 IXP 則是類似這樣，主要是「模擬」物理 IXP，讓業餘愛好者體驗接入 IXP 的感覺  
 ![](https://i.imgur.com/jt1pPjI.png)  
+
 1. 隧道接入: 模擬外部跳線接入。直接從自己外部的路由器連接到 IX 的交換機上
 2. VM 接入: 
     1. VM本體: 模擬 IXP colo 接入，把自己的機器部屬在 IXP 裡面
