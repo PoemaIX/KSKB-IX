@@ -354,7 +354,7 @@
               "vlan_id": 0,
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:164",
-                "as_macro": "as-142164",
+                "as_macro": "AS-142164",
                 "routeserver": true
               }
             }
@@ -392,7 +392,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -405,7 +405,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:427",
                 "as_macro": "AS-MESON-SELF",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -517,7 +517,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -530,7 +530,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::201:217",
                 "as_macro": "AS-RADISH",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -606,6 +606,31 @@
                 "address": "2404:f4c0:f70e:1980::202:952",
                 "as_macro": "AS-BANDURA-SET",
                 "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 203236,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::203:236",
+                "as_macro": "AS-LILY",
+                "routeserver": false
               }
             }
           ]
