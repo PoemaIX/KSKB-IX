@@ -59,4 +59,8 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 138435 | [YuetAu Network](https://bgp.tools/as/138435) | AS-YUETAU | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/127.0.0.1/AS138435_1),[0](https://ixlg.kskb.eu.org/detail/127.0.0.1/AS138435_1) | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS138435_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS138435_1) | - |  |
 | 142427 | [Meson Global Network](https://bgp.tools/as/142427) | AS-MESON-SELF | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/127.0.0.1/AS142427_1),[0](https://ixlg.kskb.eu.org/detail/127.0.0.1/AS142427_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142427_1) | - |  |
 | 142164 | [GoldDoge Networks](https://bgp.tools/as/142164) | AS-142164 | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/127.0.0.1/AS142164_1),[0](https://ixlg.kskb.eu.org/detail/127.0.0.1/AS142164_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142164_1) | - |  |
+<<<<<<< HEAD
+| 203236 | [Lily Network](https://bgp.tools/as/203236) | AS-LILY | [-](https://ixlg.kskb.eu.org/detail/127.0.0.1/AS203236_1) | - | - |  |
+=======
 | 203236 | [Lily Network](https://bgp.tools/as/203236) | AS-LILY | [-](https://ixlg.kskb.eu.org/detail/127.0.0.1/AS203236_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS203236_1) | - |  |
+>>>>>>> 4b272db9c356fe5cb535064b9be8a41cadda3b18
