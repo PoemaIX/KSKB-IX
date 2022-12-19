@@ -1,11 +1,11 @@
-# KSKB-IX
+# Poema IX
 
 ## Introduction
-KSKB-IX is a [Virtual IXP](https://bgp.tools/kb/virtual-ixp) located and running on a laptop at my home in order to provide a platform to BGP hobbyist to learn and expirenment with the real life networking.  
+Poema IX is a [Virtual IXP](https://bgp.tools/kb/virtual-ixp) located and running on a laptop at my home in order to provide a platform to BGP hobbyist to learn and expirenment with the real life networking.  
 This IX provides OSI Layer 2 Ethernet Switching service. For the switching network, we refer to `IX LAN`, `IX peering LAN` or `Peering LAN` in the following sections.  
 
 I host this virtal Internet eXchange point because I want to provide a platform to learn and expirenment the BGP for network engineering hobbyist or novices.  
-The idea behind the KSKB-IX project is, to enable regular end user to learn, use and play with IPv6, and BGP networking.  
+The idea behind the Poema IX project is, to enable regular end user to learn, use and play with IPv6, and BGP networking.  
 
 This IX supports IPv4(mpbgp + extended next hop) and IPv6  
 PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
@@ -29,9 +29,9 @@ If those technologies are aviable, but why we don't use it? So, I decide to use 
         2. I provide the top floor, you provide the construction fee of the directional wi-fi
 4. Join via AX.25 radio (Considering, not implenment yet)
 
-Commercial use is prohibited. For example using KSKB-IX to exchange commercial traffic
+Commercial use is prohibited. For example using Poema IX to exchange commercial traffic
 
-* Commercial use is not allowed. For example using KSKB-IX to exchange commercial traffic. Please contact us for more information.
+* Commercial use is not allowed. For example using Poema IX to exchange commercial traffic. Please contact us for more information.
 * SLA < 99% guaranteed. ([My computer is very unstable](https://www.kskb.eu.org/2022/06/5.html), It may be a problem with the memory or the motherboard, and it will BSoD randomly) 
 * If SLA >= 99%，You can get double SLA credit compensate, I will shutdown your server to fit the SLA. ~~Guaranteed less than is also a guarantee~~  
 * The IXP **DOES NOT** provides IP Transit itself, but there are some [volunteers](#RS2) who provides IP Transit. Otherwise  you can ask IP transit from [IX members](../members) directly.
@@ -135,10 +135,10 @@ IPv6           | wg-wgcf-STUIX | 1372 | sponsered IP Transit `HE TPE at STUIX` |
 There are some security regulations for the IX peering LAN and the IX access port (usually eth1 for the IX VM).  
 
 * Only permitted MAC addresses will be allowed
-* arp-proxy and ndp-proxy must disable on the IX port. You can only respond the Neighbor Discovery packet that send to the KSKB-IX allocated `IX LAN` IP.
+* arp-proxy and ndp-proxy must disable on the IX port. You can only respond the Neighbor Discovery packet that send to the Poema IX allocated `IX LAN` IP.
 * L3 joining only. Bridge out port to other switch are not allowed.
-* Participants must not announce ("leak") KSKB-IX peering LAN (IPv6: 2404:f4c0:f70e:1980::/64) to other networks to redice the potential attack surface.
-* KSKB-IX does NOT support trunk port or VLAN mapping to our switches.
+* Participants must not announce ("leak") Poema IX peering LAN (IPv6: 2404:f4c0:f70e:1980::/64) to other networks to redice the potential attack surface.
+* Poema IX does NOT support trunk port or VLAN mapping to our switches.
 * Ethertypes: All forwarded frames must have one of the following ether types:
     * 0x0800 - IPv4
     * 0x86dd - IPv6
@@ -186,7 +186,7 @@ Including but not limited to the following:
 * mailto: ix@kskb.eu.org
 
 ## Special Thanks
-We want to acknowledge the following sponsers for their sponsored resources and support toward the KSKB-IX project.  
+We want to acknowledge the following sponsers for their sponsored resources and support toward the Poema IX project.  
 
 | List                                     | Acknowledgements     |
 |------------------------------------------|----------------------|
