@@ -179,8 +179,10 @@ Including but not limited to the following:
 * Commiting copyright violations using Torrents, BitTorrent, etc. is not allowed.
 * I do not allow the use of the net_speeder/finalspeed/kcptun, etc, and any form of multiple packet sending tools that may interfere my home network, or let my web browsing slowing down.
 * Fair use terms applied for all resources. It is forbidden to consume/occupy CPU/network/bandwidth and other resources for a long time, such as `rclone transferring`/`crypto mining`, or any action that makes me feel my home network is very lag
-* Personal use is allowed. But using it as crawler or for account registration, etc. which may cause my IP to be marked as a bot is not allowed
-* You may not run resource-consuming programs, such as online games, crypto mining. It is not allowed to use our network as open proxy or for filesharing.
+* Using it as crawler or for account registration, etc. which may cause my IP to be marked as a bot is not allowed
+* You may not run resource-consuming programs, such as online games, crypto mining. 
+* It is not allowed to hosting open service at my VM such as open proxy or for filesharing.
+* Using my VM as a VPN exitnode is not allowed. The only allowed traffic destination is your other node, peering partner, or any destination required to maintain the server, such as updating via apt.
 
 ## Contact
 * mailto: ix@kskb.eu.org
