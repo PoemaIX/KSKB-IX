@@ -1,4 +1,4 @@
-site_name: KSKB-IX
+site_name: Poema IX
 theme:
   # name: material
   name: flatly
@@ -10,10 +10,10 @@ markdown_extensions:
   - pymdownx.extra
 nav:
   - Poema IX: index.md
-  - Poema IX(EN): Poema-IX-EN.md
+  - (EN): Poema-IX-EN.md
   - Virtual IXP: Virtual-IXP.md
   - Members: members.md
-  - Route Server Configuration: RS.md
+  - Route Server: RS.md
   - Poema Network: "https://net.kskb.eu.org"
 site_url: https://ix.poema.eu.org/
 repo_url: https://github.com/KSKBpage/KSKB-IX
