@@ -1,4 +1,4 @@
-# KSKB-IX
+# Poema IX
 
 ## 介紹 | Introduction
 一個搭在我家客廳雲，非營利玩具類型的[虛擬 IX](Virtual-IXP) ，作為一個BGP實驗交流和學習的平台  
@@ -38,7 +38,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 只是個玩具IX啦，不要拿營業用ASN來加喔
 
-* 非商業性質。禁止商業使用，例如使用 KSKB-IX 交換商業流量。請聯系我們以獲取更多信息  
+* 非商業性質。禁止商業使用，例如使用 Poema IX 交換商業流量。請聯系我們以獲取更多信息  
 * SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
 * SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
 * IX本身不存在IP Transit，但是現在有[志願者](#RS2)於RS2提供IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
@@ -140,10 +140,10 @@ IPv6           | wg-wgcf-STUIX | 1372 | 群友提供的 IP Transit`HE TPE at STU
 對於  IX LAN 內網，以及IX接入端口(IX VM 接入的話通常是eth1)，有以下安全規範
 
 * 只有經過申請的來源mac位址可以被使用
-* 端口必須關閉 arp-proxy 和 ndp-proxy ，只能針對由 KSKB-IX 分配的 **IX LAN** IP 的 Neighbor Discovery 封包做出回應
+* 端口必須關閉 arp-proxy 和 ndp-proxy ，只能針對由 Poema IX 分配的 **IX LAN** IP 的 Neighbor Discovery 封包做出回應
 * 必須 L3 接入，不得將端口橋接到其他交換機上面
-* KSKB-IX 服務交換網段(IPv6: 2404:f4c0:f70e:1980::/64)資訊不可被轉送至客戶所轄網內或者是互聯網上任何地方以免成為受攻擊目標
-* KSKB-IX 不支援與成員交換或者對應/修改VLAN資訊
+* Poema IX 服務交換網段(IPv6: 2404:f4c0:f70e:1980::/64)資訊不可被轉送至客戶所轄網內或者是互聯網上任何地方以免成為受攻擊目標
+* Poema IX 不支援與成員交換或者對應/修改VLAN資訊
 * Ethertypes: 轉發的所有幀必須具有以下以太網類型之一:
     * 0x0800 - IPv4
     * 0x86dd - IPv6
@@ -192,7 +192,7 @@ IPv6           | wg-wgcf-STUIX | 1372 | 群友提供的 IP Transit`HE TPE at STU
 * mailto: ix@kskb.eu.org
 
 ## 致謝 | Special Thanks
-KSKB-IX 的正常運作，離不開下列群友的貢獻
+Poema IX 的正常運作，離不開下列群友的貢獻
 
 | 名單                                      | 致謝 |
 |------------------------------------------|----------|
