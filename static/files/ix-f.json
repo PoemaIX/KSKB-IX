@@ -147,7 +147,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::138:517",
                 "as_macro": "AS-POEMA",
-                "routeserver": true
+                "routeserver": false
               }
             },
             {
