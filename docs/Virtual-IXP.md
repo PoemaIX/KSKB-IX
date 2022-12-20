@@ -88,7 +88,7 @@ STUIX 提供了「port 接入」、「colo」服務
 ## 混合 IXP
 
 還有一種IX: 混合IX。就是類似這種，混和了虛擬IX和實體IX，開放物理接入的同時允許業餘玩家用隧道/VM的方式接入  
-![](https://i.imgur.com/2PfdVuG.png)
+![](https://i.imgur.com/l3m9nJk.png)
 
 對於實體接入的成員，上網卡能 ssh 就好，延遲不重要。物理光纖有通更重要  
 但是對於虛擬接入的成員，業務都跑在隧道裡，延遲就變得很重要了  
@@ -98,14 +98,14 @@ STUIX 提供了「port 接入」、「colo」服務
 
 但是虛擬接入的成員不改變物理拓樸  
 因為實際的網路封包類似這樣流動，仍然依託於物理接入成員的線路  
-![](https://i.imgur.com/Tgn7xYX.png)
+![](https://i.imgur.com/SY5n5Zy.png)
 因此，混合IX就不能只根據成員數量來推論IX規模了  
 
 ### IX 的上網卡<a name="IX-VM-ETH0"></a>
 
 正式的物理 IX ，需要和「自己的其他內網節點」物理拉光纖線(使用跳線/進線服務)  
 
-比如 Gooele 和遠傳在 TPIX 交換流量，遠傳的用戶訪問 Gmail  
+比如 Google 和遠傳在 TPIX 交換流量，遠傳的用戶訪問 Gmail  
 Google 的 TPIX 節點需要和彰化機房物理上有拉光纖線  
 遠傳的 TPIX 節點也和自己機房有物理光纖，再拉光纖到各戶人家  
 ![](https://i.imgur.com/DAEiOfm.png)
