@@ -380,7 +380,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -393,7 +393,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:427",
                 "as_macro": "AS-MESON-SELF",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -505,7 +505,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -518,7 +518,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::200:536",
                 "as_macro": "AS-NET186",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -530,7 +530,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -543,7 +543,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::200:895",
                 "as_macro": "AS200895",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
