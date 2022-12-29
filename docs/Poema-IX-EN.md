@@ -116,11 +116,13 @@ See member list: [Members](..\members)
 
 All **outbound** connections from the IX VM follows the following routing policies
 
-Traffic        | Connection    | MTU  | Comment                                |
----------------|---------------|------|----------------------------------------|
-IPv4           | wgcf          | 1432 | `dst port < 9999`                      |
-IPv4           | hinet         | 1492 | `dst port >= 10000`，`icmp`            |
-IPv6           | wg-wgcf-STUIX | 1372 | sponsered IP Transit `HE TPE at STUIX` |
+| Dst IP           | Dst port      | Connection         | MTU  |
+|------------------|---------------|--------------------|------|
+| 103.147.22.0/23  | Any           | Yi & Licson        | 1472 |
+| 0.0.0.0/0        | `0~9999`      | wgcf(Cloudflare)   | 1432 |
+| 0.0.0.0/0        | `10000~65535` | Hinet              | 1492 |
+| 0.0.0.0/0        | ICMP          | Hinet              | 1492 |
+| ::/0             | Any           | Hurricane Electric | 1372 |
 
 #### Connection Service
 1. port forward:
