@@ -119,11 +119,14 @@ See member list: [Members](members)
 
 所有從 IX VM 的**出方向**的連線，遵守以下路由策略
 
-Traffic        | Connection    | MTU  | Comment                                |
----------------|---------------|------|----------------------------------------|
-IPv4           | wgcf          | 1432 | `9999 以下的port`                      |
-IPv4           | hinet         | 1492 | `10000 以上的port`，`icmp`             |
-IPv6           | wg-wgcf-STUIX | 1372 | 群友提供的 IP Transit`HE TPE at STUIX`  |
+| Dst IP           | Dst port      | Connection         | MTU  | Comment         |
+|------------------|---------------|--------------------|------|-----------------|
+| 103.147.22.0/23  | Any           | Yi & Licson        | 1472 | TWDS VM (STUIX) |
+| 0.0.0.0/0        | `0~9999`      | wgcf(Cloudflare)   | 1432 |                 |
+| 0.0.0.0/0        | `10000~65535` | Hinet              | 1492 |                 |
+| 0.0.0.0/0        | ICMP          | Hinet              | 1492 |                 |
+| ::/0             | Any           | Hurricane Electric | 1372 |                 |
+
 
 #### 連線服務 | Connection Service
 1. port forward服務:
@@ -131,8 +134,6 @@ IPv6           | wg-wgcf-STUIX | 1372 | 群友提供的 IP Transit`HE TPE at STU
     * :\[\*\*\*00~\*\*\*99\] → :\[\*\*\*00~\*\*\*99\]，共計100個port供內網隧道搭建使用  
     * :10\*\*\* → :22 ，供ssh連線使用
     * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint
-2. Dst IP白名單服務(已棄用): 
-    * 名單內的IP不論方向，均直接走hinet出去，供內網隧道搭建使用  
 
 ## 限制 | Limitations
 
