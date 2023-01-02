@@ -119,13 +119,12 @@ See member list: [Members](members)
 
 所有從 IX VM 的**出方向**的連線，遵守以下路由策略
 
-| Dst IP           | Dst port      | Connection         | MTU  | Comment         |
-|------------------|---------------|--------------------|------|-----------------|
-| 103.147.22.0/23  | Any           | Yi & Licson        | 1472 | TWDS VM (STUIX) |
-| 0.0.0.0/0        | `0~9999`      | wgcf(Cloudflare)   | 1432 |                 |
-| 0.0.0.0/0        | `10000~65535` | Hinet              | 1492 |                 |
-| 0.0.0.0/0        | ICMP          | Hinet              | 1492 |                 |
-| ::/0             | Any           | Hurricane Electric | 1372 |                 |
+| Dst IP           | Dst port                | Connection                  | MTU  | Comment         |
+|------------------|-------------------------|-----------------------------|------|-----------------|
+| 103.147.22.0/23  | Any                     | [Yi & Licson](#TWDS_CONN)   | 1472 | TWDS VM (STUIX) |
+| 0.0.0.0/0        | `0~9999`                | wgcf(Cloudflare)            | 1432 |                 |
+| 0.0.0.0/0        | `10000~65535`<br>ICMP   | Hinet                       | 1492 |                 |
+| ::/0             | Any                     | Hurricane Electric          | 1372 |                 |
 
 
 #### 連線服務 | Connection Service
@@ -202,8 +201,8 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 |------------------------------------------|----------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
 | [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
-| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 IPv6 Transit</li><li>走<ins>小易</ins>提供的VM去STUIX</li> |
-| Licson                                   | <li>感謝<ins>Licson</ins>的IP，可以直連Hinet，解決了 Hinet 和 STUIX 互連性問題</li> |
+| Licson                                   | <a name="TWDS_CONN"></a> <li>感謝<ins>Licson</ins>的IP(掛在小易的VM上面)，可以直連Hinet</li> |
+| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的VM，可以直達去STUIX</li><li>解決了 Hinet 和 STUIX 互連性問題</li> |
 | [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國VM讓我做相關實驗. |
 
 

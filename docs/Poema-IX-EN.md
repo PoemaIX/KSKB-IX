@@ -116,13 +116,12 @@ See member list: [Members](..\members)
 
 All **outbound** connections from the IX VM follows the following routing policies
 
-| Dst IP           | Dst port      | Connection         | MTU  |
-|------------------|---------------|--------------------|------|
-| 103.147.22.0/23  | Any           | Yi & Licson        | 1472 |
-| 0.0.0.0/0        | `0~9999`      | wgcf(Cloudflare)   | 1432 |
-| 0.0.0.0/0        | `10000~65535` | Hinet              | 1492 |
-| 0.0.0.0/0        | ICMP          | Hinet              | 1492 |
-| ::/0             | Any           | Hurricane Electric | 1372 |
+| Dst IP           | Dst port                | Connection                  | MTU  | Comment         |
+|------------------|-------------------------|-----------------------------|------|-----------------|
+| 103.147.22.0/23  | Any                     | [Yi & Licson](#TWDS_CONN)   | 1472 | TWDS VM (STUIX) |
+| 0.0.0.0/0        | `0~9999`                | wgcf(Cloudflare)            | 1432 |                 |
+| 0.0.0.0/0        | `10000~65535`<br>ICMP   | Hinet                       | 1492 |                 |
+| ::/0             | Any                     | Hurricane Electric          | 1372 |                 |
 
 #### Connection Service
 1. port forward:
@@ -196,8 +195,8 @@ We want to acknowledge the following sponsers for their sponsored resources and 
 |------------------------------------------|----------------------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>Thank to <ins>The BaiRuo</ins> for the IPv6 Transit to STUIX over GeekIX</li> |
 | [Shizuku](https://as142553.zhiccc.net/)  | <li>Thank to <ins>Shizuku</ins> for the IPv6 Transit to to STUIX over WGCF</li>   |
-| [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the IPv6 Transit to STUIX over <ins>SteveYi</ins>'s VM</li><li>Thank to <ins>SteveYi</ins> for the Taipei VM which can reach STUIX with low latency.</li> |
-| Licson                                   | <li>Thank to <ins>Licson</ins> for the IP which can reach Hinet with low latency to solve the connectivity issue between KSKBIX and STUIX.</li> |
+| Licson                                   | <a name="TWDS_CONN"></a><li>Thank to <ins>Licson</ins> for the IP(attached on SteveYi's VM) which can reach Hinet with low latency</li> |
+| [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the Taipei VM which can reach STUIX with low latency.</li><li>solved the connectivity issue between KSKBIX and STUIX.</li> |
 | [MLGT](https://as204508.net/)            | <li>Thank to <ins>Gatterer Manuel</ins> for providing the Germany VM for better connectivity. |
 
 [^1]: True story: Someone bought a swag gift card unintentionally, top-up it with a Taiwan VPN. Then the police found the top-uping IP is from a Taiwan IP. Then the computer has been seized and the server holder has been arrest by the police.
