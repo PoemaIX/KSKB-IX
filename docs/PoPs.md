@@ -8,7 +8,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: KSKB
-* [直營](#TYPE)
+* PoP 種類: [直營](#TYPE)
 * 物理位置: 台北市大安區，KSKB 家裡的客廳雲
 * SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
 * SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
@@ -60,7 +60,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: [@jord903](https://t.me/jord903)
-* [加盟](#TYPE)
+* PoP 種類: [加盟](#TYPE)
 * 物理位置: Jord
 
 #### 接入方式
@@ -82,7 +82,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: KSKB
-* [贊助](#TYPE)
+* PoP 種類: [贊助](#TYPE)
 * 贊助人: 小易
 * 物理位置: 世方電信
 
@@ -97,7 +97,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: KSKB
-* [直營](#TYPE)
+* PoP 種類: [直營](#TYPE)
 * 物理位置: 虛擬 PoP，無具體位置
 
 #### 接入方式
@@ -113,7 +113,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 ### 加盟
 * 接入需要該 PoP 之管理員同意，無須 KSKB 同意
-* 但若發現有濫用行為，KSKB 有事後清退權
+* 但若發現有濫用行為，KSKB 有權要求加盟主清退成員
 * KSKB 授權使用 「Poema IX」商標，使用 VXLAN + EVPN 接入 IX 內網  
 * 節點設備以及節點清退規則由加盟人自行管理
 
