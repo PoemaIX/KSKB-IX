@@ -39,8 +39,6 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 只是個玩具IX啦，不要拿營業用ASN來加喔
 
 * 非商業性質。禁止商業使用，例如使用 Poema IX 交換商業流量。請聯系我們以獲取更多信息  
-* SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
-* SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
 * IX本身不存在IP Transit，但是現在有[志願者](#RS2)於RS2提供IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
 * 我們強制要求與`RS1`進行BGP連接  
 * 若沒有和`RS1`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
@@ -114,25 +112,6 @@ RS2 RS3 都是特殊RS，有實驗/整活的性質，請先針對RS的情況，�
 
 See member list: [Members](members)
 
-## VM 連線 | VM Connectivity
-**IX VM 的網路連線能力。wifi 或是其他方式接入可以無視本章節**
-
-所有從 IX VM 的**出方向**的連線，遵守以下路由策略
-
-| Dst IP           | Dst port                | Connection                  | MTU  | Comment         |
-|------------------|-------------------------|-----------------------------|------|-----------------|
-| 103.147.22.0/23  | Any                     | [Yi & Licson](#TWDS_CONN)   | 1472 | TWDS VM (STUIX) |
-| 0.0.0.0/0        | `0~9999`                | wgcf(Cloudflare)            | 1432 |                 |
-| 0.0.0.0/0        | `10000~65535`<br>ICMP   | Hinet                       | 1492 |                 |
-| ::/0             | Any                     | Hurricane Electric          | 1372 |                 |
-
-
-#### 連線服務 | Connection Service
-1. port forward服務:
-    * **\*\*\*=VMID**
-    * :\[\*\*\*00~\*\*\*99\] → :\[\*\*\*00~\*\*\*99\]，共計100個port供內網隧道搭建使用  
-    * :10\*\*\* → :22 ，供ssh連線使用
-    * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint
 
 ## 限制 | Limitations
 
@@ -172,7 +151,6 @@ See member list: [Members](members)
         * 偽造他人的 ASN origin
         * 發送造假的 AS path
 
-
 ### IX VM
 對於KSKB提供的IX VM，以及IX LAN，僅供IX成員作為**網路流量交換(內網流量交換/peering)**使用。禁止其他類型使用  
 
@@ -191,6 +169,7 @@ See member list: [Members](members)
 * 禁止提供公開服務，提供公開連接，或將主機當作檔案主機使用，例如圖床/檔案伺服器
 * 禁止用於流量落地/VPN出口。通訊對象必須是[自己其他的內網節點](Virtual-IXP/#IX-VM-ETH0)、其他 peering 對象，或是apt update/git clone之類保持節點運作必須的流量<a name="IX-VM-LIMIT"></a>
 
+
 ## 聯絡方式 | Contact
 * mailto: ix@kskb.eu.org
 
@@ -201,7 +180,6 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 |------------------------------------------|----------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
 | [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
-| Licson                                   | <a name="TWDS_CONN"></a> <li>感謝<ins>Licson</ins>的IP(掛在小易的VM上面)，可以直連Hinet</li> |
 | [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的VM，可以直達去STUIX</li><li>解決了 Hinet 和 STUIX 互連性問題</li> |
 | [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國VM讓我做相關實驗. |
 
