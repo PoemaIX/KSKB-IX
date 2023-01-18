@@ -8,8 +8,8 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: KSKB
-* PoP 種類: [直營](#TYPE)
-* 物理位置: KSKB 家裡的客廳雲
+* [直營](#TYPE)
+* 物理位置: 台北市大安區，KSKB 家裡的客廳雲
 * SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
 * SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
 
@@ -60,7 +60,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: [@jord903](https://t.me/jord903)
-* PoP 種類: [加盟](#TYPE)
+* [加盟](#TYPE)
 * 物理位置: Jord
 
 #### 接入方式
@@ -82,7 +82,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: KSKB
-* PoP 種類: [贊助](#TYPE)
+* [贊助](#TYPE)
 * 贊助人: 小易
 * 物理位置: 世方電信
 
@@ -97,7 +97,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 #### PoP 屬性
 * 管理人: KSKB
-* PoP 種類: [直營](#TYPE)
+* [直營](#TYPE)
 * 物理位置: 虛擬 PoP，無具體位置
 
 #### 接入方式
