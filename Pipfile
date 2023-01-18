@@ -7,6 +7,7 @@ name = "pypi"
 mkdocs-bootswatch = "*"
 pymdown-extensions = "*"
 mkdocs-material = "*"
+jieba = "*"
 
 [dev-packages]
 

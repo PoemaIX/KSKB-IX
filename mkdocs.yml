@@ -1,7 +1,7 @@
 site_name: Poema IX
 theme:
-  # name: material
-  name: flatly
+  name: material
+  # name: flatly
   custom_dir: static
 extra_css:
   - css/hidefooter.css
@@ -10,7 +10,8 @@ markdown_extensions:
   - pymdownx.extra
 nav:
   - Poema IX: index.md
-  - (EN): Poema-IX-EN.md
+  - PoPs: PoPs.md
+  # - (EN): Poema-IX-EN.md
   - Virtual IXP: Virtual-IXP.md
   - Members: members.md
   - Route Server: RS.md
@@ -18,3 +19,6 @@ nav:
 site_url: https://ix.poema.eu.org/
 repo_url: https://github.com/KSKBpage/KSKB-IX
 edit_uri: blob/main/docs/
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'
