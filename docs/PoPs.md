@@ -2,7 +2,7 @@
 
 Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
 PoP 之間使用 EVPN+VXLAN 互連  
-![Topology](https://i.imgur.com/tUuyMgP.png)
+![Topology](https://i.imgur.com/MtAmPL6.png)
 
 ### KSKB-HOME
 
