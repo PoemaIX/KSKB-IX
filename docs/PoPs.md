@@ -2,7 +2,7 @@
 
 Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
 PoP 之間使用 EVPN+VXLAN 互連  
-![Topology](https://i.imgur.com/Cc33xTj.png)
+![Topology](https://i.imgur.com/tUuyMgP.png)
 
 ### KSKB-HOME
 
@@ -58,7 +58,7 @@ PoP 之間使用 EVPN+VXLAN 互連
     * :10\*\*\* → :22 ，供ssh連線使用
     * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint
 
-### Jord-HOME
+### Jord-Home
 
 #### PoP 屬性
 * 管理人: [@jord903](https://t.me/jord903)
@@ -81,6 +81,30 @@ PoP 之間使用 EVPN+VXLAN 互連
 | Dst IP           | Dst port                | Connection                  | MTU  | Comment         |
 |------------------|-------------------------|-----------------------------|------|-----------------|
 | 0.0.0.0/0        | `any`                   | SeedNet                     | 1500 |                 |
+
+### NCU-Lab
+
+#### PoP 屬性
+* 管理人: whojk
+* PoP 種類: [加盟](#TYPE)
+* 物理位置: 台灣桃園市中壢區，中央大學工程五館
+
+#### 接入方式
+
+1. VM接入
+    * 接入費用: 無須付費，供測試/學術研究
+    * 接入條件: 僅限中央大學在職教職員/在讀學生
+2. 隧道接入
+    1. OpenVPN
+
+#### VM 連線 | VM Connectivity
+**IX VM 的網路連線能力。wifi 或是其他方式接入可以無視本章節**
+
+所有從 IX VM 的**出方向**的連線，遵守以下路由策略
+
+| Dst IP           | Dst port                | Connection                  | MTU  | Comment         |
+|------------------|-------------------------|-----------------------------|------|-----------------|
+| 0.0.0.0/0        | `any`                   | National Central University | 1500 |                 |
 
 ### Yi-VM
 
