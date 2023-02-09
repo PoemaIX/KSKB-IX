@@ -2,14 +2,14 @@
 
 ## AS-SET
 * All members: [AS-KSKB-IX](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX)
-* RS1 connected members: [AS-KSKB-IX-RS1](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS1)
-* RS2 connected members: [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2)
+* RS Regular 1 connected members: [AS-KSKB-IX-RS1](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS1)
+* RS Transitable connected members: [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2)
 
 ## Connection status
 
 For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 
-| ASN | Name | AS-SET | RS1 | RS2 | RS3 | IPT service |
+| ASN | Name | AS-SET | RS R1 | RS T | RS C | IPT service |
 |-----|-----|-----|-----|-----|-----|-----|
 | 138517 | [Poema Network(KSKB-IX)](https://bgp.tools/as/138517) | AS-POEMA | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS138517_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS138517_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS138517_1) | - |  |
 | 142553 | [Air's Project Private Network](https://bgp.tools/as/142553) | AS142553:AS-SHIZUKUGLOBAL-APAC-APS | [18](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS142553_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS142553_1) | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS142553_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142553_1) | - |  |
