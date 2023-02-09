@@ -10,7 +10,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 === "KSKB-HOME"
 
-    PoP 屬性  
+    **PoP 屬性**  
     
     * 管理人: KSKB
     * PoP 種類: [直營](#TYPE)
@@ -18,7 +18,7 @@ PoP 之間使用 EVPN+VXLAN 互連
     * SLA保證低於99% ([我家電腦很不穩](https://www.kskb.eu.org/2022/06/5.html)，可能是記憶體或是主機板有問題，會自己不定時BSoD)  
     * SLA若超過99%，工單反應以後可獲得雙倍 SLA credit 補償，人工幫你關機降低 SLA 。~~保證低於也算是一種保證~~  
     
-    接入方式  
+    **接入方式**  
     
     1. 隧道接入
         * OpenVPN
@@ -67,13 +67,13 @@ PoP 之間使用 EVPN+VXLAN 互連
 
 === "Jord-Home"
 
-    PoP 屬性  
+    **PoP 屬性**  
     
     * 管理人: [@jord903](https://t.me/jord903)
     * PoP 種類: [加盟](#TYPE)
     * 物理位置: 桃園市平鎮區，Jord 家裡的客廳
     
-    接入方式  
+    **接入方式**  
     
     1. 隧道接入
         1. OpenVPN
@@ -132,6 +132,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 === "Zerotier"
 
     **PoP 屬性**  
+    
     * 管理人: KSKB
     * PoP 種類: [直營](#TYPE)
     * 物理位置: 虛擬 PoP，無具體位置
