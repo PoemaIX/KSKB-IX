@@ -8,6 +8,9 @@ extra_css:
 markdown_extensions:
   - pymdownx.tilde
   - pymdownx.extra
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
 nav:
   - Poema IX: index.md
   - PoPs: PoPs.md
