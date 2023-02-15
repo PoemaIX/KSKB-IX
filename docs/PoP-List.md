@@ -1,10 +1,10 @@
-# Poema IX POPs
+# Poema IX POP List
 
 ## 拓樸架構
 
 Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
 PoP 之間使用 EVPN+VXLAN 互連  
-![Topology](https://i.imgur.com/MtAmPL6.png)
+![Topology](https://i.imgur.com/jU7Krcb.png)
 
 ## 節點列表
 
