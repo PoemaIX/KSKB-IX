@@ -13,7 +13,7 @@ markdown_extensions:
       alternate_style: true 
 nav:
   - Poema IX: index.md
-  - PoPs: PoPs.md
+  - PoP List: PoP-List.md
   # - (EN): Poema-IX-EN.md
   - Virtual IXP: Virtual-IXP.md
   - Members: members.md
