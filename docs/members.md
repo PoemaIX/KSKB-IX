@@ -9,57 +9,94 @@
 
 For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 
-| ASN | Name | AS-SET | RS R1 | RS T | RS C | IPT service |
-|-----|-----|-----|-----|-----|-----|-----|
-| 138517 | [Poema Network(KSKB-IX)](https://bgp.tools/as/138517) | AS-POEMA | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS138517_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS138517_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS138517_1) | - |  |
-| 142553 | [Air's Project Private Network](https://bgp.tools/as/142553) | AS142553:AS-SHIZUKUGLOBAL-APAC-APS | [19](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS142553_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS142553_1) | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS142553_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142553_1) | - |  |
-| 207705 | [JK-Network](https://bgp.tools/as/207705) | AS-JKNET | [12](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS207705_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS207705_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS207705_1) | - |  |
-| 51930 | [Haonan Yang](https://bgp.tools/as/51930) | AS-AUGUST | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS51930_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS51930_1) | - |  |
-| 210320 | [ZH Innovation Network](https://bgp.tools/as/210320) | AS-ZH-NET | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS210320_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS210320_1) | - |  |
-| 213262 | [Moe Overflow Electric](https://bgp.tools/as/213262) | AS-CUTE | [5](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS213262_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS213262_1) | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS213262_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS213262_1) | [0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_1) |  |
-| 61302 | [HUIZE-NET](https://bgp.tools/as/61302) | AS-HUIZE | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS61302_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS61302_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS61302_1) | - |  |
-| 141237 | [Moecast Network](https://bgp.tools/as/141237) | AS-MOEC | [0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS141237_1),[1](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.101/AS141237_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS141237_1) | - |  |
-| 139317 | [ZX Network](https://bgp.tools/as/139317) | AS-ZXINC | [84](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS139317_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS139317_1) | [0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS139317_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS139317_1) | [0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_2),[0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_2) |  |
-| 7721 | [Qin Cloud Networks](https://bgp.tools/as/7721) | APNIC::AS-QINCLOUD | [12](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS7721_1),[1](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.101/AS7721_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS7721_1) | - |  |
-| 209306 | [SohaNET](https://bgp.tools/as/209306) | AS209306:AS-SET | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS209306_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS209306_1) | - |  |
-| 140913 | [Hentai Network Lab](https://bgp.tools/as/140913) | AS-KOISHI | [0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS140913_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS140913_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS140913_1) | - |  |
-| 139328 | [Haima Global Network](https://bgp.tools/as/139328) | RIPE::AS-MOEBEE-CN | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS139328_1),[6](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.101/AS139328_1) | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS139328_1),[6](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.102/AS139328_1) | [8](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.103/RS3LL_4),[0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_4) |  |
-| 142551 | [Azurite27 Network](https://bgp.tools/as/142551) |  | [10](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS142551_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS142551_1) | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS142551_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142551_1) | [10](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.103/RS3LL_3),[0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_3) |  |
-| 140731 | [TOHU Public Internet](https://bgp.tools/as/140731) | RIPE::AS-TOHUNET | [192](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS140731_1),[1](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.101/AS140731_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS140731_1) | - |  |
-| 142281 | [Yuuta Network](https://bgp.tools/as/142281) |  | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS142281_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS142281_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142281_1) | - |  |
-| 208223 | [Foxo.tw's ASN](https://bgp.tools/as/208223) | AS208223:AS-ALL | [9](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS208223_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS208223_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS208223_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS208223_1) | - |  |
-| 212483 | [Level 86 Network](https://bgp.tools/as/212483) | RIPE::AS-86 | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS212483_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS212483_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS212483_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS212483_1) | - |  |
-| 210932 | [Chess Network Services](https://bgp.tools/as/210932) | AS-CHESSKUO | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS210932_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS210932_1) | - |  |
-| 134478 | [JSMSR](https://bgp.tools/as/134478) | AS-JSMSR | [24](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS134478_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS134478_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS134478_1) | - |  |
-| 212357 | [Leko Internet Individual](https://bgp.tools/as/212357) | AS-LEKO | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS212357_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS212357_1) | - |  |
-| 17415 | [Ming Yi Tea Farm](https://bgp.tools/as/17415) | AS-Sciuridae | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS17415_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS17415_1) | - |  |
-| 9886 | [MercyCloud Network](https://bgp.tools/as/9886) | AS-MERCYCLOUD | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS9886_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS9886_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS9886_1) | - |  |
-| 140506 | [ZR Global Network](https://bgp.tools/as/140506) |  | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS140506_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS140506_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS140506_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS140506_1) | - |  |
-| 149835 | [HUAJINET Internet](https://bgp.tools/as/149835) | AS149835:AS-ALL | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS149835_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS149835_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS149835_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS149835_1) | - |  |
-| 60326 | [MrSheepNET](https://bgp.tools/as/60326) | AS-MrSheep | [61](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS60326_1),[2](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.101/AS60326_1) | [164911](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS60326_1),[8](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.102/AS60326_1) | [0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_5),[0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3LL_5) | ✔️ |
-| 142055 | [Anillc Network](https://bgp.tools/as/142055) | AS-ANILLC | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS142055_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142055_1) | - |  |
-| 203472 | [Poema Network(EU)](https://bgp.tools/as/203472) | AS-POEMA | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS203472_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS203472_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS203472_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS203472_1) | - |  |
-| 205603 | [Wolf Network Lab](https://bgp.tools/as/205603) | AS-WOLFLAB | [0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS205603_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS205603_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS205603_1) | - |  |
-| 57429 | [Haraguroicha Internet Services](https://bgp.tools/as/57429) | AS-HARAGUROICHA | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS57429_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS57429_1) | - |  |
-| 204508 | [Gatterer Manuel](https://bgp.tools/as/204508) | AS-MLGT | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS204508_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS204508_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS204508_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS204508_1) | - |  |
-| 203314 | [Hats Network](https://bgp.tools/as/203314) | AS-HATSNET | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS203314_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS203314_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS203314_1) | - |  |
-| 212154 | [Saru Network 🤔](https://bgp.tools/as/212154) | AS-SARUNETWORK | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS212154_1),[1](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.101/AS212154_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS212154_1),[1](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.102/AS212154_1) | - |  |
-| 131171 | [Everlife Networks](https://bgp.tools/as/131171) | APNIC::AS-SET-AS131171 | [3](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS131171_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS131171_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS131171_1) | - |  |
-| 202952 | [Bandura Communications](https://bgp.tools/as/202952) | AS-BANDURA-SET | [4](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS202952_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS202952_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS202952_1) | - |  |
-| 57406 | [Zero Distance](https://bgp.tools/as/57406) | AS-ZERODISTANCE | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS57406_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS57406_1) | - |  |
-| 205329 | [Muilties Network](https://bgp.tools/as/205329) | AS-MUILTIES | [7](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS205329_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS205329_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS205329_1) | - |  |
-| 138211 | [MQNET](https://bgp.tools/as/138211) | AS-MoeQing | [9](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS138211_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS138211_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS138211_1) | - |  |
-| 210000 | [DAOport OU](https://bgp.tools/as/210000) | AS-DAOPORT | [-](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS210000_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS210000_1) | - |  |
-| 202939 | [Chimon Network](https://bgp.tools/as/202939) | AS-CHIMON | [3](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS202939_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS202939_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS202939_1) | - |  |
-| 202776 | [Moeclub ltd](https://bgp.tools/as/202776) | AS-MOECLUB | [3](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS202776_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS202776_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS202776_1) | [3](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.103/RS3RE_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.103/RS3RE_1) |  |
-| 207268 | [Strategic Explorations](https://bgp.tools/as/207268) | AS-STREXP | [7](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS207268_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS207268_1) | [7](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS207268_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS207268_1) | - |  |
-| 211390 | [Yuzhen Network](https://bgp.tools/as/211390) | AS-YUZHEN | [2](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS211390_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS211390_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS211390_1) | - |  |
-| 201217 | [RADISHCLOUD TECHNOLOGY](https://bgp.tools/as/201217) | AS-RADISH | [4](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS201217_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS201217_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS201217_1) | - |  |
-| 138435 | [YuetAu Network](https://bgp.tools/as/138435) | AS-YUETAU | [3](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS138435_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS138435_1) | [3](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS138435_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS138435_1) | - |  |
-| 142427 | [Meson Global Network](https://bgp.tools/as/142427) | AS-MESON-SELF | [0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS142427_1),[1](https://ixlg.kskb.eu.org/route_filtered_from_protocol_all/192.168.16.101/AS142427_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142427_1) | - |  |
-| 142164 | [GoldDoge Networks](https://bgp.tools/as/142164) | AS-142164 | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS142164_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS142164_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS142164_1) | - |  |
-| 203236 | [Lily Network](https://bgp.tools/as/203236) | AS-LILY | [6](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS203236_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS203236_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS203236_1) | - |  |
-| 200536 | [186526 Network](https://bgp.tools/as/200536) | AS-NET186 | [44](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS200536_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS200536_1) | [31](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS200536_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS200536_1) | - |  |
-| 210445 | [CRE Network](https://bgp.tools/as/210445) | AS-CRENET | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS210445_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS210445_1) | [-](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS210445_1) | - |  |
-| 200895 | [Gua-Network](https://bgp.tools/as/200895) |  | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS200895_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS200895_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS200895_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS200895_1) | - |  |
-| 203899 | [WJY Network](https://bgp.tools/as/203899) | AS-WJY | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.101/AS203899_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.101/AS203899_1) | [1](https://ixlg.kskb.eu.org/route_from_protocol_all/192.168.16.102/AS203899_1),[0](https://ixlg.kskb.eu.org/detail/192.168.16.102/AS203899_1) | - |  |
+| ASN | Name | AS-SET | RS R1 | RS T |
+|-----|-----|-----|-----|-----|
+| 138517 | [Poema Network(KSKB-IX)](https://bgp.tools/as/138517) | AS-POEMA | - {: neigh_ip='fe80::1000:138:517' RS='RSR1' } | - {: neigh_ip='fe80::1000:138:517' RS='RST' } |
+| 142553 | [Air's Project Private Network](https://bgp.tools/as/142553) | AS142553:AS-SHIZUKUGLOBAL-APAC-APS | - {: neigh_ip='fe80::142:553' RS='RSR1' } | - {: neigh_ip='fe80::142:553' RS='RST' } |
+| 207705 | [JK-Network](https://bgp.tools/as/207705) | AS-JKNET | - {: neigh_ip='fe80::207:705' RS='RSR1' } | - {: neigh_ip='fe80::207:705' RS='RST' } |
+| 51930 | [Haonan Yang](https://bgp.tools/as/51930) | AS-AUGUST | - {: neigh_ip='fe80::51:930' RS='RSR1' } | - {: neigh_ip='fe80::51:930' RS='RST' } |
+| 210320 | [ZH Innovation Network](https://bgp.tools/as/210320) | AS-ZH-NET | - {: neigh_ip='fe80::210:320' RS='RSR1' } | - {: neigh_ip='fe80::210:320' RS='RST' } |
+| 213262 | [Moe Overflow Electric](https://bgp.tools/as/213262) | AS-CUTE | - {: neigh_ip='fe80::213:262' RS='RSR1' } | - {: neigh_ip='fe80::213:262' RS='RST' } |
+| 61302 | [HUIZE-NET](https://bgp.tools/as/61302) | AS-HUIZE | - {: neigh_ip='fe80::61:302' RS='RSR1' } | - {: neigh_ip='fe80::61:302' RS='RST' } |
+| 141237 | [Moecast Network](https://bgp.tools/as/141237) | AS-MOEC | - {: neigh_ip='2404:f4c0:f70e:1980::141:237' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::141:237' RS='RST' } |
+| 139317 | [ZX Network](https://bgp.tools/as/139317) | AS-ZXINC | - {: neigh_ip='fe80::139:317' RS='RSR1' } | - {: neigh_ip='fe80::139:317' RS='RST' } |
+| 7721 | [Qin Cloud Networks](https://bgp.tools/as/7721) | APNIC::AS-QINCLOUD | - {: neigh_ip='fe80::7721' RS='RSR1' } | - {: neigh_ip='fe80::7721' RS='RST' } |
+| 209306 | [SohaNET](https://bgp.tools/as/209306) | AS209306:AS-SET | - {: neigh_ip='2404:f4c0:f70e:1980::209:306' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::209:306' RS='RST' } |
+| 140913 | [Hentai Network Lab](https://bgp.tools/as/140913) | AS-KOISHI | - {: neigh_ip='fe80::140:913' RS='RSR1' } | - {: neigh_ip='fe80::140:913' RS='RST' } |
+| 139328 | [Haima Global Network](https://bgp.tools/as/139328) | RIPE::AS-MOEBEE-CN | - {: neigh_ip='fe80::139:328' RS='RSR1' } | - {: neigh_ip='fe80::139:328' RS='RST' } |
+| 142551 | [Azurite27 Network](https://bgp.tools/as/142551) |  | - {: neigh_ip='fe80::142:551' RS='RSR1' } | - {: neigh_ip='fe80::142:551' RS='RST' } |
+| 140731 | [TOHU Public Internet](https://bgp.tools/as/140731) | RIPE::AS-TOHUNET | - {: neigh_ip='fe80::140:731' RS='RSR1' } | - {: neigh_ip='fe80::140:731' RS='RST' } |
+| 142281 | [Yuuta Network](https://bgp.tools/as/142281) |  | - {: neigh_ip='fe80::142:281' RS='RSR1' } | - {: neigh_ip='fe80::142:281' RS='RST' } |
+| 208223 | [Foxo.tw's ASN](https://bgp.tools/as/208223) | AS208223:AS-ALL | - {: neigh_ip='fe80::208:223' RS='RSR1' } | - {: neigh_ip='fe80::208:223' RS='RST' } |
+| 212483 | [Level 86 Network](https://bgp.tools/as/212483) | RIPE::AS-86 | - {: neigh_ip='fe80::212:483' RS='RSR1' } | - {: neigh_ip='fe80::212:483' RS='RST' } |
+| 210932 | [Chess Network Services](https://bgp.tools/as/210932) | AS-CHESSKUO | - {: neigh_ip='fe80::210:932' RS='RSR1' } | - {: neigh_ip='fe80::210:932' RS='RST' } |
+| 134478 | [JSMSR](https://bgp.tools/as/134478) | AS-JSMSR | - {: neigh_ip='fe80::134:478' RS='RSR1' } | - {: neigh_ip='fe80::134:478' RS='RST' } |
+| 212357 | [Leko Internet Individual](https://bgp.tools/as/212357) | AS-LEKO | - {: neigh_ip='2404:f4c0:f70e:1980::212:357' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::212:357' RS='RST' } |
+| 17415 | [Ming Yi Tea Farm](https://bgp.tools/as/17415) | AS-Sciuridae | - {: neigh_ip='2404:f4c0:f70e:1980::17:415' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::17:415' RS='RST' } |
+| 9886 | [MercyCloud Network](https://bgp.tools/as/9886) | AS-MERCYCLOUD | - {: neigh_ip='2404:f4c0:f70e:1980::9886' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::9886' RS='RST' } |
+| 140506 | [ZR Global Network](https://bgp.tools/as/140506) |  | - {: neigh_ip='fe80::140:506' RS='RSR1' } | - {: neigh_ip='fe80::140:506' RS='RST' } |
+| 149835 | [HUAJINET Internet](https://bgp.tools/as/149835) | AS149835:AS-ALL | - {: neigh_ip='fe80::149:835' RS='RSR1' } | - {: neigh_ip='fe80::149:835' RS='RST' } |
+| 60326 | [MrSheepNET](https://bgp.tools/as/60326) | AS-MrSheep | - {: neigh_ip='fe80::60:326' RS='RSR1' } | - {: neigh_ip='fe80::60:326' RS='RST' } |
+| 142055 | [Anillc Network](https://bgp.tools/as/142055) | AS-ANILLC | - {: neigh_ip='fe80::142:55' RS='RSR1' } | - {: neigh_ip='fe80::142:55' RS='RST' } |
+| 203472 | [Poema Network(EU)](https://bgp.tools/as/203472) | AS-POEMA | - {: neigh_ip='fe80::203:472' RS='RSR1' } | - {: neigh_ip='fe80::203:472' RS='RST' } |
+| 205603 | [Wolf Network Lab](https://bgp.tools/as/205603) | AS-WOLFLAB | - {: neigh_ip='2404:f4c0:f70e:1980::205:603' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::205:603' RS='RST' } |
+| 57429 | [Haraguroicha Internet Services](https://bgp.tools/as/57429) | AS-HARAGUROICHA | - {: neigh_ip='2404:f4c0:f70e:1980::57:429' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::57:429' RS='RST' } |
+| 204508 | [Gatterer Manuel](https://bgp.tools/as/204508) | AS-MLGT | - {: neigh_ip='fe80::204:508' RS='RSR1' } | - {: neigh_ip='fe80::204:508' RS='RST' } |
+| 203314 | [Hats Network](https://bgp.tools/as/203314) | AS-HATSNET | - {: neigh_ip='fe80::203:314' RS='RSR1' } | - {: neigh_ip='fe80::203:314' RS='RST' } |
+| 212154 | [Saru Network 🤔](https://bgp.tools/as/212154) | AS-SARUNETWORK | - {: neigh_ip='fe80::212:154' RS='RSR1' } | - {: neigh_ip='fe80::212:154' RS='RST' } |
+| 131171 | [Everlife Networks](https://bgp.tools/as/131171) | APNIC::AS-SET-AS131171 | - {: neigh_ip='fe80::131:171' RS='RSR1' } | - {: neigh_ip='fe80::131:171' RS='RST' } |
+| 202952 | [Bandura Communications](https://bgp.tools/as/202952) | AS-BANDURA-SET | - {: neigh_ip='fe80::202:952' RS='RSR1' } | - {: neigh_ip='fe80::202:952' RS='RST' } |
+| 57406 | [Zero Distance](https://bgp.tools/as/57406) | AS-ZERODISTANCE | - {: neigh_ip='fe80::57:406' RS='RSR1' } | - {: neigh_ip='fe80::57:406' RS='RST' } |
+| 205329 | [Muilties Network](https://bgp.tools/as/205329) | AS-MUILTIES | - {: neigh_ip='2404:f4c0:f70e:1980::205:329' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::205:329' RS='RST' } |
+| 138211 | [MQNET](https://bgp.tools/as/138211) | AS-MoeQing | - {: neigh_ip='fe80::138:211' RS='RSR1' } | - {: neigh_ip='fe80::138:211' RS='RST' } |
+| 210000 | [DAOport OU](https://bgp.tools/as/210000) | AS-DAOPORT | - {: neigh_ip='2404:f4c0:f70e:1980::210:0' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::210:0' RS='RST' } |
+| 202939 | [Chimon Network](https://bgp.tools/as/202939) | AS-CHIMON | - {: neigh_ip='fe80::202:939' RS='RSR1' } | - {: neigh_ip='fe80::202:939' RS='RST' } |
+| 202776 | [Moeclub ltd](https://bgp.tools/as/202776) | AS-MOECLUB | - {: neigh_ip='2404:f4c0:f70e:1980::202:776' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::202:776' RS='RST' } |
+| 207268 | [Strategic Explorations](https://bgp.tools/as/207268) | AS-STREXP | - {: neigh_ip='fe80::207:268' RS='RSR1' } | - {: neigh_ip='fe80::207:268' RS='RST' } |
+| 211390 | [Yuzhen Network](https://bgp.tools/as/211390) | AS-YUZHEN | - {: neigh_ip='fe80::211:390' RS='RSR1' } | - {: neigh_ip='fe80::211:390' RS='RST' } |
+| 201217 | [RADISHCLOUD TECHNOLOGY](https://bgp.tools/as/201217) | AS-RADISH | - {: neigh_ip='fe80::201:217' RS='RSR1' } | - {: neigh_ip='fe80::201:217' RS='RST' } |
+| 138435 | [YuetAu Network](https://bgp.tools/as/138435) | AS-YUETAU | - {: neigh_ip='fe80::138:435' RS='RSR1' } | - {: neigh_ip='fe80::138:435' RS='RST' } |
+| 142427 | [Meson Global Network](https://bgp.tools/as/142427) | AS-MESON-SELF | - {: neigh_ip='fe80::142:427' RS='RSR1' } | - {: neigh_ip='fe80::142:427' RS='RST' } |
+| 142164 | [GoldDoge Networks](https://bgp.tools/as/142164) | AS-142164 | - {: neigh_ip='2404:f4c0:f70e:1980::142:164' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::142:164' RS='RST' } |
+| 203236 | [Lily Network](https://bgp.tools/as/203236) | AS-LILY | - {: neigh_ip='fe80::203:236' RS='RSR1' } | - {: neigh_ip='fe80::203:236' RS='RST' } |
+| 200536 | [186526 Network](https://bgp.tools/as/200536) | AS-NET186 | - {: neigh_ip='fe80::200:536' RS='RSR1' } | - {: neigh_ip='fe80::200:536' RS='RST' } |
+| 210445 | [CRE Network](https://bgp.tools/as/210445) | AS-CRENET | - {: neigh_ip='fe80::210:445' RS='RSR1' } | - {: neigh_ip='fe80::210:445' RS='RST' } |
+| 200895 | [Gua-Network](https://bgp.tools/as/200895) |  | - {: neigh_ip='fe80::200:895' RS='RSR1' } | - {: neigh_ip='fe80::200:895' RS='RST' } |
+| 203899 | [WJY Network](https://bgp.tools/as/203899) | AS-WJY | - {: neigh_ip='fe80::203:899' RS='RSR1' } | - {: neigh_ip='fe80::203:899' RS='RST' } |
+
+<script>
+let rs_list = ["RSR1:192.168.16.101","RST:192.168.16.102"];
+let lg_baseurl = "https://ixlg.kskb.eu.org/";
+let lg_json_api = "https://ixlgjson.poema.net.eu.org/bird?RS=";
+
+function get_state_url(num,name,type,proxy_url,baseurl){
+    if (num === 0){
+        type = "detail";
+    }
+    return `${baseurl}/${type}/${proxy_url}/${name}`;
+}
+async function render_mamber_list(){
+    for( rs_info of rs_list){
+        let rs_parts = rs_info.split(':');
+        let [rs_name, proxy_url] = [rs_parts[0], rs_parts.slice(1).join(',')];
+        let ixlg_api_resilt = await fetch(lg_json_api + rs_name);
+        let clients = await ixlg_api_resilt.json();
+        for (client of clients){
+            let table_block = document.querySelectorAll(`[rs="${rs_name}"][neigh_ip="${client.addr.remote}"]` )[0]
+            if ( table_block === undefined){ 
+                console.log(`[rs="${rs_name}"][neigh_ip="${client.addr.remote}"]`);
+                continue;
+            };
+            if ( client.state !== "Established" ){
+                table_block.innerHTML = "-".link(get_state_url(0,client.name,"detail",proxy_url,lg_baseurl))
+                continue;
+            };
+            let num_i = client.route.ipv6.imported;
+            let num_f = client.route.ipv6.filtered;
+            table_block.innerHTML = num_i.toString().link(get_state_url(num_i,client.name,"route_from_protocol_all",proxy_url,lg_baseurl)) + "," + 
+            num_f.toString().link(get_state_url(num_f,client.name,"route_filtered_from_protocol_all",proxy_url,lg_baseurl));
+        };
+    };
+};
+render_mamber_list();
+</script>
