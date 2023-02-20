@@ -75,28 +75,28 @@ function get_state_url(num,name,type,proxy_url,baseurl){
     }
     return `${baseurl}/${type}/${proxy_url}/${name}`;
 }
-async function render_mamber_list(){
-    for( rs_info of rs_list){
-        let rs_parts = rs_info.split(':');
-        let [rs_name, proxy_url] = [rs_parts[0], rs_parts.slice(1).join(',')];
-        let ixlg_api_resilt = await fetch(lg_json_api + rs_name);
-        let clients = await ixlg_api_resilt.json();
-        for (client of clients){
-            let table_block = document.querySelectorAll(`[rs="${rs_name}"][neigh_ip="${client.addr.remote}"]` )[0]
-            if ( table_block === undefined){ 
-                console.log(`[rs="${rs_name}"][neigh_ip="${client.addr.remote}"]`);
-                continue;
-            };
-            if ( client.state !== "Established" ){
-                table_block.innerHTML = "-".link(get_state_url(0,client.name,"detail",proxy_url,lg_baseurl))
-                continue;
-            };
-            let num_i = client.route.ipv6.imported;
-            let num_f = client.route.ipv6.filtered;
-            table_block.innerHTML = num_i.toString().link(get_state_url(num_i,client.name,"route_from_protocol_all",proxy_url,lg_baseurl)) + "," + 
-            num_f.toString().link(get_state_url(num_f,client.name,"route_filtered_from_protocol_all",proxy_url,lg_baseurl));
+async function render_mamber_list(rs_info){
+    let rs_parts = rs_info.split(':');
+    let [rs_name, proxy_url] = [rs_parts[0], rs_parts.slice(1).join(',')];
+    let ixlg_api_resilt = await fetch(lg_json_api + rs_name);
+    let clients = await ixlg_api_resilt.json();
+    for (client of clients){
+        let table_block = document.querySelectorAll(`[rs="${rs_name}"][neigh_ip="${client.addr.remote}"]` )[0]
+        if ( table_block === undefined){ 
+            console.log(`[rs="${rs_name}"][neigh_ip="${client.addr.remote}"]`);
+            continue;
         };
+        if ( client.state !== "Established" ){
+            table_block.innerHTML = "-".link(get_state_url(0,client.name,"detail",proxy_url,lg_baseurl))
+            continue;
+        };
+        let num_i = client.route.ipv6.imported;
+        let num_f = client.route.ipv6.filtered;
+        table_block.innerHTML = num_i.toString().link(get_state_url(num_i,client.name,"route_from_protocol_all",proxy_url,lg_baseurl)) + "," + 
+        num_f.toString().link(get_state_url(num_f,client.name,"route_filtered_from_protocol_all",proxy_url,lg_baseurl));
     };
 };
-render_mamber_list();
+for( rs_info of rs_list){
+    render_mamber_list(rs_info);
+}
 </script>

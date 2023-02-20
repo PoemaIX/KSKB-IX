@@ -3,6 +3,8 @@ theme:
   name: material
   # name: flatly
   custom_dir: static
+  features:
+    - content.tabs.link
 extra_css:
   - css/hidefooter.css
 markdown_extensions:
@@ -10,14 +12,16 @@ markdown_extensions:
   - pymdownx.extra
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 nav:
   - Poema IX: index.md
   - PoP List: PoP-List.md
   # - (EN): Poema-IX-EN.md
-  - Virtual IXP: Virtual-IXP.md
-  - Members: members.md
+  - Member List: members.md
   - Route Server: RS.md
+  - Virtual IXP: Virtual-IXP.md
   - Poema Network: "https://net.kskb.eu.org"
 site_url: https://ix.poema.eu.org/
 repo_url: https://github.com/KSKBpage/KSKB-IX

@@ -66,8 +66,8 @@ Please first make the special settings according to the policy of RS before you 
 * RS1
     * AS114514
     * A regular route server
-    * [Filtering Policy](..\RS#default-filtering-policy)
-    * [Communities](..\RS#announcement-control-via-bgp-communities)
+    * [Filtering Policy](\RS#default-filtering-policy)
+    * [Communities](\RS#announcement-control-via-bgp-communities)
     * Nutshell: **Config the RS session as peering session**
     * You can connect to this RS without any concern, We do IRR and RPKI validation for you.
     * A BGP connection with RS1 is mandatory and you must **announce at least one IPv6 route from your internal network**.
@@ -93,7 +93,7 @@ Please first make the special settings according to the policy of RS before you 
         * Add [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) to your AS-SET. It contains RS2 connected members who has <=100 routes in his AS-SET.
         * You have to transit routes symmetrically.
             * You have to transit our route out if you want to transit external route in.
-            * If you want to exclude transit out for someone, you have to use [community](..\RS#announcement-control-via-bgp-communities) `Do not announce to peer` to avoid transit in to that person.
+            * If you want to exclude transit out for someone, you have to use [community](\RS#announcement-control-via-bgp-communities) `Do not announce to peer` to avoid transit in to that person.
             * External route <--> you <--> RS2 route, routes must be transit symmetrically.
         * RS2 can helps you add `(114514:65530:7)` for your transit routes if you register your upstream ASN routes at my side.
         * You have to be registered as a transit provider to update the filter of RS2 to allow transit routes.
@@ -109,7 +109,7 @@ Please first make the special settings according to the policy of RS before you 
 
 ## Members
 
-See member list: [Members](..\members)
+See member list: [Members](\members)
 
 ## LXC/VM Connectivity
 **IX VM Connectivity. Ignore this chapter if you are not joining via VM**

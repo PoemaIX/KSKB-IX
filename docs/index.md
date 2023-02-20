@@ -1,11 +1,12 @@
 # Poema IX
 
 ## 介紹 | Introduction
-一個搭在我家客廳雲，非營利玩具類型的[虛擬 IX](Virtual-IXP) ，作為一個BGP實驗交流和學習的平台  
-提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching。針對Switching內網，以下稱呼為 **IX LAN**
+一個非營利的分部式[虛擬 IX](Virtual-IXP) ，作為一個BGP實驗交流和學習的平台  
 
-主要是給BGP配網的`業餘/有興趣/新手`玩家一個練習的地方，可以放心炸網  
-還有提供一個平台，給大家熟悉IX環境。畢竟DN42和公網環境差距不只是一點點  
+主要是給BGP配網的`業餘/有興趣/新手`一個練習的地方，可以放心實驗  
+同時提供一個平台，給大家熟悉IX環境。畢竟DN42和公網環境差距不只是一點點  
+
+提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching。針對Switching內網，以下稱呼為 **IX LAN**
 
 本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
 PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
@@ -21,7 +22,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 ## 接入 | Join
 
-接入方式:
+主要有以下接入方式:
 
 1. VM接入
 2. 隧道接入
@@ -36,7 +37,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
         2. 我提供頂樓，指向式wifi建設成本由妳提供
 4. AX.25 無線電接入(正在想要不要搞)
 
-只是個玩具IX啦，不要拿營業用ASN來加喔
+只是實驗性IX啦，不要拿營業用ASN來加喔
 
 * 非商業性質。禁止商業使用，例如使用 Poema IX 交換商業流量。請聯系我們以獲取更多信息  
 * IX本身不存在IP Transit，但是現在有[志願者](#RS2)於 `RS Transitable` 提供 IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
@@ -44,6 +45,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 * 若沒有和`RS Regular 1`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
 
 ## 要求 | Requirement
+
 參與者要有一個公網ASN，以及至少一段 /48 的ipv6
 
 參與者要有一點網路相關知識和經驗，比如
@@ -152,23 +154,19 @@ See member list: [Members](members)
         * 發送造假的 AS path
 
 ### IX VM
-對於KSKB提供的IX VM，以及IX LAN，僅供IX成員作為**網路流量交換(內網流量交換/peering)**使用。禁止其他類型使用  
+對於接入了 Poema IX 的 IX VM，以及IX LAN ，有以下安全規定
 
-包括但不限於以下限制
-
-* 遵守中華民國（台灣）法律，禁止做出任何可能會讓我家電腦被扣押的舉動
+* 遵守中華民國（台灣）法律，禁止做出任何可能會讓電腦被扣押的舉動
 * 尤其是任何涉及「錢」的操作，更是**嚴禁**[^1]。比如遊戲點卡儲值，註冊相關帳號。或是金融相關網頁/程式的帳戶開設/操作
 * 僅供個人使用，禁止轉讓/租借/商業使用
 * 禁止主機對外、對內發包（無論是否為主動行為）, ARP 攻擊, ARP 劫持, 掃描弱密碼, 惡意窮舉，DDoS，木馬和干擾其它伺服器運行
 * 禁止發送垃圾郵件、垃圾訊息, 散播木馬、病毒(包括引用其它伺服器的惡意文件)
 * 禁止使用 Torrents、BT，等下載或傳播版權內容
-* 禁止使用 net_speeder/finalspeed/kcptun 等干擾我家網路運作的，任何形式的多倍發包工具
+* 禁止使用 net_speeder/finalspeed/kcptun 等干擾網路運作的，任何形式的多倍發包工具
 * 資源合理使用。禁止長時間消耗/佔滿CPU/網路頻寬等資源，例如rclone轉存/挖礦，**或是讓我感覺家裡網路很卡**(這是最主要的判斷方式)
 * 禁止用於爬蟲/帳號註冊等，可能會使IP被標記為bot(俗稱IP被汙染)之行為
 * 禁止架設耗資源的程式，如線上遊戲
-* 禁止提供公開服務，提供公開連接，或將主機當作檔案主機使用，例如圖床/檔案伺服器
-* 禁止用於流量落地/VPN出口。通訊對象必須是[自己其他的內網節點](Virtual-IXP/#IX-VM-ETH0)、其他 peering 對象，或是apt update/git clone之類保持節點運作必須的流量<a name="IX-VM-LIMIT"></a>
-
+* Poema IX 由多人運營，請遵守 [PoP 各自的規範](/PoP-List/)
 
 ## 聯絡方式 | Contact
 * mailto: ix@kskb.eu.org

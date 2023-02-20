@@ -1,4 +1,4 @@
-Configuration of route server at KSKB-IX
+Configuration of route server at Poema-IX
 
 BGP sessions default configuration
 ----------------------------------
