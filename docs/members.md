@@ -99,4 +99,10 @@ async function render_mamber_list(rs_info){
 for( rs_info of rs_list){
     render_mamber_list(rs_info);
 }
+window.setInterval(function(){
+    for( rs_info of rs_list){
+        render_mamber_list(rs_info);
+    }
+}, 5000);
+
 </script>
