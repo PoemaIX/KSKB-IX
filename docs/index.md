@@ -14,11 +14,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 一般IX都不用 `link local`/`mpbgp`/`extended next hop`  
 這些技術明明存在，為什麼不用呢?我很好奇!  
-所以我就想來用看看了  
-
-普通的IX也不能炸全表  
-同時我也想順便開一個可以炸全表的IX  
-用比較科學的方式啦  
+所以我就想自己成立一個 IX ，把這些都使用上    
 
 ## 接入 | Join
 
@@ -26,21 +22,11 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 1. VM接入
 2. 隧道接入
-    1. zerotier
-    2. openvpn
-3. Wifi接入 - Taipei
-    1. 短距離接入，僅限鄰居
-        1. 2.4GHz 802.11n
-        2. 5GHz 802.11ac
-    2. 長距離接入
-        1. 接入點必須位於六張犁捷運站 3km 內，並且可直接目視，無建物遮擋
-        2. 我提供頂樓，指向式wifi建設成本由妳提供
-4. AX.25 無線電接入(正在想要不要搞)
 
-只是實驗性IX啦，不要拿營業用ASN來加喔
+每個 PoP 有不同的接入方式，請參考 [PoP List](/PoP-List/)
 
 * 非商業性質。禁止商業使用，例如使用 Poema IX 交換商業流量。請聯系我們以獲取更多信息  
-* IX本身不存在IP Transit，但是現在有[志願者](#RS2)於 `RS Transitable` 提供 IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
+* IX本身不存在IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
 * 我們強制要求與`RS Regular 1`進行BGP連接  
 * 若沒有和`RS Regular 1`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
 
