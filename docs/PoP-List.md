@@ -5,7 +5,7 @@
 Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
 PoP 之間使用 EVPN+VXLAN 互連  
 <div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-20T04:18:40.375Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\&quot; etag=\&quot;Ye1g3tMMVMCHw4sacS0D\&quot; version=\&quot;20.8.20\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;c37626ed-c26b-45fb-9056-f9ebc6bb27b6\&quot;&gt;7VrbcqM4EP0aPzoFiJsfg+NMduJkvOudXOYlhY0M2gDygHzL168EwlxEsMexY6fKlVSBjkQjuk833W1aoBssv0X21LvDDvRbiuQsW+CqpSiyKpn0wJBVihiylgJuhJwUknJgiN4gvzJDZ8iBMcdSiGDsEzQtg2MchnBMSpgdRXhRXjbBvlMCprYLBWA4tn0RfUQO8TgqS1I+cQOR6/FbmxqfGNnjVzfCs5DfL8QhTGcCOxPDl8ae7eBFAQK9FuhGGJP0LFh2oc/UWtbY9Tuz6y1HMCTbXPBTd37dwVfPavef5Pvvj8PH30bbSKXMbX/GVYHn05BvmKwy/SRPCJkgqQUsHBEPuzi0/T7GUwrKFPwPErLilrVnBFPII4HPZ2HoXDI70WGiogS5Rr7PRcIlIk/s/ELjo+fsSnp+tSwsu1rxgagArpMYz6IxbHhqmT82sSMXkqaFnNfQKfGHK/gbxAEk0YouiKBvEzQv08nmrHTX69aXDjCim1Yk7kGqrl7ImmF2VAPoppoJ4N4EgFQWmD4gl1E0eVWsKpUEqXpFUKoAQRA9KTxdDiWM+gN2yfKp0CukD/JUHDznZGPDnGHJaFWhpVwgZU7R49Gy8zm01PUyfzR1O/4IgjRJKTNaNbdi9L6IaH4WD3fgy87c3MD5D/DQPDEealIljnV2DIj6JkEbCZ0txJNJDA/C1Y7A1VEkMJVpfMiHOU97OWodh8t0MIARojqA0cnyWz2xtz/Q9Z1YuS/GqQLjfsEIEwRF3sWvkIw9boEp21CyRc2i/9KFxNL+7vrY0ugl3WSmY26a4cfCTCZNnFFSoAzWYYYIyolMRasB6zCjeu8EkGvuXcWUGrBWZM29pcom6T+w5jAiiNYsfXsE/QGOEUE4pNofYUJwUHbebO2lj1y2hjCnt+x4mlZPE7RkocGy+fSY+hBz2NSkMOrNYWpZJosWLlNm/mDpsurvYoziMZY7F1Eiy5pGf42TffjKS7xACT2sCfXTLvZxlNAGXF+yPyaLRPgVFmYkSZMMwK7AIeGxiPpdg3uzR4PLRn/ks4r+Tvq7yGu8DPIK1V01Sy56cMn3Ghztx+jx5eYFPCu93v1AmU2M+MZtK+eMY/vMFxneBN3OHn73guDO+XsGyM20Le87Im9rT/gvuB64PybkDcD+P/1gEaC7zJ6b0kq228Rpy6YTnK/qtAFynPRdDmP0Zo8SeWLgvapVfRMBBRdad1b4TVrFFkWda7WlC1k2jJJ7tUE6/ODb0KwVevi8SxZ7IbfDW6v9jB7uGvyWWXLhIQKHUzvh+IIGybKhfWZ7a90pyqKfAyf2zCeHiX2gU459SkcTYp+sHCj41bouOFzwK3eNpC2DXx7v1r2mkym3Tiv4NW676i83VP7X95e6XOFg/tJYXBf0+x1HzhfVr66dmn7X/llfVXMnP06Maiyj/yxuVW15uDiWWe8IdfXHiCAJjiYwo7nufa/KrNaO71WE1XWymla+/FiYMTWtYSqZyZbUyDO1r1VRzgM7TH6526GePEaQUxWtFOQ0ICZdWk2M0w4W48Sk6xzjPhTjlG1j3N5b4x8jgliqnmPcOcbtksiZpxbjxPZ1S9HXj5/0NjLV6b9n7HMLqgcwmUgS+zUoh3SXHXsPg/uWYj0s+5f3mRy6r1RUukTwHKo6crjeDou3MTdijU3Lqf9GSpTZVKBKgX056tixt5bt+nYc822uv2ZpjKfb00qTQYlWoAPE+gCoIq8ybO/9ii2bewd6eTZ/+vLeizJ/NR6widHUmzjh92Ltts1PzY8+p0lPR9XEisUM0bk/lQ2164yTIoP4tdJ992ebJg4NTv9F2i3Hb/+K3fVzAnpOQHegttFRypmCJHYS95SA0mH+fW76O1P+/TPo/Q8=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
-<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js" defer></script>
 
 ## 節點列表
 
@@ -29,23 +29,24 @@ PoP 之間使用 EVPN+VXLAN 互連
         |----|----|----|-----|--------|
         | LXC| 1C |0.5G|8G   | 0元   |
 
-        KSKB 無償提供VM資源，提供大家一個練習的地方，目的是結交網路技術愛好者  
-        大家一同討論實驗不同的網路的架構，一起精進自己的技術  
-        但是電費(≈NT200/月)，網路費(NT1099/月)，硬體(≈NT25000)都要花錢  
-        KSKB 不希望自己花的錢，被挪作他用，因此 VM 的使用，有以下規範  
+        KSKB 無償提供資源，是想要給對網路運作有興趣的人，一個練習配網的地方  
+        同時結交網路技術愛好者。大家一同討論/實驗不同的網路的架構，一起精進自己的技術  
+        但是對 KSKB 來說，電費(≈NT200/月)，網路費(NT1099/月)，硬體(≈NT25000)都要花錢的  
+        KSKB 不想要自己花的錢，被挪作他用，因此 VM 的使用，有以下規範  
         
         <h4>使用規範</h4>
         
-        * VM 僅限用於內網架設和網路設定相關(如 OSPF/eBGP/iBGP/Route Reflector)的練習
-        * 禁止用於其他用途比如代理，架站等等，包括但不限於
-            * 禁止提供公開服務，公開連接。
-            * 禁止作檔案主機使用，例如圖床/檔案/網站伺服器
-            * 禁止用於流量落地/VPN出口
+        * VM 僅限用於內網架設和網路設定相關(如 OSPF/eBGP/iBGP/Route Reflector)的用途
         * IX VM 的網路，僅供IX成員作為**網路流量交換(內網流量交換/peering)**使用
             * 禁止其他類型使用。網路活動的連線對象必須符合以下資格
                 1. [自己其他的內網節點](/Virtual-IXP/#IX-VM-ETH0)
                 2. 其他 peering 對象
                 3. apt update/git clone 保持節點運作必須的流量
+        * 禁止用於其他用途比如代理，架站等等，包括但不限於
+            * 禁止提供公開服務，公開連接
+                * 如果是 Looning glass 或是和網路設定本身相關則允許
+            * 禁止作檔案主機使用，例如圖床/檔案/網站伺服器
+            * 禁止用於流量落地/VPN出口
         * 如果是 KSKB 朋友，徵詢 KSKB 同意以後可以略過以上限制
         * [Poema IX 全域性規定](/#ix-vm)
 
