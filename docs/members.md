@@ -48,7 +48,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 202952 | [Bandura Communications](https://bgp.tools/as/202952) | AS-BANDURA-SET | - {: neigh_ip='fe80::202:952' RS='RSR1' } | - {: neigh_ip='fe80::202:952' RS='RST' } |
 | 57406 | [Zero Distance](https://bgp.tools/as/57406) | AS-ZERODISTANCE | - {: neigh_ip='fe80::57:406' RS='RSR1' } | - {: neigh_ip='fe80::57:406' RS='RST' } |
 | 205329 | [Muilties Network](https://bgp.tools/as/205329) | AS-MUILTIES | - {: neigh_ip='2404:f4c0:f70e:1980::205:329' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::205:329' RS='RST' } |
-| 138211 | [MQNET](https://bgp.tools/as/138211) | AS-MoeQing | - {: neigh_ip='fe80::138:211' RS='RSR1' } | - {: neigh_ip='fe80::138:211' RS='RST' } |
+| 200105 | [MQNET](https://bgp.tools/as/200105) | AS-MoeQing | - {: neigh_ip='fe80::200:105' RS='RSR1' } | - {: neigh_ip='fe80::200:105' RS='RST' } |
 | 210000 | [DAOport OU](https://bgp.tools/as/210000) | AS-DAOPORT | - {: neigh_ip='2404:f4c0:f70e:1980::210:0' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::210:0' RS='RST' } |
 | 202939 | [Chimon Network](https://bgp.tools/as/202939) | AS-CHIMON | - {: neigh_ip='fe80::202:939' RS='RSR1' } | - {: neigh_ip='fe80::202:939' RS='RST' } |
 | 202776 | [Moeclub ltd](https://bgp.tools/as/202776) | AS-MOECLUB | - {: neigh_ip='2404:f4c0:f70e:1980::202:776' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::202:776' RS='RST' } |
@@ -104,5 +104,4 @@ window.setInterval(function(){
         render_mamber_list(rs_info);
     }
 }, 5000);
-
 </script>
