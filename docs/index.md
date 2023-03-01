@@ -28,7 +28,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 * 非商業性質。禁止商業使用，例如使用 Poema IX 交換商業流量。請聯系我們以獲取更多信息  
 * IX本身不存在IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
 * 我們強制要求與`RS Regular 1`進行BGP連接  
-* 若沒有和`RS Regular 1`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
+* 若沒有和`RS Regular 1`進行BGP連接並**發送至少一條IPv6路由**，長期不連接可能會被視為不活躍成員被清理  
 
 ## 要求 | Requirement
 
