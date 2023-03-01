@@ -76,7 +76,7 @@ function get_state_url(num,name,type,proxy_url,baseurl){
 }
 async function render_mamber_list(rs_info){
     let rs_parts = rs_info.split(':');
-    let [rs_name, proxy_url] = [rs_parts[0], rs_parts.slice(1).join(':')];
+    let [rs_name, proxy_url] = [rs_parts[0], rs_parts.slice(1).join(',')];
     let ixlg_api_resilt = await fetch(lg_json_api + rs_name);
     let clients = await ixlg_api_resilt.json();
     for (client of clients){
