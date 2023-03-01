@@ -12,7 +12,6 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | ASN | Name | AS-SET | RS R1 | RS T |
 |-----|-----|-----|-----|-----|
 | 138517 | [Poema Network(KSKB-IX)](https://bgp.tools/as/138517) | AS-POEMA | - {: neigh_ip='fe80::1000:138:517' RS='RSR1' } | - {: neigh_ip='fe80::1000:138:517' RS='RST' } |
-| 142553 | [Air's Project Private Network](https://bgp.tools/as/142553) | AS142553:AS-SHIZUKUGLOBAL-APAC-APS | - {: neigh_ip='fe80::142:553' RS='RSR1' } | - {: neigh_ip='fe80::142:553' RS='RST' } |
 | 207705 | [JK-Network](https://bgp.tools/as/207705) | AS-JKNET | - {: neigh_ip='fe80::207:705' RS='RSR1' } | - {: neigh_ip='fe80::207:705' RS='RST' } |
 | 51930 | [Haonan Yang](https://bgp.tools/as/51930) | AS-AUGUST | - {: neigh_ip='fe80::51:930' RS='RSR1' } | - {: neigh_ip='fe80::51:930' RS='RST' } |
 | 210320 | [ZH Innovation Network](https://bgp.tools/as/210320) | AS-ZH-NET | - {: neigh_ip='fe80::210:320' RS='RSR1' } | - {: neigh_ip='fe80::210:320' RS='RST' } |
