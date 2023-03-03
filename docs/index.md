@@ -56,17 +56,17 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 **懶得設定的話，只要連 RS Regular 就好了**
 
 * RS Regular 1
-    * AS114514
+    * AS199594
     * 是一個普通RS
     * [過濾規則](RS#default-filtering-policy)
     * [支援的Community屬性](RS#announcement-control-via-bgp-communities)
     * 普通人也能連接，RS有做過濾
     * 懶人包: **把RS 當作 peer 對象來連線**
     * 我們強制要求與RS1進行BGP連接，並發送至少一條IPv6路由
-    * 連線地址(link-local 模式): `fe80::114:514 % eth1`
-    * 連線地址(普通模式): `2404:f4c0:f70e:1980::114:514`
+    * 連線地址(link-local 模式): `fe80::1980:1:1 % eth1`
+    * 連線地址(普通模式): `2404:f4c0:f70e:1980::1:1`
 * RS Transitable<a name="RS2"></a>
-    * AS114514
+    * AS199594
     * Transitable route server. 這個 RS 的路由允許被 transit 到其他地方，同時也允許把其他地方的路由 transit 進來
         * 但兩者必須同時發生。把其他地方的路由 transit 進來的同時，必須把 RS 內路由 transit 到其他地方。必須要對秤
         * 初衷是想說任何成員都可以成為志願者，一次性幫忙把 IX 裡面全部成員的路由 transit 去別的地方，而不需要每個下游一一設定BGP session。比如 STUIX ，或是 HE 上游之類
@@ -77,8 +77,8 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
     * 懶人包:
         * **一般成員: 請將 `RS Transitable` 設定成上游**
         * **提供Transit志願者: 請將 `RS Transitable` 設定成下游**，發送路由打上 `(114514:65530:7)`，並拒收帶有 `(114514:65530:7)` 的路由
-    * 連線地址(link-local 模式): `fe80::1145:14 % eth1`
-    * 連線地址(普通模式): `2404:f4c0:f70e:1980::1145:14`
+    * 連線地址(link-local 模式): `fe80::1980:2:1 % eth1`
+    * 連線地址(普通模式): `2404:f4c0:f70e:1980::2:1`
     * 發全表條件:
         * 如果你想成為志願者，想幫忙 transit `RS Transitable` 的路由去 STUIX 的話，收路由就要過濾掉 (114514:65530:7)
         * 外面收到的表要打上 `(114514:65530:7)`才能發去 `RS Transitable` (可以在我這邊登記上游ASN，RS會幫忙自動打上)
@@ -87,14 +87,14 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
             * 意思是若你想法全表發給A，你就得同時把A的路由發給上游。不想幫某人發上游，就不要發給他全表。必須做到對稱
         * 弄好以後即可以申請開通炸全表filter
 * RS Chaos
-    * AS114514
+    * AS199594
     * 過濾規則: `import all; export all`;，也就是沒有過濾
     * 只有智慧之人才能連接，智慧之人都會自己做好過濾的
     * 懶人包: **大亂鬥，有DN42漏油都不奇怪**
     * 不支援任何Community屬性
     * 路由發送上限 2000，超過會被斷開連接
-    * 連線地址(link-local 模式): `fe80::11:4514 % eth1`
-    * 連線地址(普通模式): `2404:f4c0:f70e:1980::11:4514`
+    * 連線地址(link-local 模式): `fe80::1980:3:1 % eth1`
+    * 連線地址(普通模式): `2404:f4c0:f70e:1980::3:1`
 
 ## 成員 | Members
 
