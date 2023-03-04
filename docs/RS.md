@@ -1,4 +1,5 @@
-Configuration of route server at Poema-IX
+Configuration of Poema IX Route Server at AS199594
+======================================================================
 
 BGP sessions default configuration
 ----------------------------------
@@ -31,27 +32,26 @@ are **rejected**.
 
   List of "transit-free" networks' ASNs:
 [701](https://stat.ripe.net/AS701), [1239](https://stat.ripe.net/AS1239), [1299](https://stat.ripe.net/AS1299), [2914](https://stat.ripe.net/AS2914), [3257](https://stat.ripe.net/AS3257), [3320](https://stat.ripe.net/AS3320), [3356](https://stat.ripe.net/AS3356), [3491](https://stat.ripe.net/AS3491), [5511](https://stat.ripe.net/AS5511), [6453](https://stat.ripe.net/AS6453), [6461](https://stat.ripe.net/AS6461), [6762](https://stat.ripe.net/AS6762), [6830](https://stat.ripe.net/AS6830), [7018](https://stat.ripe.net/AS7018), [12956](https://stat.ripe.net/AS12956), [174](https://stat.ripe.net/AS174), [1273](https://stat.ripe.net/AS1273), [2828](https://stat.ripe.net/AS2828), [4134](https://stat.ripe.net/AS4134), [4809](https://stat.ripe.net/AS4809), [4637](https://stat.ripe.net/AS4637), [6939](https://stat.ripe.net/AS6939), [7473](https://stat.ripe.net/AS7473), [7922](https://stat.ripe.net/AS7922), [9002](https://stat.ripe.net/AS9002)
+* Routes with an AS_PATH containing one or more **"never via route-servers" networks**' ASNs are **rejected**.
 
 ### IRRDBs prefix/origin ASN enforcement
 
 * Origin ASN validity is **enforced**. Routes whose origin ASN is not authorized by the client's AS-SET are rejected.
 * Announced prefixes validity is **enforced**. Routes whose prefix is not part of the client's AS-SET are rejected.
   Longer prefixes that are covered by one entry of the resulting route set are accepted.
-* Use **ARIN Whois DB dump** to validate routes whose origin ASN is authorized by the client's AS-SET but whose prefix is not.
-* Database is fetched from <a href="http://irrexplorer.nlnog.net/static/dumps/arin-whois-originas.json.bz2" rel="noopener">http://irrexplorer.nlnog.net/static/dumps/arin-whois-originas.json.bz2</a>.
 * Route **validity state** is signalled to route server clients using the following **BGP communities**:
 
 
 | Validity state | Standard | Extended | Large |
 | --- | --- | --- | --- |
-| Prefix is included in client's AS-SET | 65530:5 | None | 114514:65530:5 |
-| Prefix is NOT included in client's AS-SET | 65530:6 | None | 114514:65530:6 |
-| Origin ASN is included in client's AS-SET | 65530:1 | None | 114514:65530:1 |
-| Origin ASN is NOT included in client's AS-SET | 65530:0 | None | 114514:65530:0 |
-| AS-PATH contains transit providers | 65530:7 | None | 114514:65530:7 |
-| Prefix matched by a RPKI ROA for the authorized origin ASN | 65530:2 | None | 114514:65530:2 |
-| Prefix matched by an entry of the ARIN Whois DB dump | 65530:4 | None | 114514:65530:4 |
-| Route authorized soley because of a client white list entry | 65530:3 | None | 114514:65530:3 |
+| Prefix is included in client's AS-SET | 65530:5 | None | 199594:65530:5 |
+| Prefix is NOT included in client's AS-SET | 65530:6 | None | 199594:65530:6 |
+| Origin ASN is included in client's AS-SET | 65530:1 | None | 199594:65530:1 |
+| Origin ASN is NOT included in client's AS-SET | 65530:0 | None | 199594:65530:0 |
+| AS-PATH contains transit providers | 65530:7 | None | 199594:65530:7 |
+| Prefix matched by a RPKI ROA for the authorized origin ASN | 65530:2 | None | 199594:65530:2 |
+| Prefix matched by an entry of the ARIN Whois DB dump | 65530:4 | None | 199594:65530:4 |
+| Route authorized soley because of a client white list entry | 65530:3 | None | 199594:65530:3 |
 
 ### RPKI BGP Prefix Origin Validation
 
@@ -70,7 +70,6 @@ are **rejected**.
 
 
 * A **max-prefix limit** is enforced; when it triggers,  new routes from the announcing client are **discarded**.
-* The limit, if not provided on a client-by-client basis, is learnt from the client's **PeeringDB record**.
 * If no more specific limits exist for the client, the **general limit** of 170000 IPv4 routes and 12000 IPv6 routes is enforced.
 
 
@@ -148,7 +147,7 @@ Blackhole filtering
 -------------------
 
 
-* Blackhole filtering of more specific IP prefixes can be requested by tagging them with the following **BGP communities**: 65534:0, 114514:666:0,  65535:666 ([BLACKHOLE](https://tools.ietf.org/html/rfc7999#section-5) well-known community)
+* Blackhole filtering of more specific IP prefixes can be requested by tagging them with the following **BGP communities**: 65534:0, 199594:666:0,  65535:666 ([BLACKHOLE](https://tools.ietf.org/html/rfc7999#section-5) well-known community)
 
 * By default, routes are **propagated** to all the clients unless they have been explicitly configured to not receive them.
 * IPv4 routes are propagated **unchanged** to clients.
@@ -174,19 +173,19 @@ Announcement control via BGP communities
 
 | Function | Standard | Extended | Large |
 | --- | --- | --- | --- |
-| Do not announce to any client | None | rt:0:114514 | 114514:0:114514 |
-| Announce to peer, even if tagged with the previous community | None | None | 114514:114514:peer_as |
-| Do not announce to peer | 0:peer_as | rt:0:peer_as | 114514:0:peer_as |
-| Prepend the announcing ASN once to peer | 65504:peer_as | rt:65504:peer_as | 114514:65504:peer_as |
-| Prepend the announcing ASN twice to peer | 65505:peer_as | rt:65505:peer_as | 114514:65505:peer_as |
-| Prepend the announcing ASN thrice to peer | 65506:peer_as | rt:65506:peer_as | 114514:65506:peer_as |
-| Prepend the announcing ASN once to any | None | rt:65501:114514 | 114514:65501:114514 |
-| Prepend the announcing ASN twice to any | None | rt:65502:114514 | 114514:65502:114514 |
-| Prepend the announcing ASN thrice to any | None | rt:65503:114514 | 114514:65503:114514 |
-| Add NO_EXPORT to any | None | rt:65507:114514 | 114514:65507:114514 |
-| Add NO_ADVERTISE to any | None | rt:65508:114514 | 114514:65508:114514 |
-| Add NO_EXPORT to peer | 65509:peer_as | rt:65509:peer_as | 114514:65509:peer_as |
-| Add NO_ADVERTISE to peer | 65510:peer_as | rt:65510:peer_as | 114514:65510:peer_as |
+| Do not announce to any client | None | rt:0:199594 | 199594:0:199594 |
+| Announce to peer, even if tagged with the previous community | None | None | 199594:199594:peer_as |
+| Do not announce to peer | 0:peer_as | rt:0:peer_as | 199594:0:peer_as |
+| Prepend the announcing ASN once to peer | 65504:peer_as | rt:65504:peer_as | 199594:65504:peer_as |
+| Prepend the announcing ASN twice to peer | 65505:peer_as | rt:65505:peer_as | 199594:65505:peer_as |
+| Prepend the announcing ASN thrice to peer | 65506:peer_as | rt:65506:peer_as | 199594:65506:peer_as |
+| Prepend the announcing ASN once to any | None | rt:65501:199594 | 199594:65501:199594 |
+| Prepend the announcing ASN twice to any | None | rt:65502:199594 | 199594:65502:199594 |
+| Prepend the announcing ASN thrice to any | None | rt:65503:199594 | 199594:65503:199594 |
+| Add NO_EXPORT to any | None | rt:65507:199594 | 199594:65507:199594 |
+| Add NO_ADVERTISE to any | None | rt:65508:199594 | 199594:65508:199594 |
+| Add NO_EXPORT to peer | 65509:peer_as | rt:65509:peer_as | 199594:65509:peer_as |
+| Add NO_ADVERTISE to peer | 65510:peer_as | rt:65510:peer_as | 199594:65510:peer_as |
 
 
 Reject reasons
@@ -198,21 +197,23 @@ Reject reasons
 
 | ID | Reason | Standard | Extended | Large |
 | --- | --- | --- | --- | --- |
-| 0 | Generic code: the route must be treated as rejected | 65531:0 | None | 114514:65531:0 |
-| 1 | Invalid AS_PATH length | 65531:1 | None | 114514:65531:1 |
-| 2 | Prefix is bogon | 65531:2 | None | 114514:65531:2 |
-| 3 | Prefix is in global blacklist | 65531:3 | None | 114514:65531:3 |
-| 4 | Invalid AFI | 65531:4 | None | 114514:65531:4 |
-| 5 | Invalid NEXT_HOP | 65531:5 | None | 114514:65531:5 |
-| 6 | Invalid left-most ASN | 65531:6 | None | 114514:65531:6 |
-| 7 | Invalid ASN in AS_PATH | 65531:7 | None | 114514:65531:7 |
-| 8 | Transit-free ASN in AS_PATH | 65531:8 | None | 114514:65531:8 |
-| 9 | Origin ASN not in IRRDB AS-SETs | 65531:9 | None | 114514:65531:9 |
-| 10 | IPv6 prefix not in global unicast space | 65531:10 | None | 114514:65531:10 |
-| 11 | Prefix is in client blacklist | 65531:11 | None | 114514:65531:11 |
-| 12 | Prefix not in IRRDB AS-SETs | 65531:12 | None | 114514:65531:12 |
-| 13 | Invalid prefix length | 65531:13 | None | 114514:65531:13 |
-| 14 | RPKI INVALID route | 65531:14 | None | 114514:65531:14 |
-| 15 | Never via route-servers ASN in AS_PATH | 65531:15 | None | 114514:65531:15 |
-| 65535 | Unknown | 65531:65535 | None | 114514:65531:65535 |
+| 0 | Generic code: the route must be treated as rejected | 65531:0 | None | 199594:65531:0 |
+| 1 | Invalid AS_PATH length | 65531:1 | None | 199594:65531:1 |
+| 2 | Prefix is bogon | 65531:2 | None | 199594:65531:2 |
+| 3 | Prefix is in global blacklist | 65531:3 | None | 199594:65531:3 |
+| 4 | Invalid AFI | 65531:4 | None | 199594:65531:4 |
+| 5 | Invalid NEXT_HOP | 65531:5 | None | 199594:65531:5 |
+| 6 | Invalid left-most ASN | 65531:6 | None | 199594:65531:6 |
+| 7 | Invalid ASN in AS_PATH | 65531:7 | None | 199594:65531:7 |
+| 8 | Transit-free ASN in AS_PATH | 65531:8 | None | 199594:65531:8 |
+| 9 | Origin ASN not in IRRDB AS-SETs | 65531:9 | None | 199594:65531:9 |
+| 10 | IPv6 prefix not in global unicast space | 65531:10 | None | 199594:65531:10 |
+| 11 | Prefix is in client blacklist | 65531:11 | None | 199594:65531:11 |
+| 12 | Prefix not in IRRDB AS-SETs | 65531:12 | None | 199594:65531:12 |
+| 13 | Invalid prefix length | 65531:13 | None | 199594:65531:13 |
+| 14 | RPKI INVALID route | 65531:14 | None | 199594:65531:14 |
+| 15 | Never via route-servers ASN in AS_PATH | 65531:15 | None | 199594:65531:15 |
+| 65535 | Unknown | 65531:65535 | None | 199594:65531:65535 |
+
+
 
