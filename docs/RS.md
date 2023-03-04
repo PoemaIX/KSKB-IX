@@ -44,14 +44,14 @@ are **rejected**.
 
 | Validity state | Standard | Extended | Large |
 | --- | --- | --- | --- |
+| Origin ASN is NOT included in client's AS-SET | 65530:0 | None | 199594:65530:0 |
+| Origin ASN is included in client's AS-SET | 65530:1 | None | 199594:65530:1 |
+| Prefix matched by a RPKI ROA for the authorized origin ASN | 65530:2 | None | 199594:65530:2 |
+| Route authorized soley because of a client white list entry | 65530:3 | None | 199594:65530:3 |
+| Prefix matched by an entry of the ARIN Whois DB dump | 65530:4 | None | 199594:65530:4 |
 | Prefix is included in client's AS-SET | 65530:5 | None | 199594:65530:5 |
 | Prefix is NOT included in client's AS-SET | 65530:6 | None | 199594:65530:6 |
-| Origin ASN is included in client's AS-SET | 65530:1 | None | 199594:65530:1 |
-| Origin ASN is NOT included in client's AS-SET | 65530:0 | None | 199594:65530:0 |
 | AS-PATH contains transit providers | 65530:7 | None | 199594:65530:7 |
-| Prefix matched by a RPKI ROA for the authorized origin ASN | 65530:2 | None | 199594:65530:2 |
-| Prefix matched by an entry of the ARIN Whois DB dump | 65530:4 | None | 199594:65530:4 |
-| Route authorized soley because of a client white list entry | 65530:3 | None | 199594:65530:3 |
 
 ### RPKI BGP Prefix Origin Validation
 

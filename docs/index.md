@@ -71,17 +71,17 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
         * 但兩者必須同時發生。把其他地方的路由 transit 進來的同時，必須把 RS 內路由 transit 到其他地方。必須要對秤
         * 初衷是想說任何成員都可以成為志願者，一次性幫忙把 IX 裡面全部成員的路由 transit 去別的地方，而不需要每個下游一一設定BGP session。比如 STUIX ，或是 HE 上游之類
     * 實驗性質，把 peering route 和 transit route 混在同一個 bgp session 裡面，透過 bgp_large_community 來區分
-        * 有 `(114514:65530:7)` 屬性的就是 transit 路由，請當成上游路由處裡。沒有的就是 peering 路由，請當成 peering 路由處理
-        * 同理，若將外部路由倒入 `RS Transitable` ，請將外部路由打上 `(114514:65530:7)`，供其他成員參考
+        * 有 `(199594:65530:7)` 屬性的就是 transit 路由，請當成上游路由處裡。沒有的就是 peering 路由，請當成 peering 路由處理
+        * 同理，若將外部路由倒入 `RS Transitable` ，請將外部路由打上 `(199594:65530:7)`，供其他成員參考
         * 只有提供Transit志願者可以倒全表，請參考下面的「發全表條件」
     * 懶人包:
         * **一般成員: 請將 `RS Transitable` 設定成上游**
-        * **提供Transit志願者: 請將 `RS Transitable` 設定成下游**，發送路由打上 `(114514:65530:7)`，並拒收帶有 `(114514:65530:7)` 的路由
+        * **提供Transit志願者: 請將 `RS Transitable` 設定成下游**，發送路由打上 `(199594:65530:7)`，並拒收帶有 `(199594:65530:7)` 的路由
     * 連線地址(link-local 模式): `fe80::1980:2:1 % eth1`
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::2:1`
     * 發全表條件:
-        * 如果你想成為志願者，想幫忙 transit `RS Transitable` 的路由去 STUIX 的話，收路由就要過濾掉 (114514:65530:7)
-        * 外面收到的表要打上 `(114514:65530:7)`才能發去 `RS Transitable` (可以在我這邊登記上游ASN，RS會幫忙自動打上)
+        * 如果你想成為志願者，想幫忙 transit `RS Transitable` 的路由去 STUIX 的話，收路由就要過濾掉 (199594:65530:7)
+        * 外面收到的表要打上 `(199594:65530:7)`才能發去 `RS Transitable` (可以在我這邊登記上游ASN，RS會幫忙自動打上)
         * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和 `RS Transitable` 有連線的成員(並且 AS-SET 大小必須小於100條路由)，每小時同步一次
         * 若想排除部分成員的transit，則需要使用[Community屬性](RS#announcement-control-via-bgp-communities)裡面的`Do not announce to peer`，將之從發送對象之中排除
             * 意思是若你想法全表發給A，你就得同時把A的路由發給上游。不想幫某人發上游，就不要發給他全表。必須做到對稱
