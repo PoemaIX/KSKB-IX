@@ -64,6 +64,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 203899 | [WJY Network](https://bgp.tools/as/203899) | AS-WJY | - {: neigh_ip='fe80::203:899' RS='RSR1' } | - {: neigh_ip='fe80::203:899' RS='RST' } |
 | 199613 | [Bling Network](https://bgp.tools/as/199613) | ARIN::AS-BLING | - {: neigh_ip='fe80::199:613' RS='RSR1' } | - {: neigh_ip='fe80::199:613' RS='RST' } |
 | 199683 | [Eki Network](https://bgp.tools/as/199683) | AS199683:AS-NTT | - {: neigh_ip='fe80::199:683' RS='RSR1' } | - {: neigh_ip='fe80::199:683' RS='RST' } |
+| 212168 | [prprCloud Limited](https://bgp.tools/as/212168) | AS212168:AS-PRPR | - {: neigh_ip='fe80::212:168' RS='RSR1' } | - {: neigh_ip='fe80::212:168' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
