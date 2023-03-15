@@ -112,21 +112,24 @@ PoP 之間使用 EVPN+VXLAN 互連
     <h4>1. 隧道</h4>
     
         1. OpenVPN
+        2. GRETAP
+        3. VXLAN
     <h4>2. VM</h4>
     
     === "VM Shape"
         |Virt| CPU| Mem| Disk| MRC    |
         |----|----|----|-----|--------|
-        | KVM| 1C |  1G|8G   | NTD100 |
-        
+        | LXC| 1C |512M|  8G |  Free  |
+        | KVM| 1C | 1G | 16G | NTD150 |
+        | KVM| 1C | 2G | 32G | NTD300 |
+        更高規格請洽詢節點管理員
         
         <h4>使用規範</h4>
         
-        * 整備中，尚未開放
         * [Poema IX 全域性規定](/#ix-vm)
 
     === "Eligibility"
-        * 列表整備中
+        * 任何人皆可接入，僅限教育使用，嚴禁非法行為
     === "Connectivity"
         網路連線
         
@@ -134,7 +137,7 @@ PoP 之間使用 EVPN+VXLAN 互連
         
         | Dst IP           | Dst port                | Connection       | Speed   | MTU  |
         |------------------|-------------------------|------------------|---------|------|
-        | 0.0.0.0/0        | `any`                   | SeedNet          | 60M/20M | 1500 |
+        | 0.0.0.0/0        | `any`                   | SeedNet          |100M/40M | 1500 |
         
     
 === "JK-Lab"
@@ -155,7 +158,7 @@ PoP 之間使用 EVPN+VXLAN 互連
     === "VM Shape"
         |Virt| CPU| Mem| Disk| MRC    |
         |----|----|----|-----|--------|
-        | LXC| 1C |0.5G|8G   | 0元    |
+        | LXC| 1C |0.5G|8G   | Free   |
 
         
         <h4>使用規範</h4>
