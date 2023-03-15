@@ -648,6 +648,8 @@ KSKB 不想要自己花的錢，被挪作他用(實驗、練習配網以外的�
 <p><h3>接入方式</h3> 
 <h4>1. 隧道</h4></p>
 <pre><code>1. OpenVPN
+2. GRETAP
+3. VXLAN
 </code></pre>
 <p><h4>2. VM</h4></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">VM Shape</label><label for="__tabbed_3_2">Eligibility</label><label for="__tabbed_3_3">Connectivity</label></div>
@@ -665,23 +667,43 @@ KSKB 不想要自己花的錢，被挪作他用(實驗、練習配網以外的�
 </thead>
 <tbody>
 <tr>
+<td>LXC</td>
+<td>1C</td>
+<td>512M</td>
+<td>8G</td>
+<td>Free</td>
+</tr>
+<tr>
 <td>KVM</td>
 <td>1C</td>
 <td>1G</td>
-<td>8G</td>
-<td>NTD100</td>
+<td>16G</td>
+<td>NTD150</td>
+</tr>
+<tr>
+<td>KVM</td>
+<td>1C</td>
+<td>2G</td>
+<td>32G</td>
+<td>NTD300</td>
+</tr>
+<tr>
+<td>更高規格請洽詢節點管理員</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p><h4>使用規範</h4></p>
 <ul>
-<li>整備中，尚未開放</li>
 <li><a href="/#ix-vm">Poema IX 全域性規定</a></li>
 </ul>
 </div>
 <div class="tabbed-block">
 <ul>
-<li>列表整備中</li>
+<li>任何人皆可接入，僅限教育使用，嚴禁非法行為</li>
 </ul>
 </div>
 <div class="tabbed-block">
@@ -702,7 +724,7 @@ KSKB 不想要自己花的錢，被挪作他用(實驗、練習配網以外的�
 <td>0.0.0.0/0</td>
 <td><code>any</code></td>
 <td>SeedNet</td>
-<td>60M/20M</td>
+<td>100M/40M</td>
 <td>1500</td>
 </tr>
 </tbody>
@@ -743,7 +765,7 @@ KSKB 不想要自己花的錢，被挪作他用(實驗、練習配網以外的�
 <td>1C</td>
 <td>0.5G</td>
 <td>8G</td>
-<td>0元</td>
+<td>Free</td>
 </tr>
 </tbody>
 </table>

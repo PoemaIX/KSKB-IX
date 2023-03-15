@@ -108,7 +108,7 @@
       ]
     },
     {
-      "asnum": 51930,
+      "asnum": 57481,
       "connection_list": [
         {
           "ixp_id": 0,
@@ -123,8 +123,8 @@
             {
               "vlan_id": 0,
               "ipv6": {
-                "address": "2404:f4c0:f70e:1980::51:930",
-                "as_macro": "AS-AUGUST",
+                "address": "2404:f4c0:f70e:1980::57:481",
+                "as_macro": "",
                 "routeserver": false
               }
             }
@@ -162,7 +162,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -175,7 +175,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::213:262",
                 "as_macro": "AS-CUTE",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -187,7 +187,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -200,7 +200,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::61:302",
                 "as_macro": "AS-HUIZE",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -312,7 +312,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -325,7 +325,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::140:913",
                 "as_macro": "AS-KOISHI",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -362,7 +362,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -375,7 +375,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:551",
                 "as_macro": "",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -412,7 +412,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -425,7 +425,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:281",
                 "as_macro": "",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -608,36 +608,11 @@
       ]
     },
     {
-      "asnum": 140506,
-      "connection_list": [
-        {
-          "ixp_id": 0,
-          "state": "inactive",
-          "if_list": [
-            {
-              "if_speed": 250,
-              "switch_id": 1
-            }
-          ],
-          "vlan_list": [
-            {
-              "vlan_id": 0,
-              "ipv6": {
-                "address": "2404:f4c0:f70e:1980::140:506",
-                "as_macro": "",
-                "routeserver": false
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "asnum": 149835,
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -650,7 +625,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::149:835",
                 "as_macro": "AS149835:AS-ALL",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -687,7 +662,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -700,7 +675,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:055",
                 "as_macro": "AS-ANILLC",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -812,7 +787,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -825,7 +800,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::203:314",
                 "as_macro": "AS-HATSNET",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -962,7 +937,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -975,7 +950,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::200:105",
                 "as_macro": "AS-MoeQing",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -1083,31 +1058,6 @@
       ]
     },
     {
-      "asnum": 211390,
-      "connection_list": [
-        {
-          "ixp_id": 0,
-          "state": "inactive",
-          "if_list": [
-            {
-              "if_speed": 250,
-              "switch_id": 1
-            }
-          ],
-          "vlan_list": [
-            {
-              "vlan_id": 0,
-              "ipv6": {
-                "address": "2404:f4c0:f70e:1980::211:390",
-                "as_macro": "AS-YUZHEN",
-                "routeserver": false
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "asnum": 201217,
       "connection_list": [
         {
@@ -1187,7 +1137,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -1200,7 +1150,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:164",
                 "as_macro": "AS-142164",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -1387,7 +1337,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -1400,7 +1350,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::212:168",
                 "as_macro": "AS212168:AS-PRPR",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
