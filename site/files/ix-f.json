@@ -437,7 +437,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -450,7 +450,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::208:223",
                 "as_macro": "AS208223:AS-ALL",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -662,7 +662,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -675,7 +675,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::142:055",
                 "as_macro": "AS-ANILLC",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -1350,6 +1350,56 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::212:168",
                 "as_macro": "AS212168:AS-PRPR",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 199656,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::199:656",
+                "as_macro": "AS199656:AS-ZYC",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 199632,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::199:632",
+                "as_macro": "AS199632:AS-DECIMA",
                 "routeserver": true
               }
             }

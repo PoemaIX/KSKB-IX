@@ -63,6 +63,8 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 199613 | [Bling Network](https://bgp.tools/as/199613) | ARIN::AS-BLING | - {: neigh_ip='fe80::199:613' RS='RSR1' } | - {: neigh_ip='fe80::199:613' RS='RST' } |
 | 199683 | [Eki Network](https://bgp.tools/as/199683) | AS199683:AS-NTT | - {: neigh_ip='fe80::199:683' RS='RSR1' } | - {: neigh_ip='fe80::199:683' RS='RST' } |
 | 212168 | [prprCloud Limited](https://bgp.tools/as/212168) | AS212168:AS-PRPR | - {: neigh_ip='fe80::212:168' RS='RSR1' } | - {: neigh_ip='fe80::212:168' RS='RST' } |
+| 199656 | [ZYC Network](https://bgp.tools/as/199656) | AS199656:AS-ZYC | - {: neigh_ip='fe80::199:656' RS='RSR1' } | - {: neigh_ip='fe80::199:656' RS='RST' } |
+| 199632 | [Decima LLC](https://bgp.tools/as/199632) | AS199632:AS-DECIMA | - {: neigh_ip='fe80::199:632' RS='RSR1' } | - {: neigh_ip='fe80::199:632' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
