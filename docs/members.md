@@ -11,10 +11,9 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 
 | ASN | Name | AS-SET | RS R1 | RS T |
 |-----|-----|-----|-----|-----|
-| 138517 | [Poema Network](https://bgp.tools/as/138517) | AS-POEMA | - {: neigh_ip='fe80::1000:138:517' RS='RSR1' } | - {: neigh_ip='fe80::1000:138:517' RS='RST' } |
+| 138517 | [Poema Network](https://bgp.tools/as/138517) | AS-POEMA | - {: neigh_ip='fe80::138:517' RS='RSR1' } | - {: neigh_ip='fe80::138:517' RS='RST' } |
 | 207705 | [JK-Network](https://bgp.tools/as/207705) | AS-JKNET | - {: neigh_ip='fe80::207:705' RS='RSR1' } | - {: neigh_ip='fe80::207:705' RS='RST' } |
 | 57481 | [Haonan Yang](https://bgp.tools/as/57481) |  | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RST' } |
-| 210320 | [ZH Innovation Network](https://bgp.tools/as/210320) | AS-ZH-NET | - {: neigh_ip='fe80::210:320' RS='RSR1' } | - {: neigh_ip='fe80::210:320' RS='RST' } |
 | 213262 | [Moe Overflow Electric](https://bgp.tools/as/213262) | AS-CUTE | - {: neigh_ip='fe80::213:262' RS='RSR1' } | - {: neigh_ip='fe80::213:262' RS='RST' } |
 | 61302 | [HUIZE-NET](https://bgp.tools/as/61302) | AS-HUIZE | - {: neigh_ip='fe80::61:302' RS='RSR1' } | - {: neigh_ip='fe80::61:302' RS='RST' } |
 | 141237 | [Moecast Network](https://bgp.tools/as/141237) | AS-MOEC | - {: neigh_ip='2404:f4c0:f70e:1980::141:237' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::141:237' RS='RST' } |
@@ -61,10 +60,12 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 200895 | [Gua-Network](https://bgp.tools/as/200895) |  | - {: neigh_ip='fe80::200:895' RS='RSR1' } | - {: neigh_ip='fe80::200:895' RS='RST' } |
 | 203899 | [WJY Network](https://bgp.tools/as/203899) | AS-WJY | - {: neigh_ip='fe80::203:899' RS='RSR1' } | - {: neigh_ip='fe80::203:899' RS='RST' } |
 | 199613 | [Bling Network](https://bgp.tools/as/199613) | ARIN::AS-BLING | - {: neigh_ip='fe80::199:613' RS='RSR1' } | - {: neigh_ip='fe80::199:613' RS='RST' } |
-| 199683 | [Eki Network](https://bgp.tools/as/199683) | AS199683:AS-NTT | - {: neigh_ip='fe80::199:683' RS='RSR1' } | - {: neigh_ip='fe80::199:683' RS='RST' } |
+| 199683 | [Eki Network](https://bgp.tools/as/199683) | AS199683:AS-SET | - {: neigh_ip='fe80::199:683' RS='RSR1' } | - {: neigh_ip='fe80::199:683' RS='RST' } |
 | 212168 | [prprCloud Limited](https://bgp.tools/as/212168) | AS212168:AS-PRPR | - {: neigh_ip='fe80::212:168' RS='RSR1' } | - {: neigh_ip='fe80::212:168' RS='RST' } |
 | 199656 | [ZYC Network](https://bgp.tools/as/199656) | AS199656:AS-ZYC | - {: neigh_ip='fe80::199:656' RS='RSR1' } | - {: neigh_ip='fe80::199:656' RS='RST' } |
 | 199632 | [Decima LLC](https://bgp.tools/as/199632) | AS199632:AS-DECIMA | - {: neigh_ip='fe80::199:632' RS='RSR1' } | - {: neigh_ip='fe80::199:632' RS='RST' } |
+| 139888 | [Time Network](https://bgp.tools/as/139888) |  | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RST' } |
+| 150184 | [OwONet](https://bgp.tools/as/150184) |  | - {: neigh_ip='fe80::150:184' RS='RSR1' } | - {: neigh_ip='fe80::150:184' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
