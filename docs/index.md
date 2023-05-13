@@ -152,8 +152,8 @@ See member list: [Members](members)
 * 禁止發送垃圾郵件、垃圾訊息, 散播木馬、病毒(包括引用其它伺服器的惡意文件)
 * 禁止使用 Torrents、BT，等下載或傳播版權內容
 * 禁止使用 net_speeder/finalspeed/kcptun 等干擾網路運作的，任何形式的多倍發包工具
-* 資源合理使用。禁止長時間消耗/佔滿CPU/網路頻寬等資源，例如rclone轉存/挖礦，**或是讓我感覺家裡網路很卡**(這是最主要的判斷方式)
-* 禁止用於爬蟲/帳號註冊等，可能會使IP被標記為bot(俗稱IP被汙染)之行為
+* 資源合理使用。禁止長時間消耗/佔滿 CPU/網路頻寬等資源，例如 rclone 轉存/挖礦，**或是讓我感覺家裡網路很卡**(這是最主要的判斷方式)
+* 禁止用於爬蟲/帳號註冊等，可能會使 IP 被標記為 bot(俗稱 IP 被汙染)之行為
 * 禁止架設耗資源的程式，如線上遊戲
 * Poema IX 由多人運營，請遵守 [PoP 各自的規範](/PoP-List/)
 
@@ -165,10 +165,10 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 
 | 名單                                      | 致謝 |
 |------------------------------------------|----------|
-| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走GeekIX去STUIX </li> |
-| [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走wgcf去STUIX</li> |
-| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的VM，可以直達去STUIX</li><li>解決了 Hinet 和 STUIX 互連性問題</li> |
-| [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國VM讓我做相關實驗. |
+| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走 GeekIX 去 TWDS </li> |
+| [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走 wgcf 去 TWDS</li> |
+| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的VM，可以直達去 TWDS</li><li>解決了 Hinet 和 TWDS 互連性問題</li> |
+| [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國 VM 讓我做相關實驗. |
 
 
-[^1]: 真實故事: 不法分子行騙以後，贓款 GASH 點數於網路上轉賣。有人貪便宜購買贓物 GASH 以後，掛著 Hinet 出口的VPN儲值。警方接獲報案以後循線追蹤，因此將VPN主人的電腦(查到儲值IP是VPN主人的IP)扣押進行後續調查。因此符合第一條的「可能會讓我家電腦被扣押的舉動」
+[^1]: 真實故事: 不法分子行騙以後，贓款 GASH 點數於網路上轉賣。有人貪便宜購買贓物 GASH 以後，掛著 Hinet 出口的 VPN 儲值。警方接獲報案以後循線追蹤，因此將 VPN 主人的電腦(查到儲值 IP 是 VPN 主人的 IP)扣押進行後續調查。因此符合第一條的「可能會讓我家電腦被扣押的舉動」
