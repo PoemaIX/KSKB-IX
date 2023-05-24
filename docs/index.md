@@ -72,6 +72,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
         * 初衷是想說任何成員都可以成為志願者
             * 有需要的人，接上 RS2 就能接到上游
             * 有意願的人，可以成為 provider，幫忙有需要的人把路由播給上游，而不需要每個下游一一設定BGP session
+            * 成為 provider 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 (199594:0:對方AS) 即可
     * 接入有兩種身分: client 和 provider
         * 預設是 client 身分接入，不能發全表
         * 成為 provider 需要登記，可以發全表
@@ -88,6 +89,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
         * 如果你想幫忙 transit `RS Transitable` 的路由去 STUIX 的話，收路由就要過濾掉 (199594:65530:7) 的路由
         * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和 `RS Transitable` 有連線的成員(並且 AS-SET 大小必須小於100條路由)，每小時同步一次
         * 外面收到的表要打上 `(199594:65530:7)`才能發去 `RS Transitable` (可以在我這邊登記上游ASN，RS會幫忙自動打上)
+        * 成為 provider 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 (199594:0:對方AS) 即可
         * 弄好以後即可以申請開通炸全表filter
 * RS Chaos
     * AS199594
