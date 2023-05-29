@@ -1,0 +1,1274 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ix.poema.eu.org/RS/">
+      
+      
+        <link rel="prev" href="../members/">
+      
+      
+        <link rel="next" href="../Virtual-IXP/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.1">
+    
+    
+      
+        <title>Route Server - Poema IX</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.402914a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/hidefooter.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configuration-of-poema-ix-route-server-at-as199594" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Poema IX" class="md-header__button md-logo" aria-label="Poema IX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Poema IX
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Route Server
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/KSKBpage/KSKB-IX" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Poema IX" class="md-nav__button md-logo" aria-label="Poema IX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Poema IX
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/KSKBpage/KSKB-IX" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Poema IX
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PoP-List/" class="md-nav__link">
+        PoP List
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../members/" class="md-nav__link">
+        Member List
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Route Server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Route Server
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bgp-sessions-default-configuration" class="md-nav__link">
+    BGP sessions default configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#route-server-general-behaviours" class="md-nav__link">
+    Route server general behaviours
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-filtering-policy" class="md-nav__link">
+    Default filtering policy
+  </a>
+  
+    <nav class="md-nav" aria-label="Default filtering policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next_hop-attribute" class="md-nav__link">
+    NEXT_HOP attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as_path-attribute" class="md-nav__link">
+    AS_PATH attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irrdbs-prefixorigin-asn-enforcement" class="md-nav__link">
+    IRRDBs prefix/origin ASN enforcement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpki-bgp-prefix-origin-validation" class="md-nav__link">
+    RPKI BGP Prefix Origin Validation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpki-roas" class="md-nav__link">
+    RPKI ROAs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-pref-limit" class="md-nav__link">
+    Max-pref limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minmax-prefix-length" class="md-nav__link">
+    Min/max prefix length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rejected-prefixes" class="md-nav__link">
+    Rejected prefixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blackhole-filtering" class="md-nav__link">
+    Blackhole filtering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graceful-bgp-session-shutdown" class="md-nav__link">
+    Graceful BGP session shutdown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#announcement-control-via-bgp-communities" class="md-nav__link">
+    Announcement control via BGP communities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reject-reasons" class="md-nav__link">
+    Reject reasons
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Virtual-IXP/" class="md-nav__link">
+        Virtual IXP
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://net.kskb.eu.org" class="md-nav__link">
+        Poema Network
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bgp-sessions-default-configuration" class="md-nav__link">
+    BGP sessions default configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#route-server-general-behaviours" class="md-nav__link">
+    Route server general behaviours
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-filtering-policy" class="md-nav__link">
+    Default filtering policy
+  </a>
+  
+    <nav class="md-nav" aria-label="Default filtering policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next_hop-attribute" class="md-nav__link">
+    NEXT_HOP attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as_path-attribute" class="md-nav__link">
+    AS_PATH attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irrdbs-prefixorigin-asn-enforcement" class="md-nav__link">
+    IRRDBs prefix/origin ASN enforcement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpki-bgp-prefix-origin-validation" class="md-nav__link">
+    RPKI BGP Prefix Origin Validation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpki-roas" class="md-nav__link">
+    RPKI ROAs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-pref-limit" class="md-nav__link">
+    Max-pref limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minmax-prefix-length" class="md-nav__link">
+    Min/max prefix length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rejected-prefixes" class="md-nav__link">
+    Rejected prefixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blackhole-filtering" class="md-nav__link">
+    Blackhole filtering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graceful-bgp-session-shutdown" class="md-nav__link">
+    Graceful BGP session shutdown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#announcement-control-via-bgp-communities" class="md-nav__link">
+    Announcement control via BGP communities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reject-reasons" class="md-nav__link">
+    Reject reasons
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="configuration-of-poema-ix-route-server-at-as199594">Configuration of Poema IX Route Server at AS199594</h1>
+<h2 id="bgp-sessions-default-configuration">BGP sessions default configuration</h2>
+<ul>
+<li><strong>Passive</strong> sessions are configured toward neighbors.</li>
+<li>GTSM (Generalized TTL Security Mechanism - <a href="//tools.ietf.org/html/rfc5082">RFC5082</a>) is <strong>disabled</strong> on sessions toward the neighbors.</li>
+<li><strong>ADD-PATH</strong> capability (<a href="//tools.ietf.org/html/rfc7911">RFC7911</a>) is negotiaded by default; the route server is configured as "able to send multiple paths to its peer".</li>
+</ul>
+<h2 id="route-server-general-behaviours">Route server general behaviours</h2>
+<ul>
+<li>Route server ASN is <strong>not prepended</strong> to the AS_PATH of routes announced to clients (<a href="https://tools.ietf.org/html/rfc7947#section-2.2.2.1">RFC7947 section 2.2.2.1</a>).</li>
+<li>Route server <strong>does  implement</strong> path-hiding mitigation techniques (<a href="https://tools.ietf.org/html/rfc7947#section-2.3.1">RFC7947 section 2.3.1</a>).</li>
+</ul>
+<h2 id="default-filtering-policy">Default filtering policy</h2>
+<h3 id="next_hop-attribute">NEXT_HOP attribute</h3>
+<ul>
+<li>The route server verifies that the NEXT_HOP attribute of routes received from a client matches the <strong>IP address of the client itself</strong>.</li>
+</ul>
+<h3 id="as_path-attribute">AS_PATH attribute</h3>
+<ul>
+<li>Routes whose <strong>AS_PATH is longer than 32</strong> ASNs are rejected.</li>
+<li>The <strong>left-most ASN</strong> in the AS_PATH of any route announced to the route server must be the ASN of the announcing client.</li>
+<li>Routes whose AS_PATH contains <a href="http://mailman.nanog.org/pipermail/nanog/2016-June/086078.html"><strong>private or invalid ASNs</strong></a> are rejected.</li>
+<li>Routes with an AS_PATH containing one or more of the following <strong>"transit-free" networks</strong>' ASNs
+are <strong>rejected</strong>.</li>
+</ul>
+<p>List of "transit-free" networks' ASNs:
+<a href="https://stat.ripe.net/AS701">701</a>, <a href="https://stat.ripe.net/AS1239">1239</a>, <a href="https://stat.ripe.net/AS1299">1299</a>, <a href="https://stat.ripe.net/AS2914">2914</a>, <a href="https://stat.ripe.net/AS3257">3257</a>, <a href="https://stat.ripe.net/AS3320">3320</a>, <a href="https://stat.ripe.net/AS3356">3356</a>, <a href="https://stat.ripe.net/AS3491">3491</a>, <a href="https://stat.ripe.net/AS5511">5511</a>, <a href="https://stat.ripe.net/AS6453">6453</a>, <a href="https://stat.ripe.net/AS6461">6461</a>, <a href="https://stat.ripe.net/AS6762">6762</a>, <a href="https://stat.ripe.net/AS6830">6830</a>, <a href="https://stat.ripe.net/AS7018">7018</a>, <a href="https://stat.ripe.net/AS12956">12956</a>, <a href="https://stat.ripe.net/AS174">174</a>, <a href="https://stat.ripe.net/AS1273">1273</a>, <a href="https://stat.ripe.net/AS2828">2828</a>, <a href="https://stat.ripe.net/AS4134">4134</a>, <a href="https://stat.ripe.net/AS4809">4809</a>, <a href="https://stat.ripe.net/AS4637">4637</a>, <a href="https://stat.ripe.net/AS6939">6939</a>, <a href="https://stat.ripe.net/AS7473">7473</a>, <a href="https://stat.ripe.net/AS7922">7922</a>, <a href="https://stat.ripe.net/AS9002">9002</a>
+* Routes with an AS_PATH containing one or more <strong>"never via route-servers" networks</strong>' ASNs are <strong>rejected</strong>.</p>
+<h3 id="irrdbs-prefixorigin-asn-enforcement">IRRDBs prefix/origin ASN enforcement</h3>
+<ul>
+<li>Origin ASN validity is <strong>enforced</strong>. Routes whose origin ASN is not authorized by the client's AS-SET are rejected.</li>
+<li>Announced prefixes validity is <strong>enforced</strong>. Routes whose prefix is not part of the client's AS-SET are rejected.
+  Longer prefixes that are covered by one entry of the resulting route set are accepted.</li>
+<li>Route <strong>validity state</strong> is signalled to route server clients using the following <strong>BGP communities</strong>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Validity state</th>
+<th>Standard</th>
+<th>Extended</th>
+<th>Large</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Origin ASN is NOT included in client's AS-SET</td>
+<td>65530:0</td>
+<td>None</td>
+<td>199594:65530:0</td>
+</tr>
+<tr>
+<td>Origin ASN is included in client's AS-SET</td>
+<td>65530:1</td>
+<td>None</td>
+<td>199594:65530:1</td>
+</tr>
+<tr>
+<td>Prefix matched by a RPKI ROA for the authorized origin ASN</td>
+<td>65530:2</td>
+<td>None</td>
+<td>199594:65530:2</td>
+</tr>
+<tr>
+<td>Route authorized soley because of a client white list entry</td>
+<td>65530:3</td>
+<td>None</td>
+<td>199594:65530:3</td>
+</tr>
+<tr>
+<td>Prefix matched by an entry of the ARIN Whois DB dump</td>
+<td>65530:4</td>
+<td>None</td>
+<td>199594:65530:4</td>
+</tr>
+<tr>
+<td>Prefix is included in client's AS-SET</td>
+<td>65530:5</td>
+<td>None</td>
+<td>199594:65530:5</td>
+</tr>
+<tr>
+<td>Prefix is NOT included in client's AS-SET</td>
+<td>65530:6</td>
+<td>None</td>
+<td>199594:65530:6</td>
+</tr>
+<tr>
+<td>AS-PATH contains transit providers</td>
+<td>65530:7</td>
+<td>None</td>
+<td>199594:65530:7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rpki-bgp-prefix-origin-validation">RPKI BGP Prefix Origin Validation</h3>
+<ul>
+<li><a href="https://tools.ietf.org/html/rfc6483">RPKI BGP Origin Validation</a> of routes received by the route server is <strong>enabled</strong>.</li>
+<li>When an INVALID route is received by the route server, <strong>it is rejected</strong>.</li>
+</ul>
+<h3 id="rpki-roas">RPKI ROAs</h3>
+<ul>
+<li>RPKI ROAs are fetched from the RIPE RPKI Validator format cache files at <a href="https://console.rpki-client.org/vrps.json" rel="noopener">https://console.rpki-client.org/vrps.json</a>, <a href="https://rpki.gin.ntt.net/api/export.json" rel="noopener">https://rpki.gin.ntt.net/api/export.json</a>, <a href="https://rpki-validator.ripe.net/api/export.json" rel="noopener">https://rpki-validator.ripe.net/api/export.json</a>. The following Trust Anchors are used: APNIC RPKI Root, AfriNIC RPKI Root, LACNIC RPKI Root, RIPE NCC RPKI Root, apnic, afrinic, lacnic, ripe</li>
+</ul>
+<h3 id="max-pref-limit">Max-pref limit</h3>
+<ul>
+<li>A <strong>max-prefix limit</strong> is enforced; when it triggers,  new routes from the announcing client are <strong>discarded</strong>.</li>
+<li>If no more specific limits exist for the client, the <strong>general limit</strong> of 170000 IPv4 routes and 12000 IPv6 routes is enforced.</li>
+</ul>
+<h3 id="minmax-prefix-length">Min/max prefix length</h3>
+<ul>
+<li>Only prefixes whose length is in the following range are accepted by the route server:<ul>
+<li>IPv4: 8-24</li>
+<li>IPv6: 12-48</li>
+</ul>
+</li>
+</ul>
+<h3 id="rejected-prefixes">Rejected prefixes</h3>
+<ul>
+<li>The following prefixes are <strong>unconditionally rejected</strong>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>More specific</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fd00::/8</td>
+<td>any more specific prefix</td>
+<td>DN42 Network</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Bogon prefixes</strong> are rejected too.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>More specific</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0.0.0/0</td>
+<td>only the exact prefix</td>
+<td>Default route</td>
+</tr>
+<tr>
+<td>0.0.0.0/8</td>
+<td>any more specific prefix</td>
+<td>IANA - Local Identification</td>
+</tr>
+<tr>
+<td>10.0.0.0/8</td>
+<td>any more specific prefix</td>
+<td>RFC 1918 - Private Use</td>
+</tr>
+<tr>
+<td>127.0.0.0/8</td>
+<td>any more specific prefix</td>
+<td>IANA - Loopback</td>
+</tr>
+<tr>
+<td>169.254.0.0/16</td>
+<td>any more specific prefix</td>
+<td>RFC 3927 - Link Local</td>
+</tr>
+<tr>
+<td>172.16.0.0/12</td>
+<td>any more specific prefix</td>
+<td>RFC 1918 - Private Use</td>
+</tr>
+<tr>
+<td>192.0.2.0/24</td>
+<td>any more specific prefix</td>
+<td>RFC 5737 - TEST-NET-1</td>
+</tr>
+<tr>
+<td>192.88.99.0/24</td>
+<td>any more specific prefix</td>
+<td>RFC 3068 - 6to4 prefix</td>
+</tr>
+<tr>
+<td>192.168.0.0/16</td>
+<td>any more specific prefix</td>
+<td>RFC 1918 - Private Use</td>
+</tr>
+<tr>
+<td>198.18.0.0/15</td>
+<td>any more specific prefix</td>
+<td>RFC 2544 - Network Interconnect Device Benchmark Testing</td>
+</tr>
+<tr>
+<td>198.51.100.0/24</td>
+<td>any more specific prefix</td>
+<td>RFC 5737 - TEST-NET-2</td>
+</tr>
+<tr>
+<td>203.0.113.0/24</td>
+<td>any more specific prefix</td>
+<td>RFC 5737 - TEST-NET-3</td>
+</tr>
+<tr>
+<td>224.0.0.0/3</td>
+<td>any more specific prefix</td>
+<td>RFC 5771 - Multcast (formerly Class D)</td>
+</tr>
+<tr>
+<td>100.64.0.0/10</td>
+<td>any more specific prefix</td>
+<td>RFC 6598 - Shared Address Space</td>
+</tr>
+<tr>
+<td>::/0</td>
+<td>only the exact prefix</td>
+<td>Default route</td>
+</tr>
+<tr>
+<td>::/8</td>
+<td>any more specific prefix</td>
+<td>loopback, unspecified, v4-mapped</td>
+</tr>
+<tr>
+<td>64:ff9b::/96</td>
+<td>any more specific prefix</td>
+<td>RFC 6052 - IPv4-IPv6 Translation</td>
+</tr>
+<tr>
+<td>100::/8</td>
+<td>any more specific prefix</td>
+<td>RFC 6666 - reserved for Discard-Only Address Block</td>
+</tr>
+<tr>
+<td>200::/7</td>
+<td>any more specific prefix</td>
+<td>RFC 4048 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>400::/6</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>800::/5</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>1000::/4</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>2001::/33</td>
+<td>any more specific prefix</td>
+<td>RFC 4380 - Teredo prefix</td>
+</tr>
+<tr>
+<td>2001:0:8000::/33</td>
+<td>any more specific prefix</td>
+<td>RFC 4380 - Teredo prefix</td>
+</tr>
+<tr>
+<td>2001:2::/48</td>
+<td>any more specific prefix</td>
+<td>RFC 5180 - Benchmarking</td>
+</tr>
+<tr>
+<td>2001:3::/32</td>
+<td>any more specific prefix</td>
+<td>RFC 7450 - Automatic Multicast Tunneling</td>
+</tr>
+<tr>
+<td>2001:10::/28</td>
+<td>any more specific prefix</td>
+<td>RFC 4843 - Deprecated ORCHID</td>
+</tr>
+<tr>
+<td>2001:20::/28</td>
+<td>any more specific prefix</td>
+<td>RFC 7343 - ORCHIDv2</td>
+</tr>
+<tr>
+<td>2001:db8::/32</td>
+<td>any more specific prefix</td>
+<td>RFC 3849 - NON-ROUTABLE range to be used for documentation purpose</td>
+</tr>
+<tr>
+<td>2002::/16</td>
+<td>any more specific prefix</td>
+<td>RFC 3068 - 6to4 prefix</td>
+</tr>
+<tr>
+<td>3ffe::/16</td>
+<td>any more specific prefix</td>
+<td>RFC 5156 - used for the 6bone but was returned</td>
+</tr>
+<tr>
+<td>4000::/3</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>5f00::/8</td>
+<td>any more specific prefix</td>
+<td>RFC 5156 - used for the 6bone but was returned</td>
+</tr>
+<tr>
+<td>6000::/3</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>8000::/3</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>a000::/3</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>c000::/3</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>e000::/4</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>f000::/5</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>f800::/6</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>fc00::/7</td>
+<td>any more specific prefix</td>
+<td>RFC 4193 - Unique Local Unicast</td>
+</tr>
+<tr>
+<td>fe80::/10</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Link Local Unicast</td>
+</tr>
+<tr>
+<td>fec0::/10</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Reserved by IETF</td>
+</tr>
+<tr>
+<td>ff00::/8</td>
+<td>any more specific prefix</td>
+<td>RFC 4291 - Multicast</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>IPv6 prefixes are accepted only if part of the IPv6 Global Unicast space 2000::/3.</li>
+</ul>
+<h2 id="blackhole-filtering">Blackhole filtering</h2>
+<ul>
+<li>
+<p>Blackhole filtering of more specific IP prefixes can be requested by tagging them with the following <strong>BGP communities</strong>: 65534:0, 199594:666:0,  65535:666 (<a href="https://tools.ietf.org/html/rfc7999#section-5">BLACKHOLE</a> well-known community)</p>
+</li>
+<li>
+<p>By default, routes are <strong>propagated</strong> to all the clients unless they have been explicitly configured to not receive them.</p>
+</li>
+<li>IPv4 routes are propagated <strong>unchanged</strong> to clients.</li>
+<li>IPv6 routes are propagated <strong>unchanged</strong> to clients.</li>
+<li>Before being announced to clients, all the routes are tagged with the BLACKHOLE well-known community.
+  The NO_EXPORT well-known community is also added.</li>
+<li>Blackhole filtering requests bypass any RPKI validation check and min/max length check.</li>
+</ul>
+<h2 id="graceful-bgp-session-shutdown">Graceful BGP session shutdown</h2>
+<ul>
+<li>Routes tagged with the <strong>GRACEFUL_SHUTDOWN</strong> BGP community (65535:0) have their LOCAL_PREF attribute lowered to 0.</li>
+</ul>
+<h2 id="announcement-control-via-bgp-communities">Announcement control via BGP communities</h2>
+<ul>
+<li>Routes tagged with the <strong>NO_EXPORT</strong> or <strong>NO_ADVERTISE</strong> communities received by the route server are propagated to other clients with those communities unaltered.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Standard</th>
+<th>Extended</th>
+<th>Large</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Do not announce to any client</td>
+<td>None</td>
+<td>rt:0:199594</td>
+<td>199594:0:199594</td>
+</tr>
+<tr>
+<td>Announce to peer, even if tagged with the previous community</td>
+<td>None</td>
+<td>None</td>
+<td>199594:199594:peer_as</td>
+</tr>
+<tr>
+<td>Do not announce to peer</td>
+<td>0:peer_as</td>
+<td>rt:0:peer_as</td>
+<td>199594:0:peer_as</td>
+</tr>
+<tr>
+<td>Prepend the announcing ASN once to peer</td>
+<td>65504:peer_as</td>
+<td>rt:65504:peer_as</td>
+<td>199594:65504:peer_as</td>
+</tr>
+<tr>
+<td>Prepend the announcing ASN twice to peer</td>
+<td>65505:peer_as</td>
+<td>rt:65505:peer_as</td>
+<td>199594:65505:peer_as</td>
+</tr>
+<tr>
+<td>Prepend the announcing ASN thrice to peer</td>
+<td>65506:peer_as</td>
+<td>rt:65506:peer_as</td>
+<td>199594:65506:peer_as</td>
+</tr>
+<tr>
+<td>Prepend the announcing ASN once to any</td>
+<td>None</td>
+<td>rt:65501:199594</td>
+<td>199594:65501:199594</td>
+</tr>
+<tr>
+<td>Prepend the announcing ASN twice to any</td>
+<td>None</td>
+<td>rt:65502:199594</td>
+<td>199594:65502:199594</td>
+</tr>
+<tr>
+<td>Prepend the announcing ASN thrice to any</td>
+<td>None</td>
+<td>rt:65503:199594</td>
+<td>199594:65503:199594</td>
+</tr>
+<tr>
+<td>Add NO_EXPORT to any</td>
+<td>None</td>
+<td>rt:65507:199594</td>
+<td>199594:65507:199594</td>
+</tr>
+<tr>
+<td>Add NO_ADVERTISE to any</td>
+<td>None</td>
+<td>rt:65508:199594</td>
+<td>199594:65508:199594</td>
+</tr>
+<tr>
+<td>Add NO_EXPORT to peer</td>
+<td>65509:peer_as</td>
+<td>rt:65509:peer_as</td>
+<td>199594:65509:peer_as</td>
+</tr>
+<tr>
+<td>Add NO_ADVERTISE to peer</td>
+<td>65510:peer_as</td>
+<td>rt:65510:peer_as</td>
+<td>199594:65510:peer_as</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reject-reasons">Reject reasons</h2>
+<ul>
+<li>
+<p>The following values are used to identify the reason for which routes are rejected. This is mostly used for troubleshooting, internal reporting purposes, looking glasses or in the route server log files.</p>
+</li>
+<li>
+<p>Routes which are rejected are tagged with the BGP community that represents the reason for which they were discarded.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Reason</th>
+<th>Standard</th>
+<th>Extended</th>
+<th>Large</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Generic code: the route must be treated as rejected</td>
+<td>65531:0</td>
+<td>None</td>
+<td>199594:65531:0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Invalid AS_PATH length</td>
+<td>65531:1</td>
+<td>None</td>
+<td>199594:65531:1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Prefix is bogon</td>
+<td>65531:2</td>
+<td>None</td>
+<td>199594:65531:2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Prefix is in global blacklist</td>
+<td>65531:3</td>
+<td>None</td>
+<td>199594:65531:3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Invalid AFI</td>
+<td>65531:4</td>
+<td>None</td>
+<td>199594:65531:4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Invalid NEXT_HOP</td>
+<td>65531:5</td>
+<td>None</td>
+<td>199594:65531:5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Invalid left-most ASN</td>
+<td>65531:6</td>
+<td>None</td>
+<td>199594:65531:6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Invalid ASN in AS_PATH</td>
+<td>65531:7</td>
+<td>None</td>
+<td>199594:65531:7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Transit-free ASN in AS_PATH</td>
+<td>65531:8</td>
+<td>None</td>
+<td>199594:65531:8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Origin ASN not in IRRDB AS-SETs</td>
+<td>65531:9</td>
+<td>None</td>
+<td>199594:65531:9</td>
+</tr>
+<tr>
+<td>10</td>
+<td>IPv6 prefix not in global unicast space</td>
+<td>65531:10</td>
+<td>None</td>
+<td>199594:65531:10</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Prefix is in client blacklist</td>
+<td>65531:11</td>
+<td>None</td>
+<td>199594:65531:11</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Prefix not in IRRDB AS-SETs</td>
+<td>65531:12</td>
+<td>None</td>
+<td>199594:65531:12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Invalid prefix length</td>
+<td>65531:13</td>
+<td>None</td>
+<td>199594:65531:13</td>
+</tr>
+<tr>
+<td>14</td>
+<td>RPKI INVALID route</td>
+<td>65531:14</td>
+<td>None</td>
+<td>199594:65531:14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Never via route-servers ASN in AS_PATH</td>
+<td>65531:15</td>
+<td>None</td>
+<td>199594:65531:15</td>
+</tr>
+<tr>
+<td>65535</td>
+<td>Unknown</td>
+<td>65531:65535</td>
+<td>None</td>
+<td>199594:65531:65535</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b78d2936.min.js"></script>
+      
+    
+  </body>
+</html>
