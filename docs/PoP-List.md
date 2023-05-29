@@ -4,8 +4,8 @@
 
 Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
 PoP 之間使用 EVPN+VXLAN 互連  
-<div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-20T04:18:40.375Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\&quot; etag=\&quot;Ye1g3tMMVMCHw4sacS0D\&quot; version=\&quot;20.8.20\&quot; type=\&quot;device\&quot;&gt;&lt;diagram name=\&quot;Page-1\&quot; id=\&quot;c37626ed-c26b-45fb-9056-f9ebc6bb27b6\&quot;&gt;7VrbcqM4EP0aPzoFiJsfg+NMduJkvOudXOYlhY0M2gDygHzL168EwlxEsMexY6fKlVSBjkQjuk833W1aoBssv0X21LvDDvRbiuQsW+CqpSiyKpn0wJBVihiylgJuhJwUknJgiN4gvzJDZ8iBMcdSiGDsEzQtg2MchnBMSpgdRXhRXjbBvlMCprYLBWA4tn0RfUQO8TgqS1I+cQOR6/FbmxqfGNnjVzfCs5DfL8QhTGcCOxPDl8ae7eBFAQK9FuhGGJP0LFh2oc/UWtbY9Tuz6y1HMCTbXPBTd37dwVfPavef5Pvvj8PH30bbSKXMbX/GVYHn05BvmKwy/SRPCJkgqQUsHBEPuzi0/T7GUwrKFPwPErLilrVnBFPII4HPZ2HoXDI70WGiogS5Rr7PRcIlIk/s/ELjo+fsSnp+tSwsu1rxgagArpMYz6IxbHhqmT82sSMXkqaFnNfQKfGHK/gbxAEk0YouiKBvEzQv08nmrHTX69aXDjCim1Yk7kGqrl7ImmF2VAPoppoJ4N4EgFQWmD4gl1E0eVWsKpUEqXpFUKoAQRA9KTxdDiWM+gN2yfKp0CukD/JUHDznZGPDnGHJaFWhpVwgZU7R49Gy8zm01PUyfzR1O/4IgjRJKTNaNbdi9L6IaH4WD3fgy87c3MD5D/DQPDEealIljnV2DIj6JkEbCZ0txJNJDA/C1Y7A1VEkMJVpfMiHOU97OWodh8t0MIARojqA0cnyWz2xtz/Q9Z1YuS/GqQLjfsEIEwRF3sWvkIw9boEp21CyRc2i/9KFxNL+7vrY0ugl3WSmY26a4cfCTCZNnFFSoAzWYYYIyolMRasB6zCjeu8EkGvuXcWUGrBWZM29pcom6T+w5jAiiNYsfXsE/QGOEUE4pNofYUJwUHbebO2lj1y2hjCnt+x4mlZPE7RkocGy+fSY+hBz2NSkMOrNYWpZJosWLlNm/mDpsurvYoziMZY7F1Eiy5pGf42TffjKS7xACT2sCfXTLvZxlNAGXF+yPyaLRPgVFmYkSZMMwK7AIeGxiPpdg3uzR4PLRn/ks4r+Tvq7yGu8DPIK1V01Sy56cMn3Ghztx+jx5eYFPCu93v1AmU2M+MZtK+eMY/vMFxneBN3OHn73guDO+XsGyM20Le87Im9rT/gvuB64PybkDcD+P/1gEaC7zJ6b0kq228Rpy6YTnK/qtAFynPRdDmP0Zo8SeWLgvapVfRMBBRdad1b4TVrFFkWda7WlC1k2jJJ7tUE6/ODb0KwVevi8SxZ7IbfDW6v9jB7uGvyWWXLhIQKHUzvh+IIGybKhfWZ7a90pyqKfAyf2zCeHiX2gU459SkcTYp+sHCj41bouOFzwK3eNpC2DXx7v1r2mkym3Tiv4NW676i83VP7X95e6XOFg/tJYXBf0+x1HzhfVr66dmn7X/llfVXMnP06Maiyj/yxuVW15uDiWWe8IdfXHiCAJjiYwo7nufa/KrNaO71WE1XWymla+/FiYMTWtYSqZyZbUyDO1r1VRzgM7TH6526GePEaQUxWtFOQ0ICZdWk2M0w4W48Sk6xzjPhTjlG1j3N5b4x8jgliqnmPcOcbtksiZpxbjxPZ1S9HXj5/0NjLV6b9n7HMLqgcwmUgS+zUoh3SXHXsPg/uWYj0s+5f3mRy6r1RUukTwHKo6crjeDou3MTdijU3Lqf9GSpTZVKBKgX056tixt5bt+nYc822uv2ZpjKfb00qTQYlWoAPE+gCoIq8ybO/9ii2bewd6eTZ/+vLeizJ/NR6widHUmzjh92Ltts1PzY8+p0lPR9XEisUM0bk/lQ2164yTIoP4tdJ992ebJg4NTv9F2i3Hb/+K3fVzAnpOQHegttFRypmCJHYS95SA0mH+fW76O1P+/TPo/Q8=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
-<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js" defer></script>
+
+![Alt text](./files/topology.drawio.svg)
 
 ## 節點列表
 
@@ -237,6 +237,23 @@ PoP 之間使用 EVPN+VXLAN 互連
         2. GRETAP
         3. VxLAN
 
+=== "Luobo-TWDSVM"
+
+    <h3>PoP 屬性</h3>
+    
+    * 管理人: KSKB
+    * PoP 種類: [贊助](#TYPE)，贊助人: 蘿蔔
+    * 物理位置: 台北市內湖區，是方電訊
+    * 無SLA保證
+    
+    <h3>接入方式</h3> 
+        
+        1. 隧道
+    <h4>1. 隧道</h4>
+    
+        1. OpenVPN
+        2. GRETAP
+        3. VxLAN
 
 === "Zerotier"
 
