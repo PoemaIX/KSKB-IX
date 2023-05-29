@@ -11,7 +11,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 
 | ASN | Name | AS-SET | RS R1 | RS T |
 |-----|-----|-----|-----|-----|
-| 138517 | [Poema Network](https://bgp.tools/as/138517) | AS-POEMA | - {: neigh_ip='fe80::138:517' RS='RSR1' } | - {: neigh_ip='fe80::138:517' RS='RST' } |
+| 138517 | [Poema Network](https://bgp.tools/as/138517) | AS-POEMA | - {: neigh_ip='2404:f4c0:f70e:1980::138:517' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::138:517' RS='RST' } |
 | 207705 | [JK-Network](https://bgp.tools/as/207705) | AS-JKNET | - {: neigh_ip='fe80::207:705' RS='RSR1' } | - {: neigh_ip='fe80::207:705' RS='RST' } |
 | 57481 | [Haonan Yang](https://bgp.tools/as/57481) |  | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RST' } |
 | 213262 | [Moe Overflow Electric](https://bgp.tools/as/213262) | AS-CUTE | - {: neigh_ip='fe80::213:262' RS='RSR1' } | - {: neigh_ip='fe80::213:262' RS='RST' } |
@@ -66,6 +66,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 199632 | [Decima LLC](https://bgp.tools/as/199632) | AS199632:AS-DECIMA | - {: neigh_ip='fe80::199:632' RS='RSR1' } | - {: neigh_ip='fe80::199:632' RS='RST' } |
 | 139888 | [Time Network](https://bgp.tools/as/139888) |  | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RST' } |
 | 150184 | [OwONet](https://bgp.tools/as/150184) |  | - {: neigh_ip='fe80::150:184' RS='RSR1' } | - {: neigh_ip='fe80::150:184' RS='RST' } |
+| 212623 | [23751 NET](https://bgp.tools/as/212623) | AS212623:AS-INPRTX | - {: neigh_ip='fe80::212:623' RS='RSR1' } | - {: neigh_ip='fe80::212:623' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
