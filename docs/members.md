@@ -67,6 +67,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 139888 | [Time Network](https://bgp.tools/as/139888) |  | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RST' } |
 | 150184 | [OwONet](https://bgp.tools/as/150184) |  | - {: neigh_ip='fe80::150:184' RS='RSR1' } | - {: neigh_ip='fe80::150:184' RS='RST' } |
 | 212623 | [23751 NET](https://bgp.tools/as/212623) | AS212623:AS-INPRTX | - {: neigh_ip='fe80::212:623' RS='RSR1' } | - {: neigh_ip='fe80::212:623' RS='RST' } |
+| 60900 | [Ssmidge LLC](https://bgp.tools/as/60900) | RIPE::AS60900:AS-MAIN | - {: neigh_ip='2404:f4c0:f70e:1980::60:900' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::60:900' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
