@@ -67,30 +67,30 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::1:1`
 * RS Transitable<a name="RS2"></a>
     * AS199594
-    * Transitable route server. 這個 RS 的路由能被 transit 到其他地方，同時也能把其他地方的路由 transit 進來
-        * 兩者要同時發生。把其他地方的路由 transit 進來的同時，也要把 RS 內路由 transit 到其他地方
-        * 初衷是想說任何成員都可以成為志願者
-            * 有需要的人，接上 RS2 就能接到上游
-            * 有意願的人，可以成為 provider，幫忙有需要的人把路由播給上游，而不需要每個下游一一設定BGP session
-            * 成為 provider 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 (199594:0:對方AS) 即可
-    * 接入有兩種身分: client 和 provider
+    * Transitable route server.
+        * 初衷是想說任何成員都可以成為 transit sponsor
+        * 有 transit 需要的人，接上 RS2 就能接到上游
+        * 有意願的人，則可以成為 provider，幫忙把路由 transit 到 STUIX 的 HE 上游，而不需要每個下游一一設定BGP session
+        * 成為 provider 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 `(199594:0:對方AS)` 即可
+    * 接入有兩種身分: client 和 transit sponsor
         * 預設是 client 身分接入，不能發全表
-        * 成為 provider 需要登記，可以發全表
+        * 成為 transit sponsor 需要登記，可以發全表
+        * transit sponsor 幫忙把路由表帶到 STUIX
+        * STUIX 成員自己可以接上游，因此無法成為 client 。請發揮能力搭建內網在 STUIX 接上游
     * 實驗性質，因為 peering route 和 transit route 被混在同一個 bgp session 裡面了，所以要改透過 bgp_large_community 來區分
         * 有 `(199594:65530:7)` 屬性的就是 transit 路由，請當成上游路由處裡。沒有的就是 peering 路由，請當成 peering 路由處理
         * 同理，若將外部路由倒入 `RS Transitable` ，請將外部路由打上 `(199594:65530:7)`，供其他成員參考
         * 只有提供Transit志願者可以倒全表，請參考下面的「發全表條件」
     * 懶人包:
-        * **一般成員: 請將 `RS Transitable` 設定成上游**
-        * **提供Transit志願者: 請將 `RS Transitable` 設定成下游**，發送路由打上 `(199594:65530:7)`，並拒收帶有 `(199594:65530:7)` 的路由
+        * **一般成員: 請將 `RS Transitable` 設定成上游，同時心中默念100遍「感謝志願者幫我 transit」，即可獲得 transit **
+        * **transit sponsor: 請將 `RS Transitable` 設定成下游**，發送路由打上 `(199594:65530:7)`，並拒收帶有 `(199594:65530:7)` 的路由
     * 連線地址(link-local 模式): `fe80::1980:2:1 % eth1`
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::2:1`
-    * 成為 provider 注意事項:
-        * 如果你想幫忙 transit `RS Transitable` 的路由去 STUIX 的話，收路由就要過濾掉 (199594:65530:7) 的路由
-        * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和 `RS Transitable` 有連線的成員(並且 AS-SET 大小必須小於100條路由)，每小時同步一次
-        * 外面收到的表要打上 `(199594:65530:7)`才能發去 `RS Transitable` (可以在我這邊登記上游ASN，RS會幫忙自動打上)
-        * 成為 provider 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 (199594:0:對方AS) 即可
-        * 弄好以後即可以申請開通炸全表filter
+    * 成為 transit sponsor 注意事項:
+        * 首先，收路由請**務必，絕對**要過濾掉 `(199594:65530:7)` 的路由
+        * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和 `RS Transitable` 有 client 已經發送的(並且 AS-SET 大小必須小於100條路由)路由，每小時同步一次
+        * 發全表進去要打上 `(199594:65530:7)` (其實RS會幫忙自動打上)
+        * sponsor 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 `(199594:0:對方AS)` 即可
 * RS Chaos
     * AS199594
     * 過濾規則: `import all; export all`;，也就是沒有過濾
@@ -168,7 +168,8 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 | 名單                                      | 致謝 |
 |------------------------------------------|----------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走 GeekIX 去 TWDS </li> |
-| [雫](https://as142553.zhiccc.net/)       | <li>感謝<ins>雫</ins>提供的 IPv6 Transit</li><li>走 wgcf 去 TWDS</li> |
+| [MrSheepNET LTD](https://mrsheep.io/)    | <li>感謝<ins>MrSheepNET LTD</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
+| [Muilties Network](https://muilties.com/)| <li>感謝<ins>Muilties Network</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
 | [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的VM，可以直達去 TWDS</li><li>解決了 Hinet 和 TWDS 互連性問題</li> |
 | [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國 VM 讓我做相關實驗. |
 
