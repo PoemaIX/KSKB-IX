@@ -167,7 +167,6 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 
 | 名單                                      | 致謝 |
 |------------------------------------------|----------|
-| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走 GeekIX 去 TWDS </li> |
 | [MrSheepNET LTD](https://mrsheep.io/)    | <li>感謝<ins>MrSheepNET LTD</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
 | [Muilties Network](https://muilties.com/)| <li>感謝<ins>Muilties Network</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
 | [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的VM，可以直達去 TWDS</li><li>解決了 Hinet 和 TWDS 互連性問題</li> |
