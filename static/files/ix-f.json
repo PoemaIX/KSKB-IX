@@ -62,7 +62,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -75,7 +75,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::138:517",
                 "as_macro": "AS-POEMA",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
