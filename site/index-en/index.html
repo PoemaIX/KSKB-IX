@@ -611,20 +611,20 @@ Participants should should have some knowledge and experience related to the net
 <li>AS199594</li>
 <li>"Transitable" route server.<ul>
 <li>You can be a voluntary <strong>transit sponsor</strong>, help us to transit our routes to upstream such as STUIX or AS6939 without setup BGP sessions for each downstream one by one.</li>
-<li>Those who need transit can connect to RS Transitable to get transits.</li>
-<li>Transit Sponser can refuse transit to specific users by tagging routes with <code>(199594:0:AS number)</code>.</li>
+<li>Those who need transit can connect to <code>RS Transitable</code> to get IP transit.</li>
+<li>Transit Sponser can reject to transit for specific downstream by tagging routes with <code>(199594:0:AS number)</code>.</li>
 </ul>
 </li>
 <li>Client Roles: <strong>Downstream</strong> and <strong>Transit Sponser</strong><ul>
 <li>The default role is downstream, you can't accounce full table into it.</li>
-<li>You can registered as transit sponser, then you can send full table to RS Transitable.</li>
+<li>You can registered as transit sponser, then you can send full table to <code>RS Transitable</code>.</li>
 <li>You have to transit routes to upstream for downstreams.</li>
 </ul>
 </li>
-<li>It's experimental since peering routes and transit routes are mixed in the same BGP session, and they are differentiated using bgp_large_community.<ul>
+<li>It's experimental since peering routes and transit routes are mixed in the same BGP session. You have split them with bgp_large_community.<ul>
 <li>Routes with <code>(199594:65530:7)</code> attribute are transit routes and should be treated as upstream routes. Transit Sponser should reject these rotues.</li>
-<li>Similarly, when exporting external routes into RS Transitable, please tag them with <code>(199594:65530:7)</code> for reference by other Transit Sponser.</li>
-<li>Only transit sponser can export the full table into RS Transitable. Please refer to the "Conditions for Full Routing Table" below.</li>
+<li>Similarly, when exporting external routes into <code>RS Transitable</code>, please tag them with <code>(199594:65530:7)</code> for reference by other Transit Sponser.</li>
+<li>Only transit sponser can export the full table into <code>RS Transitable</code>. Please refer to the <code>Obligation of transit sponsor</code> below.</li>
 </ul>
 </li>
 <li>Nutshell:<ul>
@@ -745,11 +745,11 @@ Including but not limited to the following:  </p>
 </tr>
 <tr>
 <td><a href="https://mrsheep.io/">MrSheepNET LTD</a></td>
-<td><li>Thank to <ins>MrSheepNET LTD</ins>to be a transit sponsor</li><li>Transit our routes to STUIX.</li></td>
+<td><li>Thank to <ins>MrSheepNET LTD</ins> to be a transit sponsor</li><li>Transit our routes to STUIX.</li></td>
 </tr>
 <tr>
 <td><a href="https://muilties.com/">Muilties Network</a></td>
-<td><li>Thank to <ins>Muilties Network</ins>to be a transit sponsor</li><li>Transit our routes to STUIX.</li></td>
+<td><li>Thank to <ins>Muilties Network</ins> to be a transit sponsor</li><li>Transit our routes to STUIX.</li></td>
 </tr>
 <tr>
 <td><a href="https://network.steveyi.net/">SteveYi</a></td>

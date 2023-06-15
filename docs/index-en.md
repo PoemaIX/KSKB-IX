@@ -158,8 +158,8 @@ We want to acknowledge the following sponsers for their sponsored resources and 
 | List                                     | Acknowledgements     |
 |------------------------------------------|----------------------|
 | [TOHU NET](https://as140731.bairuo.net/) | <li>Thank to <ins>The BaiRuo</ins> for the IPv6 Transit to STUIX over GeekIX</li> |
-| [MrSheepNET LTD](https://mrsheep.io/)    | <li>Thank to <ins>MrSheepNET LTD</ins>to be a transit sponsor</li><li>Transit our routes to STUIX.</li> |
-| [Muilties Network](https://muilties.com/)| <li>Thank to <ins>Muilties Network</ins>to be a transit sponsor</li><li>Transit our routes to STUIX.</li> |
+| [MrSheepNET LTD](https://mrsheep.io/)    | <li>Thank to <ins>MrSheepNET LTD</ins> to be a transit sponsor</li><li>Transit our routes to STUIX.</li> |
+| [Muilties Network](https://muilties.com/)| <li>Thank to <ins>Muilties Network</ins> to be a transit sponsor</li><li>Transit our routes to STUIX.</li> |
 | [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the VM, let me setup testing the EVPN-VXLAN setup.</li> |
 | [MLGT](https://as204508.net/)            | <li>Thank to <ins>Gatterer Manuel</ins> for providing the Germany VM for better connectivity. |
 
