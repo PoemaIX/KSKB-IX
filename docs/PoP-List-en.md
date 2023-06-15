@@ -261,7 +261,7 @@ The PoPs are interconnected using EVPN+VXLAN.
     
     * Operator: KSKB
     * Pop Type: [Direct](#TYPE)
-    * Physical Location: Virtual PoP, no specific location
+    * Physical Location: Virtual PoP, no concrete location
     * No SLA guarantee
     
     <h3>Access Method</h3> 
