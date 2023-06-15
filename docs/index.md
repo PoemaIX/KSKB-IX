@@ -80,7 +80,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
         * 同理，若將外部路由倒入 `RS Transitable` ，請將外部路由打上 `(199594:65530:7)`，供其他成員參考
         * 只有提供Transit志願者可以倒全表，請參考下面的「發全表條件」
     * 懶人包:
-        * **一般成員: 請將 `RS Transitable` 設定成上游，同時心中默念100遍「感謝志願者幫我 transit」，即可獲得 transit **
+        * **一般成員: 請將 `RS Transitable` 設定成上游，同時心中默念100遍「感謝 sponsor 幫我 transit」，即可獲得 transit**
         * **transit sponsor: 請將 `RS Transitable` 設定成下游**，發送路由打上 `(199594:65530:7)`，並拒收帶有 `(199594:65530:7)` 的路由
     * 連線地址(link-local 模式): `fe80::1980:2:1 % eth1`
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::2:1`
