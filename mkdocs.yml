@@ -21,8 +21,8 @@ nav:
   - Poema IX(EN): index-en.md
   - PoP List: PoP-List.md
   - PoP List(EN): PoP-List-en.md
-  - Member List: members.md
-  - Route Server: RS.md
+  - Member List(EN): members.md
+  - Route Server(EN): RS.md
   - Virtual IXP: Virtual-IXP.md
   - Poema Network: "https://net.kskb.eu.org"
 site_url: https://ix.poema.eu.org/
