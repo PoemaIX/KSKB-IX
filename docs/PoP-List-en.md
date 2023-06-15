@@ -97,8 +97,8 @@ The PoPs are interconnected using EVPN+VXLAN.
                 *For internal network tunnel setup  
                 * 🂠🂠🂠00~🂠🂠🂠99
             * ssh port:
-                Connect to port 22 of VMID machine22
-                * :10🂠🂠🂠 → :2t
+                Connect to port 22 of VMID machine
+                * :10🂠🂠🂠 → :22
     <h4>3. Physical(Wifi)</h4>
     
         Location: Taipei City
