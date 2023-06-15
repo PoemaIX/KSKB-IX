@@ -62,16 +62,16 @@ We have three route servers, with 3 different policies
     * AS199594
     * "Transitable" route server.
         * You can be a voluntary **transit sponsor**, help us to transit our routes to upstream such as STUIX or AS6939 without setup BGP sessions for each downstream one by one.
-        * Those who need transit can connect to RS Transitable to get transits.
-        * Transit Sponser can refuse transit to specific users by tagging routes with `(199594:0:AS number)`.
+        * Those who need transit can connect to `RS Transitable` to get IP transit.
+        * Transit Sponser can reject to transit for specific downstream by tagging routes with `(199594:0:AS number)`.
     * Client Roles: **Downstream** and **Transit Sponser**
         * The default role is downstream, you can't accounce full table into it.
-        * You can registered as transit sponser, then you can send full table to RS Transitable.
+        * You can registered as transit sponser, then you can send full table to `RS Transitable`.
         * You have to transit routes to upstream for downstreams.
-    * It's experimental since peering routes and transit routes are mixed in the same BGP session, and they are differentiated using bgp_large_community.
+    * It's experimental since peering routes and transit routes are mixed in the same BGP session. You have split them with bgp_large_community.
         * Routes with `(199594:65530:7)` attribute are transit routes and should be treated as upstream routes. Transit Sponser should reject these rotues.
-        * Similarly, when exporting external routes into RS Transitable, please tag them with `(199594:65530:7)` for reference by other Transit Sponser.
-        * Only transit sponser can export the full table into RS Transitable. Please refer to the "Conditions for Full Routing Table" below.
+        * Similarly, when exporting external routes into `RS Transitable`, please tag them with `(199594:65530:7)` for reference by other Transit Sponser.
+        * Only transit sponser can export the full table into `RS Transitable`. Please refer to the `Obligation of transit sponsor` below.
     * Nutshell:
         * **Regular member: Set `RS Transitable` as an upstream**
         * **Transit sponsor: Set `RS Transitable` as an downstream**, reject all routes contains `(199594:65530:7)` and add `(199594:65530:7)` while exporting routes.
