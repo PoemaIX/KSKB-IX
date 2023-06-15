@@ -772,13 +772,21 @@ KSKB 不想要自己花的錢，被挪作他用(實驗、練習配網以外的�
 <tbody>
 <tr>
 <td>0.0.0.0/0</td>
-<td><code>any</code></td>
+<td><code>1 ~ 9999</code></td>
+<td>Cloudflare WARP</td>
+<td>100M/40M</td>
+<td>1440</td>
+</tr>
+<tr>
+<td>0.0.0.0/0</td>
+<td><code>10000 ~ 65535</code></td>
 <td>SeedNet</td>
 <td>100M/40M</td>
 <td>1500</td>
 </tr>
 </tbody>
 </table>
+<p>虛擬機位於NAT後面，出於安全原因，目標端口小於10000的連接將被重定向到Cloudflare WARP</p>
 </div>
 </div>
 </div>
