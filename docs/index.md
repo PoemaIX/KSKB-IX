@@ -62,23 +62,21 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
     * [支援的Community屬性](RS#announcement-control-via-bgp-communities)
     * 普通人也能連接，RS有做過濾
     * 懶人包: **把RS 當作 peer 對象來連線**
-    * 我們強制要求與RS1進行BGP連接，並發送至少一條IPv6路由
+    * 我們強制要求與 `RS Regular 1` 進行BGP連接，並發送至少一條IPv6路由
     * 連線地址(link-local 模式): `fe80::1980:1:1 % eth1`
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::1:1`
 * RS Transitable<a name="RS2"></a>
     * AS199594
     * Transitable route server.
-        * 初衷是想說任何成員都可以成為 transit sponsor
-        * 有 transit 需要的人，接上 RS2 就能接到上游
-        * 有意願的人，則可以成為 provider，幫忙把路由 transit 到 STUIX 的 HE 上游，而不需要每個下游一一設定BGP session
-        * 成為 provider 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 `(199594:0:對方AS)` 即可
-    * 接入有兩種身分: client 和 transit sponsor
-        * 預設是 client 身分接入，不能發全表
+        * 你可以成為 transit sponsor 幫忙把路由 transit 到 STUIX 的 HE 上游，而不需要每個下游一一設定BGP session
+        * 你有 transit 需要的話，接上 `RS Transitable` 也能接到上游
+        * 成為 transit sponsor 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 `(199594:0:對方AS)` 即可
+    * 接入有兩種身分: **Downstream** 和 **Transit Sponser**
+        * 預設是 Downstream 身分接入，不能發全表
         * 成為 transit sponsor 需要登記，可以發全表
-        * transit sponsor 幫忙把路由表帶到 STUIX
-        * STUIX 成員自己可以接上游，因此無法成為 client 。請發揮能力搭建內網在 STUIX 接上游
+        * transit sponsor 幫忙把路由表帶到 STUIX 的上游
     * 實驗性質，因為 peering route 和 transit route 被混在同一個 bgp session 裡面了，所以要改透過 bgp_large_community 來區分
-        * 有 `(199594:65530:7)` 屬性的就是 transit 路由，請當成上游路由處裡。沒有的就是 peering 路由，請當成 peering 路由處理
+        * 有 `(199594:65530:7)` 屬性的就是 transit 路由， Transit Sponser 請拒收
         * 同理，若將外部路由倒入 `RS Transitable` ，請將外部路由打上 `(199594:65530:7)`，供其他成員參考
         * 只有提供Transit志願者可以倒全表，請參考下面的「發全表條件」
     * 懶人包:
@@ -90,7 +88,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
         * 首先，收路由請**務必，絕對**要過濾掉 `(199594:65530:7)` 的路由
         * 將 [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) 加到自己的 AS-SET 裡面，裡面只有已和 `RS Transitable` 有 client 已經發送的(並且 AS-SET 大小必須小於100條路由)路由，每小時同步一次
         * 發全表進去要打上 `(199594:65530:7)` (其實RS會幫忙自動打上)
-        * sponsor 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 `(199594:0:對方AS)` 即可
+        * sponsor 可以拒絕為特定使用者提供 transit ，只需要發路由時打上 `(199594:0:對方AS)` 並拒絕對應的路由即可
 * RS Chaos
     * AS199594
     * 過濾規則: `import all; export all`;，也就是沒有過濾
@@ -109,7 +107,7 @@ See member list: [Members](members)
 ## 限制 | Limitations
 
 ### IX LAN
-對於  IX LAN 內網，以及IX接入端口(IX VM 接入的話通常是eth1)，有以下安全規範
+對於  IX LAN 內網，以及IX接入端口(IX VM 接入的話通常是eth1)，有以下規定
 
 * 只有經過申請的來源mac位址可以被使用
 * 端口必須關閉 arp-proxy 和 ndp-proxy ，只能針對由 Poema IX 分配的 **IX LAN** IP 的 Neighbor Discovery 封包做出回應
@@ -145,9 +143,9 @@ See member list: [Members](members)
         * 發送造假的 AS path
 
 ### IX VM
-對於接入了 Poema IX 的 IX VM，以及IX LAN ，有以下安全規定
+對於接入了 Poema IX 的 IX VM，以及IX LAN ，有以下額外規定
 
-* 遵守中華民國（台灣）法律，禁止做出任何可能會讓電腦被扣押的舉動
+* 遵守中華民國（台灣）法律，禁止做出任何可能會讓電腦主機被扣押的舉動
 * 尤其是任何涉及「錢」的操作，更是**嚴禁**[^1]。比如遊戲點卡儲值，註冊相關帳號。或是金融相關網頁/程式的帳戶開設/操作
 * 僅供個人使用，禁止轉讓/租借/商業使用
 * 禁止主機對外、對內發包（無論是否為主動行為）, ARP 攻擊, ARP 劫持, 掃描弱密碼, 惡意窮舉，DDoS，木馬和干擾其它伺服器運行
@@ -167,9 +165,10 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 
 | 名單                                      | 致謝 |
 |------------------------------------------|----------|
+| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走 GeekIX 去 TWDS </li> |
 | [MrSheepNET LTD](https://mrsheep.io/)    | <li>感謝<ins>MrSheepNET LTD</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
 | [Muilties Network](https://muilties.com/)| <li>感謝<ins>Muilties Network</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
-| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的VM，可以直達去 TWDS</li><li>解決了 Hinet 和 TWDS 互連性問題</li> |
+| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 VM 讓我做 VXLAN-EVPN 架設實驗.</li> |
 | [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國 VM 讓我做相關實驗. |
 
 

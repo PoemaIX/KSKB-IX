@@ -1,29 +1,29 @@
 # Poema IX POP List
 
-## 拓樸架構
+## Topology
 
-Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
-PoP 之間使用 EVPN+VXLAN 互連  
+Poema IX is composed of multiple Points of Presence (PoP), each operating independently.
+The PoPs are interconnected using EVPN+VXLAN.
 
 ![Alt text](./files/topology.drawio.svg)
 
-## 節點列表
+## Node List
 
 === "KSKB-HOME"
 
-    <h3>PoP 屬性</h3>
+    <h3>Pop Attributes</h3>
     
-    * 管理人: KSKB
-    * PoP 種類: [直營](#TYPE)
-    * 物理位置: 台北市大安區，KSKB 家裡的客廳雲
-    * 無SLA保證
+    * Operator: KSKB
+    * Pop Type: [Direct Sales](#TYPE)
+    * Physical Location: Da'an District, Taipei City, Cloud in KSKB's living room
+    * No SLA guarantee
     
-    <h3>接入方式</h3> 
+    <h3>Access Method</h3> 
     
-        1. 隧道
+        1. Tunnel
         2. VM
-        3. 物理
-    <h4>1. 隧道</h4>
+        3. Physical
+    <h4>1. Tunnel</h4>
     
         1. OpenVPN
     <h4>2. VM</h4>
@@ -35,58 +35,54 @@ PoP 之間使用 EVPN+VXLAN 互連
         | KVM| 1C | 1G | 8G  | NTD200 |
         | KVM| 1C | 2G | 16G | NTD350 |
         
-        ??? "IX 全域性規定"
-            * 遵守中華民國（台灣）法律，禁止做出任何可能會讓電腦被扣押的舉動
-            * 尤其是任何涉及「錢」的操作，更是**嚴禁**。比如遊戲點卡儲值，註冊相關帳號。或是金融相關網頁/程式的帳戶開設/操作
-            * 僅供個人使用，禁止轉讓/租借/商業使用
-            * 禁止主機對外、對內發包（無論是否為主動行為）, ARP 攻擊, ARP 劫持, 掃描弱密碼, 惡意窮舉，DDoS，木馬和干擾其它伺服器運行
-            * 禁止發送垃圾郵件、垃圾訊息, 散播木馬、病毒(包括引用其它伺服器的惡意文件)
-            * 禁止使用 Torrents、BT，等下載或傳播版權內容
-            * 禁止使用 net_speeder/finalspeed/kcptun 等干擾網路運作的，任何形式的多倍發包工具
-            * 資源合理使用。禁止長時間消耗/佔滿CPU/網路頻寬等資源，例如rclone轉存/挖礦，**或是讓我感覺家裡網路很卡**(這是最主要的判斷方式)
-            * 禁止用於爬蟲/帳號註冊等，可能會使IP被標記為bot(俗稱IP被汙染)之行為
-            * 禁止架設耗資源的程式，如線上遊戲
-            
-        ???+ PoP個別規定
-            KSKB 免費提供資源，是想要給對網路運作有興趣的人，一個**練習配網**的地方  
-            同時結交網路技術愛好者。大家一同討論/實驗不同的網路的架構，一起精進自己的技術  
-            但是對 KSKB 來說，電費(≈NT200/月)，網路費(NT1099/月)，硬體(≈NT25000)都要花錢的  
-            KSKB 不想要自己花的錢，被挪作他用(實驗、練習配網以外的用途)  
-            因此 VM 的使用，有以下規範  
+        ??? "IX Global Rules"
+            * Comply with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer
+            * Especially prohibited are any operations involving "money." For example, game card top-up or registration of related accounts, as well as account opening or operations related to financial web pages/programs.
+            * For personal use only; transfer, rental, and commercial use are prohibited
+            * Prohibited actions include sending packages from the host to the outside or inside (regardless of whether they are active), ARP attacks, ARP hijacking, scanning weak passwords, malicious enumeration, DDoS, Trojans, and interference with the operation of other servers
+            * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers)
+            * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content
+            * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation
+            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criterion)
+            * Prohibited activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination)
+            * Prohibited from running resource-intensive programs, such as online games
         
-            <h4>使用規範</h4>
-            
-            * VM 僅限用於內網架設和網路設定相關(如 OSPF/eBGP/iBGP/Route Reflector)的用途
-            * VM 提供的網路，僅供成員作為**成員間內網流量交換**使用，不得作為外部網路使用
-                * 網路活動的連線對象必須符合以下資格
-                    1. [自己內網的其他節點](/Virtual-IXP/#IX-VM-ETH0)
-                    2. Peering 對象
-                    3. apt update/git clone 保持節點運作必須的流量
-                * 禁止長時間站滿頻寬，影響其他人使用
-            * 禁止用於其他用途比如代理，架站等等，包括但不限於
-                * 禁止提供公開服務，公開連接
-                    * 如果是 Looning glass 或是和網路設定本身相關則允許
-                * 禁止作檔案主機使用，例如圖床/檔案/網站伺服器
-                * 禁止用於流量落地/VPN出口
-            * 如果是 KSKB 朋友，徵詢 KSKB 同意以後可以略過以上限制
-        
-        ???+ "VM 接入要求"
-            * 你必須向 KSKB 證明你具有下列能力:
-                1. 知道交換機轉發封包的流程
-                2. 了解路由器選路過程
-                3. 了解動態路由的目的，還有和靜態路由的差異
-                4. 明白 eBGP/iBGP/iGP/RR 運作的過程，以及這些技術要解決的問題
-                5. 必須要有自己的內網(可以基於隧道)，且必須把提供的 VM 加入內網
-                6. 內網必需要有 iGP 和 iBGP 路由協議，並且能區分 peer 和 transit 表
-                7. IX 上網卡僅用於內網隧道的搭建，不用無其他服務
-                8. 抱著謙虛學習的心，Be nice.
-            * 證明: 群友內推/考試/面試/自主提供材料
-            * 若沒有和`RS Regular`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
-            * 如果是 KSKB 朋友，徵詢 KSKB 同意以後可以略過以上限制
+
+        ???+ PoP Specific Regulations
+            KSKB provides resources for free to provide a place for individuals interested in network operation to practice network configuration. It also allows networking enthusiasts to connect, discuss, and experiment with different network architectures, collectively improving their technical skills. However, for KSKB, electricity costs (≈NT200/month), internet fees (NT1099/month), and hardware costs (≈NT25000) are expenses. KSKB does not want its funds to be used for purposes other than experimentation and practicing network configuration. Therefore, the use of VMs is subject to the following regulations:
+
+            <h4>Usage Regulations</h4>
+            * VMs are only allowed for internal network tunneling and network configuration purposes (such as OSPF/eBGP/iBGP/Route Reflector).
+            * The network provided by VMs is only for member-to-member or internal network traffic exchange and should not be used as an external network.
+                * The connected entities must meet the following criteria:
+                   1. Other nodes within your internal network
+                   2. Peering partners
+                   3. Apt update/git clone traffic required for node operation
+                *Prohibited actions include prolonged bandwidth occupation that affects others' usage.
+            *Prohibited use for other purposes such as proxy, hosting, etc., including but not limited to:
+                * Prohibited provision of public services or public connections.
+                    * Looning glass or network configuration-related services are allowed.
+                * Prohibited use as a file host, such as image hosting/file/web servers.
+                * Prohibited use as traffic termination/VPN egress.
+            * If you are a friend of KSKB, you may bypass the above restrictions with KSKB's consent.
+        ???+ "VM Access Requirements"
+            * You must prove to KSKB that you possess the following abilities:
+                1. Understanding of packet forwarding processes in switches.
+                2. Knowledge of router routing selection processes.
+                3. Understanding the purpose of dynamic routing and the differences between dynamic and static routing.
+                4. Familiarity with the operation of eBGP/iBGP/iGP/RR and the problems these technologies aim to solve.
+                5. Must have your own internal network (tunnel-based is acceptable) and include the provided VM in the network.
+                6. The internal network must have iGP and iBGP routing protocols and be able to differentiate between peer and transit tables.
+                7. The network card on the IX is only used for building an internal network tunnel and not for any other services.
+                8. Approach learning with a humble attitude and be nice.
+            * Proof: Recommendation from group members/exams/interviews/self-provided materials.
+            * If you do not establish a BGP connection with RS Regular and send at least one IPv6 route, KSKB will prioritize shutting down your VM when Google Chrome's memory explodes to allow KSKB to browse the web/play games smoothly.
+           * If you are a friend of KSKB, you may bypass the above restrictions with KSKB's consent.
     === "Connectivity"
-        網路連線
+        Network Connections
+
         
-        所有從 IX VM 的**出方向**的連線，遵守以下路由策略
+        All **outgoing** connections from the IX VM follow the routing policies outlined below:
         
         | Dst IP           | Dst port                | Connection         | Speed     | MTU  |
         |------------------|-------------------------|--------------------|-----------|------|
@@ -94,29 +90,28 @@ PoP 之間使用 EVPN+VXLAN 互連
         | 0.0.0.0/0        | `10000~65535`<br>ICMP   | Hinet              | 500M/250M | 1492 |
         | ::/0             | Any                     | Hurricane Electric | 200M/200M | 1372 |
         
-        連線服務 | Connection Service  
+      | Connection Service  
         
         * Port forward:
             * 🂠🂠🂠=**VMID**
-            * tcp/udp port 轉發，共計100個port
-                * 供內網隧道搭建使用  
+            tcp/udp通用 porforwarding, a total of 100 portsrt
+                *For internal network tunnel setup  
                 * 🂠🂠🂠00~🂠🂠🂠99
             * ssh port:
-                * 連線到 VMID 機器的 port 22
-                * :10🂠🂠🂠 → :22
-            * port forward入口，由於是浮動IP，wg隧道務必加上crontab更新endpoint
-    <h4>3. 物理(Wifi)</h4>
+                Connect to port 22 of VMID machine22
+                * :10🂠🂠🂠 → :2t
+    <h4>3Physical物理(Wifi)</h4>
     
-        * 地理位置: 台北市
-        * 短距離接入，僅限鄰居
+        Location: Taipei City北市
+        Short-range access, limited to neighbors鄰居
             * 2.4GHz 802.11n
             * 5GHz 802.11ac
-        * 長距離接入
-            * 接入點必須位於六張犁捷運站 3km 內，並且可直接目視，無建物遮擋
-            * KSKB 提供頂樓，指向式wifi建設成本由妳提供
-    <h4>4. 物理(AX.25 無線電接入(未實裝))</h4>
+        Long-range access接入
+            The access point must be within 3km of Liuzhangli MRT Station, Taipei, with direct line of sight and no building obstruction.遮擋
+            KSKB provides the rooftop, and the directional Wi-Fi construction cost will be borne by you.提供
+    <h4>4Physical (AX.25 Radio Access) (Not Implemented)))</h4>
     
-        * 未實作，正在想要不要弄
+        Not implemented, still considering whether to proceed.要弄
 
 === "Jord-Home"
 
