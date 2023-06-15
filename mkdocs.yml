@@ -18,8 +18,9 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 nav:
   - Poema IX: index.md
+  - Poema IX(EN): index-en.md
   - PoP List: PoP-List.md
-  # - (EN): Poema-IX-EN.md
+  - PoP List(EN): PoP-List-en.md
   - Member List: members.md
   - Route Server: RS.md
   - Virtual IXP: Virtual-IXP.md
