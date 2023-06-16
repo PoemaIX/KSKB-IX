@@ -1,7 +1,7 @@
 # Poema IX
 
 ## Introduction
-Poema IX is a non-profit distributed [Virtual IXP](https://bgp.tools/kb/virtual-ixp) located and running on a laptop at my home in order to provide a platform to BGP hobbyist to learn and expirenment with the real life networking.  
+Poema IX is a non-profit distributed [Virtual IXP](https://bgp.tools/kb/virtual-ixp) located and running at my home in order to provide a platform to BGP hobbyist to learn and expirenment with real life networking.  
 
 This IX provides OSI Layer 2 Ethernet Switching service. For the switching network, we refer to `IX LAN`, `IX peering LAN` or `Peering LAN` in the following sections.  
 
@@ -9,8 +9,8 @@ This IX supports IPv4(mpbgp + extended next hop) and IPv6
 PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
 IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/)  
 
-Meanwhile a number of new technologies are aviable, such as `IPv6 Link-local address`, `Multiprotocol BGP` and `Extended Next Hop(RFC 5549)` but only a few networks are using it.  
-If those technologies are aviable, but why we don't use it? So, I decide to use it ay my IXP.  
+Meanwhile a number of new technologies are avilable, such as `IPv6 Link-local address`, `Multiprotocol BGP` and `Extended Next Hop(RFC 5549)` but only few networks are using it.  
+If those technologies are avilable, but why we don't use it? So, I decide to use it at my IXP.  
 
 ## Join
 
