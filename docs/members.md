@@ -11,6 +11,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 
 | ASN | Name | AS-SET | RS R1 | RS T |
 |-----|-----|-----|-----|-----|
+| 199594 | [Poema IX RS](https://bgp.tools/as/199594) |  | - {: neigh_ip='fe80::1000:199:594' RS='RSR1' } | - {: neigh_ip='fe80::1000:199:594' RS='RST' } |
 | 138517 | [Poema Network](https://bgp.tools/as/138517) | AS-POEMA | - {: neigh_ip='2404:f4c0:f70e:1980::138:517' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::138:517' RS='RST' } |
 | 207705 | [JK-Network](https://bgp.tools/as/207705) | AS-JKNET | - {: neigh_ip='fe80::207:705' RS='RSR1' } | - {: neigh_ip='fe80::207:705' RS='RST' } |
 | 57481 | [Haonan Yang](https://bgp.tools/as/57481) |  | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RST' } |
