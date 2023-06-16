@@ -58,6 +58,31 @@
       ]
     },
     {
+      "asnum": 199594,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 250,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::1000:199:594",
+                "as_macro": "",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "asnum": 138517,
       "connection_list": [
         {
@@ -412,7 +437,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -425,7 +450,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::208:223",
                 "as_macro": "AS208223:AS-ALL",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
