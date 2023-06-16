@@ -275,17 +275,18 @@ The PoPs are interconnected using EVPN+VXLAN.
 ## Direct vs Franchisee vs Sponsored<a name="TYPE"></a>
 
 ### direct
-* Node equipment is owned by KSKB itself and is directly managed by KSKB
+* Directly managed by KSKB
 * Access requires the consent of KSKB
+* PoP hardware is owned by KSKB
 
 ### Franchisee
-* Node equipment and node clearance rules are managed by franchisees
+* PoP hardware and node rules are managed by franchisees
 * Access requires the consent of the administrator of the PoP, not the consent of KSKB
-* However, if any abuse is found, KSKB has the right to ask the franchisee to withdraw members
-* KSKB authorized the use of "Poema IX" trademark and operating rights
+* However, if any abuse is occured, KSKB can ask the franchisee to withdraw members
+* KSKB authorized the use of "Poema IX" trademark and operating rights to franchisees
 * Use VXLAN + EVPN to access IX LAN
 
 ### Sponsored
-* Access requires the consent of KSKB
-* KSKB is used as a PoP of Poema IX by sponsoring nodes to KSKB
-* Node devices are owned by sponsors but authorized to manage by KSKB
+* Managed by KSKB
+* Sponsored PoP of Poema IX by sponsoring to KSKB
+* PoP hardware is owned by sponsors.
