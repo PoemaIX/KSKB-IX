@@ -1,7 +1,7 @@
 # Poema IX
 
 ## Introduction
-Poema IX is a non-profit distributed [Virtual IXP](https://bgp.tools/kb/virtual-ixp) located and runs at my home. It serves to provide BGP hobbyists with a platform to learn and experiment with real life networking.  
+Poema IX is a non-profit distributed [Virtual IXP](https://bgp.tools/kb/virtual-ixp) located and run at my home. It serves to provide BGP hobbyists with a platform to learn and experiment with real life networking.  
 
 This IX provides OSI Layer 2 Ethernet Switching service. For the switching network, we refer to `IX LAN`, `IX peering LAN` or `Peering LAN` in the following sections.  
 
