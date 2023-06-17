@@ -20,7 +20,7 @@ If those technologies are avilable, why we don't use it? So, I have decided to u
 Each Point of Presence (PoP) has its own management rules. Please refer to the [PoP List](/PoP-List-en/)
 
 * Commercial use is not allowed. For example, using Poema IX to exchange commercial traffic. Please contact us for more information.
-* The IXP **DOES NOT** provides IP Transit itself, but there are some [sponsers](#RS2) who provide IP Transit. Otherwise you can ask IP transit from [IX members](../members) directly.
+* The IXP **DOES NOT** provides IP Transit itself, but there are some [sponsors](#RS2) who provide IP Transit. Otherwise you can ask IP transit from [IX members](../members) directly.
 * We require you to maintain an active BGP connection with RS1 and **announce at least one IPv6 route from your own network**.
 * KSKB will disable your VM when I feel my computer is laggy and if you do not establish a bgp session to `RS1` and announce routes.  
 
@@ -63,15 +63,15 @@ We have three route servers, with 3 different policies
     * "Transitable" route server.
         * You can be a voluntary **transit sponsor**, and help us to transit our routes to upstreams such as STUIX or AS6939 without setting up BGP sessions for each downstream one by one.
         * Those who need transit can connect to `RS Transitable` to get IP transit.
-        * Transit Sponser can reject to transit a specific downstream by tagging routes with `(199594:0:AS number)`.
-    * Client Roles: **Downstream** and **Transit Sponser**
+        * Transit Sponsors can reject to transit a specific downstream by tagging routes with `(199594:0:AS number)`.
+    * Client Roles: **Downstream** and **Transit Sponsor**
         * The default role is downstream, you can't announce full table to it.
-        * Once you have been registered as a transit sponser, then you can send full table to `RS Transitable`.
+        * Once you have been registered as a transit sponsor, then you can send full table to `RS Transitable`.
         * You have to transit routes to upstreams for downstreams.
     * It's experimental since peering routes and transit routes are mixed in the same BGP session. You have to split them with bgp_large_community.
-        * Routes with `(199594:65530:7)` attributes are transit routes and should be treated as upstream routes. Transit Sponsers should reject these routes.
-        * Similarly, when exporting external routes into `RS Transitable`, please tag them with `(199594:65530:7)` as reference for other Transit Sponsers.
-        * Only transit sponsers can export the full table into `RS Transitable`. Please refer to the `Obligation of transit sponsors` below.
+        * Routes with `(199594:65530:7)` attributes are transit routes and should be treated as upstream routes. Transit Sponsors should reject these routes.
+        * Similarly, when exporting external routes into `RS Transitable`, please tag them with `(199594:65530:7)` as reference for other Transit Sponsors.
+        * Only transit sponsors can export the full table into `RS Transitable`. Please refer to the `Obligation of transit sponsors` below.
     * In a nutshell:
         * **Regular member: Set `RS Transitable` as an upstream**
         * **Transit sponsor: Set `RS Transitable` as an downstream**, reject all routes contains `(199594:65530:7)` and add `(199594:65530:7)` while exporting routes.
@@ -81,7 +81,7 @@ We have three route servers, with 3 different policies
         * Do not transit any routes received from `RS Transitable` which contains `(199594:65530:7)` community.
         * Add community `(199594:65530:7)` before exporting routes to RS Transitable.
         * Add [AS-KSKB-IX-RS2](https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&type=as-set&key=AS-KSKB-IX-RS2) to your AS-SET. It contains RS2 connected downstreams only.
-        * Transit Sponsers can refuse transit to specific users by tagging routes with `(199594:0:AS number)` and reject corresponding routes.
+        * Transit Sponsors can refuse transit to specific users by tagging routes with `(199594:0:AS number)` and reject corresponding routes.
 * RS Chaos
     * AS199594
     * Does not have any filter: `import all; export all`;
@@ -153,7 +153,7 @@ Extra enforcements apply, including but not limited to:
 * mailto: ix@kskb.eu.org
 
 ## Special Thanks
-We want to acknowledge the following sponsers for their sponsored resources and support toward the Poema IX project.  
+We want to acknowledge the following sponsors for their sponsored resources and support toward the Poema IX project.  
 
 | List                                     | Acknowledgements     |
 |------------------------------------------|----------------------|
