@@ -36,20 +36,20 @@ The PoPs are interconnected using EVPN+VXLAN.
         | KVM| 1C | 2G | 16G | NTD350 |
         
         ??? "IX Global Rules"
-            * Comply with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer
-            * Especially prohibited are any operations involving "money." For example, game card top-up or registration of related accounts, as well as account opening or operations related to financial web pages/programs.
-            * For personal use only; transfer, rental, and commercial use are prohibited
-            * Prohibited actions include sending packages from the host to the outside or inside (regardless of whether they are active), ARP attacks, ARP hijacking, scanning weak passwords, malicious enumeration, DDoS, Trojans, and interference with the operation of other servers
-            * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers)
-            * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content
-            * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation
-            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criterion)
-            * Prohibited activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination)
-            * Prohibited from running resource-intensive programs, such as online games
+            * Complying with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer.
+            * Especially prohibited are any operations involving "money". For example, game card top-up or registration of related accounts, as well as account opening or operations related to financial web pages/programs.
+            * For personal use only; transfer, rental, and commercial uses are prohibited.
+            * Prohibited actions include sending packages from the host to the outside or inside (regardless of whether they are active), ARP attacks, ARP hijacking, scanning weak passwords, malicious enumeration, DDoS, Trojans, and interference with the operation of other servers.
+            * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers).
+            * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content.
+            * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation.
+            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criteria).
+            * Prohibited from activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination).
+            * Prohibited from running resource-intensive programs, such as online games.
         
 
         ???+ PoP Specific Regulations
-            KSKB provides resources for free to provide a place for individuals interested in network operation to practice network configuration. It also allows networking enthusiasts to connect, discuss, and experiment with different network architectures, collectively improving their technical skills. However, for KSKB, electricity costs (≈NT200/month), internet fees (NT1099/month), and hardware costs (≈NT25000) are expenses. KSKB does not want its funds to be used for purposes other than experimentation and practicing network configuration. Therefore, the use of VMs is subject to the following regulations:
+            KSKB provides resources for free to provide a place for individuals interested in network operation to practice with network configurations. It also allows networking enthusiasts to connect, discuss, and experiment with different network architectures, collectively improving their technical skills. However, for KSKB, electricity costs (≈NT200/month), internet fees (NT1099/month), and hardware costs (≈NT25000) are expenses. KSKB does not want its funds to be used for purposes other than experimentation and practicing network configurations. Therefore, the use of VMs is subject to the following regulations:
 
             <h4>Usage Regulations</h4>
             
@@ -70,10 +70,10 @@ The PoPs are interconnected using EVPN+VXLAN.
             * You must prove to KSKB that you get the following knowledges:
                 1. Understanding of packet forwarding processes in switches.
                 2. Knowledge of router routing selection processes.
-                3. Understanding the purpose of dynamic routing and the differences between dynamic and static routing.
-                4. Familiarity with the operation of eBGP/iBGP/iGP/RR and the problems these technologies aim to solve.
+                3. Understanding of the purpose of dynamic routing and the differences between dynamic and static routing.
+                4. Familiarity with the operation of eBGP/iBGP/IGP/RR and the problems these technologies aim to solve.
                 5. Must have your own internal network (tunnel-based is acceptable) and include the provided VM in the network.
-                6. The internal network must have iGP and iBGP routing protocols and be able to differentiate between peer and transit tables.
+                6. The internal network must have IGP and iBGP routing protocols and be able to differentiate between peer and transit tables.
                 7. The network interface attached on the IX VM is only used for constructing an internal network tunnel and not for any other services.
                 8. Approach learning with a humble attitude and be nice.
             * Proof: Recommendation from group members/exams/interviews/self-provided materials.
@@ -142,16 +142,16 @@ The PoPs are interconnected using EVPN+VXLAN.
         For larger shapes, please contact the node administrator
         
         ??? "IX Global Rules"
-            * Comply with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer
-            * Especially prohibited are any operations involving "money." For example, game card top-up or registration of related accounts, as well as account opening or operations related to financial web pages/programs.
-            * For personal use only; transfer, rental, and commercial use are prohibited
-            * Prohibited actions include sending packages from the host to the outside or inside (regardless of whether they are active), ARP attacks, ARP hijacking, scanning weak passwords, malicious enumeration, DDoS, Trojans, and interference with the operation of other servers
-            * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers)
-            * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content
-            * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation
-            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criterion)
-            * Prohibited activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination)
-            * Prohibited from running resource-intensive programs, such as online games
+            * Complying with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer.
+            * Especially prohibited are any operations involving "money". For example, game card top-up or registration of related accounts, as well as account opening or operations related to financial web pages/programs.
+            * For personal use only; transfer, rental, and commercial uses are prohibited.
+            * Prohibited actions include sending packages from the host to the outside or inside (regardless of whether they are active), ARP attacks, ARP hijacking, scanning weak passwords, malicious enumeration, DDoS, Trojans, and interference with the operation of other servers.
+            * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers).
+            * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content.
+            * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation.
+            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criteria).
+            * Prohibited from activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination).
+            * Prohibited from running resource-intensive programs, such as online games.
 
         ???+ "VM Access Requirements"
             * Anyone can access, educational use only, illegal activities are strictly prohibited
@@ -195,16 +195,16 @@ The PoPs are interconnected using EVPN+VXLAN.
         | LXC| 1C |0.5G|8G   | Free   |
 
         ??? "IX Global Rules"
-            * Comply with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer
-            * Especially prohibited are any operations involving "money." For example, game card top-up or registration of related accounts, as well as account opening or operations related to financial web pages/programs.
-            * For personal use only; transfer, rental, and commercial use are prohibited
-            * Prohibited actions include sending packages from the host to the outside or inside (regardless of whether they are active), ARP attacks, ARP hijacking, scanning weak passwords, malicious enumeration, DDoS, Trojans, and interference with the operation of other servers
-            * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers)
-            * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content
-            * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation
-            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criterion)
-            * Prohibited activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination)
-            * Prohibited from running resource-intensive programs, such as online games
+            * Complying with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer.
+            * Especially prohibited are any operations involving "money". For example, game card top-up or registration of related accounts, as well as account opening or operations related to financial web pages/programs.
+            * For personal use only; transfer, rental, and commercial uses are prohibited.
+            * Prohibited actions include sending packages from the host to the outside or inside (regardless of whether they are active), ARP attacks, ARP hijacking, scanning weak passwords, malicious enumeration, DDoS, Trojans, and interference with the operation of other servers.
+            * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers).
+            * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content.
+            * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation.
+            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criteria).
+            * Prohibited from activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination).
+            * Prohibited from running resource-intensive programs, such as online games.
 
 
         ???+ "VM Access Requirements"
@@ -274,7 +274,7 @@ The PoPs are interconnected using EVPN+VXLAN.
 
 ## Direct vs Franchisee vs Sponsored<a name="TYPE"></a>
 
-### direct
+### Direct
 * Directly managed by KSKB
 * Access requires the consent of KSKB
 * PoP hardware is owned by KSKB
@@ -282,11 +282,11 @@ The PoPs are interconnected using EVPN+VXLAN.
 ### Franchisee
 * PoP hardware and node rules are managed by franchisees
 * Access requires the consent of the administrator of the PoP, not the consent of KSKB
-* However, if any abuse is occured, KSKB can ask the franchisee to withdraw members
+* However, if any abuse has occured, KSKB can ask the franchisee to withdraw members
 * KSKB authorized the use of "Poema IX" trademark and operating rights to franchisees
 * Use VXLAN + EVPN to access IX LAN
 
 ### Sponsored
 * Managed by KSKB
 * Sponsored PoP of Poema IX by sponsoring to KSKB
-* PoP hardware is owned by sponsors.
+* PoP hardware is owned by sponsors
