@@ -43,7 +43,7 @@ The PoPs are interconnected using EVPN+VXLAN.
             * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers).
             * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content.
             * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation.
-            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criteria).
+            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criterion).
             * Prohibited from activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination).
             * Prohibited from running resource-intensive programs, such as online games.
         
@@ -149,7 +149,7 @@ The PoPs are interconnected using EVPN+VXLAN.
             * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers).
             * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content.
             * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation.
-            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criteria).
+            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criterion).
             * Prohibited from activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination).
             * Prohibited from running resource-intensive programs, such as online games.
 
@@ -202,7 +202,7 @@ The PoPs are interconnected using EVPN+VXLAN.
             * Prohibited activities include sending spam emails or messages, spreading Trojans and viruses (including malicious files referencing other servers).
             * Prohibited from using Torrents, BT, or similar methods to download or distribute copyrighted content.
             * Prohibited from using tools such as net_speeder/finalspeed/kcptun, or any form of packet multiplication that interferes with network operation.
-            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criteria).
+            * Utilize resources reasonably. Prohibited from consuming/occupying CPU/network bandwidth for a long time, such as rclone storage transfer/mining, or making my home network feel slow (this is the primary criterion).
             * Prohibited from activities such as web crawling/account registration that may result in the IP being flagged as a bot (commonly known as IP contamination).
             * Prohibited from running resource-intensive programs, such as online games.
 
