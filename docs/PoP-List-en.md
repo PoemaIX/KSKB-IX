@@ -288,5 +288,5 @@ The PoPs are interconnected using EVPN+VXLAN.
 
 ### Sponsored
 * Managed by KSKB
-* Sponsored PoP of Poema IX by sponsoring to KSKB
+* Sponsored PoP of Poema IX
 * PoP hardware is owned by sponsors.
