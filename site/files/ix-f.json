@@ -262,7 +262,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 250,
@@ -275,7 +275,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::7721",
                 "as_macro": "APNIC::AS-QINCLOUD",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -312,7 +312,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -325,7 +325,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::140:913",
                 "as_macro": "AS-KOISHI",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -1462,7 +1462,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
               "if_speed": 250,
@@ -1475,7 +1475,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::212:623",
                 "as_macro": "AS212623:AS-INPRTX",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
