@@ -37,7 +37,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 參與者要有一點網路相關知識和經驗，比如
 
 * 知道L2和L3運作的原理
-* 知道eBGP/iBGP/iGP是什麼和其差異
+* 知道eBGP/iBGP/IGP是什麼和其差異
 * 曾經配過兩個以上 DN42 節點，並提供跨節點的ip transit服務。或是與之相等的知識經驗(曾在其他實驗網/公網提供類似服務)
 * 抱著謙虛學習的心，Be nice.
 
