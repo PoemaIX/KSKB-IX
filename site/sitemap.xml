@@ -2,37 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ix.poema.eu.org/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-20</lastmod>
+=======
+         <lastmod>2023-06-18</lastmod>
+>>>>>>> fea84f3d0f67a02ec14df544f3d134d13d3baf68
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ix.poema.eu.org/PoP-List-en/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-20</lastmod>
+=======
+         <lastmod>2023-06-18</lastmod>
+>>>>>>> fea84f3d0f67a02ec14df544f3d134d13d3baf68
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ix.poema.eu.org/PoP-List/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-20</lastmod>
+=======
+         <lastmod>2023-06-18</lastmod>
+>>>>>>> fea84f3d0f67a02ec14df544f3d134d13d3baf68
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ix.poema.eu.org/RS/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-20</lastmod>
+=======
+         <lastmod>2023-06-18</lastmod>
+>>>>>>> fea84f3d0f67a02ec14df544f3d134d13d3baf68
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ix.poema.eu.org/Virtual-IXP/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-20</lastmod>
+=======
+         <lastmod>2023-06-18</lastmod>
+>>>>>>> fea84f3d0f67a02ec14df544f3d134d13d3baf68
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ix.poema.eu.org/index-en/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-20</lastmod>
+=======
+         <lastmod>2023-06-18</lastmod>
+>>>>>>> fea84f3d0f67a02ec14df544f3d134d13d3baf68
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ix.poema.eu.org/members/</loc>
+<<<<<<< HEAD
          <lastmod>2023-06-20</lastmod>
+=======
+         <lastmod>2023-06-18</lastmod>
+>>>>>>> fea84f3d0f67a02ec14df544f3d134d13d3baf68
          <changefreq>daily</changefreq>
     </url>
 </urlset>
