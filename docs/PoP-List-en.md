@@ -70,7 +70,7 @@ The PoPs are interconnected using EVPN+VXLAN.
                 2. Knowledge of router routing selection processes.
                 3. Understanding of the purpose of dynamic routing and the differences between dynamic and static routing.
                 4. Familiarity with the operation of eBGP/iBGP/IGP/RR and the problems these technologies aim to solve.
-                5. Must have your own intranet (tunnel-based is acceptable) and include the provided VM in the network.
+                5. Must have your own intranet (tunnel-based is acceptable) and include the provided VM in your network.
                 6. Your intranet must have IGP and iBGP routing protocols running in it and be able to differentiate between peer and transit tables.
                 7. The network interface attached on the IX VM is only used for constructing an internal network tunnel and not for any other services.
                 8. Approach learning with a humble attitude and be nice.
