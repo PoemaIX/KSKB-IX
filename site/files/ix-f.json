@@ -32,7 +32,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -65,7 +65,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -90,7 +90,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -115,7 +115,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -140,7 +140,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -165,7 +165,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -190,7 +190,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -215,7 +215,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -240,7 +240,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -262,10 +262,10 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "inactive",
+          "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -275,7 +275,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::7721",
                 "as_macro": "APNIC::AS-QINCLOUD",
-                "routeserver": false
+                "routeserver": true
               }
             }
           ]
@@ -290,7 +290,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -315,7 +315,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -337,10 +337,10 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -350,7 +350,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::139:328",
                 "as_macro": "RIPE::AS-MOEBEE-CN",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -365,7 +365,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -390,7 +390,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -415,7 +415,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -440,7 +440,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -465,7 +465,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -490,7 +490,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -515,7 +515,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -540,7 +540,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -565,7 +565,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -587,10 +587,10 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -600,7 +600,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::9886",
                 "as_macro": "AS-MERCYCLOUD",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -615,7 +615,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -640,7 +640,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -665,7 +665,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -690,7 +690,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -715,7 +715,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -740,7 +740,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -765,7 +765,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -790,7 +790,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -812,10 +812,10 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -825,7 +825,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::212:154",
                 "as_macro": "AS-SARUNETWORK",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -840,7 +840,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -865,7 +865,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -890,7 +890,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -915,7 +915,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -940,7 +940,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -965,7 +965,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -990,7 +990,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1015,7 +1015,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1040,7 +1040,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1065,7 +1065,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1090,7 +1090,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1115,7 +1115,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1140,7 +1140,7 @@
           "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1165,7 +1165,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1190,7 +1190,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1215,7 +1215,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1240,7 +1240,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1258,14 +1258,14 @@
       ]
     },
     {
-      "asnum": 203899,
+      "asnum": 62246,
       "connection_list": [
         {
           "ixp_id": 0,
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1273,7 +1273,7 @@
             {
               "vlan_id": 0,
               "ipv6": {
-                "address": "2404:f4c0:f70e:1980::203:899",
+                "address": "2404:f4c0:f70e:1980::62:246",
                 "as_macro": "AS-WJY",
                 "routeserver": true
               }
@@ -1290,7 +1290,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1315,7 +1315,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1340,7 +1340,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1365,7 +1365,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1390,7 +1390,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1415,7 +1415,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1437,10 +1437,10 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1450,7 +1450,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::150:184",
                 "as_macro": "",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
@@ -1465,7 +1465,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1490,7 +1490,7 @@
           "state": "active",
           "if_list": [
             {
-              "if_speed": 250,
+              "if_speed": 500,
               "switch_id": 1
             }
           ],
@@ -1500,6 +1500,181 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::60:900",
                 "as_macro": "RIPE::AS60900:AS-MAIN",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 198304,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::198:304",
+                "as_macro": "AS198304:AS-SET",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 18428,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::18:428",
+                "as_macro": "AS18428:AS-MERCYCAT",
+                "routeserver": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 208747,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::208:747",
+                "as_macro": "AS208747:AS-DRAGONET",
+                "routeserver": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 142553,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::142:553",
+                "as_macro": "",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 151674,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::151:674",
+                "as_macro": "AS151674:AS-HYUNET",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 202881,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::202:881",
+                "as_macro": "AS-MTSN",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 199310,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::199:310",
+                "as_macro": "AS199310:AS-QFNET",
                 "routeserver": true
               }
             }
