@@ -560,117 +560,117 @@
 
 <h1 id="poema-ix">Poema IX</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Poema IX is a non-profit distributed <a href="https://bgp.tools/kb/virtual-ixp">Virtual IXP</a> located and running at my home in order to provide a platform to BGP hobbyist to learn and expirenment with real life networking.  </p>
+<p>Poema IX is a non-profit distributed <a href="https://bgp.tools/kb/virtual-ixp">Virtual IXP</a> located and run at my home. It serves to provide BGP hobbyists with a platform to learn and experiment with real life networking.  </p>
 <p>This IX provides OSI Layer 2 Ethernet Switching service. For the switching network, we refer to <code>IX LAN</code>, <code>IX peering LAN</code> or <code>Peering LAN</code> in the following sections.  </p>
-<p>This IX supports IPv4(mpbgp + extended next hop) and IPv6<br />
+<p>This IX supports IPv4 (mpbgp + extended next hop) and IPv6<br />
 PeeringDB: <a href="https://www.peeringdb.com/ix/3792">https://www.peeringdb.com/ix/3792</a><br />
 IXPDB: <a href="https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/">https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/</a>  </p>
 <p>Meanwhile a number of new technologies are avilable, such as <code>IPv6 Link-local address</code>, <code>Multiprotocol BGP</code> and <code>Extended Next Hop(RFC 5549)</code> but only few networks are using it.<br />
-If those technologies are avilable, but why we don't use it? So, I decide to use it at my IXP.  </p>
+If those technologies are avilable, why we don't use it? So, I have decided to use it at my IXP.  </p>
 <h2 id="join">Join</h2>
 <ol>
 <li>Join via VM</li>
 <li>Join via tunnel</li>
 </ol>
-<p>Each Point of Presence (PoP) has own management rules. Please refer to the <a href="/PoP-List-en/">PoP List</a></p>
+<p>Each Point of Presence (PoP) has its own management rules. Please refer to the <a href="/PoP-List-en/">PoP List</a></p>
 <ul>
-<li>Commercial use is not allowed. For example using Poema IX to exchange commercial traffic. Please contact us for more information.</li>
-<li>The IXP <strong>DOES NOT</strong> provides IP Transit itself, but there are some <a href="#RS2">sponsers</a> who provides IP Transit. Otherwise you can ask IP transit from <a href="../members">IX members</a> directly.</li>
-<li>We require you to maintain an active BGP connection with RS1 and <strong>announce at least one IPv6 route from your internal network</strong>.</li>
-<li>KSKB will disable your VM when I feel my computer is laggy if you do not establish a bgp session to <code>RS1</code> and announce routes.  </li>
+<li>Commercial use is not allowed. For example, using Poema IX to exchange commercial traffic. Please contact us for more information.</li>
+<li>The IXP <strong>DOES NOT</strong> provides IP Transit itself, but there are some <a href="#RS2">sponsors</a> who provide IP Transit. Otherwise you can ask IP transit from <a href="../members">IX members</a> directly.</li>
+<li>We require you to maintain an active BGP connection with RS1 and <strong>announce at least one IPv6 route from your own network</strong>.</li>
+<li>KSKB will disable your VM when I feel my computer is laggy and if you do not establish a bgp session to <code>RS1</code> and announce routes.  </li>
 </ul>
 <h2 id="requirement">Requirement</h2>
-<p>Participants must have a ASN and at least a public routabe /48 ipv6 subent<br />
-Participants should should have some knowledge and experience related to the networking and BGP, such as:</p>
+<p>Participants must have a ASN and at least a public routable /48 ipv6 subnet<br />
+Participants should have some knowledge and experience related to networking and BGP, such as:</p>
 <ul>
 <li>Know the basics about L2 and L3</li>
-<li>Know what eBGP/iBGP/iGP is and its differences</li>
-<li>Deployed more than two DN42 nodes and provided cross-node ip transit services before. Or equivalent knowledge and experience (provided similar services on other experimental networks/public networks)</li>
-<li>With a humble learning heart, Be nice.</li>
+<li>Know what eBGP/iBGP/IGP is and its differences</li>
+<li>Have deployed more than two DN42 nodes and have provided cross-node ip transit services before. Or equivalent knowledge and experience (have provided similar services on other experimental networks/public networks)</li>
+<li>Have a humble learning heart. Be nice.</li>
 </ul>
 <p>The bgp daemon used by the participant must support the following functions</p>
 <ul>
 <li>IPv6 link local</li>
-<li>bgp large community</li>
-<li>multiprotocol BGP (IPv4)</li>
-<li>extended nexthop (IPv4)</li>
+<li>BGP large community</li>
+<li>Multiprotocol BGP (IPv4)</li>
+<li>Extended nexthop (IPv4)</li>
 </ul>
 <h2 id="configure">Configure</h2>
 <p>We have three route servers, with 3 different policies  </p>
 <p><strong>Only <code>RS Regular</code> is a regular Route Server</strong><br />
 <code>RS Transitable</code> / <code>RS Chaos</code> are special Route Servers for experimenting.  </p>
-<p><strong>If you don't known what this is, establish session to <code>RS Regular</code> only please</strong>  </p>
+<p><strong>If you don't know what this is, please establish sessions to <code>RS Regular</code> only</strong>  </p>
 <ul>
 <li>RS1<ul>
 <li>AS199594</li>
 <li>A regular route server</li>
 <li><a href="\RS#default-filtering-policy">Filtering Policy</a></li>
 <li><a href="\RS#announcement-control-via-bgp-communities">Communities</a></li>
-<li>Nutshell: <strong>Config the RS session as peering session</strong></li>
-<li>You can connect to this RS without any concern, We do IRR and RPKI validation for you.</li>
-<li>A BGP connection with <code>RS Regular 1</code> is mandatory and you must <strong>announce at least one IPv6 route from your internal network</strong>.</li>
-<li>IP Address(link-local mode): <code>fe80::1980:1:1 % eth1</code></li>
+<li>In a nutshell: <strong>Config the RS session as peering session</strong></li>
+<li>You can connect to this RS without any concern, we will do IRR and RPKI validation for you.</li>
+<li>A BGP connection with <code>RS Regular 1</code> is mandatory and you must <strong>announce at least one IPv6 route from your own network</strong>.</li>
+<li>IP Address(Link-local mode): <code>fe80::1980:1:1 % eth1</code></li>
 <li>IP Address(Regular mode): <code>2404:f4c0:f70e:1980::1:1</code></li>
 </ul>
 </li>
 <li>RS2<a name="RS2"></a><ul>
 <li>AS199594</li>
 <li>"Transitable" route server.<ul>
-<li>You can be a voluntary <strong>transit sponsor</strong>, help us to transit our routes to upstream such as STUIX or AS6939 without setup BGP sessions for each downstream one by one.</li>
+<li>You can be a voluntary <strong>transit sponsor</strong>, and help us to transit our routes to upstreams such as STUIX or AS6939 without setting up BGP sessions for each downstream one by one.</li>
 <li>Those who need transit can connect to <code>RS Transitable</code> to get IP transit.</li>
-<li>Transit Sponser can reject to transit for specific downstream by tagging routes with <code>(199594:0:AS number)</code>.</li>
+<li>Transit Sponsors can reject to transit a specific downstream by tagging routes with <code>(199594:0:AS number)</code>.</li>
 </ul>
 </li>
-<li>Client Roles: <strong>Downstream</strong> and <strong>Transit Sponser</strong><ul>
-<li>The default role is downstream, you can't accounce full table into it.</li>
-<li>You can registered as transit sponser, then you can send full table to <code>RS Transitable</code>.</li>
-<li>You have to transit routes to upstream for downstreams.</li>
+<li>Client Roles: <strong>Downstream</strong> and <strong>Transit Sponsor</strong><ul>
+<li>The default role is downstream, you can't announce full table to it.</li>
+<li>Once you have been registered as a transit sponsor, then you can send full table to <code>RS Transitable</code>.</li>
+<li>You have to transit routes to upstreams for downstreams.</li>
 </ul>
 </li>
-<li>It's experimental since peering routes and transit routes are mixed in the same BGP session. You have split them with bgp_large_community.<ul>
-<li>Routes with <code>(199594:65530:7)</code> attribute are transit routes and should be treated as upstream routes. Transit Sponser should reject these rotues.</li>
-<li>Similarly, when exporting external routes into <code>RS Transitable</code>, please tag them with <code>(199594:65530:7)</code> for reference by other Transit Sponser.</li>
-<li>Only transit sponser can export the full table into <code>RS Transitable</code>. Please refer to the <code>Obligation of transit sponsor</code> below.</li>
+<li>It's experimental since peering routes and transit routes are mixed in the same BGP session. You have to split them with bgp_large_community.<ul>
+<li>Routes with <code>(199594:65530:7)</code> attributes are transit routes and should be treated as upstream routes. Transit Sponsors should reject these routes.</li>
+<li>Similarly, when exporting external routes into <code>RS Transitable</code>, please tag them with <code>(199594:65530:7)</code> as reference for other Transit Sponsors.</li>
+<li>Only transit sponsors can export the full table into <code>RS Transitable</code>. Please refer to the <code>Obligation of transit sponsors</code> below.</li>
 </ul>
 </li>
-<li>Nutshell:<ul>
+<li>In a nutshell:<ul>
 <li><strong>Regular member: Set <code>RS Transitable</code> as an upstream</strong></li>
 <li><strong>Transit sponsor: Set <code>RS Transitable</code> as an downstream</strong>, reject all routes contains <code>(199594:65530:7)</code> and add <code>(199594:65530:7)</code> while exporting routes.</li>
 </ul>
 </li>
-<li>IP Address(link-local mode): <code>fe80::1980:2:1 % eth1</code></li>
+<li>IP Address(Link-local mode): <code>fe80::1980:2:1 % eth1</code></li>
 <li>IP Address(Regular mode):  <code>2404:f4c0:f70e:1980::2:1</code></li>
-<li>Obligation of transit sponsor:<ul>
+<li>Obligation of transit sponsors:<ul>
 <li>Do not transit any routes received from <code>RS Transitable</code> which contains <code>(199594:65530:7)</code> community.</li>
-<li>Add community <code>(199594:65530:7)</code> before exporting routes to RS Transitable</li>
-<li>Add <a href="https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&amp;type=as-set&amp;key=AS-KSKB-IX-RS2">AS-KSKB-IX-RS2</a> to your AS-SET. It contains RS2 connected downstream only.</li>
-<li>Transit Sponser can refuse transit to specific users by tagging routes with <code>(199594:0:AS number)</code> and reject corresponding routes.</li>
+<li>Add community <code>(199594:65530:7)</code> before exporting routes to RS Transitable.</li>
+<li>Add <a href="https://apps.db.ripe.net/db-web-ui/lookup?source=RIPE&amp;type=as-set&amp;key=AS-KSKB-IX-RS2">AS-KSKB-IX-RS2</a> to your AS-SET. It contains RS2 connected downstreams only.</li>
+<li>Transit Sponsors can refuse transit to specific users by tagging routes with <code>(199594:0:AS number)</code> and reject corresponding routes.</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>RS Chaos<ul>
 <li>AS199594</li>
-<li>Do not have any filter: <code>import all; export all</code>;</li>
-<li>Only man of wisdom can connect, man of wisdom will do their own filtering.</li>
-<li>Nutshell: <strong>Do whatever you want to do</strong></li>
-<li>Do not support community attribute</li>
-<li>Import limit: 2000, it will be disconnected if you exceeds</li>
-<li>IP Address(link-local mode): <code>fe80::1980:3:1 % eth1</code></li>
+<li>Does not have any filter: <code>import all; export all</code>;</li>
+<li>Only men of wisdom can connect, men of wisdom will do their own filtering.</li>
+<li>In a nutshell: <strong>Do whatever you want to do</strong></li>
+<li>Does not support community attributes</li>
+<li>Import limit: 2000, it will be disconnected if you exceed</li>
+<li>IP Address(Link-local mode): <code>fe80::1980:3:1 % eth1</code></li>
 <li>IP Address(Regular mode): <code>2404:f4c0:f70e:1980::3:1</code></li>
 </ul>
 </li>
 </ul>
 <h2 id="members">Members</h2>
-<p>See member list: <a href="\members">Members</a></p>
+<p>See members list: <a href="\members">Members</a></p>
 <h2 id="limitations">Limitations</h2>
 <h3 id="ix-lan">IX LAN</h3>
 <p>There are some security regulations for the IX peering LAN and the IX access port (usually eth1 for the IX VM).  </p>
 <ul>
 <li>Only permitted MAC addresses will be allowed</li>
-<li>arp-proxy and ndp-proxy must disable on the IX port. You can only respond the Neighbor Discovery packet that send to the Poema IX allocated <code>IX LAN</code> IP.</li>
-<li>L3 joining only. Bridge out port to other switch are not allowed.</li>
-<li>Participants must not announce ("leak") Poema IX peering LAN (IPv6: 2404:f4c0:f70e:1980::/64) to other networks to redice the potential attack surface.</li>
+<li>arp-proxy and ndp-proxy must be disabled on the IX port. You can only respond the Neighbor Discovery packet that was sent to the Poema IX allocated <code>IX LAN</code> IP.</li>
+<li>L3 joining only. Bridging our port to other switches are not allowed.</li>
+<li>Participants must not announce ("leak") Poema IX peering LAN (IPv6: 2404:f4c0:f70e:1980::/64) to other networks to reduce the potential attack surface.</li>
 <li>Poema IX does NOT support trunk port or VLAN mapping to our switches.</li>
 <li>Ethertypes: All forwarded frames must have one of the following ether types:<ul>
 <li>0x0800 - IPv4</li>
@@ -683,7 +683,7 @@ Participants should should have some knowledge and experience related to the net
 <li>BGP session over link-local address in the IX peering LAN.</li>
 </ul>
 </li>
-<li>All other types of lick-local traffic are prohibited, including but not limited to:<ul>
+<li>All other types of link-local traffic are prohibited, including but not limited to:<ul>
 <li>IGP traffic (e.g. OSPF, ISIS, IGRP, EIGRP)</li>
 <li>BOOTP/DHCP</li>
 <li>ICMPv6 Router Advertisement</li>
@@ -703,10 +703,10 @@ Participants should should have some knowledge and experience related to the net
 <li>Multicast/broadcast packet traffic must not exceed 1kbps</li>
 </ul>
 </li>
-<li>Abuse network infrastructure of IXP members is not allowed. Including but not limited to the following acts:<ul>
-<li>Setup default route or unauthorized route to IXP member is prohibited</li>
-<li>Send routes that has malformed nexthop attribute such as point to other menber is prohibited.</li>
-<li>Send ICMP redirects packets to redirect your traffic to other members is prohibited.</li>
+<li>Abuse on network infrastructure of IXP members is not allowed. Including but not limited to the following acts:<ul>
+<li>Setting up default route or unauthorized routes to IXP member is prohibited.</li>
+<li>Sending routes that has malformed nexthop attribute such as point to other member is prohibited.</li>
+<li>Sending ICMP redirects packets to redirect your traffic to other members is prohibited.</li>
 <li>BGP hijacking without the authorization of the resource owner is prohibited. Including but not limited to the following behaviors<ul>
 <li>Prefix hijacking</li>
 <li>ASN origin spoofing</li>
@@ -718,25 +718,25 @@ Participants should should have some knowledge and experience related to the net
 </ul>
 <h3 id="ix-vm">IX VM</h3>
 <p>Regarding the IX VM provided by KSKB, as well as the IX peering LAN itself, IX members may only use it to exchange network traffic(internal traffic/peering). Other types of use are not allowed.
-Including but not limited to the following:  </p>
+Extra enforcements apply, including but not limited to:  </p>
 <ul>
-<li>Comply with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer</li>
-<li>Any operation involving "money" is <strong>strictly prohibited</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. For example, Game point, card top-up, registering third-party account or account opening/operation of financial-related webpages/programs.</li>
-<li>For personal use only; transfer, rental, and commercial use are prohibited</li>
-<li>Cyber attack are not allowed, such as ARP attack, ARP hijacking, scan weak passwords, malicious exhaustion, DDoS, Trojan horses and interfere with the operation of other networks and servers</li>
-<li>Spam email, spam messages, spread Trojans, viruses (including referencing malicious files from other servers) are not allowed</li>
+<li>Complying with the laws of the Republic of China (Taiwan) and refrain from any action that may result in the confiscation of the computer.</li>
+<li>Any operation involving "money" is <strong>strictly prohibited</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. For example, Game points, card top-ups, registering third-party accounts or account opening/operation of financial-related webpages/programs.</li>
+<li>For personal use only; transfer, rental, and commercial uses are prohibited.</li>
+<li>Cyber attacks are not allowed, such as ARP attack, ARP hijacking, scaning weak passwords, malicious exhaustion, DDoS, Trojan horses and interfering with the operation of other networks and servers.</li>
+<li>Spaming emails, spaming messages, spreading Trojans, viruses (including referencing malicious files from other servers) are not allowed.</li>
 <li>Commiting copyright violations using Torrents, BitTorrent, etc. is not allowed.</li>
-<li>Use of the net_speeder/finalspeed/kcptun, etc, and any form of packet multiplication tools that may interfere our network</li>
-<li>Fair use terms applied for all resources. It is forbidden to consume/occupy CPU/network/bandwidth and other resources for a long time, such as <code>rclone transferring</code>/<code>crypto mining</code>, or any action that makes me feel my network is very lag</li>
-<li>Using it as crawler or for account registration, etc. which may cause my IP to be marked as a bot is not allowed</li>
-<li>You may not run resource-consuming programs, such as online games, crypto mining. </li>
+<li>Use of the net_speeder/finalspeed/kcptun, etc, and any form of packet multiplication tools that may interfere our network.</li>
+<li>Fair use terms applied for all resources. It is forbidden to consume/occupy CPU/network/bandwidth and other resources for a long time, such as <code>rclone transferring</code>/<code>crypto mining</code>, or any action that makes me feel my network is very laggy.</li>
+<li>Using it as crawler or for account registration, etc. which may cause my IP to be marked as a bot is not allowed.</li>
+<li>You may not run resource-consuming programs, such as online games, crypto mining.</li>
 </ul>
 <h2 id="contact">Contact</h2>
 <ul>
 <li>mailto: ix@kskb.eu.org</li>
 </ul>
 <h2 id="special-thanks">Special Thanks</h2>
-<p>We want to acknowledge the following sponsers for their sponsored resources and support toward the Poema IX project.  </p>
+<p>We want to acknowledge the following sponsors for their sponsored resources and support toward the Poema IX project.  </p>
 <table>
 <thead>
 <tr>
@@ -751,19 +751,19 @@ Including but not limited to the following:  </p>
 </tr>
 <tr>
 <td><a href="https://mrsheep.io/">MrSheepNET LTD</a></td>
-<td><li>Thank to <ins>MrSheepNET LTD</ins> to be a transit sponsor</li><li>Transit our routes to STUIX.</li></td>
+<td><li>Thank to <ins>MrSheepNET LTD</ins> to be a transit sponsor</li><li>Transits our routes to STUIX.</li></td>
 </tr>
 <tr>
 <td><a href="https://muilties.com/">Muilties Network</a></td>
-<td><li>Thank to <ins>Muilties Network</ins> to be a transit sponsor</li><li>Transit our routes to STUIX.</li></td>
+<td><li>Thank to <ins>Muilties Network</ins> to be a transit sponsor</li><li>Transits our routes to STUIX.</li></td>
 </tr>
 <tr>
 <td><a href="https://network.steveyi.net/">SteveYi</a></td>
-<td><li>Thank to <ins>SteveYi</ins> for the VM, let me setup testing the EVPN-VXLAN setup.</li></td>
+<td><li>Thank to <ins>SteveYi</ins> for the VM, letting me setup test for EVPN-VXLAN setup.</li></td>
 </tr>
 <tr>
 <td><a href="https://as204508.net/">MLGT</a></td>
-<td><li>Thank to <ins>Gatterer Manuel</ins> for providing the Germany VM for better connectivity.</td>
+<td><li>Thank to <ins>Gatterer Manuel</ins> for providing the German VM for better connectivity.</td>
 </tr>
 </tbody>
 </table>
@@ -771,7 +771,7 @@ Including but not limited to the following:  </p>
 <hr />
 <ol>
 <li id="fn:1">
-<p>True story: Someone bought a swag gift card unintentionally, top-up it with a Taiwan VPN. Then the police found the top-uping IP is from a Taiwan IP. Then the computer has been seized and the server holder has been arrest by the police.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>True story: Someone bought a swag gift card unintentionally, topped it up with a Taiwan VPN. Then the police found the top-uping IP is from a Taiwan IP. Then the computer has been seized and the server holder has been arrested by the police.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

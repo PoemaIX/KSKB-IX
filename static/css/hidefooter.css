@@ -1,3 +1,6 @@
 body > footer {
     display: none
 }
+.md-footer {
+    display: none
+}
