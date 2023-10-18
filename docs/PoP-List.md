@@ -90,9 +90,9 @@ PoP 之間使用 EVPN+VXLAN 互連
         
         | Dst IP           | Dst port                | Connection         | Speed     | MTU  |
         |------------------|-------------------------|--------------------|-----------|------|
-        | 0.0.0.0/0        | `0~9999`                | wgcf(Cloudflare)   | 200M/200M | 1432 |
-        | 0.0.0.0/0        | `10000~65535`<br>ICMP   | Hinet              | 500M/250M | 1492 |
-        | ::/0             | Any                     | Hurricane Electric | 200M/200M | 1372 |
+        | 0.0.0.0/0        | `0~9999`                | wgcf(Cloudflare)   | 450M/450M | 1432 |
+        | 0.0.0.0/0        | `10000~65535`<br>ICMP   | Hinet              | 500M/500M | 1492 |
+        | ::/0             | Any                     | Hurricane Electric | 450M/450M | 1372 |
         
         連線服務 | Connection Service  
         
