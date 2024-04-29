@@ -77,6 +77,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 49195 | [SSAC](https://bgp.tools/as/49195) | AS49195:AS-GLOBAL | - {: neigh_ip='fe80::49:195' RS='RSR1' } | - {: neigh_ip='fe80::49:195' RS='RST' } |
 | 197860 | [Haruka Network](https://bgp.tools/as/197860) | AS197860:AS-HARUKA | - {: neigh_ip='fe80::197:860' RS='RSR1' } | - {: neigh_ip='fe80::197:860' RS='RST' } |
 | 211035 | [PHANTOM HIVE NETWORK](https://bgp.tools/as/211035) | AS211035:AS-PHANTOM-HIVE | - {: neigh_ip='fe80::211:35' RS='RSR1' } | - {: neigh_ip='fe80::211:35' RS='RST' } |
+| 53808 | [MoeDove](https://bgp.tools/as/53808) |  | - {: neigh_ip='fe80::53:808' RS='RSR1' } | - {: neigh_ip='fe80::53:808' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
