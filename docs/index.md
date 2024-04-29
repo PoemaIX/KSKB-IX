@@ -20,8 +20,8 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 主要有以下接入方式:
 
-1. VM接入
-2. 隧道接入
+1. VM接入 (如果你沒有台灣 PoP)
+2. 隧道接入 (如果你已經有台灣 PoP)
 
 每個 PoP 有不同的接入方式，請參考 [PoP List](/PoP-List/)
 
