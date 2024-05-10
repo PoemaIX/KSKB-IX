@@ -60,12 +60,11 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 62246 | [WJY Network](https://bgp.tools/as/62246) | AS-WJY | - {: neigh_ip='fe80::62:246' RS='RSR1' } | - {: neigh_ip='fe80::62:246' RS='RST' } |
 | 199613 | [Bling Network](https://bgp.tools/as/199613) | ARIN::AS-BLING | - {: neigh_ip='fe80::199:613' RS='RSR1' } | - {: neigh_ip='fe80::199:613' RS='RST' } |
 | 199683 | [Eki Network](https://bgp.tools/as/199683) | AS199683:AS-SET | - {: neigh_ip='fe80::199:683' RS='RSR1' } | - {: neigh_ip='fe80::199:683' RS='RST' } |
-| 212168 | [prprCloud Limited](https://bgp.tools/as/212168) | AS212168:AS-PRPR | - {: neigh_ip='fe80::212:168' RS='RSR1' } | - {: neigh_ip='fe80::212:168' RS='RST' } |
 | 23347 | [ZYC Network](https://bgp.tools/as/23347) | AS-ZYC | - {: neigh_ip='fe80::23:347' RS='RSR1' } | - {: neigh_ip='fe80::23:347' RS='RST' } |
-| 199632 | [Decima LLC](https://bgp.tools/as/199632) | AS199632:AS-DECIMA | - {: neigh_ip='fe80::199:632' RS='RSR1' } | - {: neigh_ip='fe80::199:632' RS='RST' } |
+| 30114 | [Decima LLC](https://bgp.tools/as/30114) | AS30114:AS-DECIMA | - {: neigh_ip='fe80::30:114' RS='RSR1' } | - {: neigh_ip='fe80::30:114' RS='RST' } |
 | 139888 | [Time Network](https://bgp.tools/as/139888) |  | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RST' } |
 | 150184 | [OwONet](https://bgp.tools/as/150184) |  | - {: neigh_ip='fe80::150:184' RS='RSR1' } | - {: neigh_ip='fe80::150:184' RS='RST' } |
-| 212623 | [23751 NET](https://bgp.tools/as/212623) | AS212623:AS-INPRTX | - {: neigh_ip='fe80::212:623' RS='RSR1' } | - {: neigh_ip='fe80::212:623' RS='RST' } |
+| 27010 | [23751 NET](https://bgp.tools/as/27010) |  | - {: neigh_ip='fe80::27:10' RS='RSR1' } | - {: neigh_ip='fe80::27:10' RS='RST' } |
 | 60900 | [Ssmidge LLC](https://bgp.tools/as/60900) | RIPE::AS60900:AS-MAIN | - {: neigh_ip='2404:f4c0:f70e:1980::60:900' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::60:900' RS='RST' } |
 | 44324 | [Pigeon Network](https://bgp.tools/as/44324) | AS44324:AS-MD | - {: neigh_ip='fe80::44:324' RS='RSR1' } | - {: neigh_ip='fe80::44:324' RS='RST' } |
 | 18428 | [Mercycat Network](https://bgp.tools/as/18428) | AS18428:AS-MERCYCAT | - {: neigh_ip='2404:f4c0:f70e:1980::18:428' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::18:428' RS='RST' } |
@@ -74,10 +73,11 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 151674 | [HYU-NET](https://bgp.tools/as/151674) | AS151674:AS-HYUNET | - {: neigh_ip='fe80::151:674' RS='RSR1' } | - {: neigh_ip='fe80::151:674' RS='RST' } |
 | 202881 | [MTS Network](https://bgp.tools/as/202881) | AS-MTSN | - {: neigh_ip='2404:f4c0:f70e:1980::202:881' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::202:881' RS='RST' } |
 | 199310 | [QFNET](https://bgp.tools/as/199310) | AS199310:AS-QFNET | - {: neigh_ip='fe80::199:310' RS='RSR1' } | - {: neigh_ip='fe80::199:310' RS='RST' } |
-| 49195 | [SSAC](https://bgp.tools/as/49195) | AS49195:AS-GLOBAL | - {: neigh_ip='fe80::49:195' RS='RSR1' } | - {: neigh_ip='fe80::49:195' RS='RST' } |
 | 197860 | [Haruka Network](https://bgp.tools/as/197860) | AS197860:AS-HARUKA | - {: neigh_ip='fe80::197:860' RS='RSR1' } | - {: neigh_ip='fe80::197:860' RS='RST' } |
 | 211035 | [PHANTOM HIVE NETWORK](https://bgp.tools/as/211035) | AS211035:AS-PHANTOM-HIVE | - {: neigh_ip='fe80::211:35' RS='RSR1' } | - {: neigh_ip='fe80::211:35' RS='RST' } |
 | 53808 | [MoeDove](https://bgp.tools/as/53808) |  | - {: neigh_ip='fe80::53:808' RS='RSR1' } | - {: neigh_ip='fe80::53:808' RS='RST' } |
+| 216123 | [ZhuyuanNetwork](https://bgp.tools/as/216123) | AS216123:AS-ZHUYUAN | - {: neigh_ip='2404:f4c0:f70e:1980::216:123' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::216:123' RS='RST' } |
+| 215956 | [Dennis de Houx trading as All In One](https://bgp.tools/as/215956) | AS215956:AS-MYIP | - {: neigh_ip='2404:f4c0:f70e:1980::215:956' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::215:956' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
