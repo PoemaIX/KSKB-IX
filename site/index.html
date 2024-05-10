@@ -706,7 +706,10 @@ IXPDB: <a href="https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/">https://ixpdb.euro
 </ul>
 </li>
 <li>不得濫用 IXP 成員的網路基礎設施。包括但不限於以下行為:<ul>
-<li>不得將 default route 或是未授權的路由，指向IXP成員</li>
+<li>不得將 default route 或是未授權的路由，指向IXP成員<ul>
+<li>a.k.a 未經當事人授權， <strong>static route 指向成員是嚴重違規行為</strong></li>
+</ul>
+</li>
 <li>不得發送 nexthop 不是自己，而是指向其他成員的路由</li>
 <li>不得發送 ICMP redirects 封包，將自己的封包重新導向至其他成員</li>
 <li>不得盜播路由，包括但不限於以下行為，除非有獲得當事人授權<ul>
@@ -758,10 +761,6 @@ IXPDB: <a href="https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/">https://ixpdb.euro
 <tr>
 <td><a href="https://muilties.com/">Muilties Network</a></td>
 <td><li>感謝<ins>Muilties Network</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li></td>
-</tr>
-<tr>
-<td><a href="https://network.steveyi.net/">小易</a></td>
-<td><li>感謝<ins>小易</ins>提供的 VM 讓我做 VXLAN-EVPN 架設實驗.</li></td>
 </tr>
 <tr>
 <td><a href="https://as204508.net/">MLGT</a></td>
