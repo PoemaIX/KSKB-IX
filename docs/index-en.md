@@ -127,6 +127,7 @@ There are some security regulations for the IX peering LAN and the IX access por
     * Multicast/broadcast packet traffic must not exceed 1kbps
 * Abuse on network infrastructure of IXP members is not allowed. Including but not limited to the following acts:
     *  Setting up default route or unauthorized routes to IXP member is prohibited.
+        * a.k.a Any form of **static route to members** without authorization, is **strict prohibited**.
     *  Sending routes that has malformed nexthop attribute such as point to other member is prohibited.
     *  Sending ICMP redirects packets to redirect your traffic to other members is prohibited.
     *  BGP hijacking without the authorization of the resource owner is prohibited. Including but not limited to the following behaviors
@@ -160,7 +161,6 @@ We want to acknowledge the following sponsors for their sponsored resources and 
 | [TOHU NET](https://as140731.bairuo.net/) | <li>Thank to <ins>The BaiRuo</ins> for the IPv6 Transit to STUIX over GeekIX</li> |
 | [MrSheepNET LTD](https://mrsheep.io/)    | <li>Thank to <ins>MrSheepNET LTD</ins> to be a transit sponsor</li><li>Transits our routes to STUIX.</li> |
 | [Muilties Network](https://muilties.com/)| <li>Thank to <ins>Muilties Network</ins> to be a transit sponsor</li><li>Transits our routes to STUIX.</li> |
-| [SteveYi](https://network.steveyi.net/)  | <li>Thank to <ins>SteveYi</ins> for the VM, letting me setup test for EVPN-VXLAN setup.</li> |
 | [MLGT](https://as204508.net/)            | <li>Thank to <ins>Gatterer Manuel</ins> for providing the German VM for better connectivity. |
 
 [^1]: True story: Someone bought a swag gift card unintentionally, topped it up with a Taiwan VPN. Then the police found the top-uping IP is from a Taiwan IP. Then the computer has been seized and the server holder has been arrested by the police.
