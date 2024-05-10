@@ -135,6 +135,7 @@ See member list: [Members](members)
     * 組播/廣播封包流量不得超過 1kbps
 * 不得濫用 IXP 成員的網路基礎設施。包括但不限於以下行為:
     *  不得將 default route 或是未授權的路由，指向IXP成員
+        * a.k.a 未經當事人授權， **static route 指向成員是嚴重違規行為**
     *  不得發送 nexthop 不是自己，而是指向其他成員的路由
     *  不得發送 ICMP redirects 封包，將自己的封包重新導向至其他成員
     *  不得盜播路由，包括但不限於以下行為，除非有獲得當事人授權
@@ -168,7 +169,6 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 | [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走 GeekIX 去 TWDS </li> |
 | [MrSheepNET LTD](https://mrsheep.io/)    | <li>感謝<ins>MrSheepNET LTD</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
 | [Muilties Network](https://muilties.com/)| <li>感謝<ins>Muilties Network</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
-| [小易](https://network.steveyi.net/)     | <li>感謝<ins>小易</ins>提供的 VM 讓我做 VXLAN-EVPN 架設實驗.</li> |
 | [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國 VM 讓我做相關實驗. |
 
 
