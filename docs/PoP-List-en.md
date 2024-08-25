@@ -160,8 +160,8 @@ The PoPs are interconnected using EVPN+VXLAN.
         
         | Dst IP           | Dst port                | Connection       | Speed   | MTU  |
         |------------------|-------------------------|------------------|---------|------|
-        | 0.0.0.0/0        | `1 ~ 9999`              | Cloudflare WARP  |100M/40M | 1440 |
-        | 0.0.0.0/0        | `10000 ~ 65535`         | SeedNet          |100M/40M | 1500 |
+        | 0.0.0.0/0        | `1 ~ 9999`              | Cloudflare WARP  |300M/300M| 1440 |
+        | 0.0.0.0/0        | `10000 ~ 65535`         | SeedNet          |300M/300M| 1500 |
 
         The VM is behind NAT, connections with destination ports less than 10000 will be redirected to Cloudflare WARP for security reasons
     
