@@ -32,8 +32,6 @@ The PoPs are interconnected using EVPN+VXLAN.
         |Virt| CPU| Mem| Disk| MRC    |
         |----|----|----|-----|--------|
         | LXC| 1C |0.5G| 8G  | Free   |
-        | KVM| 1C | 1G | 8G  | NTD200 |
-        | KVM| 1C | 2G | 16G | NTD350 |
         
         ??? "IX Global Rules"
             * Comply with the laws of the United States.
