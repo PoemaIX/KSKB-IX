@@ -20,7 +20,6 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 139317 | [ZX Network](https://bgp.tools/as/139317) | AS-ZXINC | - {: neigh_ip='fe80::139:317' RS='RSR1' } | - {: neigh_ip='fe80::139:317' RS='RST' } |
 | 7721 | [Qin Cloud Networks](https://bgp.tools/as/7721) | APNIC::AS-QINCLOUD | - {: neigh_ip='fe80::7721' RS='RSR1' } | - {: neigh_ip='fe80::7721' RS='RST' } |
 | 209306 | [SohaNET](https://bgp.tools/as/209306) | AS209306:AS-SET | - {: neigh_ip='2404:f4c0:f70e:1980::209:306' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::209:306' RS='RST' } |
-| 140913 | [Hentai Network Lab](https://bgp.tools/as/140913) | AS-KOISHI | - {: neigh_ip='2404:f4c0:f70e:1980::140:913' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::140:913' RS='RST' } |
 | 139328 | [Haima Global Network](https://bgp.tools/as/139328) | RIPE::AS-MOEBEE-CN | - {: neigh_ip='fe80::139:328' RS='RSR1' } | - {: neigh_ip='fe80::139:328' RS='RST' } |
 | 142551 | [Azurite27 Network](https://bgp.tools/as/142551) |  | - {: neigh_ip='fe80::142:551' RS='RSR1' } | - {: neigh_ip='fe80::142:551' RS='RST' } |
 | 140731 | [TOHU Public Internet](https://bgp.tools/as/140731) | RIPE::AS-TOHUNET | - {: neigh_ip='fe80::140:731' RS='RSR1' } | - {: neigh_ip='fe80::140:731' RS='RST' } |
@@ -56,10 +55,8 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 203236 | [Lily Network](https://bgp.tools/as/203236) | AS-LILY | - {: neigh_ip='fe80::203:236' RS='RSR1' } | - {: neigh_ip='fe80::203:236' RS='RST' } |
 | 200536 | [186526 Network](https://bgp.tools/as/200536) | AS-NET186 | - {: neigh_ip='fe80::200:536' RS='RSR1' } | - {: neigh_ip='fe80::200:536' RS='RST' } |
 | 210445 | [CRE Network](https://bgp.tools/as/210445) | AS-CRENET | - {: neigh_ip='fe80::210:445' RS='RSR1' } | - {: neigh_ip='fe80::210:445' RS='RST' } |
-| 200895 | [Gua-Network](https://bgp.tools/as/200895) |  | - {: neigh_ip='fe80::200:895' RS='RSR1' } | - {: neigh_ip='fe80::200:895' RS='RST' } |
 | 62246 | [WJY Network](https://bgp.tools/as/62246) | AS-WJY | - {: neigh_ip='fe80::62:246' RS='RSR1' } | - {: neigh_ip='fe80::62:246' RS='RST' } |
 | 199613 | [Bling Network](https://bgp.tools/as/199613) | ARIN::AS-BLING | - {: neigh_ip='fe80::199:613' RS='RSR1' } | - {: neigh_ip='fe80::199:613' RS='RST' } |
-| 199683 | [Eki Network](https://bgp.tools/as/199683) | AS199683:AS-SET | - {: neigh_ip='fe80::199:683' RS='RSR1' } | - {: neigh_ip='fe80::199:683' RS='RST' } |
 | 23347 | [ZYC Network](https://bgp.tools/as/23347) | AS-ZYC | - {: neigh_ip='fe80::23:347' RS='RSR1' } | - {: neigh_ip='fe80::23:347' RS='RST' } |
 | 30114 | [Decima LLC](https://bgp.tools/as/30114) | AS30114:AS-DECIMA | - {: neigh_ip='fe80::30:114' RS='RSR1' } | - {: neigh_ip='fe80::30:114' RS='RST' } |
 | 139888 | [Time Network](https://bgp.tools/as/139888) |  | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::139:888' RS='RST' } |
@@ -81,6 +78,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 215934 | [Qian Network](https://bgp.tools/as/215934) | AS215934:AS-QIANOWO | - {: neigh_ip='2404:f4c0:f70e:1980::215:934' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::215:934' RS='RST' } |
 | 140915 | [MNTG Network Global](https://bgp.tools/as/140915) | AS140915:AS-MKNT | - {: neigh_ip='fe80::140:915' RS='RSR1' } | - {: neigh_ip='fe80::140:915' RS='RST' } |
 | 207852 | [Y525 Global Network](https://bgp.tools/as/207852) | AS-Y525 | - {: neigh_ip='fe80::207:852' RS='RSR1' } | - {: neigh_ip='fe80::207:852' RS='RST' } |
+| 215750 | [TENONET](https://bgp.tools/as/215750) | AS215750:AS-SET | - {: neigh_ip='2404:f4c0:f70e:1980::215:750' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::215:750' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
