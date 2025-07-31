@@ -218,25 +218,6 @@ PoP 之間使用 EVPN+VXLAN 互連
         | 0.0.0.0/0        | `any`                   | National Central University| 500M/500M | 1500 |
         
 
-=== "Yi-VM"
-
-    <h3>PoP 屬性</h3>
-    
-    * 管理人: KSKB
-    * PoP 種類: [贊助](#TYPE)，贊助人: 小易
-    * 物理位置: 台北市內湖區，是方電訊
-    * 無SLA保證
-    * 大易網維修中，暫時無法使用
-    
-    <h3>接入方式</h3> 
-        
-        1. 隧道
-    <h4>1. 隧道</h4>
-    
-        1. OpenVPN
-        2. GRETAP
-        3. VxLAN
-
 === "Luobo-TWDSVM"
 
     <h3>PoP 屬性</h3>

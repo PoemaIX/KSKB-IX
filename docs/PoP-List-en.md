@@ -212,24 +212,6 @@ The PoPs are interconnected using EVPN+VXLAN.
         | 0.0.0.0/0        | `any`                   | National Central University|500M/500M | 1500 |
         
 
-=== "Yi-VM"
-
-    <h3>Pop Attributes</h3>
-    
-    * Operator: KSKB
-    * Pop Type: [Sponsored](#TYPE)，Sponsor: SteveYi
-    * Physical Location: Neihu District, Taipei City, Chief Telecom
-    * No SLA guarantee
-    
-    <h3>Access Method</h3> 
-    
-        1. Tunnel
-    <h4>1. Tunnel</h4>
-
-        1. OpenVPN
-        2. GRETAP
-        3. VXLAN
-
 === "Luobo-TWDSVM"
 
     <h3>Pop Attributes</h3>
