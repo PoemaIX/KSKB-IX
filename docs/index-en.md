@@ -26,6 +26,7 @@ Each Point of Presence (PoP) has its own management rules. Please refer to the [
 
 ## Requirement
 Participants must have a ASN and at least a public routable /48 ipv6 subnet  
+Participants needs a Telegram account to join our announcement group to get IX related announcement
 Participants should have some knowledge and experience related to networking and BGP, such as:
 
 * Know the basics about L2 and L3
