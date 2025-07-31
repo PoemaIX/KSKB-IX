@@ -74,6 +74,7 @@ The PoPs are interconnected using EVPN+VXLAN.
                 8. Approach learning with a humble attitude and be nice.
             * Proof: Recommendation from group members/exams/interviews/self-provided materials.
            * If you are a friend of KSKB, you may bypass the above restrictions with KSKB's consent.
+           * Because of VM resource, you need an recommendation from existing member to join via this method
     === "Connectivity"
         Network Connections
 

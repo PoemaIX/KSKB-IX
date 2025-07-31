@@ -32,7 +32,8 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 ## 要求 | Requirement
 
-參與者要有一個公網ASN，以及至少一段 /48 的ipv6
+1. 參與者要有一個公網ASN，以及至少一段 /48 的ipv6
+2. 參與者需要一個 Telegram 帳號，並加入公告群組。關於 IX 的公告會在群組內發布
 
 參與者要有一點網路相關知識和經驗，比如
 
