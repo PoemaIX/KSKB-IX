@@ -13,7 +13,6 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 |-----|-----|-----|-----|-----|
 | 199594 | [Poema IX RS](https://bgp.tools/as/199594) |  | - {: neigh_ip='fe80::1000:199:594' RS='RSR1' } | - {: neigh_ip='fe80::1000:199:594' RS='RST' } |
 | 207705 | [JK-Network](https://bgp.tools/as/207705) | AS-JKNET | - {: neigh_ip='fe80::207:705' RS='RSR1' } | - {: neigh_ip='fe80::207:705' RS='RST' } |
-| 57481 | [Haonan Yang](https://bgp.tools/as/57481) |  | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::57:481' RS='RST' } |
 | 213262 | [Moe Overflow Electric](https://bgp.tools/as/213262) | AS-CUTE | - {: neigh_ip='fe80::213:262' RS='RSR1' } | - {: neigh_ip='fe80::213:262' RS='RST' } |
 | 61302 | [HUIZE-NET](https://bgp.tools/as/61302) | AS-HUIZE | - {: neigh_ip='fe80::61:302' RS='RSR1' } | - {: neigh_ip='fe80::61:302' RS='RST' } |
 | 141237 | [Moecast Network](https://bgp.tools/as/141237) | AS-MOEC | - {: neigh_ip='2404:f4c0:f70e:1980::141:237' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::141:237' RS='RST' } |
