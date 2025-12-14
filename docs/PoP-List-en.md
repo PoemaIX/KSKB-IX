@@ -263,7 +263,7 @@ The PoPs are interconnected using EVPN+VXLAN.
             * You may not run resource-consuming programs, such as online games or crypto mining.
 
         ???+ "VM Access Requirements"
-            * Only for staff/students of National Central University
+            * Contact Telegram @gugumnt
     === "Connectivity"
         Network Connections
 
@@ -308,6 +308,7 @@ The PoPs are interconnected using EVPN+VXLAN.
 * Managed by KSKB
 * Sponsored PoP of Poema IX
 * PoP hardware is owned by sponsors.
+
 
 
 
