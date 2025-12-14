@@ -231,6 +231,48 @@ The PoPs are interconnected using EVPN+VXLAN.
         2. GRETAP
         3. VXLAN
 
+=== "MoeDove"
+
+    <h3>Pop Attributes</h3>
+    
+    * Operator: gugumnt
+    * Pop Type: [Franchisee](#TYPE)
+    * Physical Location: Taipei City, Chief HD facility
+    * SLA guaranteed
+    
+    <h3>Access Method</h3> 
+    
+        1. VM
+        
+    <h4>VM</h4>
+    
+    === "VM Shape"
+        |Virt| CPU| Mem| Disk| MRC    |
+        |----|----|----|-----|--------|
+        | KVM| 1C |  1G|10G  | 10 USD |
+
+        ??? "IX Global Rules"
+            * Comply with the laws of the United States.
+            * Personal use only; transfer, rental, and commercial uses are prohibited.
+            * Cyber attacks are not allowed, such as ARP attack, ARP hijacking, scanning weak passwords, malicious exhaustion, DDoS, Trojan horses, and interfering with the operation of other networks and servers.
+            * Spamming emails, spamming messages, spreading Trojans, viruses (including referencing malicious files from other servers) are not allowed.
+            * Committing copyright violations using Torrents, BitTorrent, etc., is not allowed.
+            * Usage of net_speeder/finalspeed/kcptun, etc., and any form of packet multiplication tools that may interfere with our network is prohibited.
+            * Fair use terms apply to all resources. It is forbidden to consume/occupy CPU/network/bandwidth and other resources for a long time, such as rclone transferring/crypto mining or any action that makes my network feel very laggy.
+            * Using it as a crawler or for account registration, etc., which may cause my IP to be marked as a bot is not allowed.
+            * You may not run resource-consuming programs, such as online games or crypto mining.
+
+        ???+ "VM Access Requirements"
+            * Only for staff/students of National Central University
+    === "Connectivity"
+        Network Connections
+
+        All **outgoing** connections from the IX VM follow the routing policies outlined below:
+        
+        | Dst IP           | Dst port                | Connection  | Speed       | MTU  |
+        |------------------|-------------------------|-------------|-------------|------|
+        | 0.0.0.0/0        | `any`                   | MoeDove LLC | 1000M/1000M | 1500 |
+
 === "Zerotier"
 
     <h3>Pop Attributes</h3>
@@ -266,4 +308,5 @@ The PoPs are interconnected using EVPN+VXLAN.
 * Managed by KSKB
 * Sponsored PoP of Poema IX
 * PoP hardware is owned by sponsors.
+
 
