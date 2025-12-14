@@ -253,7 +253,6 @@ The PoPs are interconnected using EVPN+VXLAN.
 
         ??? "IX Global Rules"
             * Comply with the laws of the United States.
-            * Personal use only; transfer, rental, and commercial uses are prohibited.
             * Cyber attacks are not allowed, such as ARP attack, ARP hijacking, scanning weak passwords, malicious exhaustion, DDoS, Trojan horses, and interfering with the operation of other networks and servers.
             * Spamming emails, spamming messages, spreading Trojans, viruses (including referencing malicious files from other servers) are not allowed.
             * Committing copyright violations using Torrents, BitTorrent, etc., is not allowed.
@@ -308,6 +307,7 @@ The PoPs are interconnected using EVPN+VXLAN.
 * Managed by KSKB
 * Sponsored PoP of Poema IX
 * PoP hardware is owned by sponsors.
+
 
 
 
