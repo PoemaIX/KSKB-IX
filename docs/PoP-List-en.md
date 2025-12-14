@@ -269,9 +269,9 @@ The PoPs are interconnected using EVPN+VXLAN.
 
         All **outgoing** connections from the IX VM follow the routing policies outlined below:
         
-        | Dst IP           | Dst port                | Connection  | Speed       | MTU  |
-        |------------------|-------------------------|-------------|-------------|------|
-        | 0.0.0.0/0        | `any`                   | MoeDove LLC | 1000M/1000M | 1500 |
+        | Dst IP           | Dst port                | Connection     | Speed       | MTU  |
+        |------------------|-------------------------|----------------|-------------|------|
+        | 0.0.0.0/0        | `any`                   | MoeDove Global | 1000M/1000M | 1500 |
 
 === "Zerotier"
 
@@ -308,5 +308,6 @@ The PoPs are interconnected using EVPN+VXLAN.
 * Managed by KSKB
 * Sponsored PoP of Poema IX
 * PoP hardware is owned by sponsors.
+
 
 
