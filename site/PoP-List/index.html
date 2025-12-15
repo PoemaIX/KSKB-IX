@@ -592,7 +592,7 @@
 PoP 之間使用 EVPN+VXLAN 互連  </p>
 <p><img alt="Alt text" src="../files/topology.drawio.svg" /></p>
 <h2 id="節點列表">節點列表</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">KSKB-HOME</label><label for="__tabbed_1_2">Jord-Home</label><label for="__tabbed_1_3">JK-Lab</label><label for="__tabbed_1_4">Luobo-TWDSVM</label><label for="__tabbed_1_5">Zerotier</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">KSKB-HOME</label><label for="__tabbed_1_2">Jord-Home</label><label for="__tabbed_1_3">JK-Lab</label><label for="__tabbed_1_4">MoeDove</label><label for="__tabbed_1_5">Luobo-TWDSVM</label><label for="__tabbed_1_6">Zerotier</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><h3>PoP 屬性</h3></p>
@@ -970,6 +970,89 @@ KSKB 不想要自己花的錢，被挪作他用(實驗、練習配網以外的�
 <td><code>any</code></td>
 <td>National Central University</td>
 <td>500M/500M</td>
+<td>1500</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<p><h3>PoP 屬性</h3></p>
+<ul>
+<li>管理人: gugumnt</li>
+<li>PoP 種類: <a href="#TYPE">加盟</a></li>
+<li>物理位置: 台灣臺北市，是方電訊</li>
+<li>SLA保證</li>
+</ul>
+<p><h3>接入方式</h3> </p>
+<pre><code>1. VM
+</code></pre>
+<p><h4>1. VM</h4></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">VM Shape</label><label for="__tabbed_5_2">Connectivity</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Virt</th>
+<th>CPU</th>
+<th>Mem</th>
+<th>Disk</th>
+<th>MRC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KVM</td>
+<td>1C</td>
+<td>1G</td>
+<td>10G</td>
+<td>10 USD</td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary>IX 全域性規定</summary>
+<ul>
+<li>遵守中華民國（台灣）法律，禁止做出任何可能會讓電腦被扣押的舉動</li>
+<li>尤其是任何涉及「錢」的操作，更是<strong>嚴禁</strong>[^1]。比如遊戲點卡儲值，註冊相關帳號。或是金融相關網頁/程式的帳戶開設/操作</li>
+<li>禁止主機對外、對內發包（無論是否為主動行為）, ARP 攻擊, ARP 劫持, 掃描弱密碼, 惡意窮舉，DDoS，木馬和干擾其它伺服器運行</li>
+<li>禁止發送垃圾郵件、垃圾訊息, 散播木馬、病毒(包括引用其它伺服器的惡意文件)</li>
+<li>禁止使用 Torrents、BT，等下載或傳播版權內容</li>
+<li>禁止使用 net_speeder/finalspeed/kcptun 等干擾網路運作的，任何形式的多倍發包工具</li>
+<li>資源合理使用。禁止長時間消耗/佔滿CPU/網路頻寬等資源，例如rclone轉存/挖礦，<strong>或是讓我感覺家裡網路很卡</strong>(這是最主要的判斷方式)</li>
+<li>禁止用於爬蟲/帳號註冊等，可能會使IP被標記為bot(俗稱IP被汙染)之行為</li>
+<li>禁止架設耗資源的程式，如線上遊戲</li>
+</ul>
+</details>
+<details open="open">
+<summary>VM 接入要求</summary>
+<ul>
+<li>聯絡 Telegram @gugumnt</li>
+</ul>
+</details>
+</div>
+<div class="tabbed-block">
+<p>網路連線</p>
+<p>所有從 IX VM 的<strong>出方向</strong>的連線，遵守以下路由策略</p>
+<table>
+<thead>
+<tr>
+<th>Dst IP</th>
+<th>Dst port</th>
+<th>Connection</th>
+<th>Speed</th>
+<th>MTU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0.0.0/0</td>
+<td><code>any</code></td>
+<td>MoeDove Global</td>
+<td>1000M/1000M</td>
 <td>1500</td>
 </tr>
 </tbody>
