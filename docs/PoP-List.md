@@ -5,7 +5,8 @@
 Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
 PoP 之間使用 EVPN+VXLAN 互連  
 
-![Diagram](topology.d2)
+![Diagram](topology.d2){pad="0"}
+![Diagram](legend.d2){pad="0" scale="1"}
 
 ## 節點列表
 
@@ -13,7 +14,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
     <h3>PoP 屬性</h3>
     
-    * 管理員: KSKB([直營](#TYPE))
+    * 管理員: [@KSKB](https://t.me/KusakabeShi)([直營](#TYPE))
     * 物理位置: 台北市大安區，KSKB 家裡的客廳雲
     * 無SLA保證
     
@@ -77,8 +78,8 @@ PoP 之間使用 EVPN+VXLAN 互連
                 6. IX 上網卡僅用於內網隧道的搭建，不用於其他服務
                 7. 抱著謙虛學習的心，Be nice.
             * 證明: 群友內推/考試/面試/自主提供材料
-            * 若沒有和`RS Regular`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供KSKB順順看網頁/玩遊戲  
-            * 如果是 KSKB 朋友，徵詢 KSKB 同意以後可以略過以上限制
+            * 若沒有和`RS Regular`進行BGP連接並**發送至少一條IPv6路由**，KSKB將在Google Chrome記憶體爆炸的時候，優先關閉妳的VM，供 KSKB 順順看網頁/玩遊戲  
+            * 如果是 KSKB 朋友，徵詢 KSKB 同意以後可以繞過以上限制
     === "Connectivity"
         網路連線
         
@@ -118,7 +119,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
     <h3>PoP 屬性</h3>
     
-    * 管理人: [@jord903](https://t.me/jord903)([加盟](#TYPE))
+    * 管理人: [Jord](https://t.me/jord903)([加盟](#TYPE))
     * 物理位置: 桃園市平鎮區，Jord 家裡的客廳
     * 無SLA保證
     
@@ -173,7 +174,7 @@ PoP 之間使用 EVPN+VXLAN 互連
     
     <h3>PoP 屬性</h3>
     
-    * 管理人: whojk([加盟](#TYPE))
+    * 管理人: [WhoJK](https://t.me/whojk)([加盟](#TYPE))
     * 物理位置: 台灣桃園市中壢區，中央大學
     * 無SLA保證
     
@@ -219,7 +220,7 @@ PoP 之間使用 EVPN+VXLAN 互連
     
     <h3>PoP 屬性</h3>
     
-    * 管理人: gugumnt([加盟](#TYPE))
+    * 管理人: [Gugumnt](https://t.me/gugumnt)([加盟](#TYPE))
     * 物理位置: 台灣臺北市，是方電訊
     * SLA保證
     
@@ -261,7 +262,7 @@ PoP 之間使用 EVPN+VXLAN 互連
 
     <h3>PoP 屬性</h3>
     
-    * 管理人: KSKB(蘿蔔[贊助](#TYPE)))
+    * 管理人: [@KSKB](https://t.me/KusakabeShi)(蘿蔔[贊助](#TYPE)))
     * 物理位置: 台北市內湖區，是方電訊
     * 無SLA保證
     
