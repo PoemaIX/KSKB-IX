@@ -1,7 +1,7 @@
 # Poema IX
 
 ## 介紹 | Introduction
-一個非營利的分部式[虛擬 IX](Virtual-IXP) ，作為一個BGP實驗交流和學習的平台  
+一個非營利的分部式[虛擬 IX](Virtual-IXP.md) ，作為一個BGP實驗交流和學習的平台  
 
 主要是給BGP配網的`業餘/有興趣/新手`一個練習的地方，可以放心實驗  
 同時提供一個平台，給大家熟悉IX環境。畢竟DN42和公網環境差距不只是一點點  
@@ -23,10 +23,10 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 1. VM接入 (如果你沒有台灣 PoP)
 2. 隧道接入 (如果你已經有台灣 PoP)
 
-每個 PoP 有不同的接入方式，請參考 [PoP List](/PoP-List/)
+每個 PoP 有不同的接入方式，請參考 [PoP List](PoP-List.md)
 
 * 非商業性質。禁止商業使用，例如使用 Poema IX 交換商業流量。請聯系我們以獲取更多信息  
-* IX本身不存在IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members)索要IP Transit  
+* IX本身不存在IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members.md)索要IP Transit  
 * 我們強制要求與`RS Regular 1`進行BGP連接  
 * 若沒有和`RS Regular 1`進行BGP連接並**發送至少一條IPv6路由**，長期不連接可能會被視為不活躍成員被清理  
 
@@ -59,8 +59,8 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 * RS Regular 1
     * AS199594
     * 是一個**普通RS**
-    * [過濾規則](RS#default-filtering-policy)
-    * [支援的Community屬性](RS#announcement-control-via-bgp-communities)
+    * [過濾規則](RS.md#default-filtering-policy)
+    * [支援的Community屬性](RS.md#announcement-control-via-bgp-communities)
     * 普通人也能連接，RS有做過濾
     * 懶人包: **把RS 當作 peer 對象來連線**
     * 我們強制要求與 `RS Regular 1` 進行BGP連接，並發送至少一條IPv6路由
@@ -102,7 +102,7 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 ## 成員 | Members
 
-See member list: [Members](members)
+See member list: [Members](members.md)
 
 
 ## 限制 | Limitations
@@ -158,7 +158,7 @@ See member list: [Members](members)
 * 資源合理使用。禁止長時間消耗/佔滿 CPU/網路頻寬等資源，例如 rclone 轉存/挖礦，**或是讓我感覺家裡網路很卡**(這是最主要的判斷方式)
 * 禁止用於爬蟲/帳號註冊等，可能會使 IP 被標記為 bot(俗稱 IP 被汙染)之行為
 * 禁止架設耗資源的程式，如線上遊戲
-* Poema IX 由多人運營，請遵守 [PoP 各自的規範](/PoP-List/)
+* Poema IX 由多人運營，請遵守 [PoP 各自的規範](PoP-List.md)
 
 ## 聯絡方式 | Contact
 * mailto: ix@kskb.eu.org

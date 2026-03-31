@@ -1,4 +1,4 @@
-site_name: MOEIX
+site_name: Poema IX
 theme:
   name: material
   # name: flatly
@@ -29,5 +29,7 @@ site_url: https://ix.poema.eu.org/
 repo_url: https://github.com/KSKBpage/KSKB-IX
 edit_uri: blob/main/docs/
 plugins:
+  - d2:
+      pad: 0
   - search:
       separator: '[\s\u200b\-]'

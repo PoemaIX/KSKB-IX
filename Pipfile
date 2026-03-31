@@ -8,8 +8,9 @@ mkdocs-bootswatch = "*"
 pymdown-extensions = "*"
 mkdocs-material = "*"
 jieba = "*"
+mkdocs-d2-plugin = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.11.5"

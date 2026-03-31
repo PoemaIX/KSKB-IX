@@ -1,0 +1,144 @@
+# IX Network Topology — 4col × 2row grid
+#
+#   MoeDove    Luobo-TWDSVM    JK-Lab    GeekIX
+#   (空)       Jord-Home       KSKB-Home (空)
+#
+# 渲染: d2 ix-network.d2 ix-network.svg
+
+
+
+grid: "" {
+  grid-rows: 2
+  grid-columns: 4
+  grid-gap: 60
+
+  style: {
+    fill: transparent
+    stroke: transparent
+  }
+
+  # ── Row 1: MoeDove | Luobo | JK-Lab | GeekIX ──
+  MoeDove: "MoeDove" {
+    shape: rectangle
+    style: {
+      fill: "#3a1a4c"
+      stroke: "#b46eff"
+      font-color: "#e8d0ff"
+      border-radius: 8
+      font-size: 16
+      bold: true
+    }
+    link: "#__tabbed_1_4"
+  }
+
+  Luobo-TWDSVM: "Luobo-TWDSVM" {
+    shape: rectangle
+    style: {
+      fill: "#1a3a5c"
+      stroke: "#4a9eff"
+      font-color: "#e0f0ff"
+      border-radius: 8
+      font-size: 16
+      bold: true
+    }
+    link: "#__tabbed_1_5"
+  }
+
+  JK-Lab: "JK-Lab" {
+    shape: rectangle
+    style: {
+      fill: "#1a3a5c"
+      stroke: "#4a9eff"
+      font-color: "#e0f0ff"
+      border-radius: 8
+      font-size: 16
+      bold: true
+    }
+    link: "#__tabbed_1_3"
+  }
+
+  GeekIX: "GeekIX VMs" {
+    shape: rectangle
+    style: {
+      fill: "#545454"
+      stroke: "#2b2b2b"
+      font-color: "#d9d9d9"
+      border-radius: 8
+      font-size: 16
+      bold: true
+    }
+  }
+
+  # ── Row 2: (占位) | Jord-Home | KSKB-Home | (占位) ──
+  _sl: "." {
+    shape: rectangle
+    style: {
+      fill: transparent
+      stroke: transparent
+      font-color: transparent
+      font-size: 8
+    }
+  }
+  KSKB-Home: "KSKB-Home" {
+    shape: rectangle
+    style: {
+      fill: "#1a3a5c"
+      stroke: "#4a9eff"
+      font-color: "#e0f0ff"
+      border-radius: 8
+      font-size: 16
+      bold: true
+    }
+    link: "#__tabbed_1_1"
+  }
+  Jord-Home: "Jord-Home" {
+    shape: rectangle
+    style: {
+      fill: "#1a3a5c"
+      stroke: "#4a9eff"
+      font-color: "#e0f0ff"
+      border-radius: 8
+      font-size: 16
+      bold: true
+    }
+    link: "#__tabbed_1_2"
+  }
+
+  _sr: "." {
+    shape: rectangle
+    style: {
+      fill: transparent
+      stroke: transparent
+      font-color: transparent
+      font-size: 8
+    }
+  }
+
+  # ── Full Mesh (6 links) ──
+  Luobo-TWDSVM <-> JK-Lab: {
+    style: {stroke: "#4a9eff"; stroke-width: 2}
+  }
+  Luobo-TWDSVM <-> Jord-Home: {
+    style: {stroke: "#4a9eff"; stroke-width: 2}
+  }
+  Luobo-TWDSVM <-> KSKB-Home: {
+    style: {stroke: "#4a9eff"; stroke-width: 2}
+  }
+  JK-Lab <-> Jord-Home: {
+    style: {stroke: "#4a9eff"; stroke-width: 2}
+  }
+  JK-Lab <-> KSKB-Home: {
+    style: {stroke: "#4a9eff"; stroke-width: 2}
+  }
+  Jord-Home <-> KSKB-Home: {
+    style: {stroke: "#4a9eff"; stroke-width: 2}
+  }
+
+  # ── Leaf Connections (虛線) ──
+  MoeDove <-> Luobo-TWDSVM: {
+    style: {stroke: "#b46eff"; stroke-width: 2;}
+  }
+  GeekIX <-> JK-Lab: {
+    style: {stroke: "#b46eff"; stroke-width: 2;}
+  }
+}
