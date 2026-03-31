@@ -5,7 +5,7 @@
 Poema IX is composed of multiple Points of Presence (PoP), each operating independently.
 The PoPs are interconnected using EVPN+VXLAN.
 
-![Alt text](./files/topology.drawio.svg)
+![Diagram](topology.d2)
 
 ## Node List
 
@@ -44,7 +44,7 @@ The PoPs are interconnected using EVPN+VXLAN.
             * Using it as a crawler or for account registration, etc., which may cause my IP to be marked as a bot is not allowed.
             * You may not run resource-consuming programs, such as online games or crypto mining.
 
-        ???+ PoP Specific Regulations
+        ???+ PoP Specific Rules
             KSKB provides resources for free to provide a place for individuals interested in network operation to practice with network configurations. It also allows networking enthusiasts to connect, discuss, and experiment with different network architectures, collectively improving their technical skills. However, for KSKB, electricity costs (≈NT200/month), internet fees (NT1099/month), and hardware costs (≈NT25000) are expenses. KSKB does not want its funds to be used for purposes other than experimentation and practicing network configurations. Therefore, the use of VMs is subject to the following regulations:
 
             <h4>Usage Regulations</h4>
@@ -271,23 +271,6 @@ The PoPs are interconnected using EVPN+VXLAN.
         | Dst IP           | Dst port                | Connection     | Speed       | MTU  |
         |------------------|-------------------------|----------------|-------------|------|
         | 0.0.0.0/0        | `any`                   | MoeDove Global | 1000M/1000M | 1500 |
-
-=== "Zerotier"
-
-    <h3>Pop Attributes</h3>
-    
-    * Operator: KSKB
-    * Pop Type: [Direct](#TYPE)
-    * Physical Location: Virtual PoP, no concrete location
-    * No SLA guarantee
-    
-    <h3>Access Method</h3> 
-    
-        1. Tunnel
-    <h4>1. Tunnel</h4>
-
-        1. ZeroTier
-
 
 ## Direct vs Franchisee vs Sponsored<a name="TYPE"></a>
 
