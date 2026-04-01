@@ -1637,7 +1637,7 @@
       "connection_list": [
         {
           "ixp_id": 0,
-          "state": "active",
+          "state": "inactive",
           "if_list": [
             {
               "if_speed": 500,
@@ -1650,7 +1650,7 @@
               "ipv6": {
                 "address": "2404:f4c0:f70e:1980::40:929",
                 "as_macro": "AS-MOEDOVE-BN",
-                "routeserver": true
+                "routeserver": false
               }
             }
           ]
