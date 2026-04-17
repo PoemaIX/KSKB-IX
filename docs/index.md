@@ -175,12 +175,11 @@ Poema IX 的正常運作，離不開下列群友的貢獻
 
 | 名單                                      | 致謝 |
 |------------------------------------------|----------|
-| [TOHU NET](https://as140731.bairuo.net/) | <li>感謝<ins>白渃</ins>提供的 IPv6 Transit</li><li>走 GeekIX 去 TWDS </li> |
-| [MrSheepNET LTD](https://mrsheep.io/)    | <li>感謝<ins>MrSheepNET LTD</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
-| [MoeDove LLC](https://www.moedove.com/)  | <li>感謝<ins>MoeDove LLC</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
-| [Liu Haoran](https://www.pysio.online)   | <li>感謝<ins>Liu Haoran</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX & PCCWG</li> |
-| [Muilties Network](https://muilties.com/)| <li>感謝<ins>Muilties Network</ins>成為transit sponsor</li><li>幫助需要的人把路由 Transit 到 STUIX</li> |
-| [MLGT](https://as204508.net/)            | <li>感謝 <ins>Gatterer Manuel</ins> 提供的德國 VM 讓我做相關實驗. |
+| [Muilties Network](https://muilties.com/)| <li>感謝<ins>Muilties Network</ins>贊助了 JORD-HOME 站點</li><ul><li>讓成員可以更低延遲接入 Poema-IX</li></ul><li>感謝成為transit sponsor</li><ul><li>幫助需要的人把路由 Transit 到 STUIX</li></ul> |
+| [RADISHCLOUD](https://radishnet.work/)   | <li>感謝<ins>RADISHCLOUD</ins>贊助了 LUOBO-TWDS 站點</li><ul><li>讓成員可以更低延遲接入 Poema-IX.</li></ul> |
+| [MrSheepNET LTD](https://mrsheep.io/)    | <li>感謝<ins>MrSheepNET LTD</ins>成為transit sponsor</li><ul><li>幫助需要的人把路由 Transit 到 STUIX</li></ul> |
+| [MoeDove LLC](https://www.moedove.com/)  | <li>感謝<ins>MoeDove LLC</ins>成為transit sponsor</li><ul><li>幫助需要的人把路由 Transit 到 STUIX</li></ul> |
+| [Liu Haoran](https://www.pysio.online)   | <li>感謝<ins>Liu Haoran</ins>成為transit sponsor</li><ul><li>幫助需要的人把路由 Transit 到 STUIX & PCCWG</li></ul> |
 
 
 [^1]: 真實故事: 不法分子行騙以後，贓款 GASH 點數於網路上轉賣。有人貪便宜購買贓物 GASH 以後，掛著 Hinet 出口的 VPN 儲值。警方接獲報案以後循線追蹤，因此將 VPN 主人的電腦(查到儲值 IP 是 VPN 主人的 IP)扣押進行後續調查。因此符合第一條的「可能會讓我家電腦被扣押的舉動」

@@ -165,11 +165,10 @@ We want to acknowledge the following sponsors for their sponsored resources and 
 
 | List                                     | Acknowledgements     |
 |------------------------------------------|----------------------|
-| [TOHU NET](https://as140731.bairuo.net/) | <li>Thank to <ins>The BaiRuo</ins> for the IPv6 Transit to STUIX over GeekIX</li> |
-| [MrSheepNET LTD](https://mrsheep.io/)    | <li>Thank to <ins>MrSheepNET LTD</ins> to be a transit sponsor</li><li>Transits our routes to STUIX.</li> |
-| [MoeDove LLC](https://www.moedove.com/)  | <li>Thank to <ins>MoeDove LLC</ins> to be a transit sponsor</li><li>Transits our routes to STUIX.</li> |
-| [Liu Haoran](https://www.pysio.online)   | <li>Thank to <ins>Liu Haoran</ins> to be a transit sponsor</li><li>Transits our routes to STUIX and PCCWG.</li> |
-| [Muilties Network](https://muilties.com/)| <li>Thank to <ins>Muilties Network</ins> to be a transit sponsor</li><li>Transits our routes to STUIX.</li> |
-| [MLGT](https://as204508.net/)            | <li>Thank to <ins>Gatterer Manuel</ins> for providing the German VM for better connectivity. |
+| [Muilties Network](https://muilties.com/)| <li>Thank to <ins>Muilties Network</ins> sponsor the JORD-HOME site</li><ul><li>Allow members to join Poema-IX with lower latency.</li></ul><li>And thanks to be a transit sponsor</li><ul><li>Transits our routes to STUIX.</li></ul> |
+| [RADISHCLOUD](https://radishnet.work/)   | <li>Thank to <ins>RADISHCLOUD</ins> sponsor the LUOBO-TWDS site</li><ul><li>Allow members to join Poema-IX with lower latency.</li></ul> |
+| [MrSheepNET LTD](https://mrsheep.io/)    | <li>Thank to <ins>MrSheepNET LTD</ins> to be a transit sponsor</li><ul><li>Transits our routes to STUIX.</li></ul> |
+| [MoeDove LLC](https://www.moedove.com/)  | <li>Thank to <ins>MoeDove LLC</ins> to be a transit sponsor</li><ul><li>Transits our routes to STUIX.</li></ul> |
+| [Liu Haoran](https://www.pysio.online)   | <li>Thank to <ins>Liu Haoran</ins> to be a transit sponsor</li><ul><li>Transits our routes to STUIX and PCCWG.</li></ul> |
 
 [^1]: True story: Someone bought a swag gift card unintentionally, topped it up with a Taiwan VPN. Then the police found the top-uping IP is from a Taiwan IP. Then the computer has been seized and the server holder has been arrested by the police.
