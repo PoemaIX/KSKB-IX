@@ -1,10 +1,14 @@
 # Poema IX
 
 ## 介紹 | Introduction
-Poema IX 是一個一個非營利的分部式[虛擬 IX](Virtual-IXP.md) ，作為一個BGP實驗交流和學習的平台  
+Poema IX 是一個非營利的分布式[虛擬 IX](Virtual-IXP.md) ，各站點之間由 [vxlan-controller](https://github.com/PoemaIX/vxlan-controller) 互連  
+同時作為一個BGP實驗交流和學習的平台  
 
-這個 IX 比較特別之處，首先是內網只使用 **IPv6 link local** 地址， `RFC4291` 規定了此網斷不可被路由，藉此避免了 IX Lan 網段被非 IX 成員攻擊  
-但 `RFC4291` 只規範了 ipv6 ，ipv4 無此限制。因此再藉由 **Multiprotocol BGP (MP-BGP)** ，搭配 **Extended next hop** 技術來廣播 IPv4 路由  
+這個 IX 比較特別之處，首先是內網只使用 **IPv6 link local** 地址  
+`RFC4291` 規定了此網段不可被路由，藉此避免了 IX Lan 網段被非 IX 成員攻擊  
+
+但 `RFC4291` 只規範了 ipv6 ，ipv4 無此限制  
+因此再藉由 **Multiprotocol BGP (MP-BGP)** ，搭配 **Extended next hop** 技術來廣播 IPv4 路由  
 
 目前為止沒有別的 IX 這樣做，這些技術明明存在，為什麼不用呢?  
 作為實驗性質的 IX ，沒有道理不把這些都用上  

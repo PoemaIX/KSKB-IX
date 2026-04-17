@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Poema IX is a non-profit distributed Virtual IXP](https://bgp.tools/kb/virtual-ixp) that serves as a platform for BGP experimental exchange and learning in Taiwan.  
+Poema IX is a non-profit distributed [Virtual IXP](https://bgp.tools/kb/virtual-ixp) interconnected by [vxlan-controller](https://github.com/PoemaIX/vxlan-controller) that serves as a platform for BGP experimental exchange and learning in Taiwan.  
 
 What makes this IX unique is, first and foremost, its internal network uses only IPv6 link-local addresses. `RFC 4291` stipulates that this address block is non-routable, thereby preventing the IX LAN segment from being attacked by non-IX members.  
 However, `RFC 4291` only regulates IPv6; IPv4 has no such inherent restriction. Therefore, we utilize **Multiprotocol BGP (MP-BGP)** in conjunction with **Extended Next Hop** technology to advertise IPv4 routes.  
