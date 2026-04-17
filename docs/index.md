@@ -1,20 +1,23 @@
 # Poema IX
 
 ## 介紹 | Introduction
-一個非營利的分部式[虛擬 IX](Virtual-IXP.md) ，作為一個BGP實驗交流和學習的平台  
+Poema IX 是一個一個非營利的分部式[虛擬 IX](Virtual-IXP.md) ，作為一個BGP實驗交流和學習的平台  
 
-主要是給BGP配網的`業餘/有興趣/新手`一個練習的地方，可以放心實驗  
+這個 IX 比較特別之處，首先是內網只使用 **IPv6 link local** 地址， `RFC4291` 規定了此網斷不可被路由，藉此避免了 IX Lan 網段被非 IX 成員攻擊  
+但 `RFC4291` 只規範了 ipv6 ，ipv4 無此限制。因此再藉由 **Multiprotocol BGP (MP-BGP)** ，搭配 **Extended next hop** 技術來廣播 IPv4 路由  
+
+目前為止沒有別的 IX 這樣做，這些技術明明存在，為什麼不用呢?  
+作為實驗性質的 IX ，沒有道理不把這些都用上  
+
+再來是給BGP配網的`業餘/有興趣/新手`一個練習的地方，可以放心實驗  
 同時提供一個平台，給大家熟悉IX環境。畢竟DN42和公網環境差距不只是一點點  
 
-提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching。針對Switching內網，以下稱呼為 **IX LAN**
+IX 服務模式為提供OSI第二層之交換服務(Switching)，模式為Ethernet Switching。針對Switching內網，以下稱呼為 **IX LAN**
 
-本IX支援IPv4(透過mpbgp+enh) 以及 IPv6  
 PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
 IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/)  
 
-一般IX都不用 `link local`/`mpbgp`/`extended next hop`  
-這些技術明明存在，為什麼不用呢?我很好奇!  
-所以我就想自己成立一個 IX ，把這些都使用上    
+
 
 ## 接入 | Join
 
@@ -27,8 +30,8 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 
 * 非商業性質。禁止商業使用，例如使用 Poema IX 交換商業流量。請聯系我們以獲取更多信息  
 * IX本身不存在IP Transit。妳也可以在IX裡面自行尋找[其他參與者](members.md)索要IP Transit  
-* 我們強制要求與`RS Regular 1`進行BGP連接  
-* 若沒有和`RS Regular 1`進行BGP連接並**發送至少一條IPv6路由**，長期不連接可能會被視為不活躍成員被清理  
+* 我們強制要求與`RS Peering`進行BGP連接  
+* 若沒有和`RS Peering`進行BGP連接並**發送至少一條IPv6路由**，長期不連接可能會被視為不活躍成員被清理  
 
 ## 要求 | Requirement
 
@@ -52,18 +55,18 @@ IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/
 ## 設定 | Configure
 我們有以下三台Route Server，分別有著不同的策略  
 
-**只有 `RS Regular` 是正常的 Route server**  
+**只有 `RS Peering` 是正常的 Route server**  
 `RS Transitable` / `RS Chaos` 都是特殊RS，有實驗/整活的性質，請先針對RS的情況，弄好配套的特殊設定才能接入喔  
-**懶得設定的話，只要連 RS Regular 就好了**
+**懶得設定的話，只要連 RS Peering 就好了**
 
-* RS Regular 1
+* RS Peering
     * AS199594
     * 是一個**普通RS**
     * [過濾規則](RS.md#default-filtering-policy)
     * [支援的Community屬性](RS.md#announcement-control-via-bgp-communities)
     * 普通人也能連接，RS有做過濾
     * 懶人包: **把RS 當作 peer 對象來連線**
-    * 我們強制要求與 `RS Regular 1` 進行BGP連接，並發送至少一條IPv6路由
+    * 我們強制要求與 `RS Peering` 進行BGP連接，並發送至少一條IPv6路由
     * 連線地址(link-local 模式): `fe80::1980:1:1 % eth1`
     * 連線地址(普通模式): `2404:f4c0:f70e:1980::1:1`
 * RS Transitable<a name="RS2"></a>

@@ -3,7 +3,9 @@
 ## 拓樸架構
 
 Poema IX 由多個 PoP 組成，每個 PoP 獨立運作  
-PoP 之間使用 EVPN+VXLAN 互連  
+PoP 之間使用 [vxlan-controller](https://www.kskb.eu.org/2026/04/poema-ix.html)+VXLAN 互連  
+
+即時的 IX 路由以及延遲拓樸: [https://ix-topo.poema.eu.org:8443/](https://ix-topo.poema.eu.org:8443/)
 
 ![Diagram](topology.d2){pad="0"}
 ![Diagram](legend.d2){pad="0" scale="1"}

@@ -1,11 +1,17 @@
 # Poema IX
 
 ## Introduction
-Poema IX is a non-profit distributed [Virtual IXP](https://bgp.tools/kb/virtual-ixp) in Taiwan. It serves to provide BGP hobbyists with a platform to learn and experiment with real life networking.  
+
+Poema IX is a non-profit distributed Virtual IXP](https://bgp.tools/kb/virtual-ixp) that serves as a platform for BGP experimental exchange and learning in Taiwan.  
+
+What makes this IX unique is, first and foremost, its internal network uses only IPv6 link-local addresses. `RFC 4291` stipulates that this address block is non-routable, thereby preventing the IX LAN segment from being attacked by non-IX members.  
+However, `RFC 4291` only regulates IPv6; IPv4 has no such inherent restriction. Therefore, we utilize **Multiprotocol BGP (MP-BGP)** in conjunction with **Extended Next Hop** technology to advertise IPv4 routes.  
+
+To date, no other IX operates this way. Even though these technologies exist, why aren't they being used?  
+As an experimental IX, there is no reason not to utilize all of them.  
 
 This IX provides OSI Layer 2 Ethernet Switching service. For the switching network, we refer to `IX LAN`, `IX peering LAN` or `Peering LAN` in the following sections.  
 
-This IX supports IPv4 (mpbgp + extended next hop) and IPv6  
 PeeringDB: [https://www.peeringdb.com/ix/3792](https://www.peeringdb.com/ix/3792)  
 IXPDB: [https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/](https://ixpdb.euro-ix.net/en/ixpdb/ixp/1061/)  
 
@@ -44,10 +50,10 @@ The bgp daemon used by the participant must support the following functions
 ## Configure
 We have three route servers, with 3 different policies  
 
-**Only `RS Regular` is a regular Route Server**  
+**Only `RS Peering` is a Peering Route Server**  
 `RS Transitable` / `RS Chaos` are special Route Servers for experimenting.  
 
-**If you don't know what this is, please establish sessions to `RS Regular` only**  
+**If you don't know what this is, please establish sessions to `RS Peering` only**  
 
 * RS1
     * AS199594
@@ -56,7 +62,7 @@ We have three route servers, with 3 different policies
     * [Communities](RS.md#announcement-control-via-bgp-communities)
     * In a nutshell: **Config the RS session as peering session**
     * You can connect to this RS without any concern, we will do IRR and RPKI validation for you.
-    * A BGP connection with `RS Regular 1` is mandatory and you must **announce at least one IPv6 route from your own network**.
+    * A BGP connection with `RS Peering` is mandatory and you must **announce at least one IPv6 route from your own network**.
     * IP Address(Link-local mode): `fe80::1980:1:1 % eth1`
     * IP Address(Regular mode): `2404:f4c0:f70e:1980::1:1`
 * RS2<a name="RS2"></a>

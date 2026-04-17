@@ -19,6 +19,7 @@ markdown_extensions:
 nav:
   - Poema IX: index.md
   - Poema IX(EN): index-en.md
+  - PoP Real-time Tpoplogy: https://ix-topo.poema.eu.org:8443/
   - PoP List: PoP-List.md
   - PoP List(EN): PoP-List-en.md
   - Member List: members.md

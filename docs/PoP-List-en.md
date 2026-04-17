@@ -3,7 +3,9 @@
 ## Topology
 
 Poema IX is composed of multiple PoPs, each operating independently.
-PoPs are interconnected using EVPN+VXLAN.
+PoPs are interconnected using [vxlan-controller](https://www.kskb.eu.org/2026/04/poema-ix.html)+VXLAN.
+
+Real-Time Latency matrix accross all out sites: [https://ix-topo.poema.eu.org:8443/](https://ix-topo.poema.eu.org:8443/)
 
 ![Diagram](topology.d2){pad="0"}
 ![Diagram](legend.d2){pad="0" scale="1"}
