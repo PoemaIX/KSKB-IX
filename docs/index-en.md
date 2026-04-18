@@ -10,7 +10,7 @@ However, `RFC 4291` only regulates IPv6; IPv4 has no such inherent restriction. 
 To date, no other IX operates this way. Even though these technologies exist, why aren't they being used?  
 As an experimental IX, there is no reason not to utilize all of them.  
 
-This IX provides OSI Layer 2 Ethernet Switching service with MTU **1422**.  
+This IX provides OSI Layer 2 Ethernet Switching service with **MTU 1422**.  
 For the switching network, we refer to `IX LAN`, `IX peering LAN` or `Peering LAN` in the following sections.  
 
 
