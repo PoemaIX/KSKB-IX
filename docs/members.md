@@ -79,6 +79,7 @@ For real time data, check out our [Looking Glass](https://ixlg.kskb.eu.org/)
 | 211575 | [Rui Feng](https://bgp.tools/as/211575) | AS211575:AS-RUINETWORK | - {: neigh_ip='2404:f4c0:f70e:1980::211:575' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::211:575' RS='RST' } |
 | 150289 | [Sun Yanzheng](https://bgp.tools/as/150289) | AS-SUNYZ | - {: neigh_ip='2404:f4c0:f70e:1980::150:289' RS='RSR1' } | - {: neigh_ip='2404:f4c0:f70e:1980::150:289' RS='RST' } |
 | 40929 | [MoeDove R&E Network](https://bgp.tools/as/40929) | AS-MOEDOVE-BN | - {: neigh_ip='fe80::40:929' RS='RSR1' } | - {: neigh_ip='fe80::40:929' RS='RST' } |
+| 213428 | [Haco Network](https://bgp.tools/as/213428) | AS213428:AS-HACO | - {: neigh_ip='fe80::213:428' RS='RSR1' } | - {: neigh_ip='fe80::213:428' RS='RST' } |
 
 <script>
 let rs_list = ["RSR1:2404:f4c0:f70e:1980::1:1","RST:2404:f4c0:f70e:1980::2:1"];
