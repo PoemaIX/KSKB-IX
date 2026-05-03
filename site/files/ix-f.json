@@ -1,0 +1,1889 @@
+{
+  "version": "1.0",
+  "ixp_list": [
+    {
+      "ixp_id": 0,
+      "ixf_id": 1061,
+      "shortname": "KSKB-IX",
+      "vlan": [
+        {
+          "id": 0
+        }
+      ],
+      "switch": [
+        {
+          "id": 1,
+          "name": "main switch",
+          "colo": "KSKB Home",
+          "city": "Taiwan",
+          "country": "TW",
+          "manufacturer": "unknown",
+          "model": "unknown"
+        }
+      ]
+    }
+  ],
+  "member_list": [
+    {
+      "asnum": 199594,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::1:1",
+                "as_macro": "AS-KSKB-IX-RS1",
+                "routeserver": true
+              }
+            },
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::2:1",
+                "as_macro": "AS-KSKB-IX-RS2",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 199594,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::1000:199:594",
+                "as_macro": "",
+                "routeserver": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 207705,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::207:705",
+                "as_macro": "AS-JKNET",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:77:05"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 213262,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::213:262",
+                "as_macro": "AS-CUTE",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:21:32:62"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 60539,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::60:539",
+                "as_macro": "AS-HUIZE",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:06:05:39"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 141237,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::141:237",
+                "as_macro": "AS-MOEC",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:14:12:37"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 139317,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::139:317",
+                "as_macro": "AS-ZXINC",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:13:93:17"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 7721,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::7721",
+                "as_macro": "APNIC::AS-QINCLOUD",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:00:77:21"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 209306,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::209:306",
+                "as_macro": "AS209306:AS-SET",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:93:06"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 202335,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::202:335",
+                "as_macro": "RIPE::AS-MOEBEE-CN",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:23:35"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 140731,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::140:731",
+                "as_macro": "RIPE::AS-TOHUNET",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:14:07:31"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 142281,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::142:281",
+                "as_macro": "",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:14:22:81"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 208223,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::208:223",
+                "as_macro": "AS208223:AS-ALL",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:82:23"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 212483,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::212:483",
+                "as_macro": "RIPE::AS-86",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:21:24:83"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 210932,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::210:932",
+                "as_macro": "AS-CHESSKUO",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:21:09:32"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 12198,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::12:198",
+                "as_macro": "AS-JSMSR",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:01:21:98"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 17415,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::17:415",
+                "as_macro": "AS-Sciuridae",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:01:74:15"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 209554,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::209:554",
+                "as_macro": "AS-MERCYCLOUD",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:95:54"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 60326,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::60:326",
+                "as_macro": "AS-MrSheep",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:06:03:26"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 203472,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::203:472",
+                "as_macro": "AS-POEMA",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:34:72"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 205603,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::205:603",
+                "as_macro": "AS-WOLFLAB",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:56:03"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 57429,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::57:429",
+                "as_macro": "AS-HARAGUROICHA",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:05:74:29"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 204508,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::204:508",
+                "as_macro": "AS-MLGT",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:45:08"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 203314,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::203:314",
+                "as_macro": "AS-HATSNET",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:33:14"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 212154,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::212:154",
+                "as_macro": "AS-SARUNETWORK",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:21:21:54"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 57406,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::57:406",
+                "as_macro": "AS-ZERODISTANCE",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:05:74:06"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 205329,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::205:329",
+                "as_macro": "AS-MUILTIES",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:53:29"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 210000,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::210:0",
+                "as_macro": "AS-DAOPORT",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:21:00:00"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 202939,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::202:939",
+                "as_macro": "AS-CHIMON",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:29:39"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 202776,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::202:776",
+                "as_macro": "AS-MOECLUB",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:27:76"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 207268,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::207:268",
+                "as_macro": "AS-STREXP",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:72:68"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 201217,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::201:217",
+                "as_macro": "AS-RADISH",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:12:17"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 138435,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::138:435",
+                "as_macro": "AS-YUETAU",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:13:84:35"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 142164,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::142:164",
+                "as_macro": "AS-142164",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:14:21:64"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 203236,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::203:236",
+                "as_macro": "AS-LILY",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:32:36"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 200536,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::200:536",
+                "as_macro": "AS-NET186",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:05:36"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 210445,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::210:445",
+                "as_macro": "AS-CRENET",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:21:04:45"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 62246,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::62:246",
+                "as_macro": "AS-WJY",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:06:22:46"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 51087,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::51:87",
+                "as_macro": "ARIN::AS-BLING",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:05:10:87"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 23347,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::23:347",
+                "as_macro": "AS-ZYC",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:02:33:47"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 30114,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::30:114",
+                "as_macro": "AS30114:AS-DECIMA",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:03:01:14"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 139888,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::139:888",
+                "as_macro": "",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:13:98:88"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 150184,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::150:184",
+                "as_macro": "",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:15:01:84"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 27010,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::27:10",
+                "as_macro": "",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:02:70:10"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 60900,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::60:900",
+                "as_macro": "RIPE::AS60900:AS-MAIN",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:06:09:00"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 44324,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::44:324",
+                "as_macro": "AS44324:AS-MD",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:04:43:24"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 18428,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::18:428",
+                "as_macro": "AS18428:AS-MERCYCAT",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:01:84:28"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 142553,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::142:553",
+                "as_macro": "",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:14:25:53"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 151674,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::151:674",
+                "as_macro": "AS151674:AS-HYUNET",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:15:16:74"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 202881,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::202:881",
+                "as_macro": "AS-MTSN",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:28:81"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 199310,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::199:310",
+                "as_macro": "AS199310:AS-QFNET",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:19:93:10"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 197860,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::197:860",
+                "as_macro": "AS197860:AS-HARUKA",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:19:78:60"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 211035,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::211:035",
+                "as_macro": "AS211035:AS-PHANTOM-HIVE",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:21:10:35"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 216123,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::216:123",
+                "as_macro": "AS216123:AS-ZHUYUAN",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:21:61:23"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 215956,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::215:956",
+                "as_macro": "AS215956:AS-MYIP",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:21:59:56"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 215934,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::215:934",
+                "as_macro": "AS215934:AS-QIANOWO",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:21:59:34"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 204244,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::204:244",
+                "as_macro": "",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:20:42:44"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 207852,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::207:852",
+                "as_macro": "AS-Y525",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:20:78:52"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 215750,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::215:750",
+                "as_macro": "AS215750:AS-SET",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:21:57:50"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 401835,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::401:835",
+                "as_macro": "AS-BCR",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:40:18:35"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 40929,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::40:929",
+                "as_macro": "AS-MOEDOVE-BN",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:04:09:29"
+                ]
+              }
+            },
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::1:40:929",
+                "as_macro": "AS-MOEDOVE-BN",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:01:04:09:29"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 213605,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::213:605",
+                "as_macro": "AS213605:AS-PYSIO-NETWORKS-TW",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:21:36:05"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 211575,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::211:575",
+                "as_macro": "AS211575:AS-RUINETWORK",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:21:15:75"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 150289,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "active",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::150:289",
+                "as_macro": "AS-SUNYZ",
+                "routeserver": true,
+                "mac_addresses": [
+                  "02:00:00:15:02:89"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 213428,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::213:428",
+                "as_macro": "AS213428:AS-HACO",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:21:34:28"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asnum": 33622,
+      "connection_list": [
+        {
+          "ixp_id": 0,
+          "state": "inactive",
+          "if_list": [
+            {
+              "if_speed": 500,
+              "switch_id": 1
+            }
+          ],
+          "vlan_list": [
+            {
+              "vlan_id": 0,
+              "ipv6": {
+                "address": "2404:f4c0:f70e:1980::33:622",
+                "as_macro": "",
+                "routeserver": false,
+                "mac_addresses": [
+                  "02:00:00:03:36:22"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
