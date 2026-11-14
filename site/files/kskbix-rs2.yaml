@@ -1,0 +1,593 @@
+0:
+  as-set:
+  - AS-POEMA
+  as-set-flat:
+  - 138517
+  - 203472
+  asn: 138517
+1:
+  as-set:
+  - AS142553:AS-SHIZUKUGLOBAL-APAC-APS
+  as-set-flat:
+  - 7721
+  - 134478
+  - 138517
+  - 139328
+  - 142551
+  - 142553
+  - 149795
+  - 203314
+  - 203472
+  - 207705
+  asn: 142553
+2:
+  as-set:
+  - AS-JKNET
+  as-set-flat:
+  - 138517
+  - 203472
+  - 207705
+  - 211390
+  asn: 207705
+3:
+  as-set:
+  - AS51930
+  as-set-flat:
+  - 51930
+  asn: 51930
+4:
+  as-set:
+  - AS210320
+  as-set-flat:
+  - 210320
+  asn: 210320
+5:
+  as-set:
+  - AS-CUTE
+  as-set-flat:
+  - 112
+  - 9886
+  - 134993
+  - 135395
+  - 140727
+  - 140731
+  - 140936
+  - 141221
+  - 141237
+  - 207268
+  - 213262
+  asn: 213262
+6:
+  as-set:
+  - AS61302
+  as-set-flat:
+  - 61302
+  asn: 61302
+7:
+  as-set:
+  - AS-MOEC
+  as-set-flat:
+  - 9516
+  - 9886
+  - 59598
+  - 136451
+  - 138990
+  - 139328
+  - 139618
+  - 139782
+  - 140731
+  - 141237
+  - 209554
+  asn: 141237
+8:
+  as-set:
+  - AS139317
+  as-set-flat:
+  - 139317
+  asn: 139317
+9:
+  as-set:
+  - APNIC::AS-QINCLOUD
+  as-set-flat:
+  - 7721
+  - 142553
+  asn: 7721
+10:
+  as-set:
+  - AS209306:AS-SET
+  as-set-flat:
+  - 209306
+  asn: 209306
+11:
+  as-set:
+  - AS-KOISHI
+  as-set-flat:
+  - 140913
+  - 141706
+  asn: 140913
+12:
+  as-set:
+  - RIPE::AS-MOEBEE-CN
+  as-set-flat:
+  - 134478
+  - 138211
+  - 138517
+  - 139328
+  - 142164
+  - 142553
+  asn: 139328
+13:
+  as-set:
+  - AS142551
+  as-set-flat:
+  - 142551
+  asn: 142551
+14:
+  as-set:
+  - AS140731
+  as-set-flat:
+  - 140731
+  asn: 140731
+15:
+  as-set:
+  - AS142281
+  as-set-flat:
+  - 142281
+  asn: 142281
+16:
+  as-set:
+  - AS208223:AS-ALL
+  as-set-flat:
+  - 208223
+  asn: 208223
+17:
+  as-set:
+  - AS212483
+  as-set-flat:
+  - 212483
+  asn: 212483
+18:
+  as-set:
+  - AS-CHESSKUO
+  as-set-flat:
+  - 208223
+  - 210932
+  asn: 210932
+19:
+  as-set:
+  - AS134478
+  as-set-flat:
+  - 134478
+  asn: 134478
+20:
+  as-set:
+  - AS-LEKO
+  as-set-flat:
+  - 212357
+  asn: 212357
+21:
+  as-set:
+  - AS-Sciuridae
+  as-set-flat:
+  - 17415
+  - 24171
+  - 38840
+  - 131682
+  - 207469
+  asn: 17415
+22:
+  as-set:
+  - AS-MERCYCLOUD
+  as-set-flat:
+  - 9516
+  - 9886
+  - 59598
+  - 136451
+  - 138990
+  - 139328
+  - 139618
+  - 139782
+  - 140731
+  - 209554
+  asn: 9886
+23:
+  as-set:
+  - AS140506
+  as-set-flat:
+  - 140506
+  asn: 140506
+24:
+  as-set:
+  - AS149835:AS-ALL
+  as-set-flat:
+  - 149835
+  asn: 149835
+25:
+  as-set:
+  - AS60326
+  as-set-flat:
+  - 60326
+  asn: 60326
+26:
+  as-set:
+  - AS-ANILLC
+  as-set-flat:
+  - 142055
+  asn: 142055
+27:
+  as-set:
+  - AS-POEMA
+  as-set-flat:
+  - 138517
+  - 203472
+  asn: 203472
+28:
+  as-set:
+  - AS-WOLFLAB
+  as-set-flat:
+  - 138038
+  - 205603
+  asn: 205603
+29:
+  as-set:
+  - AS-HARAGUROICHA
+  as-set-flat:
+  - 57429
+  - 212359
+  asn: 57429
+30:
+  as-set:
+  - AS204508
+  as-set-flat:
+  - 204508
+  asn: 204508
+31:
+  as-set:
+  - AS203314
+  as-set-flat:
+  - 203314
+  asn: 203314
+32:
+  as-set:
+  - AS-SARUNETWORK
+  as-set-flat:
+  - 212154
+  asn: 212154
+33:
+  as-set:
+  - APNIC::AS-SET-AS131171
+  as-set-flat:
+  - 38173
+  - 131171
+  - 140936
+  - 202888
+  - 209988
+  asn: 131171
+34:
+  as-set:
+  - AS-BANDURA-SET
+  as-set-flat:
+  - 200372
+  - 202952
+  asn: 202952
+35:
+  as-set:
+  - AS57406
+  as-set-flat:
+  - 57406
+  asn: 57406
+36:
+  as-set:
+  - AS-MUILTIES
+  as-set-flat:
+  - 202412
+  - 205329
+  asn: 205329
+37:
+  as-set:
+  - AS138211
+  as-set-flat:
+  - 138211
+  asn: 138211
+38:
+  as-set:
+  - AS-DAOPORT
+  as-set-flat:
+  - 7480
+  - 35384
+  - 39753
+  - 202888
+  - 210000
+  - 210320
+  asn: 210000
+39:
+  as-set:
+  - AS-CHIMON
+  as-set-flat:
+  - 202939
+  asn: 202939
+40:
+  as-set:
+  - AS-MOECLUB
+  as-set-flat:
+  - 142553
+  - 202776
+  asn: 202776
+41:
+  as-set:
+  - AS-STREXP
+  as-set-flat:
+  - 112
+  - 135395
+  - 140731
+  - 140936
+  - 207268
+  asn: 207268
+42:
+  as-set:
+  - AS-YUZHEN
+  as-set-flat:
+  - 211390
+  asn: 211390
+43:
+  as-set:
+  - AS-RADISH
+  as-set-flat:
+  - 138517
+  - 200631
+  - 201217
+  - 203472
+  - 211390
+  asn: 201217
+44:
+  as-set:
+  - AS-YUETAU
+  as-set-flat:
+  - 138435
+  - 147047
+  asn: 138435
+45:
+  as-set:
+  - AS-MESON-SELF
+  as-set-flat:
+  - 142427
+  asn: 142427
+46:
+  as-set:
+  - AS-142164
+  as-set-flat:
+  - 142164
+  asn: 142164
+47:
+  as-set:
+  - AS-LILY
+  as-set-flat:
+  - 203236
+  asn: 203236
+48:
+  as-set:
+  - AS-NET186
+  as-set-flat:
+  - 57934
+  - 134478
+  - 138211
+  - 139328
+  - 140506
+  - 200536
+  - 200592
+  - 200895
+  - 200949
+  - 203899
+  asn: 200536
+49:
+  as-set:
+  - AS-CRENET
+  as-set-flat:
+  - 210445
+  asn: 210445
+50:
+  as-set:
+  - AS200895
+  as-set-flat:
+  - 200895
+  asn: 200895
+51:
+  as-set:
+  - AS-WJY
+  as-set-flat:
+  - 57934
+  - 203899
+  asn: 203899
+all:
+  as-set:
+  - AS61302
+  - AS-JKNET
+  - AS-WJY
+  - AS-YUETAU
+  - AS-POEMA
+  - AS210320
+  - AS-RADISH
+  - AS139317
+  - AS-MOEC
+  - AS-DAOPORT
+  - AS200895
+  - AS140731
+  - AS-HARAGUROICHA
+  - AS51930
+  - AS-MERCYCLOUD
+  - AS142281
+  - AS140506
+  - AS-BANDURA-SET
+  - APNIC::AS-QINCLOUD
+  - AS-ANILLC
+  - AS-142164
+  - RIPE::AS-MOEBEE-CN
+  - AS-Sciuridae
+  - AS142553:AS-SHIZUKUGLOBAL-APAC-APS
+  - AS212483
+  - AS134478
+  - AS-SARUNETWORK
+  - AS138211
+  - AS-NET186
+  - AS-MESON-SELF
+  - APNIC::AS-SET-AS131171
+  - AS-STREXP
+  - AS142551
+  - AS-LEKO
+  - AS203314
+  - AS149835:AS-ALL
+  - AS57406
+  - AS204508
+  - AS209306:AS-SET
+  - AS-CUTE
+  - AS-CHESSKUO
+  - AS60326
+  - AS-WOLFLAB
+  - AS-YUZHEN
+  - AS-CHIMON
+  - AS-CRENET
+  - AS-LILY
+  - AS-MUILTIES
+  - AS-MOECLUB
+  - AS208223:AS-ALL
+  - AS-KOISHI
+  as-set-flat:
+  - 201217
+  - 212483
+  - 139782
+  - 17415
+  - 210445
+  - 205329
+  - 202776
+  - 7721
+  - 203314
+  - 139317
+  - 35384
+  - 57406
+  - 139328
+  - 209988
+  - 57934
+  - 210000
+  - 57429
+  - 142427
+  - 131682
+  - 131171
+  - 147047
+  - 24171
+  - 207469
+  - 112
+  - 140913
+  - 203899
+  - 140936
+  - 202888
+  - 209554
+  - 9886
+  - 202412
+  - 200372
+  - 212154
+  - 202939
+  - 200895
+  - 138435
+  - 202952
+  - 59598
+  - 203472
+  - 142551
+  - 142553
+  - 51930
+  - 140506
+  - 204508
+  - 135395
+  - 142055
+  - 138990
+  - 200949
+  - 136451
+  - 213262
+  - 138517
+  - 38173
+  - 149795
+  - 205603
+  - 9516
+  - 138038
+  - 7480
+  - 39753
+  - 149835
+  - 134478
+  - 134993
+  - 142164
+  - 200536
+  - 207705
+  - 208223
+  - 139618
+  - 61302
+  - 212357
+  - 212359
+  - 141706
+  - 210320
+  - 200592
+  - 209306
+  - 207268
+  - 141221
+  - 60326
+  - 141237
+  - 200631
+  - 140727
+  - 38840
+  - 140731
+  - 211390
+  - 142281
+  - 138211
+  - 203236
+  - 210932
+  asn:
+  - 201217
+  - 212483
+  - 212357
+  - 17415
+  - 210445
+  - 213262
+  - 210320
+  - 205329
+  - 138517
+  - 202776
+  - 209306
+  - 9886
+  - 205603
+  - 207268
+  - 60326
+  - 7721
+  - 203314
+  - 141237
+  - 139317
+  - 212154
+  - 140731
+  - 202939
+  - 57406
+  - 211390
+  - 139328
+  - 200895
+  - 138435
+  - 202952
+  - 142281
+  - 149835
+  - 134478
+  - 203472
+  - 210000
+  - 142164
+  - 57429
+  - 142551
+  - 200536
+  - 142553
+  - 207705
+  - 51930
+  - 140506
+  - 204508
+  - 142427
+  - 208223
+  - 131171
+  - 138211
+  - 203236
+  - 142055
+  - 140913
+  - 210932
+  - 61302
+  - 203899
